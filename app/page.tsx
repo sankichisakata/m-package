@@ -1,3 +1,6 @@
+import HomeCompany from '@/components/layouts/home/homeCompany'
+import HomeEquipment from '@/components/layouts/home/homeEquipment'
+import HomeService from '@/components/layouts/home/homeService'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -34,6 +37,9 @@ export default function Home() {
         </div>
 
       </div>
+      <HomeService/>
+      <HomeEquipment/>
+      <HomeCompany/>
       </>
   )
 }
