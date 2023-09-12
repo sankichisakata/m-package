@@ -28,7 +28,7 @@ const FooterContact = () => {
             </div>
 
             <div className="
-            w-full z-1 py-10 relative backdrop-blur-sm
+            w-full py-10 relative
             flex flex-col justify-center gap-10
             "
             >

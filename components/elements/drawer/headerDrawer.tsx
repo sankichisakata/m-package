@@ -54,7 +54,7 @@ export default function HeaderDrawer() {
               <Link href="/">
                 <ListItemButton>
                   <ListItemIcon>
-                    N-Pacakge
+                    M-Pacakge
                   </ListItemIcon>
                 </ListItemButton>
               </Link>
