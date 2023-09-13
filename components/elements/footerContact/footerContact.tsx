@@ -3,21 +3,30 @@ import Image from 'next/image'
 
 const FooterContact = () => {
     return (
-        <>
-            {/* <div className='hidden'>
+        <div 
+        className='
+        w-full lg:w-4/6 mx-auto
+        flex justify-center-items-center
+        '
+        >
+            <div 
+            className='
+            hidden lg:block
+            h-auto lg:w-1/2 relative
+            flex justify-center items-center
+            '
+            >
                 <Image 
-                className='absolute'
+                className='inline-block aspect-[4/3]'
                 src="/img/equipment.jpg" 
                 alt="equipment" 
-                width={500} 
-                height={500} 
-                objectFit="cover"
-                objectPosition='center'
+                fill
+                style={{ objectFit: "cover" }}
                 />
-            </div> */}
+            </div>
 
             <div className="
-            w-full py-10
+            w-full lg:w-1/2 px-5 py-10 bg-red-200
             flex flex-col justify-center gap-10
             "
             >
@@ -46,7 +55,7 @@ const FooterContact = () => {
                     <p className="text-xs">平日 9:00 ~ 17:30</p>
                 </div>
             </div>
-       </>
+        </div>
     )
 }
 

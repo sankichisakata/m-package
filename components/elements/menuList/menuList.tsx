@@ -12,7 +12,7 @@ const MenuList = () => {
                 "
                 >
                     <li>
-                    <Link href="/service">
+                        <Link href="/service">
                             <p className='text-slate-100'>事業内容</p>
                         </Link>
                     </li>

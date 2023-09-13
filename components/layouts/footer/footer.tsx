@@ -1,6 +1,5 @@
 'use client'
 
-import { useSearchParams } from "next/navigation";
 import { usePathname } from 'next/navigation';
 
 import FooterMain from "@/components/elements/footerMain/footerMain";
