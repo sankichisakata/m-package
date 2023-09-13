@@ -26,17 +26,6 @@ export default function Home() {
           <p>当たり前を当たり前に。</p>
         </div>
 
-        {/* <div className='
-        text-center text-[30px]
-        border border-black
-        p-5
-        '
-        >
-          <p>川口から世界へ</p>
-          <p>”M-Package”</p>
-          <p>ここに爆誕</p>
-        </div> */}
-
       </div>
       <HomeService/>
       <HomeEquipment/>
