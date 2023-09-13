@@ -1,28 +1,29 @@
 'use client'
 
 import Link from 'next/link';
-import { Button } from '@chakra-ui/react';
+import { Button, Stack } from '@chakra-ui/react';
 import React from 'react';
 import { DrawerMenu } from '@/components/elements/drawer/drawerMenu';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 const Header = () => {
   return (
     <header>
       <nav className="
-      top-0 left-0 py-2 px-4 w-full 
+      top-0 left-0 py-3 px-4 w-full 
       bg-white/10 backdrop-blur-sm 
       fixed  
       "
       >
 
         <div className='
-        w-full lg:w-3/6 mx-auto
+        w-full lg:w-4/6 mx-auto
         flex justify-between items-center
         '>
 
-          <div className='border-2 border-gray-800'>
+          <div className=''>
           <Link href="/">
-            <Button colorScheme='teal' variant='ghost'>
+            <Button colorScheme='teal'>
               <p className='text-sm p-3 text-gray-800'>株式会社エムパッケージ</p>
             </Button>
           </Link>
@@ -54,16 +55,25 @@ const Header = () => {
             </li>
           </ul>
           
-          <div className='flex justify-center items-center'>
-            <Link 
-            className='text-sm font-normal text-gray-800'
-            href="/contact">
-              相談する
-            </Link>
-
-            <div className='text-[28px] lg:hidden'>
+          <div className='flex justify-center items-center gap-5'>
+          
+              <Link href="/contact">
+              <Stack 
+              className='
+              py-2 px-3
+              text-sm font-normal text-gray-800
+              border border-gray-800 rounded-xl
+              '  
+              >
+                <Button rightIcon={<ArrowForwardIcon />}  variant='outline'>
+                
+                  相談する
+                
+                </Button>
+              </Stack>
+              </Link>
+        
               <DrawerMenu/>
-            </div>
           </div>
         </div>
 

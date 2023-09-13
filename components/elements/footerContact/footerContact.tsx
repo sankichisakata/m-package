@@ -1,23 +1,12 @@
-import { Box } from '@mui/material';
+
 import Image from 'next/image'
 
 const FooterContact = () => {
     return (
         <>
-        <Box 
-        sx={{
-            width: 1,
-            height: 1,
-            backgroundColor: 'primary.dark',
-            '&:hover': {
-            backgroundColor: 'primary.main',
-            opacity: [0.9, 0.8, 0.7],
-            },
-        }}
-        >
-            <div className='hidden'>
+            {/* <div className='hidden'>
                 <Image 
-                className='z-0 absolute'
+                className='absolute'
                 src="/img/equipment.jpg" 
                 alt="equipment" 
                 width={500} 
@@ -25,10 +14,10 @@ const FooterContact = () => {
                 objectFit="cover"
                 objectPosition='center'
                 />
-            </div>
+            </div> */}
 
             <div className="
-            w-full py-10 relative
+            w-full py-10
             flex flex-col justify-center gap-10
             "
             >
@@ -57,8 +46,6 @@ const FooterContact = () => {
                     <p className="text-xs">平日 9:00 ~ 17:30</p>
                 </div>
             </div>
-
-        </Box>
        </>
     )
 }

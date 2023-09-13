@@ -1,4 +1,3 @@
-'use client'
 
 import HomeCompany from '@/components/layouts/home/homeCompany'
 import HomeEquipment from '@/components/layouts/home/homeEquipment'
