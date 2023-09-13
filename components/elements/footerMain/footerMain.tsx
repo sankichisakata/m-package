@@ -18,7 +18,7 @@ const FooterMain = () => {
                         <p>TEL:048-287-8055</p>
                     </div>
                     <div className='text-xs'>
-                        <p >加賀ICより車で101分</p>
+                        <p >加賀ICより車で10分</p>
                         <p >川口元郷駅2番出口より徒歩13分</p>
                     </div>
                 </div>
