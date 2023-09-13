@@ -2,7 +2,9 @@
 import './globals.css'
 import Header from '@/components/layouts/header/header'
 import Footer from '@/components/layouts/footer/footer'
+import { Providers } from './providers';
 
+import React from "react"
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -21,10 +23,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>
+      <body className={inter.className}>
         <Header/>
         <main>
+          <Providers>
           {children}
+          </Providers>
         </main>
         <Footer/>
         </body>

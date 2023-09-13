@@ -1,14 +1,15 @@
+'use client'
+
 import Link from 'next/link';
-import HeaderDrawer from '@/components/elements/drawer/headerDrawer';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import Button from '@mui/material/Button';
+import { Button } from '@chakra-ui/react';
+import React from 'react';
+import { DrawerMenu } from '@/components/elements/drawer/drawerMenu';
 
 const Header = () => {
   return (
     <header>
       <nav className="
-      top-0 left-0 py-2 px-4 z-10 w-full 
+      top-0 left-0 py-2 px-4 w-full 
       bg-white/10 backdrop-blur-sm 
       fixed  
       "
@@ -21,9 +22,9 @@ const Header = () => {
 
           <div className='border-2 border-gray-800'>
           <Link href="/">
-              <ListItemButton>
-                <p className='text-base text-gray-800'>M</p>
-              </ListItemButton>
+            <Button colorScheme='teal' variant='ghost'>
+              <p className='text-sm p-3 text-gray-800'>株式会社エムパッケージ</p>
+            </Button>
           </Link>
           </div>
 
@@ -33,36 +34,35 @@ const Header = () => {
           ">
             <li>
             <Link href="/service">
-              <ListItemButton>
+              
               事業内容
-              </ListItemButton>
+              
             </Link>
             </li>
             <li>
             <Link href="/equipment">
-              <ListItemButton>
+            
               設備案内
-              </ListItemButton>
+            
             </Link>
             </li>
             <li>
             <Link href="/company">
-              <ListItemButton>
                 会社概要
-              </ListItemButton>
+             
             </Link>
             </li>
           </ul>
           
           <div className='flex justify-center items-center'>
             <Link 
-            className='text-sm font-medium text-gray-800'
+            className='text-sm font-normal text-gray-800'
             href="/contact">
               相談する
             </Link>
 
-            <div className='lg:hidden'>
-            <HeaderDrawer/>
+            <div className='text-[28px] lg:hidden'>
+              <DrawerMenu/>
             </div>
           </div>
         </div>

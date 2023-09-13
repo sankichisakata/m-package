@@ -1,8 +1,6 @@
-import Container from '@mui/material/Container';
+import { Button } from '@chakra-ui/react';
 import Link from 'next/link';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import Button from '@mui/material/Button';
+
 
 const MenuList = () => {
     return(
@@ -15,31 +13,19 @@ const MenuList = () => {
                 >
                     <li>
                     <Link href="/service">
-                        <ListItemButton>
-                            <ListItemIcon>
                             <p className='text-slate-100'>事業内容</p>
-                            </ListItemIcon>
-                        </ListItemButton>
                         </Link>
                     </li>
 
                     <li>
                     <Link href="/equipment">
-                    <ListItemButton>
-                        <ListItemIcon>
                         <p className='text-slate-100'>設備案内</p>
-                        </ListItemIcon>
-                    </ListItemButton>
                     </Link>
                     </li>
 
                     <li>
                     <Link href="/company">
-                    <ListItemButton>
-                            <ListItemIcon>
                             <p className='text-slate-100'>会社概要</p>
-                            </ListItemIcon>
-                    </ListItemButton>
                     </Link>
                     </li>
                 </ul>
@@ -54,11 +40,7 @@ const MenuList = () => {
 
                 <div className='flex flex-col justify-center items-center gap-4'>
                     <Link href="#">
-                        <ListItemButton>
-                                <ListItemIcon>
                                 <p className='text-xs text-slate-100'>プライバシーポリシー</p>
-                                </ListItemIcon>
-                        </ListItemButton>
                     </Link>
                     <small className='text-xs text-slate-400'>©️2023&nbsp;株式会社エムパッケージ</small>
                 </div>
