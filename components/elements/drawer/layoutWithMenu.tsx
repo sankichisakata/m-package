@@ -1,3 +1,4 @@
+'use client'
 
 import React, { FC } from "react"
 import {
@@ -16,25 +17,24 @@ import {
     Stack,
     useDisclosure
   } from "@chakra-ui/react"
-import DrawerMenu from "./drawerMenu";
+import { DrawerMenu } from "./drawerMenu";
 import MenuList from "../menuList/menuList";
 
-const LayoutWithMenu : FC<{}> = ({ children }) => {
+export const LayoutWithMenu : React.FC<{}> = () => {
     return (
       <Stack>
         <HStack p={5}>
           <Box display={{ base: "block", md: "none" }}> {/* for mobile */}
             <DrawerMenu />{ /* Drawerを利用 */}
           </Box>
+          <Heading>Humberger Shop</Heading>
         </HStack>
         <HStack alignItems="start" >
           <Box display={{ base: "none", md: "block" }} w={500} px={6}> {/* for desktop */}
             <MenuList />{ /* Navigationをそのまま利用 */}
           </Box>
-          <Box>{ children }</Box>
+          <Box></Box>
         </HStack>
       </Stack>
     )
   }
-
-export default LayoutWithMenu;

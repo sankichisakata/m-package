@@ -1,7 +1,9 @@
+'use client'
+
 import Link from 'next/link';
-import DrawerMenu from '@/components/elements/drawer/drawerMenu';
 import { Button } from '@chakra-ui/react';
 import React from 'react';
+import { DrawerMenu } from '@/components/elements/drawer/drawerMenu';
 
 const Header = () => {
   return (

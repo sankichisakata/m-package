@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import React from "react"
+import React, { useRef } from "react"
 import { HamburgerIcon } from "@chakra-ui/icons"
 import {
     Drawer,
@@ -17,7 +17,7 @@ import {
   } from '@chakra-ui/react'
 import MenuList from "../menuList/menuList";
 
-function DrawerMenu() {
+export const DrawerMenu = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef<HTMLButtonElement>(null)
   
@@ -58,5 +58,3 @@ function DrawerMenu() {
       </>
     )
   }
-
-  export default DrawerMenu;
