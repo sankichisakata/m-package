@@ -26,7 +26,7 @@ export default function Home() {
           <p>当たり前を当たり前に。</p>
         </div>
 
-        <div className='
+        {/* <div className='
         text-center text-[30px]
         border border-black
         p-5
@@ -35,7 +35,7 @@ export default function Home() {
           <p>川口から世界へ</p>
           <p>”M-Package”</p>
           <p>ここに爆誕</p>
-        </div>
+        </div> */}
 
       </div>
       <HomeService/>

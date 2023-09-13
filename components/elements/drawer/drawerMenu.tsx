@@ -14,21 +14,25 @@ import {
     Button,
     useDisclosure,
     Link,
+    Divider,
   } from '@chakra-ui/react'
-import MenuList from "../menuList/menuList";
 
 export const DrawerMenu = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef<HTMLButtonElement>(null)
   
     return (
-      <>
+      <div 
+      className="
+      m-1 lg:hidden
+      "
+      >
         <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
         <HamburgerIcon color='black'></HamburgerIcon>
         </Button>
         <Drawer
           isOpen={isOpen}
-          placement='left'
+          placement='top'
           onClose={onClose}
           finalFocusRef={btnRef}
         >
@@ -36,15 +40,18 @@ export const DrawerMenu = () => {
             <DrawerContent>
                 
                 <DrawerHeader
-                 className="flex justify-between items-center">
-                    <div className='border-2 border-gray-800'>
-                    <Link href="/">
-                        <Button colorScheme='teal' variant='ghost'>
-                            <p className='text-sm p-3 text-gray-800'>株式会社エムパッケージ</p>
-                        </Button>
-                    </Link>
+                className="
+                pt-6 pb-10
+                flex flex-col justify-between items-center
+                "
+                >
+                  <DrawerCloseButton className="w-full py-5"/>
+                  <Divider borderColor="slate.100" orientation="vertical" />
+                    <div >
+                      <Link href="/">
+                        <p className='text-base p-3 text-slate-100'>株式会社エムパッケージ</p>
+                      </Link>
                     </div>
-                    <DrawerCloseButton/>
                 </DrawerHeader>
 
     
@@ -98,6 +105,6 @@ export const DrawerMenu = () => {
             </DrawerContent>
           </DrawerOverlay>
         </Drawer>
-      </>
+      </div>
     )
   }
