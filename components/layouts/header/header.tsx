@@ -8,8 +8,8 @@ const Header = () => {
   return (
     <header>
       <nav className="
-      top-0 left-0 py-3 px-4 w-full 
-      bg-white backdrop-blur-sm shadow-sm
+      top-0 left-0 w-full 
+      bg-white shadow-sm
       fixed  
       "
       >
@@ -18,9 +18,9 @@ const Header = () => {
         flex items-center
         '>
 
-          <div className='left-0 w-32'>
+          <div className='left-0 w-36'>
             <Link href="/">
-                <p className='text-sm p-3 text-gray-800'>エムパッケージ</p>
+                <p className='p-5 text-sm text-gray-800'>エムパッケージ</p>
             </Link>
           </div>
 
@@ -30,26 +30,24 @@ const Header = () => {
             '
             >
               <ul className="
-              hidden lg:flex justify-center items-center gap-10
+              hidden lg:flex justify-center items-center
               text-gray-800 text-xs lg:text-sm 
               ">
                 <li>
                 <Link href="/service">
-                  
-                  事業内容
-                  
+                <p className='p-5'>事業内容</p>
                 </Link>
                 </li>
                 <li>
                 <Link href="/equipment">
                 
-                  設備案内
+                  <p className='p-5'>設備案内</p>
                 
                 </Link>
                 </li>
                 <li>
                 <Link href="/company">
-                    会社概要
+                <p className='p-5'>会社概要</p>
                 
                 </Link>
                 </li>
