@@ -26,30 +26,40 @@ export default function DrawerContents () {
         <Button className="p-2" ref={btnRef} colorScheme='teal' onClick={onOpen}>
           <HamburgerIcon color='black' w={25} h={25}></HamburgerIcon>
         </Button>
+
         <Drawer
           isOpen={isOpen}
           placement='top'
           onClose={onClose}
           finalFocusRef={btnRef}
         >
-          <DrawerOverlay className="w-full h-screen">
-            <DrawerContent className="h-screen overflow-scroll" overflow='scroll'>
+          <DrawerOverlay className="bg-gray-900/60">
+            <DrawerContent className="w-full h-screen" overflow='scroll'>
                 
                 <DrawerHeader
                 className="
-                pt-4 pb-4
+                m-2
                 flex flex-col justify-between items-center
                 "
                 >
-                  <DrawerCloseButton className="w-full text-lg font-bold text-gray-900 py-8"/>
+                  <DrawerCloseButton className="
+                  w-full md:w-4/6 py-8 
+                  bg-gray-900 rounded-xl
+                  text-lg font-bold text-slate-100
+                  "
+                  />
                 </DrawerHeader>
 
     
-                <DrawerBody className="m-5 rounded-xl overflow-scroll">
-                <div className='bg-gray-900 px-5 py-10
-                shadow-2xl
-                '
+                <DrawerBody className="
+                m-2 overflow-scroll shadow-2xl rounded-xl
+                "
                 >
+                  <div className='
+                  w-full md:w-4/6
+                  bg-gray-900 mx-auto px-5 py-10
+                  '
+                  >
                       <nav className='
                       w-full
                       flex flex-col justify-center items-center
@@ -57,7 +67,7 @@ export default function DrawerContents () {
                       >
                           <ul className="
                           w-full
-                          text-xl divide-y divide-gray-600 gap-5
+                          text-base divide-y divide-gray-600 gap-5
                           flex flex-col justify-center items-center
                           "
                           >
@@ -67,7 +77,7 @@ export default function DrawerContents () {
                               </Link>
                               </li> */}
                               <li>
-                              <Link href="/service" className="w-full inline-block">
+                              <Link href="/service" className="">
                                   <p className='text-slate-100'>事業内容</p>
                               </Link>
                               </li>
@@ -85,7 +95,7 @@ export default function DrawerContents () {
 
                           <div className='my-20'>
                               <Link href="/contact">
-                                  相談する
+                                  <p className="text-orange-500 text-2xl">相談する</p>
                               </Link>
                           </div>
 
