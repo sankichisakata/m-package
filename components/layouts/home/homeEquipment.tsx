@@ -1,5 +1,5 @@
 
-const HomeEquipment = () => {
+export default function HomeEquipment () {
     return(
         <div
         className="
@@ -13,5 +13,3 @@ const HomeEquipment = () => {
         </div>
     )
 }
-
-export default HomeEquipment;
