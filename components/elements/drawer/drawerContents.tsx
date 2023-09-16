@@ -48,7 +48,7 @@ export default function DrawerContents () {
                 >
                   <div className="
                   w-11/12 
-                  bg-slate-600 rounded-md
+                  bg-slate-600 rounded-md shadow-2xl
                   flex justify-between items-center
                   ">
                    <div className='w-52'>
