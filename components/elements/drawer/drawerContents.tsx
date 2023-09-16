@@ -38,22 +38,22 @@ export default function DrawerContents () {
           finalFocusRef={btnRef}
         >
           <DrawerOverlay className="bg-gray-300">
-            <DrawerContent className="w-full h-screen" overflow='scroll'>
+            <DrawerContent className="w-full h-screen flex flex-col gap-5" overflow='scroll'>
                 
                 <DrawerHeader
                 className="
-                m-2 pt-3
+                w-full pt-3
                 flex flex-col items-center
                 "
                 >
                   <div className="
-                  w-full 
+                  w-11/12 
                   bg-slate-600 rounded-xl
                   flex justify-between items-center
                   ">
                    <div className='w-1/2'>
                     <Link href="/">
-                          <p className='w-52 p-3 text-base text-white text-bold'>株式会社エムパッケージ</p>
+                          <p className='w-52 p-3 text-xxs text-white text-bold'>株式会社エムパッケージ</p>
                     </Link>
                   </div>
                   <DrawerCloseButton className="
@@ -67,7 +67,7 @@ export default function DrawerContents () {
 
     
                 <DrawerBody className="
-                md:w-4/6 m-2 md:mx-auto overflow-scroll 
+                w-11/12 mx-auto overflow-scroll 
                 shadow-2xl rounded-xl
                 "
                 >
@@ -86,7 +86,7 @@ export default function DrawerContents () {
                               <Link href="/contact" className="border border-gray-100/20 rounded-full">
                                 <ChakraLink>
                                   <div className="flex justify-center items-center">
-                                    <p className="px-3 py-2 text-orange-400 text-sm">お問い合わせ</p>
+                                    <p className="px-3 py-2 text-orange-400 text-xs">お問い合わせ</p>
                                     <EmailIcon
                                       className="border-gray-100 rounded-full p-1 m-1 bg-gray-100 text-slate-600"
                                       w={26} h={26}
@@ -98,7 +98,7 @@ export default function DrawerContents () {
                                 <Link href="/contact" className="border border-gray-100/20 rounded-full">
                                   <ChakraLink>
                                     <div className="flex justify-center items-center">
-                                      <p className="px-3 py-2 text-orange-400 text-sm">電話で相談する</p>
+                                      <p className="px-3 py-2 text-orange-400 text-xs">電話で相談する</p>
                                       <PhoneIcon 
                                       className="border-gray-100 rounded-full p-1 m-1 bg-gray-100 text-slate-600" 
                                      
