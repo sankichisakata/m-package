@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react"
 import Link from "next/link"
-import { HamburgerIcon, EmailIcon, PhoneIcon } from "@chakra-ui/icons"
+import { HamburgerIcon, EmailIcon, PhoneIcon, ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons"
 import {
     Drawer,
     DrawerBody,
@@ -28,7 +28,7 @@ export default function DrawerContents () {
         block w-16
         p-3
         " ref={btnRef} onClick={onOpen}>
-          <HamburgerIcon color='black' w={26} h={26}></HamburgerIcon>
+          <HamburgerIcon color='black' w={23} h={23}></HamburgerIcon>
         </Button>
 
         <Drawer
@@ -48,12 +48,12 @@ export default function DrawerContents () {
                 >
                   <div className="
                   w-11/12 
-                  bg-slate-600 rounded-xl
+                  bg-slate-600 rounded-md
                   flex justify-between items-center
                   ">
-                   <div className='w-1/2'>
+                   <div className='w-52'>
                     <Link href="/">
-                          <p className='w-52 p-3 text-xxs text-white text-bold'>株式会社エムパッケージ</p>
+                          <p className='p-3 text-xxs text-white text-bold'>株式会社エムパッケージ</p>
                     </Link>
                   </div>
                   <DrawerCloseButton className="
@@ -68,7 +68,7 @@ export default function DrawerContents () {
     
                 <DrawerBody className="
                 w-11/12 mx-auto overflow-scroll 
-                shadow-2xl rounded-xl
+                shadow-2xl rounded-md
                 "
                 >
                   <div className='
@@ -110,30 +110,70 @@ export default function DrawerContents () {
                             </div>
 
                           <ul className="
-                          w-full pt-6
-                          text-sm gap-3
+                          w-full md:w-8/12 pt-6
+                          text-sm
                           flex flex-col justify-center items-center
                           "
                           >
-                              <li>
-                              <Link href="/service" className="">
-                                  <p className='text-white'>事業内容</p>
+                              <li className="w-full h-14">
+                              <Link href="/service" 
+                              className="
+                              w-full h-full inline-block 
+                              flex justify-center items-center">
+                                <div className="w-full flex justify-start items-center gap-5">
+                                    <ChevronRightIcon w={26} h={26} />
+                                    <p className='text-white text-center'>事業内容</p>
+                                </div>
                               </Link>
                               </li>
+
                               <div className="w-full flex items-center">
                                 <div className="flex-1 border-b border-gray-100/30"></div>  
                               </div>
-                              <li>
-                              <Link href="/equipment">
-                              <p className='text-white'>設備案内</p>
+
+                              <li className="w-full h-14">
+                              <Link href="/equipment" 
+                              className="
+                              w-full h-full inline-block
+                              flex justify-center items-center
+                              ">
+                                <div className="w-full flex justify-start items-center gap-5">
+                                    <ChevronRightIcon w={26} h={26} />
+                                    <p className='text-white text-center'>設備案内</p>
+                                </div>
                               </Link>
                               </li>
+
                               <div className="w-full flex items-center">
                                 <div className="flex-1 border-b border-gray-100/30"></div>  
                               </div>
-                              <li>
-                              <Link href="/company">
-                                      <p className='text-white'>会社概要</p>
+
+                              <li className="w-full h-14">
+                              <Link href="/company" 
+                              className="
+                              w-full h-full inline-block
+                              flex justify-center items-center">
+                                <div className="w-full flex justify-start items-center gap-5">
+                                    <ChevronRightIcon w={26} h={26} />
+                                    <p className='text-white text-center'>会社概要</p>
+                                </div>
+                              </Link>
+                              </li>
+
+                              <div className="w-full flex items-center">
+                                <div className="flex-1 border-b border-gray-100/30"></div>  
+                              </div>
+
+                              <li className="w-full h-14">
+                              <Link href="/contact" 
+                              className="
+                              w-full h-full inline-block
+                              flex justify-center items-center
+                              ">
+                                <div className="w-full flex justify-start items-center gap-5">
+                                    <ChevronRightIcon w={26} h={26} />
+                                    <p className='text-white text-center'>お問い合わせ</p>
+                                </div>
                               </Link>
                               </li>
                           </ul>
