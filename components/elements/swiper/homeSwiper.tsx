@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/bundle'
@@ -16,7 +16,7 @@ export default function HomeSwiper () {
     return(
         <>
             <Swiper
-            modules={[Navigation, Pagination, Scrollbar]}
+            // modules={[Navigation, Pagination, Scrollbar]}
             loop={true}
             slidesPerView={1}
             spaceBetween={50}
