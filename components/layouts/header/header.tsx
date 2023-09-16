@@ -56,7 +56,10 @@ const Header = () => {
               </ul>
               <ContactButton/>
             </div>
-          <DrawerLayout/>
+            <div className='lg:hidden'>
+              <DrawerLayout/>
+            </div>
+          
         </div>
       </nav>
     </header>
