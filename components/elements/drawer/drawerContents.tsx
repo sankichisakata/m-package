@@ -17,7 +17,7 @@ import {
     Divider,
   } from '@chakra-ui/react'
 
-export const DrawerMenu = () => {
+export default function DrawerContents () {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef<HTMLButtonElement>(null)
   
@@ -36,59 +36,62 @@ export const DrawerMenu = () => {
           onClose={onClose}
           finalFocusRef={btnRef}
         >
-          <DrawerOverlay className="bg-gray-900">
-            <DrawerContent>
+          <DrawerOverlay className="bg-gray-100">
+            <DrawerContent overflow='scroll'>
                 
                 <DrawerHeader
                 className="
-                pt-6 pb-10
+                pt-4 pb-4
                 flex flex-col justify-between items-center
                 "
                 >
-                  <DrawerCloseButton className="w-full py-5"/>
-                  <Divider borderColor="slate.100" orientation="vertical" />
-                    <div >
-                      <Link href="/">
-                        <p className='text-base p-3 text-slate-100'>株式会社エムパッケージ</p>
-                      </Link>
-                    </div>
+                  <DrawerCloseButton className="w-full text-lg font-bold text-gray-900 py-8"/>
                 </DrawerHeader>
 
     
-                <DrawerBody>
-                <div className='py-10'>
-                      <nav className='flex flex-col justify-center items-center'>
+                <DrawerBody className="w-full shadow-xl">
+                <div className='
+                bg-gray-900 mx-5 px-5 py-10
+                rounded-xl
+                '
+                >
+                      <nav className='
+                      w-full
+                      flex flex-col justify-center items-center
+                      '
+                      >
                           <ul className="
-                          text-xl 
-                          flex flex-col gap-8
+                          w-full
+                          text-xl divide-y divide-gray-600 gap-5
+                          flex justify-center items-center flex-col
                           "
                           >
+                              {/* <li>
+                              <Link href="/">
+                                  <p className='text-slate-100'>株式会社エムパッケージ</p>
+                              </Link>
+                              </li> */}
                               <li>
-                              <Button variant='outline' mr={3} onClick={onClose}>
-                              <Link href="/service">
-                                      <p className='text-slate-100'>事業内容</p>
-                                  </Link>
-                                  </Button>
+                              <Link href="/service" className="w-full inline-block">
+                                  <p className='text-slate-100'>事業内容</p>
+                              </Link>
                               </li>
                               <li>
                               <Link href="/equipment">
-                                  <p className='text-slate-100'>設備案内</p>
+                                  <p className='text-slate-100 mt-5'>設備案内</p>
                               </Link>
                               </li>
-
                               <li>
                               <Link href="/company">
-                                      <p className='text-slate-100'>会社概要</p>
+                                      <p className='text-slate-100 mt-5'>会社概要</p>
                               </Link>
                               </li>
                           </ul>
 
                           <div className='my-20'>
-                              <Button variant="outlined" size="large">
                               <Link href="/contact">
                                   相談する
                               </Link>
-                              </Button>
                           </div>
 
                           <div className='flex flex-col justify-center items-center gap-4'>
