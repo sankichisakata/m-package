@@ -1,7 +1,7 @@
 
 import Image from 'next/image'
 
-const FooterContact = () => {
+export default function FooterContact () {
     return (
         <div 
         className='
@@ -58,5 +58,3 @@ const FooterContact = () => {
         </div>
     )
 }
-
-export default FooterContact;

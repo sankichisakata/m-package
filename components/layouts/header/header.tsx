@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { DrawerMenu } from '@/components/elements/drawer/drawerMenu';
+import DrawerLayout from '@/components/elements/drawer/drawerLayout';
 import ContactButton from '@/components/elements/button/contactButton';
 
 
@@ -56,7 +56,7 @@ const Header = () => {
               </ul>
               <ContactButton/>
             </div>
-          <DrawerMenu/>
+          <DrawerLayout/>
         </div>
       </nav>
     </header>
