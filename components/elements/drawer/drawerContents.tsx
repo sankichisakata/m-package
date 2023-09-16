@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react"
 import Link from "next/link"
-import { HamburgerIcon, EmailIcon, PhoneIcon, ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons"
+import { HamburgerIcon, EmailIcon, PhoneIcon, ChevronRightIcon } from "@chakra-ui/icons"
 import {
     Drawer,
     DrawerBody,
@@ -52,7 +52,7 @@ export default function DrawerContents () {
                   flex justify-between items-center
                   ">
                    <div className='w-52'>
-                    <Link href="/">
+                    <Link onClick={onClose} href="/">
                           <p className='p-3 text-xxs text-white text-bold'>株式会社エムパッケージ</p>
                     </Link>
                   </div>
@@ -83,7 +83,7 @@ export default function DrawerContents () {
                       >
 
                             <div className='w-full md:w-5/6 flex justify-center items-center gap-2 md:gap-6'>
-                              <Link href="/contact" className="border border-gray-100/20 rounded-full">
+                              <Link href="/contact" onClick={onClose} className="border border-gray-100/20 rounded-full">
                                 <ChakraLink>
                                   <div className="flex justify-center items-center">
                                     <p className="px-3 py-2 text-orange-400 text-xs">お問い合わせ</p>
@@ -95,7 +95,7 @@ export default function DrawerContents () {
                                 </ChakraLink>
                               </Link>
 
-                                <Link href="/contact" className="border border-gray-100/20 rounded-full">
+                                <Link href="/contact" onClick={onClose} className="border border-gray-100/20 rounded-full">
                                   <ChakraLink>
                                     <div className="flex justify-center items-center">
                                       <p className="px-3 py-2 text-orange-400 text-xs">電話で相談する</p>
@@ -116,7 +116,7 @@ export default function DrawerContents () {
                           "
                           >
                               <li className="w-full h-14">
-                              <Link href="/service" 
+                              <Link href="/service" onClick={onClose}
                               className="
                               w-full h-full inline-block 
                               flex justify-center items-center">
@@ -132,7 +132,7 @@ export default function DrawerContents () {
                               </div>
 
                               <li className="w-full h-14">
-                              <Link href="/equipment" 
+                              <Link href="/equipment" onClick={onClose}
                               className="
                               w-full h-full inline-block
                               flex justify-center items-center
@@ -149,7 +149,7 @@ export default function DrawerContents () {
                               </div>
 
                               <li className="w-full h-14">
-                              <Link href="/company" 
+                              <Link href="/company" onClick={onClose}
                               className="
                               w-full h-full inline-block
                               flex justify-center items-center">
@@ -165,7 +165,7 @@ export default function DrawerContents () {
                               </div>
 
                               <li className="w-full h-14">
-                              <Link href="/contact" 
+                              <Link href="/contact" onClick={onClose}
                               className="
                               w-full h-full inline-block
                               flex justify-center items-center
@@ -182,7 +182,7 @@ export default function DrawerContents () {
                           pt-6 mb-6
                           flex flex-col justify-center items-center gap-2
                           '>
-                              <Link href="#">
+                              <Link href="#" onClick={onClose}>
                                           <p className='text-xxs text-slate-100'>プライバシーポリシー</p>
                               </Link>
                               <small className='text-xxs text-slate-400'><span className="text-slate-400">©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
