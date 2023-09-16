@@ -22,13 +22,9 @@ export default function DrawerContents () {
     const btnRef = React.useRef<HTMLButtonElement>(null)
   
     return (
-      <div 
-      className="
-      m-1 lg:hidden
-      "
-      >
-        <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
-        <HamburgerIcon color='black'></HamburgerIcon>
+      <>
+        <Button className="p-2" ref={btnRef} colorScheme='teal' onClick={onOpen}>
+          <HamburgerIcon color='black' w={25} h={25}></HamburgerIcon>
         </Button>
         <Drawer
           isOpen={isOpen}
@@ -36,8 +32,8 @@ export default function DrawerContents () {
           onClose={onClose}
           finalFocusRef={btnRef}
         >
-          <DrawerOverlay className="bg-gray-100">
-            <DrawerContent overflow='scroll'>
+          <DrawerOverlay className="w-full h-screen">
+            <DrawerContent className="h-screen overflow-scroll" overflow='scroll'>
                 
                 <DrawerHeader
                 className="
@@ -49,10 +45,9 @@ export default function DrawerContents () {
                 </DrawerHeader>
 
     
-                <DrawerBody className="w-full shadow-xl">
-                <div className='
-                bg-gray-900 mx-5 px-5 py-10
-                rounded-xl
+                <DrawerBody className="m-5 rounded-xl overflow-scroll">
+                <div className='bg-gray-900 px-5 py-10
+                shadow-2xl
                 '
                 >
                       <nav className='
@@ -63,7 +58,7 @@ export default function DrawerContents () {
                           <ul className="
                           w-full
                           text-xl divide-y divide-gray-600 gap-5
-                          flex justify-center items-center flex-col
+                          flex flex-col justify-center items-center
                           "
                           >
                               {/* <li>
@@ -108,6 +103,6 @@ export default function DrawerContents () {
             </DrawerContent>
           </DrawerOverlay>
         </Drawer>
-      </div>
+      </>
     )
   }
