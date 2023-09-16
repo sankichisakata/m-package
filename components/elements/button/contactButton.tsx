@@ -1,30 +1,26 @@
 'use client'
 
-import { ArrowForwardIcon } from '@chakra-ui/icons';
-import { Link } from '@chakra-ui/next-js';
-import { Button, Stack } from '@chakra-ui/react';
+import Link from "next/link";
+import { EmailIcon } from "@chakra-ui/icons"
+import { Link as ChakraLink } from '@chakra-ui/react';
 
 const ContactButton = () => {
     return(
         <div className='
-        w-32
+        w-36
         flex justify-center items-center gap-5
         '
         >
-            <Link href="/contact">
-            <Stack 
-            className='
-            py-2 px-3
-            text-sm font-normal text-gray-800
-            border border-gray-800 rounded-xl
-            '  
-            >
-              <Button rightIcon={<ArrowForwardIcon />}  variant='outline'>
+            <Link href="/contact" className="border border-bg-slate-600 rounded-full">
               
-                相談する
+                <div className="flex justify-center items-center">
+                  <p className="px-3 py-2 text-gray-800 text-sm">お問い合わせ</p>
+                  <EmailIcon
+                    className="border-gray-600 rounded-full p-1 m-1 bg-gray-600 text-white"
+                    w={26} h={26}
+                    />
+                  </div>
               
-              </Button>
-            </Stack>
             </Link>
       
             

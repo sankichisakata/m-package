@@ -8,19 +8,19 @@ const Header = () => {
   return (
     <header>
       <nav className="
-      top-0 left-0 w-full 
-      bg-white shadow-sm
-      fixed  
+      fixed top-0 left-0 w-full lg:w-4/6 pt-3
+      flex justify-center items-center
       "
       >
         <div className='
-        w-full lg:w-4/6 mx-auto
+        w-full m-2 bg-white
         flex items-center
+        border rounded-xl
         '>
 
-          <div className='left-0 w-36'>
+          <div className='left-0 w-56'>
             <Link href="/">
-                <p className='p-5 text-sm text-gray-800'>エムパッケージ</p>
+                <p className='p-3 text-sm text-gray-800'>株式会社エムパッケージ</p>
             </Link>
           </div>
 

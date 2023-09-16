@@ -26,7 +26,7 @@ export default function DrawerContents () {
       <>
         <Button className="
         block w-16
-        p-4 mr-1
+        p-3
         " ref={btnRef} onClick={onOpen}>
           <HamburgerIcon color='black' w={26} h={26}></HamburgerIcon>
         </Button>
@@ -42,8 +42,8 @@ export default function DrawerContents () {
                 
                 <DrawerHeader
                 className="
-                m-1
-                flex flex-col justify-justify items-center
+                m-2 pt-3
+                flex flex-col items-center
                 "
                 >
                   <div className="
@@ -52,9 +52,9 @@ export default function DrawerContents () {
                   flex justify-between items-center
                   ">
                    <div className='w-1/2'>
-                    <ChakraLink href="/">
-                          <p className='w-36 text-xs p-3 text-slate-100'>エムパッケージ</p>
-                    </ChakraLink>
+                    <Link href="/">
+                          <p className='w-52 p-3 text-base text-white text-bold'>株式会社エムパッケージ</p>
+                    </Link>
                   </div>
                   <DrawerCloseButton className="
                   w-16
@@ -73,7 +73,7 @@ export default function DrawerContents () {
                 >
                   <div className='
                   w-full
-                  bg-slate-600 mx-auto px-5 py-10
+                  bg-slate-600 mx-auto px-5 py-8
                   '
                   >
                       <nav className='
@@ -82,11 +82,11 @@ export default function DrawerContents () {
                       '
                       >
 
-                            <div className='w-full md:w-5/6 flex justify-between items-center'>
+                            <div className='w-full md:w-5/6 flex justify-center items-center gap-2 md:gap-6'>
                               <Link href="/contact" className="border border-gray-100/20 rounded-full">
                                 <ChakraLink>
                                   <div className="flex justify-center items-center">
-                                    <p className="px-3 py-2 text-orange-300 text-xxs">お問い合わせ</p>
+                                    <p className="px-3 py-2 text-orange-400 text-sm">お問い合わせ</p>
                                     <EmailIcon
                                       className="border-gray-100 rounded-full p-1 m-1 bg-gray-100 text-slate-600"
                                       w={26} h={26}
@@ -98,7 +98,7 @@ export default function DrawerContents () {
                                 <Link href="/contact" className="border border-gray-100/20 rounded-full">
                                   <ChakraLink>
                                     <div className="flex justify-center items-center">
-                                      <p className="px-3 py-2 text-orange-300 text-xxs">電話で相談する</p>
+                                      <p className="px-3 py-2 text-orange-400 text-sm">電話で相談する</p>
                                       <PhoneIcon 
                                       className="border-gray-100 rounded-full p-1 m-1 bg-gray-100 text-slate-600" 
                                      
@@ -110,14 +110,14 @@ export default function DrawerContents () {
                             </div>
 
                           <ul className="
-                          w-full pt-4
-                          text-xs gap-3
+                          w-full pt-6
+                          text-sm gap-3
                           flex flex-col justify-center items-center
                           "
                           >
                               <li>
                               <Link href="/service" className="">
-                                  <p className='text-slate-100'>事業内容</p>
+                                  <p className='text-white'>事業内容</p>
                               </Link>
                               </li>
                               <div className="w-full flex items-center">
@@ -125,7 +125,7 @@ export default function DrawerContents () {
                               </div>
                               <li>
                               <Link href="/equipment">
-                                  <p className='text-slate-100'>設備案内</p>
+                              <p className='text-white'>設備案内</p>
                               </Link>
                               </li>
                               <div className="w-full flex items-center">
@@ -133,7 +133,7 @@ export default function DrawerContents () {
                               </div>
                               <li>
                               <Link href="/company">
-                                      <p className='text-slate-100'>会社概要</p>
+                                      <p className='text-white'>会社概要</p>
                               </Link>
                               </li>
                           </ul>
@@ -145,7 +145,7 @@ export default function DrawerContents () {
                               <Link href="#">
                                           <p className='text-xxs text-slate-100'>プライバシーポリシー</p>
                               </Link>
-                              <small className='text-xxs text-slate-400'>©️2023&nbsp;株式会社エムパッケージ</small>
+                              <small className='text-xxs text-slate-400'><span className="text-slate-400">©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
                           </div>
 
                       </nav>
