@@ -9,7 +9,7 @@ const Header = () => {
     <header>
       <nav className="
       fixed top-0 left-0 z-10
-      w-full pt-3
+      w-full safari-screen pt-3
       flex justify-center items-center
       "
       >

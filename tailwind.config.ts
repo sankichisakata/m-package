@@ -16,6 +16,9 @@ const config: Config = {
       xl: ['1.25rem', '1.75rem'],
     },
     extend: {
+      height: {
+        'safari-screen' : '100dvh'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
