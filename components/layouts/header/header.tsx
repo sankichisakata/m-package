@@ -6,9 +6,9 @@ import ContactButton from '@/components/elements/button/contactButton';
 
 const Header = () => {
   return (
-    <header className='z-10'>
+    <header>
       <nav className="
-      fixed top-0 left-0 
+      fixed top-0 left-0 z-10
       w-full pt-3
       flex justify-center items-center
       "
@@ -55,7 +55,11 @@ const Header = () => {
             </ul>
           </div>
 
-          <ContactButton/>
+          {/* <div style={{ visibility: isOpen ? "hidden" : "visible"}}>
+            <ContactButton />
+          </div> */}
+
+          <ContactButton />
 
           <div className='lg:hidden'>
             <DrawerLayout/>

@@ -10,7 +10,7 @@ import 'swiper/css/navigation'
 // SwiperCore.use([Pagination, Autoplay, EffectFade])
 
 // カルーセルにする画像のソースをリストにします
-const images = ['/img/equipment.jpg', '/img/town01.jpg', '/img/town02.jpg']
+// const images = ['/img/equipment.jpg', '/img/town01.jpg', '/img/town02.jpg']
 
 export default function HomeSwiper () {
     return(
@@ -42,17 +42,17 @@ export default function HomeSwiper () {
         })} */}
 
                 <SwiperSlide className='flex justify-center items-center w-full h-auto'>
-                    <div className='w-[300px] h-[450px]'>
+                    <div className='w-screen h-screen'>
                     <Image src="/img/equipment.jpg" alt="image1" style={{ objectFit: 'contain' }} layout="responsive" width={300} height={100} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className='w-[300px] h-[450px]'>
+                <div className='w-screen h-screen'>
                     <Image src="/img/town01.jpg" alt="image2" style={{ objectFit: 'contain' }} layout="responsive" width={300} height={100} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className='w-[300px] h-[450px]'>
+                <div className='w-screen h-screen'>
                     <Image src="/img/town02.jpg" alt="image3" style={{ objectFit: 'contain' }} layout="responsive" width={300} height={100} />
                     </div>
                 </SwiperSlide>

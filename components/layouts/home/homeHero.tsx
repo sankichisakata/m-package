@@ -4,8 +4,7 @@ export default function HomeHero () {
     return(
         <div className="h-screen w-screen flex justify-center items-center">
             <div className="
-            h-6/12 w-11/12 z-[-10]
-            border border-gray-100
+            w-full z-[-5]
             ">
                 <HomeSwiper/>
             </div>
