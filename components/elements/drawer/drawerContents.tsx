@@ -50,7 +50,12 @@ export default function DrawerContents () {
         >
           
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
-            <DrawerContent className="w-full h-full safari-screen mx-auto flex flex-col gap-5" overflow='scroll'>
+            <DrawerContent 
+            className="
+            w-full h-full safari-screen mx-auto
+            flex flex-col gap-5" 
+            overflow='scroll'
+            >
                 
                 {/* <DrawerHeader
                 className="
@@ -79,6 +84,7 @@ export default function DrawerContents () {
 
     
                 <DrawerBody className="
+                bg-white
                 mt-20 mb-5
                 w-11/12 mx-auto overflow-scroll 
                 shadow-2xl rounded-md
