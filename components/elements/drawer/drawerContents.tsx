@@ -14,13 +14,13 @@ import {
     Input,
     Button,
     useDisclosure,
-    Link as ChakraLink,
     Fade,
     ScaleFade,
     Slide,
     SlideFade,
     Collapse
   } from '@chakra-ui/react'
+import BackImageTell01 from "../image/backImageTell01"
 
 export default function DrawerContents () {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
@@ -50,7 +50,7 @@ export default function DrawerContents () {
         >
           
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
-            <DrawerContent className="w-full h-full safari-screen flex flex-col gap-5" overflow='scroll'>
+            <DrawerContent className="w-full h-full safari-screen mx-auto flex flex-col gap-5" overflow='scroll'>
                 
                 {/* <DrawerHeader
                 className="
@@ -89,13 +89,56 @@ export default function DrawerContents () {
                   bg-white mx-auto px-5 py-8
                   '
                   >
+
+                      <div className="
+                      w-10/12 md:w-8/12 h-auto mx-auto 
+                      rounded-md relative
+                      ">
+                        
+                        
+
+                        <div className="
+                          w-full pt-5
+                          flex flex-col justify-center gap-2
+                          "
+                          >
+                            <div className="text-xs text-center">
+                                <p>お気軽にご相談ください。</p>
+                            </div>
+
+                            {/* 電話お問い合わせ */}
+                            <div className="text-center">
+                                <p className="text-xs">電話でのお問い合わせはこちらから</p>
+                                <p className="text-base font-semibold">048-287-8055</p>
+                                <p className="text-xs">平日 9:00 ~ 17:30</p>
+                            </div>
+                        </div>
+
+                        <div className='w-full flex justify-center items-center py-5'>
+                          <Link href="/contact" onClick={onClose} className="border border-slate-500/20 rounded-full">
+                            <div className="flex justify-center items-center">
+                                <p className="px-3 py-2 text-white text-xs">お問い合わせ</p>
+                                <EmailIcon
+                                  className="border-slate-800 rounded-full p-1 m-1 bg-slate-800 text-white"
+                                  w={26} h={26}
+                                  />
+                            </div>
+                          </Link>
+                        </div>
+
+                        <div className="w-full h-full">
+                          <BackImageTell01/>
+                        </div>
+                        
+                      </div>
+
                       <nav className='
                       w-full
                       flex flex-col justify-center items-center
                       '
                       >
 
-                            <div className='w-full md:w-5/6 flex justify-center items-center gap-2 md:gap-6'>
+                            {/* <div className='w-full md:w-5/6 flex justify-center items-center gap-2 md:gap-6'>
                               <Link href="/contact" onClick={onClose} className="border border-slate-500/20 rounded-full">
                                 <div className="flex justify-center items-center">
                                     <p className="px-3 py-2 text-slate-800 text-xs">お問い合わせ</p>
@@ -116,7 +159,7 @@ export default function DrawerContents () {
                                       />
                                     </div>
                                 </Link>
-                            </div>
+                            </div> */}
 
                           <ul className="
                           w-full md:w-8/12 pt-6
