@@ -50,7 +50,7 @@ export default function DrawerContents () {
         >
           
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
-            <DrawerContent className="w-full h-screen flex flex-col gap-5" overflow='scroll'>
+            <DrawerContent className="w-full h-full safari-screen flex flex-col gap-5" overflow='scroll'>
                 
                 {/* <DrawerHeader
                 className="
@@ -79,7 +79,7 @@ export default function DrawerContents () {
 
     
                 <DrawerBody className="
-                mt-20
+                mt-20 mb-5
                 w-11/12 mx-auto overflow-scroll 
                 shadow-2xl rounded-md
                 "
@@ -97,19 +97,16 @@ export default function DrawerContents () {
 
                             <div className='w-full md:w-5/6 flex justify-center items-center gap-2 md:gap-6'>
                               <Link href="/contact" onClick={onClose} className="border border-slate-500/20 rounded-full">
-                                <ChakraLink>
-                                  <div className="flex justify-center items-center">
+                                <div className="flex justify-center items-center">
                                     <p className="px-3 py-2 text-slate-800 text-xs">お問い合わせ</p>
                                     <EmailIcon
                                       className="border-slate-800 rounded-full p-1 m-1 bg-slate-800 text-white"
                                       w={26} h={26}
                                       />
-                                  </div>
-                                </ChakraLink>
+                                </div>
                               </Link>
 
                                 <Link href="/contact" onClick={onClose} className="border border-slate-500/20 rounded-full">
-                                  <ChakraLink>
                                     <div className="flex justify-center items-center">
                                       <p className="px-3 py-2 text-slate-800 text-xs">電話で相談する</p>
                                       <PhoneIcon 
@@ -118,7 +115,6 @@ export default function DrawerContents () {
                                       w={26} h={26}
                                       />
                                     </div>
-                                  </ChakraLink>
                                 </Link>
                             </div>
 
