@@ -91,7 +91,7 @@ export default function DrawerContents () {
                 >
                   <div className='
                   w-full
-                  bg-white mx-auto px-5 py-8
+                  bg-white mx-auto px-5 py-5
                   '
                   >
 
@@ -126,7 +126,7 @@ export default function DrawerContents () {
                               </div>
                           </div>
 
-                          <div className='w-full flex justify-center items-center py-5'>
+                          <div className='w-full flex justify-center items-center py-3'>
                             <Link href="/contact" onClick={onClose} className="bg-white rounded-full shadow-md">
                               <div className="flex justify-center items-center">
                                   <p className="px-8 py-2 text-black text-xs font-semibold">お問い合わせ</p>
@@ -178,14 +178,14 @@ export default function DrawerContents () {
                           flex flex-col justify-center items-center
                           "
                           >
-                              <li className="w-full h-14">
+                              <li className="w-full h-10">
                               <Link href="/service" onClick={onClose}
                               className="
                               w-full h-full inline-block 
                               flex justify-center items-center">
                                 <div className="w-full flex justify-start items-center gap-5">
                                     <ChevronRightIcon className="text-slate-600" w={26} h={26} />
-                                    <p className='text-slate-600 text-center'>事業内容</p>
+                                    <p className='text-slate-600 font-semibold'>事業内容</p>
                                 </div>
                               </Link>
                               </li>
@@ -194,7 +194,7 @@ export default function DrawerContents () {
                                 <div className="flex-1 border-b border-slate-500-20"></div>  
                               </div>
 
-                              <li className="w-full h-14">
+                              <li className="w-full h-10">
                               <Link href="/equipment" onClick={onClose}
                               className="
                               w-full h-full inline-block
@@ -202,7 +202,7 @@ export default function DrawerContents () {
                               ">
                                 <div className="w-full flex justify-start items-center gap-5">
                                     <ChevronRightIcon className="text-slate-600" w={26} h={26} />
-                                    <p className='text-slate-600 text-center'>設備案内</p>
+                                    <p className='text-slate-600 font-semibold'>設備案内</p>
                                 </div>
                               </Link>
                               </li>
@@ -211,14 +211,14 @@ export default function DrawerContents () {
                                 <div className="flex-1 border-b border-slate-500-20"></div>  
                               </div>
 
-                              <li className="w-full h-14">
+                              <li className="w-full h-10">
                               <Link href="/company" onClick={onClose}
                               className="
                               w-full h-full inline-block
                               flex justify-center items-center">
                                 <div className="w-full flex justify-start items-center gap-5">
                                     <ChevronRightIcon className="text-slate-600" w={26} h={26} />
-                                    <p className='text-slate-600 text-center'>会社概要</p>
+                                    <p className='text-slate-600 font-semibold'>会社概要</p>
                                 </div>
                               </Link>
                               </li>
@@ -227,7 +227,7 @@ export default function DrawerContents () {
                                 <div className="flex-1 border-b border-slate-500-20"></div>  
                               </div>
 
-                              <li className="w-full h-14">
+                              <li className="w-full h-10">
                               <Link href="/contact" onClick={onClose}
                               className="
                               w-full h-full inline-block
@@ -235,18 +235,18 @@ export default function DrawerContents () {
                               ">
                                 <div className="w-full flex justify-start items-center gap-5">
                                     <ChevronRightIcon className="text-slate-600" w={26} h={26} />
-                                    <p className='text-slate-600 text-center'>お問い合わせ</p>
+                                    <p className='text-slate-600 font-semibold'>お問い合わせ</p>
                                 </div>
                               </Link>
                               </li>
                           </ul>
 
                           <div className='
-                          pt-6 mb-6
+                          pt-6 mb-2
                           flex flex-col justify-center items-center gap-2
                           '>
                               <Link href="#" onClick={onClose}>
-                                          <p className='text-xxs text-slate-600/50'>プライバシーポリシー</p>
+                                          <p className='text-xxs text-slate-600'>プライバシーポリシー</p>
                               </Link>
                               <small className='text-xxs text-slate-400'><span className="text-slate-400">©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
                           </div>
