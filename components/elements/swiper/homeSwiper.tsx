@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, Autoplay, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/bundle'
@@ -16,16 +16,15 @@ export default function HomeSwiper () {
     return(
         <>
             <Swiper
-            // modules={[Navigation, Pagination, Scrollbar]}
+            modules={[Navigation, Pagination, Scrollbar, Autoplay, EffectFade]}
             loop={true}
             slidesPerView={1}
             spaceBetween={50}
-            navigation
             pagination={{
                 clickable: true,
             }}
             autoplay={{
-                delay: 2500,
+                delay: 6000,
                 disableOnInteraction: true,
               }} 
             speed={1000}
@@ -41,20 +40,14 @@ export default function HomeSwiper () {
             )
         })} */}
 
-                <SwiperSlide className='flex justify-center items-center w-full h-auto'>
-                    <div className='w-screen h-screen'>
-                    <Image src="/img/equipment.jpg" alt="image1" style={{ objectFit: 'contain' }} layout="responsive" width={300} height={100} />
-                    </div>
+                <SwiperSlide>
+                    <div className='w-screen h-screen bg-town01 bg-cover bg-center'></div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className='w-screen h-screen'>
-                    <Image src="/img/town01.jpg" alt="image2" style={{ objectFit: 'contain' }} layout="responsive" width={300} height={100} />
-                    </div>
+                    <div className='w-screen h-screen bg-town02 bg-cover bg-center'></div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className='w-screen h-screen'>
-                    <Image src="/img/town02.jpg" alt="image3" style={{ objectFit: 'contain' }} layout="responsive" width={300} height={100} />
-                    </div>
+                    <div className='w-screen h-screen bg-equipment01 bg-cover bg-center'></div>
                 </SwiperSlide>
             </Swiper>
 

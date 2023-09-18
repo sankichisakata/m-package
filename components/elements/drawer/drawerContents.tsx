@@ -48,7 +48,7 @@ export default function DrawerContents () {
           finalFocusRef={btnRef}
         >
           
-          <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
+          <DrawerOverlay onClick={onClose} className="bg-slate-600/10">
             <DrawerContent 
             className="
             w-full h-full safari-screen mx-auto
@@ -103,7 +103,7 @@ export default function DrawerContents () {
 
                         {/* マスク */}
                         <div className="
-                        overflow-hidden bg-fixed bg-gray-800/40 
+                        overflow-hidden bg-fixed bg-gray-800/30 
                         bottom-0 left-0 right-0 top-0 h-full w-full 
                         rounded-md
                         "

@@ -21,6 +21,9 @@ const config: Config = {
       },
       backgroundImage: {
        'tell01' : "url('/img/tell01.jpg')" ,
+       'town01' : "url('/img/town01.jpg')" ,
+       'town02' : "url('/img/town02.jpg')" ,
+       'equipment01' : "url('/img/equipment01.jpg')" ,
 
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
