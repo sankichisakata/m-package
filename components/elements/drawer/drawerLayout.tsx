@@ -21,7 +21,7 @@ export default function DrawerLayout () {
             </Link>
         :
             <div className="block pl-3">
-                <p className='text-xxs text-gray-800 font-semibold'>株式会社エムパッケージはお客様第一に活動しております。</p>
+                <p className='text-xxxs text-gray-800 font-semibold '>「親切・迅速・丁寧」を胸に、日々活動しております。</p>
             </div>
         }
         

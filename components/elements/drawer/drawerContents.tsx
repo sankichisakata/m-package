@@ -35,14 +35,14 @@ export default function DrawerContents (props) {
       <>
         
         <Button className="
-        block w-16
-        p-3
+        block w-12
+        py-3
         " ref={btnRef} onClick={onToggle} onChange={props.isOpenChange(isOpen)}>
 
           { isOpen ? 
-            <SmallCloseIcon color='black' w={23} h={23}/>
+            <SmallCloseIcon color='black' w={20} h={20}/>
           :
-            <HamburgerIcon color='black' w={23} h={23}/>
+            <HamburgerIcon color='black' w={20} h={20}/>
           }
 
         </Button>
