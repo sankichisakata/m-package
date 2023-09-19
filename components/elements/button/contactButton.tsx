@@ -12,10 +12,10 @@ const ContactButton = () => {
             <Link href="/contact" className="border border-slate-500/20 rounded-full">
               
                 <div className="flex justify-center items-center">
-                  <p className="px-3 lg:px-4 py-2 text-slate-800 text-xxs lg:text-xs font-semibold">お問い合わせ</p>
+                  <p className="px-3 md:px-4 py-1 md:py-2 text-slate-800 text-xxs lg:text-xs font-semibold">お問い合わせ</p>
                   <EmailIcon
                     className="
-                    w-[22px] lg:w-[26px] h-[22px] lg:h-[26px]
+                    w-[22px] md:w-[26px] h-[22px] lg:h-[26px]
                     border-slate-800 rounded-full p-1 m-1 bg-slate-800 text-white"
                     
                     />
