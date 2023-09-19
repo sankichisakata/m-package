@@ -3,7 +3,7 @@
 import Link from "next/link";
 import DrawerContents from "./drawerContents";
 import ContactButton from "../button/contactButton";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function DrawerLayout () {
     const [isOpen , setisOpen] =useState("")
@@ -11,19 +11,19 @@ export default function DrawerLayout () {
         setisOpen(newValue);
       };
 
+    // const isClose = () =>{
+    //    const isSetClose = ...setisOpen(false)
+    // }
+
     return(
         <>
-        { !isOpen ? 
+         {/* onClick={() => isOpenChange()} */}
             <Link href="/" className='block p-3'>
                 <p className='text-xxs lg:text-xs text-gray-800 font-bold'>
                     株式会社エムパッケージ
                 </p>
             </Link>
-        :
-            <div className="block pl-3">
-                <p className='text-xxxs text-gray-800 font-semibold '>「親切・迅速・丁寧」を胸に、日々活動しております。</p>
-            </div>
-        }
+       
         
 
 

@@ -25,7 +25,6 @@ export default function DrawerContents (props) {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
     const btnRef = React.useRef<HTMLButtonElement>(null)
 
-
     const isOpenChange = (e) => {
       const value = e.target.value;
       props.isOpenChange(value)
@@ -36,7 +35,7 @@ export default function DrawerContents (props) {
         
         <Button className="
         block w-12
-        py-3
+        py-2
         " ref={btnRef} onClick={onToggle} onChange={props.isOpenChange(isOpen)}>
 
           { isOpen ? 
@@ -54,12 +53,17 @@ export default function DrawerContents (props) {
           finalFocusRef={btnRef}
         >
           
-          <DrawerOverlay onClick={onClose} className="bg-slate-600/10">
+          <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
+
+            <div className="block w-11/12 lg:w-4/6 mx-auto mt-16 text-left">
+                <p className='text-xxxs md:txet-xxs text-white font-semibold '>株式会社エムパッケージは、「親切・迅速・丁寧」を胸に、お客様第一を掲げております。</p>
+            </div>
+
             <DrawerContent 
             className="
             w-full h-full h-safari-screen mx-auto
             flex flex-col gap-5" 
-            overflow='scroll'
+            
             >
                 
                 {/* <DrawerHeader
@@ -90,11 +94,11 @@ export default function DrawerContents (props) {
     
                 <DrawerBody className="
                 bg-white
-                mt-20 mb-5
+                mt-24 mb-5
                 w-11/12 mx-auto 
                 shadow-2xl rounded-md
                 "
-                
+                overflow='scroll'
                 >
                   <div className='
                   bg-white mx-auto px-5 py-5
