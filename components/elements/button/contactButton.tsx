@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { EmailIcon } from "@chakra-ui/icons"
-import { Link as ChakraLink } from '@chakra-ui/react';
 
 const ContactButton = () => {
     return(

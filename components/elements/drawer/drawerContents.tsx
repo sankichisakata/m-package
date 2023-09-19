@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useRef } from "react"
+import React, { FC, useRef, useState } from "react"
 import Link from "next/link"
 import { HamburgerIcon, EmailIcon, PhoneIcon, ChevronRightIcon, SmallCloseIcon } from "@chakra-ui/icons"
 import {
@@ -21,9 +21,15 @@ import {
     Collapse
   } from '@chakra-ui/react'
 
-export default function DrawerContents () {
+export default function DrawerContents (props) {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
     const btnRef = React.useRef<HTMLButtonElement>(null)
+
+
+    const isOpenChange = (e) => {
+      const value = e.target.value;
+      props.isOpenChange(value)
+    }
   
     return (
       <>
@@ -31,7 +37,7 @@ export default function DrawerContents () {
         <Button className="
         block w-16
         p-3
-        " ref={btnRef} onClick={onToggle}>
+        " ref={btnRef} onClick={onToggle} onChange={props.isOpenChange(isOpen)}>
 
           { isOpen ? 
             <SmallCloseIcon color='black' w={23} h={23}/>
@@ -51,7 +57,7 @@ export default function DrawerContents () {
           <DrawerOverlay onClick={onClose} className="bg-slate-600/10">
             <DrawerContent 
             className="
-            w-full h-full safari-screen mx-auto
+            w-full h-full h-safari-screen mx-auto
             flex flex-col gap-5" 
             overflow='scroll'
             >
@@ -85,13 +91,14 @@ export default function DrawerContents () {
                 <DrawerBody className="
                 bg-white
                 mt-20 mb-5
-                w-11/12 mx-auto overflow-scroll 
+                w-11/12 mx-auto 
                 shadow-2xl rounded-md
                 "
+                
                 >
                   <div className='
-                  w-full
                   bg-white mx-auto px-5 py-5
+                  rounded-md
                   '
                   >
 
