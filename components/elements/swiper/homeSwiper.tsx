@@ -41,13 +41,13 @@ export default function HomeSwiper () {
         })} */}
 
                 <SwiperSlide>
-                    <div className='w-screen h-screen bg-town01 bg-cover bg-center'></div>
+                    <div className='w-full h-safari-screen bg-town01 bg-cover bg-center'></div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='w-screen h-screen bg-town02 bg-cover bg-center'></div>
+                    <div className='w-full h-screen bg-town02 bg-cover bg-center'></div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='w-screen h-screen bg-equipment01 bg-cover bg-center'></div>
+                    <div className='w-full h-screen bg-equipment01 bg-cover bg-center'></div>
                 </SwiperSlide>
             </Swiper>
 
