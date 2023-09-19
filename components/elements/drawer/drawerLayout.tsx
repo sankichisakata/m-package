@@ -11,21 +11,21 @@ export default function DrawerLayout () {
         setisOpen(newValue);
       };
 
-    // const isClose = () =>{
-    //    const isSetClose = ...setisOpen(false)
+    // const isClose = () => {
+    //     const newisOpen = isOpen;
+    //     setisOpen(newisOpen);
     // }
+    // onClick={() => isClose()} 
 
     return(
-        <>
-         {/* onClick={() => isOpenChange()} */}
-            <Link href="/" className='block p-3'>
+        <>  
+        <div>
+            <a href="/" className='block  px-5 py-3'>
                 <p className='text-xxs lg:text-xs text-gray-800 font-bold'>
-                    株式会社エムパッケージ
+                    エムパッケージ
                 </p>
-            </Link>
-       
-        
-
+            </a>
+        </div>
 
         <div className='
         mr-0 ml-auto pr-3

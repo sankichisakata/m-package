@@ -15,6 +15,8 @@ const config: Config = {
       base: ['1rem', '1.5rem'],
       lg: ['1.125rem', '1.75rem'],
       xl: ['1.25rem', '1.75rem'],
+      xxl: ['1.375rem', '1.75rem'],
+      xxxl: ['1.5rem', '2rem'],
     },
     extend: {
       height: {

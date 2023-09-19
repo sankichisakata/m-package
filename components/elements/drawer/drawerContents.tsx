@@ -2,6 +2,7 @@
 
 import React, { FC, useRef, useState } from "react"
 import Link from "next/link"
+import { HiChevronRight, HiMail, HiOutlineMenu, HiOutlineX} from "react-icons/hi";
 import { HamburgerIcon, EmailIcon, PhoneIcon, ChevronRightIcon, SmallCloseIcon } from "@chakra-ui/icons"
 import {
     Drawer,
@@ -25,23 +26,24 @@ export default function DrawerContents (props) {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
     const btnRef = React.useRef<HTMLButtonElement>(null)
 
-    const isOpenChange = (e) => {
-      const value = e.target.value;
-      props.isOpenChange(value)
-    }
+    // const isOpenChange = (e) => {
+    //   const value = e.target.value;
+    //   props.isOpenChange(value)
+    // }
+
   
     return (
       <>
         
         <Button className="
         block w-12
-        py-2
+        py-2.5
         " ref={btnRef} onClick={onToggle} onChange={props.isOpenChange(isOpen)}>
 
           { isOpen ? 
-            <SmallCloseIcon color='black' w={20} h={20}/>
+            <HiOutlineX className="mx-auto text-black text-xxxl"/>
           :
-            <HamburgerIcon color='black' w={20} h={20}/>
+            <HiOutlineMenu className="mx-auto text-black text-xxxl"/>
           }
 
         </Button>
@@ -56,7 +58,7 @@ export default function DrawerContents (props) {
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
 
             <div className="block w-11/12 lg:w-4/6 mx-auto mt-16 text-left">
-                <p className='text-xxxs md:txet-xxs text-white font-semibold '>株式会社エムパッケージは、「親切・迅速・丁寧」を胸に、お客様第一を掲げております。</p>
+                <p className='text-xxxs md:txet-xxs text-white font-semibold '>(株)エムパッケージは「親切・迅速・丁寧」を胸に、お客様第一を掲げております。</p>
             </div>
 
             <DrawerContent 
@@ -141,10 +143,7 @@ export default function DrawerContents (props) {
                             <Link href="/contact" onClick={onClose} className="bg-white rounded-full shadow-md">
                               <div className="flex justify-center items-center">
                                   <p className="px-8 py-2 text-black text-xs font-semibold">お問い合わせ</p>
-                                  <EmailIcon
-                                    className="border-slate-800 rounded-full p-1 m-1 bg-slate-800 text-white"
-                                    w={26} h={26}
-                                    />
+                                  <HiMail className="border-slate-800 rounded-full p-1 m-1 bg-slate-800 text-xxxl"/>
                               </div>
                             </Link>
                           </div>
@@ -195,7 +194,7 @@ export default function DrawerContents (props) {
                               w-full h-full inline-block 
                               flex justify-center items-center">
                                 <div className="w-full flex justify-start items-center gap-5">
-                                    <ChevronRightIcon className="text-slate-600" w={26} h={26} />
+                                    <HiChevronRight className="text-slate-600 text-xxxl" />
                                     <p className='text-slate-600 font-semibold'>事業内容</p>
                                 </div>
                               </Link>
@@ -212,7 +211,7 @@ export default function DrawerContents (props) {
                               flex justify-center items-center
                               ">
                                 <div className="w-full flex justify-start items-center gap-5">
-                                    <ChevronRightIcon className="text-slate-600" w={26} h={26} />
+                                <HiChevronRight className="text-slate-600 text-xxxl" />
                                     <p className='text-slate-600 font-semibold'>設備案内</p>
                                 </div>
                               </Link>
@@ -228,7 +227,7 @@ export default function DrawerContents (props) {
                               w-full h-full inline-block
                               flex justify-center items-center">
                                 <div className="w-full flex justify-start items-center gap-5">
-                                    <ChevronRightIcon className="text-slate-600" w={26} h={26} />
+                                <HiChevronRight className="text-slate-600 text-xxxl" />
                                     <p className='text-slate-600 font-semibold'>会社概要</p>
                                 </div>
                               </Link>
@@ -245,7 +244,7 @@ export default function DrawerContents (props) {
                               flex justify-center items-center
                               ">
                                 <div className="w-full flex justify-start items-center gap-5">
-                                    <ChevronRightIcon className="text-slate-600" w={26} h={26} />
+                                <HiChevronRight className="text-slate-600 text-xxxl" />
                                     <p className='text-slate-600 font-semibold'>お問い合わせ</p>
                                 </div>
                               </Link>
