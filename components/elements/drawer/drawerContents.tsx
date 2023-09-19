@@ -58,7 +58,7 @@ export default function DrawerContents (props) {
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
 
             <div className="block w-11/12 lg:w-4/6 mx-auto mt-16 text-left">
-                <p className='text-xxxs md:txet-xxs text-white font-semibold '>(株)エムパッケージは「親切・迅速・丁寧」を胸に、お客様第一を掲げております。</p>
+                <p className='text-xxs md:txet-xxs text-white font-semibold '>(株)エムパッケージは「親切・迅速・丁寧」を胸に、お客様第一を掲げております。</p>
             </div>
 
             <DrawerContent 
