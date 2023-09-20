@@ -1,3 +1,4 @@
+import { SlideInRight } from "@/components/elements/observer/slideInRight"
 
 export default function HomeService () {
     return(
@@ -8,8 +9,10 @@ export default function HomeService () {
         flex justify-center items-center
         "
         >
+            <SlideInRight>
             <p>事業案内</p>
             <p>Our Service</p>
+            </SlideInRight>
         </div>
     )
 }
