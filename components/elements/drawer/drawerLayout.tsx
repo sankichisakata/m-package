@@ -20,8 +20,8 @@ export default function DrawerLayout () {
     return(
         <>  
         <div>
-            <a href="/" className='block  px-5 py-3'>
-                <p className='text-xxs lg:text-xs text-gray-800 font-bold'>
+            <a href="/" className='block px-5 py-3'>
+                <p className='text-xxs lg:text-sm text-gray-800 font-bold'>
                     エムパッケージ
                 </p>
             </a>
@@ -34,7 +34,7 @@ export default function DrawerLayout () {
         >
         <ul className="
         hidden lg:flex justify-center items-center
-        text-gray-800 text-xxs lg:text-xs font-semibold
+        text-gray-800 text-xxs lg:text-sm font-semibold
         ">
             <li>
             <Link href="/service">

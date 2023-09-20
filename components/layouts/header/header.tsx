@@ -14,7 +14,7 @@ const Header = () => {
       "
       >
         <div className='
-        w-11/12 lg:w-4/6 lg:px-5 bg-white
+        w-11/12 lg:w-9/12 lg:px-5 bg-white
         flex justify-center items-center
         border border-white rounded-md 
         '>
