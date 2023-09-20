@@ -51,7 +51,7 @@ export default function FooterContact () {
 
                     {/* 電話お問い合わせ */}
                     <div className="text-center text-xxs lg:text-xs">
-                        <p>電話でのお問い合わせはこちらから</p>
+                        <p>電話でのお問い合わせ</p>
                         <p className="text-xs lg:text-sm font-semibold">048-287-8055</p>
                         <p>平日 9:00 ~ 17:30</p>
                     </div>
@@ -62,7 +62,7 @@ export default function FooterContact () {
 
                         <div className='w-40 lg:w-60 mx-auto py-2 lg:py-4'>
                                 <div className="flex justify-center items-center border border-slate-500/20 rounded-full">
-                                    <p className="px-3 lg:px-10 py-2 lg:py-4 text-black text-sm lg:text-base font-semibold">お問い合わせ</p>
+                                    <p className="px-3 lg:px-10 py-2 lg:py-4 text-sm lg:text-base font-semibold">お問い合わせ</p>
                                     <HiMail className="border-slate-800 rounded-full p-1 m-1 lg:m-2 bg-slate-800 text-white text-xxxl lg:text-[2rem]"/>
                                 </div>
                         </div>
