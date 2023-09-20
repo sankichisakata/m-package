@@ -37,7 +37,7 @@ export default function DrawerContents (props) {
         
         <Button className="
         block w-12
-        py-2.5
+        py-3
         " ref={btnRef} onClick={onToggle} onChange={props.isOpenChange(isOpen)}>
 
           { isOpen ? 
