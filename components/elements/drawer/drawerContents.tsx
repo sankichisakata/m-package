@@ -116,7 +116,7 @@ export default function DrawerContents (props) {
 
                         {/* マスク */}
                         <div className="
-                        overflow-hidden bg-fixed 
+                        overflow-hidden bg-fixed bg-slate-600/40
                         bottom-0 left-0 right-0 top-0 h-full w-full 
                         rounded-md
                         "
