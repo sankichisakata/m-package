@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import { HiChevronRight } from "react-icons/hi";
+import { SlideInLeft } from '../observer/slideInLeft';
 
 export default function FooterMain () {
     return(
@@ -20,15 +21,19 @@ export default function FooterMain () {
                     flex flex-col lg:flex-row justify-center items-center
                     "
                     >
+                        
                         <li className="w-full h-10">
                         <Link href="/service"
                         className="
                         w-full h-full inline-block 
-                        flex justify-center items-center">
-                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
-                            <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                            <p className='text-slate-600 font-semibold'>事業内容</p>
-                        </div>
+                        flex items-center lg:justify-center
+                        ">
+                            <SlideInLeft>
+                                <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
+                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
+                                    <p className='text-slate-600 font-semibold'>事業内容</p>
+                                </div>
+                            </SlideInLeft>
                         </Link>
                         </li>
 
@@ -40,12 +45,16 @@ export default function FooterMain () {
                         <Link href="/equipment"
                         className="
                         w-full h-full inline-block
-                        flex justify-center items-center
+                        flex items-center lg:justify-center
                         ">
-                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
-                            <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                            <p className='text-slate-600 font-semibold'>設備案内</p>
-                        </div>
+                            <SlideInLeft>
+                                <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
+                                
+                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
+                                    <p className='text-slate-600 font-semibold'>設備案内</p>
+                                
+                                </div>
+                                </SlideInLeft>
                         </Link>
                         </li>
 
@@ -57,11 +66,14 @@ export default function FooterMain () {
                         <Link href="/company"
                         className="
                         w-full h-full inline-block
-                        flex justify-center items-center">
-                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
-                        <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                            <p className='text-slate-600 font-semibold'>会社概要</p>
-                        </div>
+                        flex items-center lg:justify-center
+                        ">
+                            <SlideInLeft>
+                                <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
+                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
+                                    <p className='text-slate-600 font-semibold'>会社概要</p>
+                                </div>
+                            </SlideInLeft>
                         </Link>
                         </li>
 
@@ -73,11 +85,14 @@ export default function FooterMain () {
                         <Link href="/news"
                         className="
                         w-full h-full inline-block
-                        flex justify-center items-center">
-                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
-                        <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                            <p className='text-slate-600 font-semibold'>ニュース</p>
-                        </div>
+                        flex items-center lg:justify-center
+                        ">
+                            <SlideInLeft>
+                                <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
+                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
+                                    <p className='text-slate-600 font-semibold'>ニュース</p>
+                                </div>
+                            </SlideInLeft>
                         </Link>
                         </li>
 
@@ -89,12 +104,14 @@ export default function FooterMain () {
                         <Link href="/contact"
                         className="
                         w-full h-full inline-block
-                        flex justify-center items-center
+                        flex items-center lg:justify-center
                         ">
-                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
-                        <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                            <p className='text-slate-600 font-semibold'>お問い合わせ</p>
-                        </div>
+                            <SlideInLeft>
+                                <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
+                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
+                                    <p className='text-slate-600 font-semibold'>お問い合わせ</p>
+                                </div>
+                            </SlideInLeft>
                         </Link>
                         </li>
                     </ul>

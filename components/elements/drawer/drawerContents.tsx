@@ -3,7 +3,6 @@
 import React, { FC, useRef, useState } from "react"
 import Link from "next/link"
 import { HiChevronRight, HiMail, HiOutlineMenu, HiOutlineX} from "react-icons/hi";
-import { HamburgerIcon, EmailIcon, PhoneIcon, ChevronRightIcon, SmallCloseIcon } from "@chakra-ui/icons"
 import {
     Drawer,
     DrawerBody,
@@ -21,6 +20,8 @@ import {
     SlideFade,
     Collapse
   } from '@chakra-ui/react'
+import { SlideInLeft } from "../observer/slideInLeft";
+import { HeaderSlideInLeft } from "../observer/headerFadeInLeft";
 
 export default function DrawerContents (props) {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
@@ -56,10 +57,11 @@ export default function DrawerContents (props) {
         >
           
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
-
-            <div className="block w-11/12 lg:w-4/6 mx-auto mt-16 text-left">
-                <p className='text-xxs md:txet-xxs text-white font-semibold '>(株)エムパッケージは、お客様第一営業を掲げております。</p>
-            </div>
+            <SlideInLeft >
+              <div className="block w-11/12 lg:w-4/6 mx-auto mt-16 text-left">
+                  <p className='text-xxs md:txet-xxs text-white font-semibold '>(株)エムパッケージは、お客様第一営業を掲げております。</p>
+              </div>
+            </SlideInLeft>
 
             <DrawerContent 
             className="
@@ -107,7 +109,7 @@ export default function DrawerContents (props) {
                   rounded-md
                   '
                   >
-
+                    <HeaderSlideInLeft>
                       <div className="
                       bg-tell01 bg-cover bg-top
                       w-10/12 md:w-8/12 h-auto mx-auto 
@@ -121,7 +123,7 @@ export default function DrawerContents (props) {
                         rounded-md
                         "
                         >
-
+                          
                           <div className="
                             w-full pt-5
                             flex flex-col justify-center gap-2
@@ -152,6 +154,7 @@ export default function DrawerContents (props) {
                         
                         
                       </div>
+                      </HeaderSlideInLeft>
 
                       <nav className='
                       w-full
@@ -192,11 +195,14 @@ export default function DrawerContents (props) {
                               <Link href="/service" onClick={onClose}
                               className="
                               w-full h-full inline-block 
-                              flex justify-center items-center">
+                              flex items-center lg:justify-center
+                              ">
+                                <HeaderSlideInLeft>
                                 <div className="w-full flex justify-start items-center gap-5">
                                     <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
                                     <p className='text-slate-600 font-semibold'>事業内容</p>
                                 </div>
+                                </HeaderSlideInLeft>
                               </Link>
                               </li>
 
@@ -208,12 +214,14 @@ export default function DrawerContents (props) {
                               <Link href="/equipment" onClick={onClose}
                               className="
                               w-full h-full inline-block
-                              flex justify-center items-center
+                              flex items-center lg:justify-center
                               ">
-                                <div className="w-full flex justify-start items-center gap-5">
-                                <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
-                                    <p className='text-slate-600 font-semibold'>設備案内</p>
-                                </div>
+                                <HeaderSlideInLeft>
+                                  <div className="w-full flex justify-start items-center gap-5">
+                                  <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
+                                      <p className='text-slate-600 font-semibold'>設備案内</p>
+                                  </div>
+                                </HeaderSlideInLeft>
                               </Link>
                               </li>
 
@@ -225,11 +233,14 @@ export default function DrawerContents (props) {
                               <Link href="/company" onClick={onClose}
                               className="
                               w-full h-full inline-block
-                              flex justify-center items-center">
-                                <div className="w-full flex justify-start items-center gap-5">
-                                <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
-                                    <p className='text-slate-600 font-semibold'>会社概要</p>
-                                </div>
+                              flex items-center lg:justify-center
+                              ">
+                                <HeaderSlideInLeft>
+                                  <div className="w-full flex justify-start items-center gap-5">
+                                  <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
+                                      <p className='text-slate-600 font-semibold'>会社概要</p>
+                                  </div>
+                                </HeaderSlideInLeft>
                               </Link>
                               </li>
 
@@ -241,11 +252,14 @@ export default function DrawerContents (props) {
                               <Link href="/news" onClick={onClose}
                               className="
                               w-full h-full inline-block
-                              flex justify-center items-center">
-                                <div className="w-full flex justify-start items-center gap-5">
-                                <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
-                                    <p className='text-slate-600 font-semibold'>ニュース</p>
-                                </div>
+                              flex items-center lg:justify-center
+                              ">
+                                <HeaderSlideInLeft>
+                                  <div className="w-full flex justify-start items-center gap-5">
+                                  <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
+                                      <p className='text-slate-600 font-semibold'>ニュース</p>
+                                  </div>
+                                </HeaderSlideInLeft>
                               </Link>
                               </li>
 
@@ -257,25 +271,29 @@ export default function DrawerContents (props) {
                               <Link href="/contact" onClick={onClose}
                               className="
                               w-full h-full inline-block
-                              flex justify-center items-center
+                              flex items-center lg:justify-center
                               ">
-                                <div className="w-full flex justify-start items-center gap-5">
-                                <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
-                                    <p className='text-slate-600 font-semibold'>お問い合わせ</p>
-                                </div>
+                                <HeaderSlideInLeft>
+                                  <div className="w-full flex justify-start items-center gap-5">
+                                  <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
+                                      <p className='text-slate-600 font-semibold'>お問い合わせ</p>
+                                  </div>
+                                </HeaderSlideInLeft>
                               </Link>
                               </li>
                           </ul>
-
-                          <div className='
-                          pt-6 mb-2
-                          flex flex-col justify-center items-center gap-2
-                          '>
-                              <Link href="#" onClick={onClose}>
-                                          <p className='text-xxs text-slate-600'>プライバシーポリシー</p>
-                              </Link>
-                              <small className='text-xxs text-slate-400'><span className="text-slate-400">©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
-                          </div>
+                            
+                          <HeaderSlideInLeft>
+                            <div className='
+                            pt-6 mb-2
+                            flex flex-col justify-center items-center gap-2
+                            '>
+                                <Link href="#" onClick={onClose}>
+                                            <p className='text-xxs text-slate-600'>プライバシーポリシー</p>
+                                </Link>
+                                <small className='text-xxs text-slate-400'><span className="text-slate-400">©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
+                            </div>
+                          </HeaderSlideInLeft>
 
                       </nav>
                   </div>

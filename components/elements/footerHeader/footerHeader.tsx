@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SlideInLeft } from "../observer/slideInLeft";
 
 
 export default function FooterHeader () {
@@ -14,10 +15,12 @@ export default function FooterHeader () {
                 text-slate-600
                 '
                 >
-                    <Link href="/" className="w-56">
-                        <p className="text-xxs md:text-xs">ダンボールのエムパッケージ</p>
-                        <p className='text-base md:text-lg font-bold'>株式会社エムパッケージ</p>
-                    </Link>
+                    <SlideInLeft>
+                        <Link href="/" className="w-56">
+                            <p className="text-xxs md:text-xs">ダンボールのエムパッケージ</p>
+                            <p className='text-base md:text-lg font-bold'>株式会社エムパッケージ</p>
+                        </Link>
+                    </SlideInLeft>
                     
                     {/* <div className='text-xs'>
                         <p>〒332-0006&nbsp;埼玉県川口市末広2-7-15</p>
