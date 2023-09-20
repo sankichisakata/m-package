@@ -1,5 +1,5 @@
 
-const Contact = () => {
+export default function Contact () {
     return(
         <>
         <div className="bg-blue-800 h-screen w-fill flex justify-center items-center">
@@ -10,5 +10,3 @@ const Contact = () => {
     )
     
 }
-
-export default Contact;
