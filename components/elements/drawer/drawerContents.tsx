@@ -133,7 +133,7 @@ export default function DrawerContents (props) {
 
                               {/* 電話お問い合わせ */}
                               <div className="text-center text-white">
-                                  <p className="text-xs font-semibold">電話でのお問い合わせはこちらから</p>
+                                  <p className="text-xs font-semibold">電話でのお問い合わせ</p>
                                   <p className="text-base font-bold">048-287-8055</p>
                                   <p className="text-xs">平日 9:00 ~ 17:30</p>
                               </div>
@@ -184,7 +184,7 @@ export default function DrawerContents (props) {
 
                           <ul className="
                           w-full md:w-8/12 pt-6
-                          text-sm
+                          text-xs md:text-sm
                           flex flex-col justify-center items-center
                           "
                           >
@@ -194,7 +194,7 @@ export default function DrawerContents (props) {
                               w-full h-full inline-block 
                               flex justify-center items-center">
                                 <div className="w-full flex justify-start items-center gap-5">
-                                    <HiChevronRight className="text-slate-600 text-xxxl" />
+                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
                                     <p className='text-slate-600 font-semibold'>事業内容</p>
                                 </div>
                               </Link>
@@ -211,7 +211,7 @@ export default function DrawerContents (props) {
                               flex justify-center items-center
                               ">
                                 <div className="w-full flex justify-start items-center gap-5">
-                                <HiChevronRight className="text-slate-600 text-xxxl" />
+                                <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
                                     <p className='text-slate-600 font-semibold'>設備案内</p>
                                 </div>
                               </Link>
@@ -227,7 +227,7 @@ export default function DrawerContents (props) {
                               w-full h-full inline-block
                               flex justify-center items-center">
                                 <div className="w-full flex justify-start items-center gap-5">
-                                <HiChevronRight className="text-slate-600 text-xxxl" />
+                                <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
                                     <p className='text-slate-600 font-semibold'>会社概要</p>
                                 </div>
                               </Link>
@@ -244,7 +244,7 @@ export default function DrawerContents (props) {
                               flex justify-center items-center
                               ">
                                 <div className="w-full flex justify-start items-center gap-5">
-                                <HiChevronRight className="text-slate-600 text-xxxl" />
+                                <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
                                     <p className='text-slate-600 font-semibold'>お問い合わせ</p>
                                 </div>
                               </Link>

@@ -15,8 +15,8 @@ export default function FooterHeader () {
                 '
                 >
                     <Link href="/" className="w-56">
-                        <p className="text-xs">ダンボールのエムパッケージ</p>
-                        <p className='text-lg font-bold'>株式会社エムパッケージ</p>
+                        <p className="text-xxs md:text-xs">ダンボールのエムパッケージ</p>
+                        <p className='text-base md:text-lg font-bold'>株式会社エムパッケージ</p>
                     </Link>
                     
                     {/* <div className='text-xs'>

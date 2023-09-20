@@ -16,7 +16,7 @@ export default function FooterMain () {
 
                     <ul className="
                     w-11/12 md:w-7/12 lg:max-w-xl pt-6
-                    text-sm lg:text-base
+                    text-xs md:text-sm lg:text-base
                     flex flex-col lg:flex-row justify-center items-center
                     "
                     >
@@ -25,8 +25,8 @@ export default function FooterMain () {
                         className="
                         w-full h-full inline-block 
                         flex justify-center items-center">
-                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 md:gap-0">
-                            <HiChevronRight className="text-slate-600 text-xxxl" />
+                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-0">
+                            <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
                             <p className='text-slate-600 font-semibold'>事業内容</p>
                         </div>
                         </Link>
@@ -42,8 +42,8 @@ export default function FooterMain () {
                         w-full h-full inline-block
                         flex justify-center items-center
                         ">
-                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 md:gap-0">
-                            <HiChevronRight className="text-slate-600 text-xxxl" />
+                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-0">
+                            <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
                             <p className='text-slate-600 font-semibold'>設備案内</p>
                         </div>
                         </Link>
@@ -58,8 +58,8 @@ export default function FooterMain () {
                         className="
                         w-full h-full inline-block
                         flex justify-center items-center">
-                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 md:gap-0">
-                        <HiChevronRight className="text-slate-600 text-xxxl" />
+                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-0">
+                        <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
                             <p className='text-slate-600 font-semibold'>会社概要</p>
                         </div>
                         </Link>
@@ -75,8 +75,8 @@ export default function FooterMain () {
                         w-full h-full inline-block
                         flex justify-center items-center
                         ">
-                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 md:gap-0">
-                        <HiChevronRight className="text-slate-600 text-xxxl" />
+                        <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-0">
+                        <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
                             <p className='text-slate-600 font-semibold'>お問い合わせ</p>
                         </div>
                         </Link>
