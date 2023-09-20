@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <Header/>
-        <main>
+        <main className='overscroll-contain'>
           <Providers>
           {children}
           </Providers>
