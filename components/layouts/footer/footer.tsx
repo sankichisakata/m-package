@@ -11,7 +11,7 @@ const Footer = () => {
     const searchPathName = usePathname();
     const isContact = searchPathName === ('/contact')
     return (
-        <footer className="w-full h-full">
+        <footer className="bg-white w-full h-full">
             {!isContact && <FooterContact/>}
             <FooterHeader/>
             <FooterMain/>

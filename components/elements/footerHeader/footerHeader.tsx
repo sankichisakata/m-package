@@ -1,25 +1,36 @@
+import Link from "next/link";
 
 
 export default function FooterHeader () {
     return(
         <div
-        className='bg-gray-900 w-full h-full'
+        className='bg-white w-full h-full'
         >
+            <div className="mx-auto w-11/12 md:w-7/12 lg:w-9/12">
                 <div className='
-                py-10
-                flex flex-col justify-center items-center gap-8
-                text-center text-slate-100
+                w-full
+                py-5
+                flex flex-col justify-start
+                text-slate-600
                 '
                 >
-                    <p className='text-xl'>株式会社エムパッケージ</p>
-                    <div className='text-base'>
-                        <address>〒332-0006&nbsp;埼玉県川口市末広2-7-15</address>
+                    <Link href="/">
+                    <p className="text-xs">ダンボールのエムパッケージ</p>
+                    <p className='text-lg font-bold'>株式会社エムパッケージ</p>
+                    </Link>
+                    
+                    {/* <div className='text-xs'>
+                        <p>〒332-0006&nbsp;埼玉県川口市末広2-7-15</p>
                         <p>TEL:048-287-8055</p>
                     </div>
                     <div className='text-xs'>
                         <p >加賀ICより車で10分</p>
                         <p >川口元郷駅2番出口より徒歩13分</p>
-                    </div>
+                    </div> */}
+                </div>
+                <div className="w-full flex items-center mx-auto">
+                    <div className="flex-1 border-b-2 border-slate-500"></div>  
+                </div>
                 </div>
         </div>
         
