@@ -21,7 +21,7 @@ export default function DrawerLayout () {
         <>  
         <div>
             <a href="/" className='block px-5 py-3'>
-                <p className='text-xxs lg:text-sm text-slate-600 font-bold'>
+                <p className='text-xs lg:text-sm text-slate-600 font-bold'>
                     エムパッケージ
                 </p>
             </a>
