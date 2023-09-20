@@ -1,5 +1,5 @@
 
-const Equipment = () => {
+export default function Equipment () {
     return(
         <>
             <div className="bg-blue-300 h-screen w-fill flex justify-center items-center">
@@ -9,5 +9,3 @@ const Equipment = () => {
         </>
     )
 }
-
-export default Equipment;

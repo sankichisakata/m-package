@@ -238,6 +238,22 @@ export default function DrawerContents (props) {
                               </div>
 
                               <li className="w-full h-10">
+                              <Link href="/news" onClick={onClose}
+                              className="
+                              w-full h-full inline-block
+                              flex justify-center items-center">
+                                <div className="w-full flex justify-start items-center gap-5">
+                                <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
+                                    <p className='text-slate-600 font-semibold'>ニュース</p>
+                                </div>
+                              </Link>
+                              </li>
+
+                              <div className="w-full flex items-center">
+                                <div className="flex-1 border-b border-slate-500-20"></div>  
+                              </div>
+
+                              <li className="w-full h-10">
                               <Link href="/contact" onClick={onClose}
                               className="
                               w-full h-full inline-block

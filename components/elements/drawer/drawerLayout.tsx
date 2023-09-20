@@ -41,19 +41,25 @@ export default function DrawerLayout () {
             <p className='p-5'>事業内容</p>
             </Link>
             </li>
+
             <li>
             <Link href="/equipment">
-            
             <p className='p-5'>設備案内</p>
-            
             </Link>
             </li>
+
             <li>
             <Link href="/company">
             <p className='p-5'>会社概要</p>
-            
             </Link>
             </li>
+
+            <li>
+            <Link href="/news">
+            <p className='p-5'>ニュース</p>
+            </Link>
+            </li>
+
         </ul>
         </div>
         <div className="transition-all duration-500 ease-out" style={{ display: !isOpen ? "block" : "none" }}>

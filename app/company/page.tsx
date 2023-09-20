@@ -1,5 +1,5 @@
 
-const Company = () => {
+export default function Company () {
     return(
         <>
             <div className="bg-yellow-300 h-screen w-fill flex justify-center items-center">
@@ -9,5 +9,3 @@ const Company = () => {
         </>
     )
 }
-
-export default Company;
