@@ -1,3 +1,4 @@
+import { FadeInBack } from "@/components/elements/observer/fadeInBack";
 
 export default function HomeCompany () {
     return(
@@ -8,8 +9,10 @@ export default function HomeCompany () {
         flex justify-center items-center
         "
         >
+            <FadeInBack>
             <p>会社概要</p>
             <p>Company</p>
+            </FadeInBack>
         </div>
     )
 }

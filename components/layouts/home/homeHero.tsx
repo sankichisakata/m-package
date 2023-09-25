@@ -6,7 +6,9 @@ export default function HomeHero () {
             <div className="
             w-full z-[-5]
             ">
+                
                 <HomeSwiper/>
+                    
             </div>
         </div>
     )

@@ -20,17 +20,15 @@ export default function HomeSwiper () {
             loop={true}
             slidesPerView={1}
             spaceBetween={50}
-            pagination={{
-                clickable: true,
-            }}
             autoplay={{
-                delay: 6000,
+                delay: 10000,
                 disableOnInteraction: true,
               }} 
             speed={1000}
             effect="fade"
             fadeEffect={{ crossFade: true }}
             >
+
 
         {/* {images.map((src: string, index: number) => {
         return (
@@ -41,14 +39,80 @@ export default function HomeSwiper () {
         })} */}
 
                 <SwiperSlide>
-                    <div className='w-full h-screen bg-town01 bg-cover bg-center'></div>
+                    <div className='
+                    w-full h-screen bg-town01 bg-cover bg-center
+                    '
+                    >
+                        <div className="
+                        overflow-hidden bg-fixed bg-slate-600/30
+                        w-full h-full 
+                        bottom-0 left-0 right-0 top-0
+                        rounded-md
+                        "
+                        >
+                          <div className="
+                            w-full h-full pt-5
+                            font-semibold text-center
+                            flex flex-col justify-center items-center gap-2
+                            "
+                            >
+                                <p className='[font-size:_clamp(1.5rem,3vw,5rem)]'>「親切・迅速・丁寧」</p>
+                                <p className='[font-size:_clamp(0.8rem,2vw,2rem)]'>エムパッケージの信念です。</p>
+                          </div>
+
+                        </div>
+
+                        
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='w-full h-screen bg-town02 bg-cover bg-center'></div>
+                    <div className='w-full h-screen bg-town02 bg-cover bg-center'>
+                        <div className="
+                            overflow-hidden bg-fixed bg-slate-600/10
+                            w-full h-full  
+                            bottom-0 left-0 right-0 top-0
+                            rounded-md
+                            "
+                            >
+                            <div className="
+                                w-full h-full p-10
+                                font-semibold text-center
+                                flex flex-col justify-center items-center gap-2
+                                "
+                                >
+                                    <p className='[font-size:_clamp(1.5rem,3vw,3rem)]'>ダンボールの総合会社</p>
+                                    <p className='[font-size:_clamp(0.8rem,2vw,2rem)]'>ダンボールの製造・企画・加工・納品までを
+                                        <span className='md:hidden'><br/></span>
+                                        ワンストップで行います。
+                                    </p>
+                            </div>
+
+                        </div>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='w-full h-screen bg-equipment01 bg-cover bg-center'></div>
+                    <div className='w-full h-screen bg-equipment01 bg-cover bg-center'>
+                        <div className="
+                            overflow-hidden bg-fixed bg-slate-600/40
+                            w-full h-full 
+                            bottom-0 left-0 right-0 top-0
+                            rounded-md
+                            "
+                            >
+                            <div className="
+                                w-full h-full p-5
+                                font-semibold text-center
+                                flex flex-col justify-center items-center gap-2
+                                "
+                                >
+                                    <p className='[font-size:_clamp(1rem,3vw,3rem)]'>お客様のご要望に真摯にお応え致します。
+                                    </p>
+                                    <p className='[font-size:_clamp(0.8rem,2vw,2rem)]'>当たり前を当たり前にする仕事。</p>
+                            </div>
+                        </div>
+                    </div>
                 </SwiperSlide>
+                
             </Swiper>
 
 

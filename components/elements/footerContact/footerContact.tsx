@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { HiMail } from "react-icons/hi";
 import equipment01 from '@/public/img/equipment01.jpg'
-import { FadeInBack } from '../observer/fadeInBack';
 import { SlideInLeft } from '../observer/slideInLeft';
 
 export default function FooterContact () {
@@ -14,7 +13,7 @@ export default function FooterContact () {
         bg-slate-600 w-full mx-auto py-5
         '
         >
-            <FadeInBack>
+            <SlideInLeft>
             <Link 
             href="/contact" 
             className="w-11/12 md:w-7/12 lg:w-9/12 mx-auto lg:p-5
@@ -48,30 +47,28 @@ export default function FooterContact () {
                 flex flex-col justify-center gap-5 lg:gap-8
                 "
                 >
-                    <SlideInLeft>
+                    
                     <div className='flex flex-col justify-center items-center font-semibold'>
                         <p className="text-base lg:text-lg text-center">お問い合わせ</p>
                         <p className="text-xs lg:text-sm">CONTACT</p>
                     </div>
-                    </SlideInLeft>
+                    
 
-                    <SlideInLeft>
+                    
                     <div className="text-xxs lg:text-xs text-center font-medium">
                         <p>お客様のご要望に応じた様々なご提案が可能でございます。</p>
                         <p>お気軽にご相談ください。</p>
                     </div>
-                    </SlideInLeft>
+                   
 
-                    <SlideInLeft>
+                    
                     {/* 電話お問い合わせ */}
                     <div className="text-center text-xxs lg:text-xs">
                         <p>電話でのお問い合わせ</p>
                         <p className="text-xs lg:text-sm font-semibold">048-287-8055</p>
                         <p>平日 9:00 ~ 17:30</p>
                     </div>
-                    </SlideInLeft>
 
-                    <SlideInLeft>
                     {/* メール問い合わせ */}
                     <div className="text-center">
                         <p className='text-xs lg:text-base font-semibold'>お問い合わせはこちらから</p>
@@ -83,16 +80,16 @@ export default function FooterContact () {
                                 </div>
                         </div>
                     </div>
-                    </SlideInLeft>
+
 
 
                 </div>
                
                 </Link>
-                </FadeInBack>
             {/* <div className="w-full md:w-7/12 lg:w-9/12 flex items-center mx-auto pt-5">
                  <div className="flex-1 border-b-2 border-slate-500"></div>  
             </div> */}
+            </SlideInLeft>
         </div>
     )
 }

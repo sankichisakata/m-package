@@ -1,3 +1,4 @@
+import { FadeInBack } from "@/components/elements/observer/fadeInBack";
 
 export default function HomeEquipment () {
     return(
@@ -8,8 +9,10 @@ export default function HomeEquipment () {
         flex justify-center items-center
         "
         >
+            <FadeInBack>
             <p>設備案内</p>
             <p>Equipment</p>
+            </FadeInBack>
         </div>
     )
 }
