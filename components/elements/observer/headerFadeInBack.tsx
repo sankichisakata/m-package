@@ -2,7 +2,7 @@
 
 import { useInView } from 'react-intersection-observer';
 
-export const HeaderSlideInLeft = ({ children }, props) => {
+export const HeaderFadeInBack = ({ children }, props) => {
     const { ref, inView } = useInView({
         // オプション
         rootMargin: '-10px', // ref要素が現れてから50px過ぎたら
@@ -12,7 +12,7 @@ export const HeaderSlideInLeft = ({ children }, props) => {
     return (
         <div
             ref={ref}
-            className={`${inView ? "opacity-100" : "opacity-0 translate-x-[-20%]"} duration-[1s]`}
+            className={`${inView ? "opacity-100" : "opacity-0 translate-y-[-10%]"} duration-[1s]`}
         >
             {children}
         </div>
