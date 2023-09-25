@@ -1,14 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
-import DrawerLayout from '@/components/elements/drawer/drawerLayout';
-import USP from '@/components/elements/useScrollPosition/USP';
-
+import DrawerLayout from '@/components/elements/drawer/drawerLayout'
 
 const Header = () => {
   return (
-    <USP>
       <nav className="
-      top-0 left-0 z-10
+      fixed top-0 left-0 z-10
       w-full pt-3
       flex justify-center items-center
       "
@@ -18,11 +15,9 @@ const Header = () => {
         flex justify-center items-center
         border border-white rounded-md shadow-md
         '>
-          
             <DrawerLayout/>
         </div>
       </nav>
-    </USP>
   );
 };
 

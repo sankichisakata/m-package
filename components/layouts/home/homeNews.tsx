@@ -1,17 +1,17 @@
-import { FadeInBack } from "@/components/elements/observer/fadeInBack"
+import { FadeInBack } from "@/components/elements/observer/fadeInBack";
 
-export default function HomeService () {
+export default function HomeNews () {
     return(
         <div
         className="
         h-[1000px]
-        bg-gray-300
+        bg-gray-800
         flex justify-center items-center
         "
         >
             <FadeInBack>
-            <p>事業案内</p>
-            <p>Our Service</p>
+            <p>ニュース</p>
+            <p>News</p>
             </FadeInBack>
         </div>
     )

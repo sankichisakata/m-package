@@ -20,7 +20,6 @@ import {
     SlideFade,
     Collapse
   } from '@chakra-ui/react'
-import { SlideInLeft } from "../observer/slideInLeft";
 import { HeaderSlideInLeft } from "../observer/headerFadeInLeft";
 
 export default function DrawerContents (props) {
@@ -57,12 +56,10 @@ export default function DrawerContents (props) {
         >
           
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
-            <SlideInLeft >
               <div className="block w-11/12 lg:w-4/6 mx-auto mt-16 text-left">
                   <p className='text-xxs md:txet-xxs text-white font-semibold '>(株)エムパッケージは、お客様第一営業を掲げております。</p>
               </div>
-            </SlideInLeft>
-
+           
             <DrawerContent 
             className="
             w-full h-full h-safari-screen mx-auto
@@ -154,7 +151,7 @@ export default function DrawerContents (props) {
                         
                         
                       </div>
-                      </HeaderSlideInLeft>
+                    </HeaderSlideInLeft>
 
                       <nav className='
                       w-full
