@@ -21,6 +21,7 @@ import {
     Collapse
   } from '@chakra-ui/react'
 import { HeaderFadeInBack } from "../observer/headerFadeInBack";
+import BorderFull from "../border/borderFull";
 
 export default function DrawerContents (props) {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
@@ -128,7 +129,7 @@ export default function DrawerContents (props) {
                             flex flex-col justify-center gap-2
                             "
                             >
-                              <div className="text-xs font-semibold text-center">
+                              <div className="text-xs text-white font-semibold text-center">
                                   <p>お気軽にご相談ください。</p>
                               </div>
 
@@ -144,7 +145,7 @@ export default function DrawerContents (props) {
                             <Link href="/contact" onClick={onClose} className="bg-white rounded-full shadow-md">
                               <div className="flex justify-center items-center">
                                   <p className="px-8 py-2 text-black text-xs font-semibold">お問い合わせ</p>
-                                  <HiMail className="border-slate-800 rounded-full p-1 m-1 bg-slate-800 text-xxxl"/>
+                                  <HiMail className="border-slate-800 rounded-full p-1 m-1 bg-slate-800 text-white text-xxxl"/>
                               </div>
                             </Link>
                           </div>
@@ -203,9 +204,7 @@ export default function DrawerContents (props) {
                               </Link>
                               </li>
 
-                              <div className="w-full flex items-center">
-                                <div className="flex-1 border-b border-slate-500-20"></div>  
-                              </div>
+                              <BorderFull/>
 
                               <li className="w-full h-10">
                               <Link href="/equipment" onClick={onClose}
@@ -220,9 +219,7 @@ export default function DrawerContents (props) {
                               </Link>
                               </li>
 
-                              <div className="w-full flex items-center">
-                                <div className="flex-1 border-b border-slate-500-20"></div>  
-                              </div>
+                              <BorderFull/>
 
                               <li className="w-full h-10">
                               <Link href="/company" onClick={onClose}
@@ -237,9 +234,7 @@ export default function DrawerContents (props) {
                               </Link>
                               </li>
 
-                              <div className="w-full flex items-center">
-                                <div className="flex-1 border-b border-slate-500-20"></div>  
-                              </div>
+                              <BorderFull/>
 
                               <li className="w-full h-10">
                               <Link href="/news" onClick={onClose}
@@ -254,9 +249,7 @@ export default function DrawerContents (props) {
                               </Link>
                               </li>
 
-                              <div className="w-full flex items-center">
-                                <div className="flex-1 border-b border-slate-500-20"></div>  
-                              </div>
+                              <BorderFull/>
 
                               <li className="w-full h-10">
                               <Link href="/contact" onClick={onClose}

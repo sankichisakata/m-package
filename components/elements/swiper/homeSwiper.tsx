@@ -52,7 +52,7 @@ export default function HomeSwiper () {
                         >
                           <div className="
                             w-full h-full pt-5
-                            font-semibold text-center
+                            font-semibold text-center text-white
                             flex flex-col justify-center items-center gap-2
                             "
                             >
@@ -76,7 +76,7 @@ export default function HomeSwiper () {
                             >
                             <div className="
                                 w-full h-full p-10
-                                font-semibold text-center
+                                font-semibold text-center text-white
                                 flex flex-col justify-center items-center gap-2
                                 "
                                 >
@@ -101,7 +101,7 @@ export default function HomeSwiper () {
                             >
                             <div className="
                                 w-full h-full p-5
-                                font-semibold text-center
+                                font-semibold text-center text-white
                                 flex flex-col justify-center items-center gap-2
                                 "
                                 >

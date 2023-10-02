@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { HiChevronRight } from "react-icons/hi";
 import { SlideInLeft } from '../observer/slideInLeft';
+import BorderFull from '../border/borderFull';
 
 export default function FooterMain () {
     return(
@@ -16,7 +17,7 @@ export default function FooterMain () {
                 >
 
                     <ul className="
-                    w-11/12 md:w-7/12 lg:max-w-xxl pt-6
+                    w-11/12 md:w-8/12 lg:max-w-xxl pt-6
                     text-xs md:text-sm lg:text-base
                     flex flex-col lg:flex-row justify-center items-center
                     "
@@ -36,7 +37,7 @@ export default function FooterMain () {
                             </SlideInLeft>
                         </Link>
                         </li>
-
+                        
                         <div className="lg:hidden w-full flex items-center">
                             <div className="flex-1 border-b border-slate-500-20"></div>  
                         </div>
@@ -59,7 +60,7 @@ export default function FooterMain () {
                         </li>
 
                         <div className="lg:hidden w-full flex items-center">
-                        <div className="flex-1 border-b border-slate-500-20"></div>  
+                            <div className="flex-1 border-b border-slate-500-20"></div>  
                         </div>
 
                         <li className="w-full h-10">
@@ -78,7 +79,7 @@ export default function FooterMain () {
                         </li>
 
                         <div className="lg:hidden w-full flex items-center">
-                        <div className="flex-1 border-b border-slate-500-20"></div>  
+                            <div className="flex-1 border-b border-slate-500-20"></div>  
                         </div>
 
                         <li className="w-full h-10">
@@ -97,7 +98,7 @@ export default function FooterMain () {
                         </li>
 
                         <div className="lg:hidden w-full flex items-center">
-                        <div className="flex-1 border-b border-slate-500-20"></div>  
+                            <div className="flex-1 border-b border-slate-500-20"></div>  
                         </div>
 
                         <li className="w-full h-10">
