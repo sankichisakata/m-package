@@ -7,7 +7,7 @@ export default function FooterHeader () {
         <div
         className='bg-white w-full h-full'
         >
-            <div className="mx-auto w-11/12 md:w-7/12 lg:w-9/12">
+            <div className="mx-auto w-11/12 md:w-8/12 lg:w-9/12">
                 <div className='
                 w-full
                 py-5

@@ -17,7 +17,6 @@ export default function FooterContact () {
             <Link 
             href="/contact" 
             className="w-11/12 md:w-7/12 lg:w-9/12 mx-auto lg:p-5
-
             flex justify-center-items-center
             shadow-md rounded-md
             group transition-all duration-500
