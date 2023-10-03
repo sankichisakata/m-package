@@ -15,13 +15,13 @@ export default function HomeService () {
                 className=" 
                 mx-5 my-10 md:my-20
                 w-full h-auto
-                flex flex-col gap-10
+                flex flex-col gap-6 md:gap-10
                 "
                 >
 
-                    <div className="mx-auto w-[30rem] p-5 text-center border-4 border-green-700">
-                        <p className="[font-size:_clamp(1.8rem,3vw,2rem)] font-bold text-green-700">エムパッケージの仕事</p>
-                        <p className="[font-size:_clamp(1rem,3vw,1.2rem)] font-semibold text-green-700">まごころを込めて、守ります。</p>
+                    <div className="mx-auto w-11/12 md:w-[30rem] p-2 md:p-4 text-center border-4 border-green-700">
+                        <p className="[font-size:_clamp(1.3rem,2vw,1.8rem)] font-bold text-green-700">エムパッケージの仕事</p>
+                        <p className="[font-size:_clamp(1rem,3vw,1.1rem)] font-semibold text-green-700">まごころを込めて、守ります。</p>
                     </div>
                 
                 
@@ -66,7 +66,7 @@ export default function HomeService () {
                                     </div>
                                     <div 
                                     className="
-                                    bg-white group-hover:bg-green-600 transition duration-500
+                                    bg-white lg:group-hover:bg-green-600 transition duration-500
                                     w-full md:w-1/2 h-2/6 
                                     group-hover:text-white
                                     border group-hover:border-green-600 rounded-full
@@ -102,7 +102,7 @@ export default function HomeService () {
                                     </div>
                                     <div 
                                     className="
-                                    bg-white group-hover:bg-green-600 transition duration-500
+                                    bg-white lg:group-hover:bg-green-600 transition duration-500
                                     w-full md:w-1/2 h-2/6 
                                     group-hover:text-white
                                     border group-hover:border-green-600 rounded-full
