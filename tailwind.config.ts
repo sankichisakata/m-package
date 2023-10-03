@@ -26,8 +26,10 @@ const config: Config = {
        'tell01' : "url('/img/tell01.jpg')" ,
        'town01' : "url('/img/town01.jpg')" ,
        'town02' : "url('/img/town02.jpg')" ,
-       'equipment01' : "url('/img/equipment01.jpg')" ,
-
+       'service01' : "url('/img/service01.jpg')" ,
+       'equipment01' : "url('/img/equipment01.jpg')",
+       'equipment02' : "url('/img/equipment02.jpg')",
+       'cardboard01' : "url('/img/cardboard01.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

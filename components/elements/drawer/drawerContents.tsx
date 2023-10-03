@@ -21,7 +21,7 @@ import {
     Collapse
   } from '@chakra-ui/react'
 import { HeaderFadeInBack } from "../observer/headerFadeInBack";
-import BorderFull from "../border/borderFull";
+import BorderWhiteFull from "../border/borderWhiteFull";
 
 export default function DrawerContents (props) {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
@@ -204,7 +204,7 @@ export default function DrawerContents (props) {
                               </Link>
                               </li>
 
-                              <BorderFull/>
+                              <BorderWhiteFull/>
 
                               <li className="w-full h-10">
                               <Link href="/equipment" onClick={onClose}
@@ -219,7 +219,7 @@ export default function DrawerContents (props) {
                               </Link>
                               </li>
 
-                              <BorderFull/>
+                              <BorderWhiteFull/>
 
                               <li className="w-full h-10">
                               <Link href="/company" onClick={onClose}
@@ -234,7 +234,7 @@ export default function DrawerContents (props) {
                               </Link>
                               </li>
 
-                              <BorderFull/>
+                              <BorderWhiteFull/>
 
                               <li className="w-full h-10">
                               <Link href="/news" onClick={onClose}
@@ -249,7 +249,7 @@ export default function DrawerContents (props) {
                               </Link>
                               </li>
 
-                              <BorderFull/>
+                              <BorderWhiteFull/>
 
                               <li className="w-full h-10">
                               <Link href="/contact" onClick={onClose}

@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { HiChevronRight } from "react-icons/hi";
 import { SlideInLeft } from '../observer/slideInLeft';
-import BorderFull from '../border/borderFull';
+import BorderFull from '../border/borderWhiteFull';
 
 export default function FooterMain () {
     return(
