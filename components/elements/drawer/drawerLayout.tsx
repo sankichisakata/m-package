@@ -21,10 +21,10 @@ export default function DrawerLayout () {
         <>  
         <div>
             <a href="/" className='flex justify-center items-center px-2'>
-                <p className='text-xs lg:text-sm text-green-700 p-1 font-bold border-2 border-green-700'>
+            <p className="text-xs md:text-sm lg:text-base p-1 font-bold border-t-2 border-l-2 border-b-2 border-black">株式会社</p>
+                <p className='text-xs md:text-sm lg:text-base text-green-700 p-1 font-bold border-2 border-green-700'>
                     エムパッケージ
                 </p>
-                <p className="text-xs lg:text-sm p-1 font-bold border-t-2 border-r-2 border-b-2 border-black">株式会社</p>
             </a>
         </div>
 
@@ -35,29 +35,29 @@ export default function DrawerLayout () {
         >
         <ul className="
         hidden lg:flex justify-center items-center
-        text-slate-600 text-xxs lg:text-sm font-semibold
+        text-slate-600 text-xxs md:text-sm lg:text-base font-semibold
         ">
             <li>
             <Link href="/service">
-            <p className='p-5'>事業内容</p>
+            <p className='p-4'>事業内容</p>
             </Link>
             </li>
 
             <li>
             <Link href="/equipment">
-            <p className='p-5'>設備案内</p>
+            <p className='p-4'>設備案内</p>
             </Link>
             </li>
 
             <li>
             <Link href="/company">
-            <p className='p-5'>会社概要</p>
+            <p className='p-4'>会社概要</p>
             </Link>
             </li>
 
             <li>
             <Link href="/news">
-            <p className='p-5'>ニュース</p>
+            <p className='p-4'>ニュース</p>
             </Link>
             </li>
 

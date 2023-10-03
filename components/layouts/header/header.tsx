@@ -6,14 +6,14 @@ const Header = () => {
   return (
       <nav className="
       fixed top-0 left-0 z-10
-      w-full
+      w-full lg:pt-5
       flex justify-center items-center
       "
       >
         <div className='
-        w-full lg:w-9/12 lg:px-5 bg-white
+        w-full lg:w-11/12 py-1 md:py-2 md:px-4 bg-white
         flex justify-center items-center
-        border border-white shadow-md
+        border border-white shadow-md lg:rounded-lg
         '>
             <DrawerLayout/>
         </div>
