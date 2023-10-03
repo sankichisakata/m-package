@@ -30,6 +30,7 @@ const config: Config = {
        'equipment01' : "url('/img/equipment01.jpg')",
        'equipment02' : "url('/img/equipment02.jpg')",
        'cardboard01' : "url('/img/cardboard01.jpg')",
+       'cardboard02' : "url('/img/cardboard02.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

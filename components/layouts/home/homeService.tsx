@@ -7,13 +7,12 @@ export default function HomeService () {
         <>
             <div 
             className='
-            w-11/12 h-full mx-auto
+            w-11/12 h-full mx-auto py-10
             flex justify-center items-center
             '
             >
                 <div
-                className=" 
-                mx-5 my-10 md:my-20
+                className="
                 w-full h-auto
                 flex flex-col gap-6 md:gap-10
                 "
@@ -27,7 +26,7 @@ export default function HomeService () {
                 
                     <div 
                     className="
-                    w-full my-5
+                    w-full
                     text-black font-semibold
                     ">
                         <p className="[font-size:_clamp(0.8rem,2vw,1.5rem)]">川口の町工場として長年地元の方やお客様と共に成長して参りました。</p>
@@ -50,13 +49,13 @@ export default function HomeService () {
                             group
                             w-full lg:max-w-lg h-[15rem]
                             flex flex-col justify-around items-center gap-5 
-                            bg-equipment02 bg-center bg-cover
+                            bg-cardboard02 bg-center bg-cover
                             ">
                                 <Link className="w-full h-full" href="/service">
                                 <div className="
                                 w-full h-full p-5
                                 flex flex-col justify-center items-center gap-5 
-                                bg-slate-600/40
+                                bg-slate-600/20
                                 ">
                                     <div className="w-full h-1/2 text-sm md:text-base text-white">
                                         <p className="font-semibold">事業内容</p>
@@ -68,8 +67,8 @@ export default function HomeService () {
                                     className="
                                     bg-white lg:group-hover:bg-green-600 transition duration-500
                                     w-full md:w-1/2 h-2/6 
-                                    group-hover:text-white
-                                    border group-hover:border-green-600 rounded-full
+                                    lg:group-hover:text-white
+                                    border lg:group-hover:border-green-600 rounded-full
                                     flex justify-center items-center gap-5
                                     ">
                                         <HiChevronDoubleRight/>
@@ -104,8 +103,8 @@ export default function HomeService () {
                                     className="
                                     bg-white lg:group-hover:bg-green-600 transition duration-500
                                     w-full md:w-1/2 h-2/6 
-                                    group-hover:text-white
-                                    border group-hover:border-green-600 rounded-full
+                                    lg:group-hover:text-white
+                                    border lg:group-hover:border-green-600 rounded-full
                                     flex justify-center items-center gap-5
                                     ">
                                         <HiChevronDoubleRight/>
