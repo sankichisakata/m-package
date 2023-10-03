@@ -20,10 +20,11 @@ export default function DrawerLayout () {
     return(
         <>  
         <div>
-            <a href="/" className='block px-5 py-3'>
-                <p className='text-xs lg:text-sm text-slate-600 font-bold'>
+            <a href="/" className='flex justify-center items-center px-2'>
+                <p className='text-xs lg:text-sm text-green-700 p-1 font-bold border-2 border-green-700'>
                     エムパッケージ
                 </p>
+                <p className="text-xs lg:text-sm p-1 font-bold border-t-2 border-r-2 border-b-2 border-black">株式会社</p>
             </a>
         </div>
 
