@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'M-Package',
-  description: '製紙コンサル企業です | 企画・製造・販売、お気軽にご相談ください。',
+  description: '梱包材コンサル企業です | 企画・製造・配送・販売、お気軽にご相談ください。',
 }
 
 export default function RootLayout({
