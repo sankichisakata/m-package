@@ -8,7 +8,7 @@ export default function HomeService () {
         <>
             <div 
             className='
-            w-full h-full mx-auto py-10 lg:py-20
+            w-full h-full mx-auto py-16 lg:py-24
             flex justify-center items-center
             '
             >
@@ -29,7 +29,7 @@ export default function HomeService () {
                     <div 
                     className="
                     w-full lg:w-10/12 mx-auto pl-2 md:pl-4
-                    text-black font-semibold
+                    font-semibold
                     border-l-4 border-green-700
                     ">
                         <p className="[font-size:_clamp(0.8rem,2vw,1.5rem)]">

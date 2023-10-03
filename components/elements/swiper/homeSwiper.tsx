@@ -80,8 +80,8 @@ export default function HomeSwiper () {
                                 flex flex-col justify-center items-center gap-2
                                 "
                                 >
-                                    <p className='[font-size:_clamp(1.5rem,3vw,3rem)]'>ダンボールの総合会社</p>
-                                    <p className='[font-size:_clamp(0.8rem,2vw,2rem)]'>ダンボールの製造・企画・加工・納品までを
+                                    <p className='[font-size:_clamp(1.5rem,3vw,3rem)]'>いつも、身近に、皆様と共に。</p>
+                                    <p className='[font-size:_clamp(0.8rem,2vw,2rem)]'>段ボールの製造・企画・加工・納品までを
                                         <span className='md:hidden'><br/></span>
                                         ワンストップで行います。
                                     </p>
@@ -107,7 +107,7 @@ export default function HomeSwiper () {
                                 >
                                     <p className='[font-size:_clamp(1rem,3vw,3rem)]'>お客様のご要望に真摯にお応え致します。
                                     </p>
-                                    <p className='[font-size:_clamp(0.8rem,2vw,2rem)]'>当たり前を当たり前にする仕事。</p>
+                                    <p className='[font-size:_clamp(0.8rem,2vw,2rem)]'></p>
                             </div>
                         </div>
                     </div>

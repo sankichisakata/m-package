@@ -8,7 +8,7 @@ export default function HomeCompany () {
             <div 
             className='
             bg-stone-200
-            w-full h-full mx-auto py-10 lg:py-20
+            w-full h-full mx-auto py-16 lg:py-24
             flex justify-center items-center
             '
             >
@@ -25,7 +25,7 @@ export default function HomeCompany () {
                     text-center border-4 border-green-700
                     ">
                         <p className="[font-size:_clamp(1rem,5vw,2rem)] font-bold text-green-700">株式会社エムパッケージについて</p>
-                        <p className="[font-size:_clamp(1rem,3vw,1.1rem)] font-semibold text-green-700">常に、皆様と共に。</p>
+                        <p className="[font-size:_clamp(1rem,3vw,1.1rem)] font-semibold text-green-700">いつも、身近に、皆様と共に。</p>
                     </div>
                     </FadeInBack>
                 
