@@ -10,7 +10,6 @@ export default function Home() {
     <>
       <HomeHero/>
       <HomeService/>
-      <HomeEquipment/>
       <HomeCompany/>
       <HomeNews/>
     </>
