@@ -13,7 +13,7 @@ const ContactButton = () => {
               
                 <div className="flex justify-center items-center">
                   <p className="px-3 md:px-4 lg:px-6 py-1 md:py-2 lg:py-3 text-white text-xs md:text-sm lg:text-base font-semibold">お問い合わせ</p>
-                  <HiMail className="border-white rounded-full p-1 m-1 bg-white text-xxl lg:text-[2rem]"/>
+                  <HiMail className="border-white rounded-full p-1 md:p-0.5 m-1 md:m-2 bg-white text-xxl lg:text-[2rem]"/>
                   </div>
               
             </Link>

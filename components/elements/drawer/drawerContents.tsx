@@ -69,33 +69,7 @@ export default function DrawerContents (props) {
             flex flex-col gap-5" 
             
             >
-                
-                {/* <DrawerHeader
-                className="
-                w-full pt-3
-                flex flex-col items-center
-                "
-                >
-                  <div className="
-                  w-11/12 
-                  bg-white rounded-md shadow-2xl
-                  flex justify-between items-center
-                  ">
-                   <div className='w-52'>
-                    <Link onClick={onClose} href="/">
-                          <p className='p-3 text-xxs text-slate-600 text-bold'>株式会社エムパッケージ</p>
-                    </Link>
-                  </div>
-                  <DrawerCloseButton className="
-                  w-16
-                  inline-block p-3
-                  text-lg font-bold text-slate-600
-                  "
-                  />
-                  </div>
-                </DrawerHeader> */}
-
-    
+  
                 <DrawerBody className="
                 bg-white
                 mt-24 mb-5
@@ -129,23 +103,23 @@ export default function DrawerContents (props) {
                             flex flex-col justify-center gap-2
                             "
                             >
-                              <div className="text-xs text-white font-semibold text-center">
+                              <div className="text-sm md:text-base text-white font-semibold text-center">
                                   <p>お気軽にご相談ください。</p>
                               </div>
 
                               {/* 電話お問い合わせ */}
                               <div className="text-center text-white">
-                                  <p className="text-xs font-semibold">電話でのお問い合わせ</p>
-                                  <p className="text-base font-bold">048-287-8055</p>
-                                  <p className="text-xs">平日 9:00 ~ 17:30</p>
+                                  <p className="text-xs md:text-sm">お急ぎの方は、電話でお問い合わせ</p>
+                                  <p className="text-base md:text-xl font-semibold">048-287-8055</p>
+                                  <p className="text-xs md:text-sm">平日 9:00 ~ 17:30</p>
                               </div>
                           </div>
 
                           <div className='w-full flex justify-center items-center py-3'>
-                            <Link href="/contact" onClick={onClose} className="bg-white rounded-full shadow-md">
+                            <Link href="/contact" onClick={onClose} className="bg-green-600 border border-green-600 rounded-full shadow-md">
                               <div className="flex justify-center items-center">
-                                  <p className="px-8 py-2 text-black text-xs font-semibold">お問い合わせ</p>
-                                  <HiMail className="border-slate-800 rounded-full p-1 m-1 bg-slate-800 text-white text-xxxl"/>
+                                  <p className="px-10 py-3 text-white text-sm md:text-base font-semibold">お問い合わせ</p>
+                                  <HiMail className="border-white rounded-full p-1 md:p-0.5 m-1 md:m-2 bg-white text-xxxl"/>
                               </div>
                             </Link>
                           </div>
