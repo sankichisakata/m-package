@@ -13,19 +13,17 @@ export default function HomeService () {
             flex justify-center items-center
             '
             >
-                <p className="text-slate-600/10 top-0 text-[4rem] md:text-[9rem] lg:text-[10rem] absolute z-[-5]">we work it</p>
+                <p className=" absolute z-[-5] text-slate-400/10 top-0 text-[4rem] md:text-[9rem] lg:text-[10rem]">we work it</p>
                 <div
                 className="
                 w-11/12 h-auto
                 flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-28
-
-                
                 "
                 >
                     <FadeInBack>
                         <div className="mx-auto w-full lg:w-10/12">
                             <div className="p-2 md:p-4 border-[0.2rem] border-green-700">
-                                <p className="[font-size:_clamp(1.5rem,3vw,2.5rem)] text-center font-bold text-green-700">エムパッケージの仕事</p>
+                                <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-green-700">エムパッケージの仕事</p>
                             </div>
                             <p className="text-base md:text-lg lg:text-xxl font-bold p-2 md:p-4">「まごころを込めて、守ります。」</p>
                         </div>
@@ -54,10 +52,10 @@ export default function HomeService () {
                         w-full lg:w-10/12 h-full flex flex-col md:flex-row justify-center items-center gap-5 text-md
 
                         before:absolute 
-                        before:bottom-[10rem] before:left-0
+                        before:bottom-0 before:left-0
                         before:w-10/12 before:md:w-9/12
-                        before:h-[30rem] before:md:h-[20rem]  before:lg:h-[30rem] 
-                        before:bg-green-600/20 before:z-[-10] before:rounded-br-lg before:md:rounded-r-lg 
+                        before:h-[40rem] before:md:h-[30rem]  before:lg:h-[40rem] 
+                        before:bg-slate-400/20 before:z-[-10] before:rounded-br-lg before:md:rounded-r-lg 
                         ">
                             
                             {/* 事業内容 */}
@@ -67,7 +65,7 @@ export default function HomeService () {
                             group
                             w-full h-[15rem] lg:h-[20rem]
                             flex flex-col justify-around items-center gap-5 
-                            bg-cardboard02 bg-center bg-cover
+                            bg-cardboard02 bg-center bg-cover rounded-md
                             ">
                                 <Link className="w-full h-full" href="/service">
                                 <div className="
@@ -107,7 +105,7 @@ export default function HomeService () {
                             group
                             w-full h-[15rem] lg:h-[20rem]
                             flex flex-col justify-around items-center gap-5 
-                            bg-equipment02 bg-center bg-cover
+                            bg-equipment02 bg-center bg-cover rounded-md
                             ">
                                 <Link className="w-full h-full" href="/equipment">
                                 <div className="

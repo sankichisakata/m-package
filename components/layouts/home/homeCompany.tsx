@@ -8,13 +8,17 @@ export default function HomeCompany () {
             <div 
             className='
             relative 
-            bg-stone-300
-            z-[-10]
             w-full h-full mx-auto py-16 lg:py-24
             flex justify-center items-center
+            
+            before:absolute 
+            before:bottom-0 before:right-0
+            before:w-10/12 before:md:w-11/12
+            before:h-[30rem] before:md:h-[20rem]  before:lg:h-[25rem] 
+            before:bg-slate-400/20 before:z-[-10] before:rounded-tl-lg 
             '
             >
-                <p className="mt-[-3rem] md:[writing-mode:vertical-lr] w-11/12 text-slate-600/10 top-0  text-[4rem] md:text-[9rem] lg:text-[10rem] absolute z-[-5]">Overview</p>
+                <p className="absolute z-[-5] mt-[-3rem] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 left-0 text-[4rem] md:text-[9rem] lg:text-[10rem]">Overview</p>
                 <div
                 className="
                 w-11/12 h-auto
@@ -67,19 +71,13 @@ export default function HomeCompany () {
                         group
                         w-full h-[15rem] lg:h-[20rem]
                         flex flex-col justify-around items-center gap-5 
-                        bg-service01 bg-center bg-cover
-
-                        before:absolute 
-                        before:bottom-0 before:right-0
-                        before:w-10/12 before:md:w-11/12
-                        before:h-[30rem] before:md:h-[20rem]  before:lg:h-[25rem] 
-                        before:bg-green-600/20 before:z-[-10] before:rounded-tl-lg 
+                        bg-service01 bg-center bg-cover rounded-md
                         ">
                             <Link className="w-full h-full" href="/company">
                             <div className="
                             w-full h-full p-5
                             flex flex-col items-center gap-5 
-                            bg-slate-600/20
+                            bg-slate-600/20 rounded-md
                             ">
                                 <div className="w-full h-full text-sm md:text-base">
                                     <p className="font-semibold">会社概要</p>
