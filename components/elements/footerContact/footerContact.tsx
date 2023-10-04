@@ -48,13 +48,13 @@ export default function FooterContact () {
                 >
                     
                     <div className='flex flex-col justify-center items-center font-semibold'>
-                        <p className="text-xl lg:text-xxxl text-center">お問い合わせ</p>
-                        <p className="text-sm lg:text-lg">CONTACT</p>
+                        <p className="text-green-600 text-xl lg:text-xxxl text-center">お問い合わせ</p>
+                        <p className="text-xs">CONTACT</p>
                     </div>
                     
 
                     
-                    <div className="text-sm lg:text-base text-center font-semibold">
+                    <div className="text-xs lg:text-sm text-center font-semibold">
                         <p>お気軽にご相談ください。</p>
                     </div>
                    
@@ -69,11 +69,11 @@ export default function FooterContact () {
 
                     {/* メール問い合わせ */}
                     <div className="text-center">
-                        <p className='text-sm lg:text-base font-semibold'>お問い合わせはこちらから</p>
+                        <p className='text-xs lg:text-sm font-semibold'>お問い合わせはこちらから</p>
 
                         <div className='w-full lg:w-[20rem] mx-auto pt-4 lg:pt-6'>
                                 <div className="flex justify-center items-center bg-green-600 border border-green-600 rounded-full">
-                                    <p className="px-3 lg:px-10 py-3 lg:py-4 text-white text-lg lg:text-xl font-semibold">お問い合わせ</p>
+                                    <p className="px-3 lg:px-10 py-3 lg:py-4 text-white text-base lg:text-lg font-semibold">お問い合わせ</p>
                                     <HiMail className="border-slate-800 rounded-full p-1 m-1 lg:m-2 bg-white text-xxxl lg:text-[2rem]"/>
                                 </div>
                         </div>

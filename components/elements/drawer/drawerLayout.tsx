@@ -21,10 +21,8 @@ export default function DrawerLayout () {
         <>  
         <div>
             <a href="/" className='flex justify-center items-center px-2'>
-            <p className="text-xs md:text-sm lg:text-base p-1 font-bold border-t-2 border-l-2 border-b-2 border-black">株式会社</p>
-                <p className='text-xs md:text-sm lg:text-base text-green-700 p-1 font-bold border-2 border-green-700'>
-                    エムパッケージ
-                </p>
+                <p className="text-xxs md:text-xs lg:text-sm p-1 font-bold border-t-2 border-l-2 border-b-2 border-black">段ボールの</p>
+                <p className='text-xxs md:text-xs lg:text-sm text-green-700 p-1 font-bold border-2 border-green-700'>エムパッケージ</p>
             </a>
         </div>
 

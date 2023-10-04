@@ -103,22 +103,22 @@ export default function DrawerContents (props) {
                             flex flex-col justify-center gap-2
                             "
                             >
-                              <div className="text-sm md:text-base text-white font-semibold text-center">
+                              <div className="text-xs md:text-sm text-white font-semibold text-center">
                                   <p>お気軽にご相談ください。</p>
                               </div>
 
                               {/* 電話お問い合わせ */}
                               <div className="text-center text-white">
-                                  <p className="text-xs md:text-sm">お急ぎの方は、電話でお問い合わせ</p>
-                                  <p className="text-base md:text-xl font-semibold">048-287-8055</p>
-                                  <p className="text-xs md:text-sm">平日 9:00 ~ 17:30</p>
+                                  <p className="text-xxs md:text-xs">お急ぎの方は、電話でお問い合わせ</p>
+                                  <p className="text-sm md:text-base font-semibold">048-287-8055</p>
+                                  <p className="text-xxs md:text-xs">平日 9:00 ~ 17:30</p>
                               </div>
                           </div>
 
                           <div className='w-full flex justify-center items-center py-3'>
                             <Link href="/contact" onClick={onClose} className="bg-green-600 border border-green-600 rounded-full shadow-md">
                               <div className="flex justify-center items-center">
-                                  <p className="px-10 py-3 text-white text-sm md:text-base font-semibold">お問い合わせ</p>
+                                  <p className="px-6 py-2 text-white text-xs md:text-sm font-semibold">お問い合わせ</p>
                                   <HiMail className="border-white rounded-full p-1 md:p-0.5 m-1 md:m-2 bg-white text-xxxl"/>
                               </div>
                             </Link>

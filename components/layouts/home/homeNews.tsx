@@ -5,14 +5,18 @@ export default function HomeNews () {
         <div
         className="
         h-[1000px]
-        bg-gray-800
+        bg-[#2c3e50]
         flex justify-center items-center
         "
         >
-            <FadeInBack>
-            <p>ニュース</p>
-            <p>News</p>
-            </FadeInBack>
+            <div className="
+            
+            ">
+                <FadeInBack>
+                <p>ニュース</p>
+                <p>News</p>
+                </FadeInBack>
+            </div>
         </div>
     )
 }
