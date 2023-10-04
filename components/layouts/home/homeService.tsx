@@ -8,21 +8,27 @@ export default function HomeService () {
         <>
             <div 
             className='
+            relative
             w-full h-full mx-auto py-16 lg:py-24
             flex justify-center items-center
             '
             >
+                <p className="text-slate-600/10 top-0 text-[4rem] md:text-[9rem] lg:text-[10rem] absolute z-[-5]">we work it</p>
                 <div
                 className="
                 w-11/12 h-auto
-                flex flex-col justify-center items-center gap-6 md:gap-10
+                flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-28
+
+                
                 "
                 >
                     <FadeInBack>
-                    <div className="mx-auto w-full lg:w-10/12 p-2 md:p-4 text-center border-4 border-green-700">
-                        <p className="[font-size:_clamp(1.5rem,3vw,2.5rem)] font-bold text-green-700">エムパッケージの仕事</p>
-                        <p className="[font-size:_clamp(1rem,3vw,1.1rem)] font-semibold text-green-700">まごころを込めて、守ります。</p>
-                    </div>
+                        <div className="mx-auto w-full lg:w-10/12">
+                            <div className="p-2 md:p-4 border-[0.2rem] border-green-700">
+                                <p className="[font-size:_clamp(1.5rem,3vw,2.5rem)] text-center font-bold text-green-700">エムパッケージの仕事</p>
+                            </div>
+                            <p className="text-base md:text-lg lg:text-xxl font-bold p-2 md:p-4">「まごころを込めて、守ります。」</p>
+                        </div>
                     </FadeInBack>
                 
                     <FadeInBack>
@@ -30,20 +36,29 @@ export default function HomeService () {
                     className="
                     w-full lg:w-10/12 mx-auto pl-2 md:pl-4
                     font-semibold
-                    border-l-4 border-green-700
+                    border-l-[0.2rem] border-green-700
+                    flex flex-col gap-3
+                    text-sm md:text-base lg:text-lg
                     ">
-                        <p className="[font-size:_clamp(0.8rem,2vw,1.5rem)]">
-                            先代から引き継いだ技術と3代目のパッションで段ボール業界に革命を起こします。
-                        </p>
-                        <p className="[font-size:_clamp(0.8rem,2vw,1.5rem)]">食品・精密機械や紙など守る者として日々奮闘して参りました。</p>
-                        <p className="[font-size:_clamp(0.8rem,2vw,1.5rem)]">これからも皆様の大事なものを守る者として、段ボールの可能性に挑戦していきます。</p>
+                        <p>株式会社エムパッケージでは、<span className="text-sky-600">ダンボールの設計・企画から製造、納品までを一貫して</span>行なっております。</p>
+                        <p>先代から引き継いだ技術で<span className="text-sky-600">質の高い段ボールとサービス</span>を提供することをお約束します。</p>
+                        <p>オリジナルアイテムや梱包品に合わせたサイズの作成など、<span className="text-sky-600">応えられないご要望はございません。</span></p>
+                        <p>まずはお気軽にお問い合わせください。</p>
                     </div>
                     </FadeInBack>
                         
                 
                     
                     <div className="w-full h-full flex flex-col items-center">
-                        <div className="w-full lg:w-10/12 h-full flex flex-col md:flex-row justify-center items-center gap-5 text-md">
+                        <div className="
+                        w-full lg:w-10/12 h-full flex flex-col md:flex-row justify-center items-center gap-5 text-md
+
+                        before:absolute 
+                        before:bottom-[10rem] before:left-0
+                        before:w-10/12 before:md:w-9/12
+                        before:h-[30rem] before:md:h-[20rem]  before:lg:h-[30rem] 
+                        before:bg-green-600/20 before:z-[-10] before:rounded-br-lg before:md:rounded-r-lg 
+                        ">
                             
                             {/* 事業内容 */}
                             <FadeInBack>
@@ -69,14 +84,14 @@ export default function HomeService () {
                                     <div 
                                     className="
                                     bg-white lg:group-hover:bg-green-600 transition duration-500
-                                    w-full md:w-3/6 h-[6rem]  
+                                    w-full md:w-3/6 h-[4rem]  
                                     lg:group-hover:text-white
                                     border lg:group-hover:border-green-600 rounded-full
                                     flex justify-center items-center gap-5
                                     font-semibold
                                     ">
+                                        <p className="text-sm">詳しく見る</p>
                                         <HiChevronDoubleRight/>
-                                        <p>詳しく見る</p>
                                     </div>
                                 </div>
                                 </Link>
@@ -107,14 +122,14 @@ export default function HomeService () {
                                     <div 
                                     className="
                                     bg-white lg:group-hover:bg-green-600 transition duration-500
-                                    w-full md:w-3/6 h-[6rem] 
+                                    w-full md:w-3/6 h-[4rem] 
                                     lg:group-hover:text-white
                                     border lg:group-hover:border-green-600 rounded-full
                                     flex justify-center items-center gap-5
                                     font-semibold
                                     ">
+                                        <p className="text-sm">詳しく見る</p>
                                         <HiChevronDoubleRight/>
-                                        <p>詳しく見る</p>
                                     </div>
                                 </div>
                                 </Link>
