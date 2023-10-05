@@ -11,18 +11,13 @@ export default function HomeService () {
             className='
             relative
             w-full h-full mx-auto py-16 lg:py-24
-            flex justify-center items-center
+            flex flex-col justify-center items-center gap-5 md:gap-8
             '
             >
                 <p className="absolute z-[-1] md:[writing-mode:vertical-lr] text-slate-400/20 top-0 left-0 text-[4rem] md:text-[8rem] lg:text-[10rem]">We work it</p>
-                <div
-                className="
-                w-11/12 h-auto
-                flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-20
-                "
-                >
-                    <SlideInLeft>
-                        
+
+                <div className="w-11/12 h-auto">
+                    <SlideInLeft> 
                         <div className="mx-auto w-full lg:w-10/12">
                             <div className="p-2 md:p-4 border-[0.2rem] border-green-700">
                                 <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-green-700">エムパッケージの仕事</p>
@@ -35,7 +30,14 @@ export default function HomeService () {
                             <p className="text-base md:text-lg lg:text-xxl font-bold p-2 md:p-4">「まごころを込めて、守ります。」</p>
                         </div>
                     </FadeInBack>
+                </div>
 
+                <div
+                className="
+                w-11/12 md:w-10/12 h-auto
+                flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-20
+                "
+                >
                     <FadeInBack>
                     <div 
                     className="
@@ -56,7 +58,7 @@ export default function HomeService () {
                     
                     <div className="w-full h-full flex flex-col items-center">
                         <div className="
-                        w-full lg:w-10/12 h-full flex flex-col md:flex-row justify-center items-center gap-5 text-md
+                        w-full lg:w-10/12 h-full flex flex-col md:flex-row justify-center items-center gap-5 lg:gap-14 text-md
 
                         before:absolute 
                         before:bottom-0 before:right-0
