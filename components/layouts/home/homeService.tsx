@@ -1,4 +1,5 @@
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
+import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
 import Link from "next/link";
 import { HiChevronDoubleRight, HiChevronRight, HiLogout } from "react-icons/hi";
 
@@ -13,30 +14,36 @@ export default function HomeService () {
             flex justify-center items-center
             '
             >
-                <p className=" absolute z-[-5] text-slate-400/10 top-0 text-[4rem] md:text-[9rem] lg:text-[10rem]">we work it</p>
+                <p className="absolute z-[-1] md:[writing-mode:vertical-lr] text-slate-400/20 top-0 left-0 text-[4rem] md:text-[8rem] lg:text-[10rem]">We work it</p>
                 <div
                 className="
                 w-11/12 h-auto
-                flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-28
+                flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-20
                 "
                 >
-                    <FadeInBack>
+                    <SlideInLeft>
+                        
                         <div className="mx-auto w-full lg:w-10/12">
                             <div className="p-2 md:p-4 border-[0.2rem] border-green-700">
                                 <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-green-700">エムパッケージの仕事</p>
                             </div>
+                        </div>
+                    </SlideInLeft>
+
+                    <FadeInBack>
+                        <div className="mx-auto w-full lg:w-10/12">
                             <p className="text-base md:text-lg lg:text-xxl font-bold p-2 md:p-4">「まごころを込めて、守ります。」</p>
                         </div>
                     </FadeInBack>
-                
+
                     <FadeInBack>
                     <div 
                     className="
                     w-full lg:w-10/12 mx-auto pl-2 md:pl-4
                     font-semibold
-                    border-l-[0.2rem] border-green-700
+                    border-l-[0.2rem] border-slate-600
                     flex flex-col gap-3
-                    text-sm md:text-base lg:text-lg
+                    text-xs md:text-sm lg:text-base
                     ">
                         <p>株式会社エムパッケージでは、<span className="text-sky-600">ダンボールの設計・企画から製造、納品までを一貫して</span>行なっております。</p>
                         <p>先代から引き継いだ技術で<span className="text-sky-600">質の高い段ボールとサービス</span>を提供することをお約束します。</p>
@@ -52,10 +59,10 @@ export default function HomeService () {
                         w-full lg:w-10/12 h-full flex flex-col md:flex-row justify-center items-center gap-5 text-md
 
                         before:absolute 
-                        before:bottom-0 before:left-0
+                        before:bottom-0 before:right-0
                         before:w-10/12 before:md:w-9/12
                         before:h-[40rem] before:md:h-[30rem]  before:lg:h-[40rem] 
-                        before:bg-slate-400/20 before:z-[-10] before:rounded-br-lg before:md:rounded-r-lg 
+                        before:bg-slate-400/20 before:z-[-10] before:rounded-bl-lg before:md:rounded-l-lg 
                         ">
                             
                             {/* 事業内容 */}
