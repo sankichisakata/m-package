@@ -10,7 +10,7 @@ export default function HomeCompany () {
             className='
             relative 
             w-full h-full mx-auto py-16 lg:py-24
-            flex justify-center items-center
+            flex flex-col justify-center items-center gap-5 md:gap-8
             
             before:absolute 
             before:bottom-0 before:left-0
@@ -20,14 +20,9 @@ export default function HomeCompany () {
             '
             >
                 <p className="absolute z-[-5] md:mt-[-3rem] md:[writing-mode:vertical-lr] text-slate-400/20 top-0 right-0 text-[4rem] md:text-[9rem] lg:text-[10rem]">Overview</p>
-                <div
-                className="
-                w-11/12 h-auto
-                flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-20
-                "
-                >
-                    
-                    <SlideInRight>
+
+                <div className="w-11/12 h-auto">
+                <SlideInRight>
                         <div className="mx-auto w-full lg:w-10/12">
                             <div className="p-2 md:p-4 border-[0.2rem] border-green-700">
                                 <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-green-700">株式会社エムパッケージについて</p>
@@ -37,15 +32,18 @@ export default function HomeCompany () {
 
                     <FadeInBack>
                         <div className="mx-auto w-full lg:w-10/12">
-                        <p className="text-base md:text-lg lg:text-xxl font-bold">「いつも、身近に、皆様と共に。」</p>
+                            <p className="text-base md:text-lg lg:text-xxl font-bold p-2 md:p-4">「いつも、身近に、皆様と共に。」</p>
                         </div>
                     </FadeInBack>
-                
-                    
+                </div>
 
-
-                
-                    <div className="w-full lg:w-10/12 flex flex-col md:flex-row justify-center items-center gap-6 md:gap-0">
+                <div
+                className="
+                w-11/12 md:w-10/12 h-auto
+                flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-20
+                "
+                >
+                    <div className="w-full lg:w-10/12 flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-14">
 
                     
                     
