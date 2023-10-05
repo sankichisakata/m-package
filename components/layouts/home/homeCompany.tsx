@@ -8,7 +8,7 @@ export default function HomeCompany () {
         <>
             <div 
             className='
-            relative 
+            relative overflow-hidden
             w-full h-full mx-auto py-16 lg:py-24
             flex flex-col justify-center items-center gap-5 md:gap-8
             
