@@ -14,7 +14,7 @@ export default function HomeNews () {
             before:absolute 
             before:top-0 before:right-0
             before:w-full 
-            before:h-[0.5rem] 
+            before:h-[0.1rem] 
             before:bg-white "></div>
             <div 
             className="
