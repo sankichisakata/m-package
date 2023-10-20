@@ -7,6 +7,7 @@ import { Providers } from './providers';
 import React from "react"
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import BreadCrumb from '@/components/elements/breadCrumb/breadCrumb';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <Header/>
+        <BreadCrumb/>
         <main>
           <Providers>
           {children}
