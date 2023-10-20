@@ -6,12 +6,12 @@ const Header = () => {
   return (
       <nav className="
       fixed top-0 left-0 z-10
-      w-full lg:pt-5
+      w-full lg:pt-5 
       flex justify-center items-center
       "
       >
         <div className='
-        w-full lg:w-11/12 py-1 md:py-2 md:px-4 bg-white
+        w-full lg:w-11/12 h-16 md:h-20  py-1 px-1 md:py-2 md:px-4 bg-white
         flex justify-center items-center
         border border-white shadow-md lg:rounded-lg
         '>

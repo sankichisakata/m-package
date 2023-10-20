@@ -1,6 +1,6 @@
 'use client'
 
-import React, { FC, useRef, useState } from "react"
+import React from "react"
 import Link from "next/link"
 import { HiChevronRight, HiMail, HiOutlineMenu, HiOutlineX} from "react-icons/hi";
 import {
@@ -58,7 +58,7 @@ export default function DrawerContents (props) {
           
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
           <HeaderFadeInBack>
-              <div className="block w-11/12 lg:w-4/6 mx-auto mt-16 text-left">
+              <div className="block w-11/12 lg:w-4/6 mx-auto mt-20 md:mt-24 text-left">
                   <p className='text-xxs md:txet-xxs text-white font-semibold '>(株)エムパッケージは、お客様第一営業を掲げております。</p>
               </div>
             </HeaderFadeInBack>
@@ -72,7 +72,7 @@ export default function DrawerContents (props) {
   
                 <DrawerBody className="
                 bg-white
-                mt-24 mb-5
+                mt-24 md:mt-28 mb-5
                 w-11/12 mx-auto 
                 shadow-2xl rounded-md
                 "
