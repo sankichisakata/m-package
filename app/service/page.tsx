@@ -1,7 +1,5 @@
 "use client";
 
-import { FadeInBack } from "@/components/elements/observer/fadeInBack";
-
 export default function Service () {
     return(
         <>
@@ -10,25 +8,7 @@ export default function Service () {
         mx-auto relative
         flex flex-col justify-center items-center
         ">
-
-            <div className="w-full flex flex-col justify-center items-center">
-                <p className="
-                    absolute
-                    text-slate-400/10 text-[3rem] md:text-[4rem] lg:text-[5rem]">
-                    Our Service
-                </p>
-            </div>
-
-            <FadeInBack>
-            <div className="
-            w-full h-[4rem] md:h-[5rem] lg:h-[6rem]
-            flex flex-col justify-center items-center
-            ">
-                <p className="text-[2rem] md:text-[2.5rem] lg:text-[3rem]">事業内容</p>
-                
-            </div>
-            </FadeInBack>
-            
+          
             <div 
             className="
             w-full h-[16rem] md:h-[24rem] lg:h-[36rem]
