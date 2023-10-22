@@ -23,13 +23,14 @@ export default function BreadCrumb () {
     return(
         <SlideInLeft>
         <nav className="
-        w-full lg:w-11/12
-        mx-auto mt-20 md:mt-24 lg:mt-36
-        px-4 md:px-8 py-4
+        w-11/12
+        mx-auto mt-24 md:mt-28 lg:mt-36
         ">
-            <ul className="flex text-xs md:text-sm lg:text-lg">
+            <ul className="
+            flex text-xxs md:text-xs lg:text-sm
+            ">
                 <li>
-                <Link href="/">ホーム</Link>
+                    <Link href="/">ホーム</Link>
                 </li>
                 <span className="mx-2 md:mx-3 lg:mx-4">|</span>
                 {navigation.map(({ href, name, id }) => (
