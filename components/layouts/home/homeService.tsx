@@ -19,8 +19,8 @@ export default function HomeService () {
                 <div className="w-11/12 h-auto">
                     <SlideInLeft> 
                         <div className="mx-auto w-full lg:w-10/12">
-                            <div className="p-2 md:p-4 border-[0.2rem] border-green-700">
-                                <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-green-700">エムパッケージの仕事</p>
+                            <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
+                                <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">エムパッケージの仕事</p>
                             </div>
                         </div>
                     </SlideInLeft>

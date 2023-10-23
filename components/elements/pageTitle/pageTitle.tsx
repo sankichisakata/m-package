@@ -48,7 +48,7 @@ export default function PageTitle () {
                                 `
                             }>
                                 <span className="
-                                    text-slate-400/10
+                                    text-slate-400/10 font-semibold
                                     text-[3rem] md:text-[4rem] lg:text-[5rem]
                                     ">
                                     {subName}
@@ -63,6 +63,7 @@ export default function PageTitle () {
                                 `
                             }>
                                 <span className="
+                                font-bold
                                 text-[2rem] md:text-[2.5rem] lg:text-[3rem]
                                 ">
                                     {name}
@@ -70,7 +71,7 @@ export default function PageTitle () {
                             </p>
                     </li>
                     ))}
-                    <div className="w-11/12 lg:w-10/12 flex items-center mx-auto">
+                    <div className="w-11/12 lg:w-10/12 pt-3 flex items-center mx-auto">
                         <div className="flex-1 border-b-2 border-slate-500"></div>  
                     </div>
                 </ul>  

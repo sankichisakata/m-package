@@ -10,7 +10,7 @@ export default function FooterHeader () {
             <div className="mx-auto w-11/12 md:w-8/12 lg:w-9/12">
                 <div className='
                 w-full
-                py-5
+                pt-5
                 flex flex-col justify-start
                 text-slate-600
                 '
@@ -31,7 +31,7 @@ export default function FooterHeader () {
                         <p >川口元郷駅2番出口より徒歩13分</p>
                     </div> */}
                 </div>
-                <div className="w-full flex items-center mx-auto">
+                <div className="w-full pt-3 flex items-center mx-auto">
                     <div className="flex-1 border-b-2 border-slate-500"></div>  
                 </div>
                 </div>

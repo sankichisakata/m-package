@@ -17,16 +17,19 @@ export default function Service () {
             py-5 
             flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-10 lg:gap-20
             ">
-                <FadeInBack>
-                <div 
-                className="
-                w-full lg:w-4/12 h-[16rem] md:h-[20rem] lg:h-auto aspect-[4/6]
-                bg-factory01 bg-center bg-cover
-                rounded-md shadow-lg
-                flex justify-center items-center
-                ">
+                <div className=" w-full lg:w-4/12 h-[16rem] md:h-[20rem] lg:h-auto">
+                    <FadeInBack>
+                    <div 
+                    className="
+                    w-full h-[16rem] md:h-[20rem] lg:h-auto
+                    aspect-[4/6]
+                    bg-factory01 bg-center bg-cover
+                    rounded-md shadow-lg
+                    flex justify-center items-center
+                    ">
+                    </div>
+                    </FadeInBack>
                 </div>
-                </FadeInBack>
 
                 <div
                 className="
@@ -36,15 +39,14 @@ export default function Service () {
                     <FadeInBack>
                     <p className="
                     text-[1.3rem] md:text-[1.8rem] lg:text-[2rem]
-                    text-bold
+                    font-bold
                     ">
                         「まごころを込めて、守ります。」
                     </p>
                     </FadeInBack>
 
                     <div className="
-                    text-sm md:text-base lg:text-lg
-                    text-medium
+                    text-xs md:text-sm lg:text-base font-semibold
                     flex flex-col justify-center gap-2
                     ">
                         <SlideInLeft>
@@ -71,7 +73,7 @@ export default function Service () {
 
             </div>
 
-            <div className="bg-green-500 h-screen w-full flex justify-center items-center">
+            <div className="h-screen w-full flex justify-center items-center">
                 <h2 className="text-2xl">事業内容</h2>
             </div>
 
