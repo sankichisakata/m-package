@@ -19,6 +19,11 @@ const config: Config = {
       xxxl: ['1.5rem', '2rem'],
     },
     extend: {
+      colors: {
+        "primary-color" : "",
+        "sub-color" : "#17a658",
+        
+      },
       height: {
         'safari-screen' : '100dvh'
       },

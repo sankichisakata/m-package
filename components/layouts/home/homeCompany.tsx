@@ -24,8 +24,8 @@ export default function HomeCompany () {
                 <div className="w-11/12 h-auto">
                 <SlideInRight>
                         <div className="mx-auto w-full lg:w-10/12">
-                            <div className="p-2 md:p-4 border-[0.2rem] border-green-700">
-                                <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-green-700">株式会社エムパッケージについて</p>
+                            <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
+                                <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">株式会社エムパッケージについて</p>
                             </div>
                         </div>
                     </SlideInRight>

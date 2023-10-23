@@ -27,7 +27,8 @@ export default function BreadCrumb () {
         mx-auto mt-24 md:mt-28 lg:mt-36
         ">
             <ul className="
-            flex text-xxs md:text-xs lg:text-sm
+            flex 
+            text-xxs md:text-xs lg:text-sm font-semibold
             ">
                 <li>
                     <Link href="/">ホーム</Link>
