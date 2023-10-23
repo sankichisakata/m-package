@@ -14,7 +14,7 @@ export default function HomeNews () {
             before:absolute 
             before:top-0 before:right-0
             before:w-full 
-            before:h-[0.1rem] 
+            before:h-[0.2rem] 
             before:bg-white "></div>
             <div 
             className="
@@ -27,7 +27,7 @@ export default function HomeNews () {
                                 <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">ニュース</p>
                             </div>
                         </div>
-                    </FadeInBack>
+                </FadeInBack>
                         
             </div>
         </div>

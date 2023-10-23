@@ -70,6 +70,9 @@ export default function PageTitle () {
                             </p>
                     </li>
                     ))}
+                    <div className="w-11/12 lg:w-10/12 flex items-center mx-auto">
+                        <div className="flex-1 border-b-2 border-slate-500"></div>  
+                    </div>
                 </ul>  
             </div>
             </FadeInBack>

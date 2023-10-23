@@ -8,7 +8,6 @@ import HomeService from '@/components/layouts/home/homeService'
 export default function Home() {
   return (
     <>
-    
       <HomeHero/>
       <HomeNews/>
       <HomeService/>
