@@ -45,7 +45,7 @@ export default function ServiceTimeline () {
                         </div>
                         <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
                             <h3 className="mb-3 font-bold text-gray-800 text-xl">ご相談</h3>
-                            <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p className="text-sm text-gray-900 text-opacity-100">長年段ボールに携わった経験と知識で最適なご提案を致します。</p>
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@ export default function ServiceTimeline () {
                         </div>
                         <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
                             <h3 className="mb-3 font-bold text-white text-xl">お見積もり</h3>
-                            <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p className="text-sm font-medium text-white text-opacity-100">午前中にいただいたお問い合わせは即日ご連絡致します。</p>
                         </div>
                     </div>
                     
@@ -85,7 +85,7 @@ export default function ServiceTimeline () {
                             rounded-lg shadow-xl">
                                 <div className="w-full p-5">
                                     <h3 className="mb-3 font-bold text-gray-800 text-xl">お見本作成</h3>
-                                    <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p className="text-sm text-gray-900 text-opacity-100">お客様のニーズをカタチにします。</p>
                                 </div>
                             </div>
 
@@ -109,7 +109,7 @@ export default function ServiceTimeline () {
                         </div>
                         <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
                             <h3 className="mb-3 font-bold text-white text-xl">企画提案</h3>
-                            <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p className="text-sm font-medium text-white text-opacity-100">微調整をし、製造へ移っていきます。</p>
                         </div>
                     </div>
                 </div>
