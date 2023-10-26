@@ -20,7 +20,7 @@ const config: Config = {
     },
     extend: {
       colors: {
-        "primary-color" : "",
+        "primary-color" : "#475569",
         "sub-color" : "#17a658",
         
       },

@@ -64,7 +64,7 @@ export default function DrawerLayout () {
         <div className="transition-all duration-500 ease-out" style={{ display: !isOpen ? "block" : "none" }}>
             <ContactButton />
         </div>
-        <div className='lg:hidden'>
+        <div className="lg:hidden">
             <DrawerContents isOpenChange={isOpenChange} />
         </div>
     </>
