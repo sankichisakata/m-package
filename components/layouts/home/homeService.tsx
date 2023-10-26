@@ -47,9 +47,9 @@ export default function HomeService () {
                     flex flex-col gap-3
                     text-xs md:text-sm lg:text-base
                     ">
-                        <p>株式会社エムパッケージでは、<span className="text-sky-600">ダンボールの設計・企画から製造、納品までを一貫して</span>行なっております。</p>
-                        <p>先代から引き継いだ技術で<span className="text-sky-600">質の高い段ボールとサービス</span>を提供することをお約束します。</p>
-                        <p>オリジナルアイテムや梱包品に合わせたサイズの作成など、<span className="text-sky-600">応えられないご要望はございません。</span></p>
+                        <p>株式会社エムパッケージでは、<span className="text-vivid-color">ダンボールの設計・企画から製造、納品までを一貫して</span>行なっております。</p>
+                        <p>先代から引き継いだ技術で<span className="text-vivid-color">質の高い段ボールとサービス</span>を提供することをお約束します。</p>
+                        <p>オリジナルアイテムや梱包品に合わせたサイズの作成など、<span className="text-vivid-color">応えられないご要望はございません。</span></p>
                         <p>まずはお気軽にお問い合わせください。</p>
                     </div>
                     </FadeInBack>

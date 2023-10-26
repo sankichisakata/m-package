@@ -11,7 +11,7 @@ export default function FooterMain () {
         >
 
                 <nav className='
-                w-fullmx-auto
+                w-full mx-auto
                 flex flex-col justify-center items-center
                 '
                 >
