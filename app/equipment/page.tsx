@@ -1,11 +1,13 @@
+import BorderPrimaryFull from "@/components/elements/border/borderPrimaryFull";
+import EquipmentList from "@/components/layouts/equipment/equipmentList";
+import EquipmentMain from "@/components/layouts/equipment/equipmentMain";
 
 export default function Equipment () {
     return(
         <>
-            <div className="bg-blue-300 h-screen w-fill flex justify-center items-center">
-            <h2 className="text-2xl">設備</h2>
-            </div>
-            
+            <EquipmentMain/>
+            <BorderPrimaryFull/>
+            <EquipmentList/>           
         </>
     )
 }
