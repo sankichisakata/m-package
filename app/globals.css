@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /* text-slate-600	color: rgb(71 85 105); */
+/* ↑　primaryColorと同じ */
 
 :root {
   --foreground-rgb: 71, 85, 105;

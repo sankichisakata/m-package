@@ -66,9 +66,8 @@ export default function DrawerContents (props) {
             <DrawerContent 
             className="
             w-full h-full h-safari-screen mx-auto
-            flex flex-col gap-5" 
-            
-            >
+            flex flex-col gap-5
+            ">
   
                 <DrawerBody className="
                 bg-white

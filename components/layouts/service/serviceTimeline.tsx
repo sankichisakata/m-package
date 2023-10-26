@@ -7,40 +7,40 @@ export default function ServiceTimeline () {
         <>
             <div className="
             w-full h-full
+            py-14 md:py-20
             flex flex-col justify-center items-center
             ">
 
                 <div className="
-
-                w-full h-full
-                py-10
+                w-11/12 lg:w-10/12 h-auto p-2 md:p-4
                 flex flex-col justify-center items-center
-                font-bold
-                text-[2rem] md:text-[2.5rem] lg:text-[3rem]
+                border-[0.2rem] border-primary-color
+                text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] font-bold
                 ">
                     <p>業務工程</p>
                 </div>
 
                 <div className="
-                bg-gray-100 relative
+                    z-10 bg-white top-0
+                    w-11/12 lg:w-10/12 max-w-5xl h-[10rem] p-3 my-10 md:my-14 lg:my-20
+                    rounded-md shadow-lg
+                    flex flex-col justify-center items-center gap-3 md:gap-5
+                    text-xs md:text-sm lg:text-base font-semibold
+                    ">
+                        <p>弊社では1人の営業がすべての工程を管理する「ノンステップ管理」をしております。</p>
+                        <p>ノンステップ管理するからできる迅速かつ正確な情報伝達。</p>
+                        <p>必要な情報を迅速にお伝えし、最短でお客様の問題を解決致します。</p>
+                    </div>
+
+                <div className="
+                z-0 relative
                 w-11/12 lg:w-10/12 max-w-5xl h-full
-                md:p-5 lg:p-10
+                md:p-10 lg:p-14
                 flex flex-col justify-center items-center gap-10
                 overflow-hidden
-                rounded-lg
+                border border-2 border-gray-500 rounded-lg
                 text-xs md:text-sm lg:text-base font-semibold
                 ">
-
-
-                    <div className="
-                    z-[1] bg-white top-0
-                    w-10/12 h-[10rem] p-5  m-10
-                    rounded-md shadow-lg
-                    flex flex-col justify-center items-center gap-5
-                    ">
-                        <p>全工程を一元管理。</p>
-                        <p>お客様へ届くまでを逐一報告し、納品まで迅速に行います。</p>
-                    </div>
 
                     {/* ボーダー */}
                     <div className="                    
@@ -51,7 +51,7 @@ export default function ServiceTimeline () {
 
 
                     {/* <!-- rightTimeline ① --> */}
-                    <div className="w-full mb-8 flex justify-center items-center">
+                    <div className="w-full mt-16 mb-8 flex justify-center items-center">
 
                         <div className="hidden md:block w-5/12 order-1 md:flex-2">
                         <SlideInLeft>
@@ -147,7 +147,8 @@ export default function ServiceTimeline () {
                         ">
                             <SlideInLeft>
                             <div className="
-                            bg-white
+                            bg-primary-color 
+                            text-white
                             rounded-lg shadow-xl">
                                 <div className="
                                 w-full p-3 md:p-5
@@ -262,7 +263,8 @@ export default function ServiceTimeline () {
                         ">
                             <SlideInLeft>
                             <div className="
-                            bg-white
+                            bg-primary-color 
+                            text-white
                             rounded-lg shadow-xl">
                                 <div className="
                                 w-full p-3 md:p-5
@@ -379,7 +381,8 @@ export default function ServiceTimeline () {
                         ">
                             <SlideInLeft>
                             <div className="
-                            bg-white
+                            bg-primary-color 
+                            text-white
                             rounded-lg shadow-xl">
                                 <div className="
                                 w-full p-3 md:p-5
@@ -496,7 +499,8 @@ export default function ServiceTimeline () {
                         ">
                             <SlideInLeft>
                             <div className="
-                            bg-white
+                            bg-primary-color 
+                            text-white
                             rounded-lg shadow-xl">
                                 <div className="
                                 w-full p-3 md:p-5
@@ -514,22 +518,6 @@ export default function ServiceTimeline () {
                             </SlideInLeft>
                         </div>
                     </div>
-
-
-                    
-
-
-
-                    <div className="
-                    z-[1] bg-white top-0
-                    w-10/12 h-[10rem] p-5  m-10
-                    rounded-md shadow-lg
-                    flex flex-col justify-center items-center gap-5
-                    ">
-                        <p>1人の営業がすべての工程を管理「ノンステップ管理」するからこそできる迅速かつ正確な情報伝達。</p>
-                        <p>必要な情報を迅速にお伝えし、最短でお客様の問題を解決致します。</p>
-                    </div>
-
                 </div>
             </div>
         </>
