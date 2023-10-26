@@ -1,11 +1,13 @@
-"use client";
+
 
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
 import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
 
-export default function ServiceMain () {
+
+export default function EquipmentMain () {
     return(
-        <div className="
+        <>
+            <div className="
         w-full h-full
         mx-auto relative
         flex flex-col justify-center items-center
@@ -72,5 +74,7 @@ export default function ServiceMain () {
                 </div>
             </div>
         </div>
+        </>
     )
+
 }

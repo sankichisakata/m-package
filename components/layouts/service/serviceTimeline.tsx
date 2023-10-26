@@ -6,34 +6,39 @@ export default function ServiceTimeline () {
     return(
         <>
             <div className="
+            bg-gray-100
             w-full h-full
             py-14 md:py-20
             flex flex-col justify-center items-center
             ">
-
+                <FadeInBack>
                 <div className="
-                w-11/12 lg:w-10/12 h-auto p-2 md:p-4
+                bg-white
+                w-11/12 lg:w-10/12 h-auto p-2 md:p-4 mx-auto
                 flex flex-col justify-center items-center
                 border-[0.2rem] border-primary-color
                 text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] font-bold
                 ">
                     <p>業務工程</p>
                 </div>
+                </FadeInBack>
 
+                <FadeInBack>
                 <div className="
                     z-10 bg-white top-0
-                    w-11/12 lg:w-10/12 max-w-5xl h-[10rem] p-3 my-10 md:my-14 lg:my-20
+                    w-11/12 lg:w-10/12 max-w-5xl h-[10rem] p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
                     rounded-md shadow-lg
                     flex flex-col justify-center items-center gap-3 md:gap-5
                     text-xs md:text-sm lg:text-base font-semibold
                     ">
-                        <p>弊社では1人の営業がすべての工程を管理する「ノンステップ管理」をしております。</p>
-                        <p>ノンステップ管理するからできる迅速かつ正確な情報伝達。</p>
-                        <p>必要な情報を迅速にお伝えし、最短でお客様の問題を解決致します。</p>
-                    </div>
+                    <p>弊社では1人の営業がすべての工程を管理する「ノンステップ管理」をしております。</p>
+                    <p>ノンステップ管理するからできる迅速かつ正確な情報伝達。</p>
+                    <p>必要な情報を迅速にお伝えし、最短でお客様の問題を解決致します。</p>
+                </div>
+                </FadeInBack>
 
                 <div className="
-                z-0 relative
+                z-0 relative bg-white
                 w-11/12 lg:w-10/12 max-w-5xl h-full
                 md:p-10 lg:p-14
                 flex flex-col justify-center items-center gap-10

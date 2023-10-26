@@ -72,7 +72,7 @@ export default function PageTitle () {
                     </li>
                     ))}
                     <div className="w-11/12 lg:w-10/12 pt-3 flex items-center mx-auto">
-                        <div className="flex-1 border-b-2 border-slate-500"></div>  
+                        <div className="flex-1 border-b-[0.2rem] border-slate-500"></div>  
                     </div>
                 </ul>  
             </div>
