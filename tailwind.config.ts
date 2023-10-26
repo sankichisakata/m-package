@@ -22,7 +22,7 @@ const config: Config = {
       colors: {
         "primary-color" : "#475569",
         "sub-color" : "#17a658",
-        
+        "vivid-color" :"#0284c7"        
       },
       height: {
         'safari-screen' : '100dvh'

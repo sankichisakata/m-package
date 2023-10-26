@@ -10,7 +10,7 @@ export default function FooterContact () {
         
         <div 
         className='
-        bg-slate-600 w-full mx-auto py-5
+        w-full mx-auto py-5
         '
         >
             <SlideInLeft>
@@ -19,7 +19,8 @@ export default function FooterContact () {
             className="
             w-11/12 md:w-7/12 lg:w-9/12 mx-auto lg:p-5
             flex justify-center-items-center
-            shadow-md rounded-md
+            border-2 border-primary-color
+            shadow-lg rounded-md
             group transition-all duration-500
             bg-white hover:bg-slate-300
             "
@@ -44,7 +45,9 @@ export default function FooterContact () {
                 </div>
 
                 <div className="
-                w-full lg:w-1/2 px-5 py-6 lg:py-10 text-slate-600
+                w-full lg:w-1/2 px-5 py-6 lg:py-10 
+                text-slate-600
+                rounded-md
                 flex flex-col justify-center gap-5 lg:gap-8
                 "
                 >

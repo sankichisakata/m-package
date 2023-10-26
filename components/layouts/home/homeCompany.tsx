@@ -58,7 +58,7 @@ export default function HomeCompany () {
                         <div className="flex flex-col justify-center gap-3">
                             <p>先代から引き継いだ技術と3代目のパッションで段ボール業界に革命を起こします。</p>
                             <p>食品・精密機械や紙など守る者として日々奮闘して参りました。</p>
-                            <p>これからも皆様の大事なものを守る者として、段ボールへ<span className="text-sky-600">真摯に向き合って参ります。</span></p>
+                            <p>これからも皆様の大事なものを守る者として、段ボールへ<span className="text-vivid-color">真摯に向き合って参ります。</span></p>
                         </div>
                         </FadeInBack>
                     </div>

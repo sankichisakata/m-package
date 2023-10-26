@@ -13,13 +13,12 @@ export default function ServiceTimeline () {
             ">
                 <FadeInBack>
                 <div className="
-                bg-white
                 w-11/12 lg:w-10/12 h-auto p-2 md:p-4 mx-auto
                 flex flex-col justify-center items-center
-                border-[0.2rem] border-primary-color
-                text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] font-bold
+                border-b-[0.2rem] border-primary-color
+                text-primary-color text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] font-bold
                 ">
-                    <p>業務工程</p>
+                    <p>お届けまでの流れ</p>
                 </div>
                 </FadeInBack>
 
@@ -28,11 +27,16 @@ export default function ServiceTimeline () {
                     z-10 bg-white top-0
                     w-11/12 lg:w-10/12 max-w-5xl h-[10rem] p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
                     rounded-md shadow-lg
-                    flex flex-col justify-center items-center gap-3 md:gap-5
+                    flex flex-col justify-center items-center
                     text-xs md:text-sm lg:text-base font-semibold
                     ">
+                    <p className="
+                    pb-5 md:ob-0
+                    text-base md:text-lg lg:text-xl font-bold
+                    ">
+                    <span className="text-vivid-color">「ノンステップ管理」</span>で迅速かつ正確な情報伝達を。
+                    </p>
                     <p>弊社では1人の営業がすべての工程を管理する「ノンステップ管理」をしております。</p>
-                    <p>ノンステップ管理するからできる迅速かつ正確な情報伝達。</p>
                     <p>必要な情報を迅速にお伝えし、最短でお客様の問題を解決致します。</p>
                 </div>
                 </FadeInBack>
@@ -43,7 +47,7 @@ export default function ServiceTimeline () {
                 md:p-10 lg:p-14
                 flex flex-col justify-center items-center gap-10
                 overflow-hidden
-                border border-2 border-gray-500 rounded-lg
+                border border-2 border-primary-color rounded-lg
                 text-xs md:text-sm lg:text-base font-semibold
                 ">
 
@@ -51,7 +55,7 @@ export default function ServiceTimeline () {
                     <div className="                    
                     absolute h-full
                     left-[12.5%] md:left-1/2
-                    border-2-2 border-gray-500 border"></div>
+                    border-2-2 border-primary-color border"></div>
 
 
 
@@ -80,7 +84,7 @@ export default function ServiceTimeline () {
                         ">
                             <FadeInBack>
                             <div className="flex justify-center items-center">
-                                <div className="flex justify-center items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                <div className="flex justify-center items-center order-1 bg-primary-color shadow-xl w-8 h-8 rounded-full">
                                     <h1 className="mx-auto font-semibold text-lg text-white">1</h1>
                                 </div>
                             </div>
@@ -93,7 +97,7 @@ export default function ServiceTimeline () {
                         ">
                             <SlideInRight>
                             <div className="
-                            bg-white
+                            bg-slate-50
                             rounded-lg shadow-xl">
                                 <div className="
                                 w-full p-3 md:p-5
@@ -139,7 +143,7 @@ export default function ServiceTimeline () {
                         ">
                             <FadeInBack>
                             <div className="flex justify-center items-center">
-                                <div className="flex justify-center items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                <div className="flex justify-center items-center order-1 bg-primary-color shadow-xl w-8 h-8 rounded-full">
                                     <h1 className="mx-auto font-semibold text-lg text-white">2</h1>
                                 </div>
                             </div>
@@ -198,7 +202,7 @@ export default function ServiceTimeline () {
                         ">
                             <FadeInBack>
                             <div className="flex justify-center items-center">
-                                <div className="flex justify-center items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                <div className="flex justify-center items-center order-1 bg-primary-color shadow-xl w-8 h-8 rounded-full">
                                     <h1 className="mx-auto font-semibold text-lg text-white">3</h1>
                                 </div>
                             </div>
@@ -211,7 +215,7 @@ export default function ServiceTimeline () {
                         ">
                             <SlideInRight>
                             <div className="
-                            bg-white
+                            bg-slate-50
                             rounded-lg shadow-xl">
                                 <div className="
                                 w-full p-3 md:p-5
@@ -255,7 +259,7 @@ export default function ServiceTimeline () {
                         ">
                             <FadeInBack>
                             <div className="flex justify-center items-center">
-                                <div className="flex justify-center items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                <div className="flex justify-center items-center order-1 bg-primary-color shadow-xl w-8 h-8 rounded-full">
                                     <h1 className="mx-auto font-semibold text-lg text-white">4</h1>
                                 </div>
                             </div>
@@ -315,7 +319,7 @@ export default function ServiceTimeline () {
                         ">
                             <FadeInBack>
                             <div className="flex justify-center items-center">
-                                <div className="flex justify-center items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                <div className="flex justify-center items-center order-1 bg-primary-color shadow-xl w-8 h-8 rounded-full">
                                     <h1 className="mx-auto font-semibold text-lg text-white">5</h1>
                                 </div>
                             </div>
@@ -328,7 +332,7 @@ export default function ServiceTimeline () {
                         ">
                             <SlideInRight>
                             <div className="
-                            bg-white
+                            bg-slate-50
                             rounded-lg shadow-xl">
                                 <div className="
                                 w-full p-3 md:p-5
@@ -373,7 +377,7 @@ export default function ServiceTimeline () {
                         ">
                             <FadeInBack>
                             <div className="flex justify-center items-center">
-                                <div className="flex justify-center items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                <div className="flex justify-center items-center order-1 bg-primary-color shadow-xl w-8 h-8 rounded-full">
                                     <h1 className="mx-auto font-semibold text-lg text-white">6</h1>
                                 </div>
                             </div>
@@ -432,7 +436,7 @@ export default function ServiceTimeline () {
                         ">
                             <FadeInBack>
                             <div className="flex justify-center items-center">
-                                <div className="flex justify-center items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                <div className="flex justify-center items-center order-1 bg-primary-color shadow-xl w-8 h-8 rounded-full">
                                     <h1 className="mx-auto font-semibold text-lg text-white">7</h1>
                                 </div>
                             </div>
@@ -445,7 +449,7 @@ export default function ServiceTimeline () {
                         ">
                             <SlideInRight>
                             <div className="
-                            bg-white
+                            bg-slate-50
                             rounded-lg shadow-xl">
                                 <div className="
                                 w-full p-3 md:p-5
@@ -491,7 +495,7 @@ export default function ServiceTimeline () {
                         ">
                             <FadeInBack>
                             <div className="flex justify-center items-center">
-                                <div className="flex justify-center items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                                <div className="flex justify-center items-center order-1 bg-primary-color shadow-xl w-8 h-8 rounded-full">
                                     <h1 className="mx-auto font-semibold text-lg text-white">8</h1>
                                 </div>
                             </div>

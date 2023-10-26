@@ -30,8 +30,13 @@ export default function BreadCrumb () {
             flex 
             text-xxs md:text-xs lg:text-sm font-semibold
             ">
-                <li>
-                    <Link href="/">ホーム</Link>
+                <li className="
+                flex justify-center items-center
+                text-xs md:text-sm lg:text-md 
+                ">
+                    <Link href="/">
+                    TOP
+                    </Link>
                 </li>
                 <span className="mx-2 md:mx-3 lg:mx-4">|</span>
                 {navigation.map(({ href, name, id }) => (
