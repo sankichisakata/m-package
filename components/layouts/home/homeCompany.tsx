@@ -8,20 +8,20 @@ export default function HomeCompany () {
         <>
             <div 
             className='
-            relative overflow-hidden
+            relative
             w-full h-full mx-auto py-16 lg:py-24
             flex flex-col justify-center items-center gap-5 md:gap-8
             
             before:absolute 
             before:bottom-0 before:left-0
-            before:w-10/12 before:md:w-11/12
+            before:w-10/12 before:md:w-9/12
             before:h-[30rem] before:md:h-[20rem]  before:lg:h-[25rem] 
-            before:bg-slate-400/20 before:z-[-10] before:rounded-tr-lg 
+            before:bg-slate-400/20 before:z-[-10] before:rounded-r-lg 
             '
             >
-                <p className="absolute z-[-5] md:mt-[-3rem] md:[writing-mode:vertical-lr] text-slate-400/20 top-0 right-0 text-[4rem] md:text-[9rem] lg:text-[10rem]">Overview</p>
+                <p className="absolute z-[-5] md:mt-[-3rem] md:[writing-mode:vertical-lr] text-slate-400/20 top-0 right-0 text-[4rem] md:text-[8rem] lg:text-[10rem]">Overview</p>
 
-                <div className="w-11/12 h-auto">
+                <div className="w-11/12 h-auto overflow-hidden">
                 <SlideInRight>
                         <div className="mx-auto w-full lg:w-10/12">
                             <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
@@ -51,7 +51,7 @@ export default function HomeCompany () {
                     className="
                     w-full h-auto mx-auto pl-2 md:pl-4 md:pr-6
                     font-semibold
-                    border-l-[0.2rem] border-slate-600
+                    border-l-[0.2rem] border-primary-color
                     text-xs md:text-sm lg:text-base
                     ">
                         <FadeInBack>
@@ -74,7 +74,7 @@ export default function HomeCompany () {
                         group
                         w-full h-[15rem] lg:h-[20rem]
                         flex flex-col justify-around items-center gap-5 
-                        bg-service01 bg-center bg-cover rounded-md
+                        bg-service01 bg-center bg-cover rounded-md shadow-lg
                         ">
                             <Link className="w-full h-full" href="/company">
                             <div className="

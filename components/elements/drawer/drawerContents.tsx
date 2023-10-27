@@ -202,7 +202,7 @@ export default function DrawerContents (props) {
                               ">
                                   <div className="w-full flex justify-start items-center gap-5">
                                   <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
-                                      <p className='text-slate-600 font-semibold'>会社概要</p>
+                                      <p className='text-slate-600 font-semibold'>会社情報</p>
                                   </div>
                               </Link>
                               </li>

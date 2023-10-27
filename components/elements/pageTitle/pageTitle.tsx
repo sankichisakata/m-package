@@ -7,9 +7,9 @@ const navigation = [
     { id: 1, name: "ホーム", subName: '', href: "/" },
     { id: 2, name: "事業内容", subName: 'Our Service', href: "/service" },
     { id: 3, name: "設備案内", subName: 'Equipment', href: "/equipment" },
-    { id: 4, name: "会社概要", subName: 'Company', href: "/company" },
+    { id: 4, name: "会社情報", subName: 'Company', href: "/company" },
     { id: 5, name: "ニュース", subName: 'News',  href: "/news" },
-    { id: 6, name: "お問い合わせ入力画面", subName: 'Contact Form',  href: "/contact" },
+    { id: 6, name: "お問い合わせ画面", subName: 'Contact Form',  href: "/contact" },
     { id: 7, name: "プライバシポリシー", subName: 'Privacy Policy',  href: "/privacypolicy" },
 ];
 

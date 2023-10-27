@@ -8,7 +8,7 @@ const navigation = [
     { id: 1, name: "ホーム", href: "/" },
     { id: 2, name: "事業内容", href: "/service" },
     { id: 3, name: "設備案内", href: "/equipment" },
-    { id: 4, name: "会社概要", href: "/company" },
+    { id: 4, name: "会社情報", href: "/company" },
     { id: 5, name: "ニュース", href: "/news" },
     { id: 6, name: "お問い合わせ入力画面", href: "/contact" },
     { id: 7, name: "プライバシポリシー", href: "/privacypolicy" },
@@ -32,7 +32,6 @@ export default function BreadCrumb () {
             ">
                 <li className="
                 flex justify-center items-center
-                text-xs md:text-sm lg:text-md 
                 ">
                     <Link href="/">
                     TOP

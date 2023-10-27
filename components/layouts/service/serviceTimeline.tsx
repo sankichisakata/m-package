@@ -11,32 +11,46 @@ export default function ServiceTimeline () {
             py-14 md:py-20
             flex flex-col justify-center items-center
             ">
-                <FadeInBack>
-                <div className="
-                w-11/12 lg:w-10/12 h-auto p-2 md:p-4 mx-auto
-                flex flex-col justify-center items-center
-                border-b-[0.2rem] border-primary-color
-                text-primary-color text-[1.8rem] md:text-[2rem] lg:text-[2.5rem] font-bold
-                ">
-                    <p>お届けまでの流れ</p>
+                <div className="w-11/12 mx-auto">
+                    <FadeInBack>
+                    <div className="
+                    w-full lg:w-11/12 h-auto p-2 md:p-4 mx-auto
+                    flex flex-col justify-center items-center
+                    border-x-[0.2rem] border-t-[0.2rem] border-sub-color
+                    text-sub-color [font-size:_clamp(1.2rem,3vw,2.5rem)] font-bold
+                    ">
+                        <p>お届けまでの流れ</p>
+                    </div>
+                    </FadeInBack>
+
+                    <FadeInBack>
+                    <div className="
+                    bg-sub-color
+                    w-full lg:w-11/12 h-auto p-2 md:p-4 mx-auto
+                    flex flex-col justify-center items-center
+                    border-x-[0.2rem] border-y-[0.2rem] border-sub-color
+                    text-white text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
+                    ">
+                        <p>
+                            <span className="text-primary-color">
+                                「ノンステップ管理」
+                                <span className="md:hidden"><br/></span>
+                            </span>
+                            で迅速かつ正確な情報伝達を。
+                        </p>
+                    </div>
+                    </FadeInBack>
                 </div>
-                </FadeInBack>
 
                 <FadeInBack>
                 <div className="
                     z-10 bg-white top-0
                     w-11/12 lg:w-10/12 max-w-5xl h-[10rem] p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
                     rounded-md shadow-lg
-                    flex flex-col justify-center items-center
+                    flex flex-col justify-center items-center gap-2
                     text-xs md:text-sm lg:text-base font-semibold
                     ">
-                    <p className="
-                    pb-5 md:ob-0
-                    text-base md:text-lg lg:text-xl font-bold
-                    ">
-                    <span className="text-vivid-color">「ノンステップ管理」</span>で迅速かつ正確な情報伝達を。
-                    </p>
-                    <p>弊社では1人の営業がすべての工程を管理する「ノンステップ管理」をしております。</p>
+                    <p>弊社では1人の営業がすべての工程を管理する<span className="text-vivid-color">「ノンステップ管理」</span>をしております。</p>
                     <p>必要な情報を迅速にお伝えし、最短でお客様の問題を解決致します。</p>
                 </div>
                 </FadeInBack>

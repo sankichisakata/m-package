@@ -17,7 +17,7 @@ export default function FooterContact () {
             <Link 
             href="/contact" 
             className="
-            w-11/12 md:w-7/12 lg:w-9/12 mx-auto lg:p-5
+            w-11/12 lg:w-9/12 mx-auto md:p-5
             flex justify-center-items-center
             border-2 border-primary-color
             shadow-lg rounded-md
@@ -29,8 +29,8 @@ export default function FooterContact () {
                 <div 
                 className='
                 overflow-hidden
-                hidden lg:block shadow-inner
-                h-auto lg:w-1/2 relative
+                hidden md:block shadow-inner
+                h-auto md:w-1/2 relative
                 flex justify-center items-center
                 '
                 >
@@ -45,7 +45,7 @@ export default function FooterContact () {
                 </div>
 
                 <div className="
-                w-full lg:w-1/2 px-5 py-6 lg:py-10 
+                w-full md:w-1/2 px-5 py-6 lg:py-10 
                 text-slate-600
                 rounded-md
                 flex flex-col justify-center gap-5 lg:gap-8
@@ -59,8 +59,8 @@ export default function FooterContact () {
                     
 
                     
-                    <div className="text-xs lg:text-sm text-center font-semibold">
-                        <p>お気軽にご相談ください。</p>
+                    <div className="text-vivid-color text-xl lg:text-xxl text-center font-semibold">
+                        <p>お気軽にご相談ください</p>
                     </div>
                    
 
