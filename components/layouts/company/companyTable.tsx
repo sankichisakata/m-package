@@ -25,43 +25,45 @@ export default function CompanyTable () {
 
                 {/* テーブルコンテナ */}
                 <div className="
-                    w-11/12 lg:w-10/12 max-w-5xl h-auto p-8 md:p-10 my-5 md:my-10 lg:my-16 mx-auto
+                    w-11/12 lg:w-10/12 max-w-5xl h-auto pl-2 py-10 md:p-10 md:my-10 lg:my-16 mx-auto
                     flex flex-col justify-center items-center
                     text-xs md:text-sm lg:text-base font-semibold
                     ">
                         {/* テーブル */}
                         <div className="
-                        w-full w-11/12 h-auto
+                        w-full h-auto
                         ">
                             <div className="
                             w-full h-auto
                             flex flex-col justify-center items-center gap-10 md:gap-16 lg:gap-20
                             ">
-                                
                                 <div className="
-                                w-full md:w-10/12 lg:w-9/12
-                                flex flex-col md:flex-row justify-center items-center md:items-start gap-3
+                                w-full 
+                                flex justify-center items-start gap-3
                                 ">
-                                    <div className="
-                                    w-full md:w-2/6
-                                    flex md:justify-center 
-                                    ">
-                                        <SlideInLeft>
-                                        <p className="
-                                        flex md:justify-center 
-                                        ">
-                                            会社名
-                                        </p>
-                                        </SlideInLeft>
-                                    </div>
+                                    {/* 空ボックス */}
+                                    <div className="hidden md:block w-1/12"></div>
                                     
                                     <div className="
-                                    w-full md:w-4/6 
-                                    flex justify-center items-center
+                                    w-3/12 md:w-3/12
+                                    flex justify-center 
+                                    ">
+                                        <FadeInBack>
+                                        <p className="
+                                        flex justify-start
+                                        ">
+                                           社名
+                                        </p>
+                                        </FadeInBack>
+                                    </div>
+
+                                    <div className="
+                                    w-9/12 md:w-8/12
+                                    flex justify-start items-center
                                     ">
                                         <SlideInRight>
                                         <p className="
-                                        flex justify-center items-center
+                                        flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             株式会社エムパッケージ
@@ -71,29 +73,32 @@ export default function CompanyTable () {
                                 </div>
 
                                 <div className="
-                                w-full md:w-10/12 lg:w-9/12
-                                flex flex-col md:flex-row justify-center items-center md:items-start gap-3
+                                w-full 
+                                flex justify-center items-start gap-3
                                 ">
-                                    <div className="
-                                    w-full md:w-2/6
-                                    flex md:justify-center 
-                                    ">
-                                        <SlideInLeft>
-                                        <p className="
-                                        flex md:justify-center 
-                                        ">
-                                            所在地
-                                        </p>
-                                        </SlideInLeft>
-                                    </div>
+                                    {/* 空ボックス */}
+                                    <div className="hidden md:block w-1/12"></div>
                                     
                                     <div className="
-                                    w-full md:w-4/6 
-                                    flex justify-center items-center
+                                    w-3/12 md:w-3/12
+                                    flex justify-center 
+                                    ">
+                                        <FadeInBack>
+                                        <p className="
+                                        flex justify-start
+                                        ">
+                                           所在地
+                                        </p>
+                                        </FadeInBack>
+                                    </div>
+
+                                    <div className="
+                                    w-9/12 md:w-8/12
+                                    flex justify-start items-center
                                     ">
                                         <SlideInRight>
                                         <p className="
-                                        flex justify-center items-center
+                                        flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             埼玉県川口市末広2-7-15
@@ -103,29 +108,32 @@ export default function CompanyTable () {
                                 </div>
 
                                 <div className="
-                                w-full md:w-10/12 lg:w-9/12
-                                flex flex-col md:flex-row justify-center items-center md:items-start gap-3
+                                w-full 
+                                flex justify-center items-start gap-3
                                 ">
-                                    <div className="
-                                    w-full md:w-2/6
-                                    flex md:justify-center 
-                                    ">
-                                        <SlideInLeft>
-                                        <p className="
-                                        flex md:justify-center 
-                                        ">
-                                            設立
-                                        </p>
-                                        </SlideInLeft>
-                                    </div>
+                                    {/* 空ボックス */}
+                                    <div className="hidden md:block w-1/12"></div>
                                     
                                     <div className="
-                                    w-full md:w-4/6 
-                                    flex justify-center items-center
+                                    w-3/12 md:w-3/12
+                                    flex justify-center 
+                                    ">
+                                        <FadeInBack>
+                                        <p className="
+                                        flex justify-start
+                                        ">
+                                           設立
+                                        </p>
+                                        </FadeInBack>
+                                    </div>
+
+                                    <div className="
+                                    w-9/12 md:w-8/12
+                                    flex justify-start items-center
                                     ">
                                         <SlideInRight>
                                         <p className="
-                                        flex justify-center items-center
+                                        flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             2022年4月
@@ -135,29 +143,32 @@ export default function CompanyTable () {
                                 </div>
 
                                 <div className="
-                                w-full md:w-10/12 lg:w-9/12
-                                flex flex-col md:flex-row justify-center items-center md:items-start gap-3
+                                w-full 
+                                flex justify-center items-start gap-3
                                 ">
-                                    <div className="
-                                    w-full md:w-2/6
-                                    flex md:justify-center 
-                                    ">
-                                        <SlideInLeft>
-                                        <p className="
-                                        flex md:justify-center 
-                                        ">
-                                            代表取締役
-                                        </p>
-                                        </SlideInLeft>
-                                    </div>
+                                    {/* 空ボックス */}
+                                    <div className="hidden md:block w-1/12"></div>
                                     
                                     <div className="
-                                    w-full md:w-4/6 
-                                    flex justify-center items-center
+                                    w-3/12 md:w-3/12
+                                    flex justify-center 
+                                    ">
+                                        <FadeInBack>
+                                        <p className="
+                                        flex justify-start
+                                        ">
+                                           代表取締役
+                                        </p>
+                                        </FadeInBack>
+                                    </div>
+
+                                    <div className="
+                                    w-9/12 md:w-8/12
+                                    flex justify-start items-center
                                     ">
                                         <SlideInRight>
                                         <p className="
-                                        flex justify-center items-center
+                                        flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             渡辺&emsp;久人
@@ -167,29 +178,32 @@ export default function CompanyTable () {
                                 </div>
 
                                 <div className="
-                                w-full md:w-10/12 lg:w-9/12
-                                flex flex-col md:flex-row justify-center items-center md:items-start gap-3
+                                w-full 
+                                flex justify-center items-start gap-3
                                 ">
-                                    <div className="
-                                    w-full md:w-2/6
-                                    flex md:justify-center 
-                                    ">
-                                        <SlideInLeft>
-                                        <p className="
-                                        flex md:justify-center 
-                                        ">
-                                            資本金
-                                        </p>
-                                        </SlideInLeft>
-                                    </div>
+                                    {/* 空ボックス */}
+                                    <div className="hidden md:block w-1/12"></div>
                                     
                                     <div className="
-                                    w-full md:w-4/6 
-                                    flex justify-center items-center
+                                    w-3/12 md:w-3/12
+                                    flex justify-center 
+                                    ">
+                                        <FadeInBack>
+                                        <p className="
+                                        flex justify-start
+                                        ">
+                                           資本金
+                                        </p>
+                                        </FadeInBack>
+                                    </div>
+
+                                    <div className="
+                                    w-9/12 md:w-8/12
+                                    flex justify-start items-center
                                     ">
                                         <SlideInRight>
                                         <p className="
-                                        flex justify-center items-center
+                                        flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             100万円
@@ -199,29 +213,32 @@ export default function CompanyTable () {
                                 </div>
 
                                 <div className="
-                                w-full md:w-10/12 lg:w-9/12
-                                flex flex-col md:flex-row justify-center items-center md:items-start gap-3
+                                w-full 
+                                flex justify-center items-start gap-3
                                 ">
-                                    <div className="
-                                    w-full md:w-2/6
-                                    flex md:justify-center 
-                                    ">
-                                        <SlideInLeft>
-                                        <p className="
-                                        flex md:justify-center 
-                                        ">
-                                            従業員数
-                                        </p>
-                                        </SlideInLeft>
-                                    </div>
+                                    {/* 空ボックス */}
+                                    <div className="hidden md:block w-1/12"></div>
                                     
                                     <div className="
-                                    w-full md:w-4/6 
-                                    flex justify-center items-center
+                                    w-3/12 md:w-3/12
+                                    flex justify-center 
+                                    ">
+                                        <FadeInBack>
+                                        <p className="
+                                        flex justify-start
+                                        ">
+                                           従業員数
+                                        </p>
+                                        </FadeInBack>
+                                    </div>
+
+                                    <div className="
+                                    w-9/12 md:w-8/12
+                                    flex justify-start items-center
                                     ">
                                         <SlideInRight>
                                         <p className="
-                                        flex justify-center items-center
+                                        flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             4名
@@ -231,29 +248,32 @@ export default function CompanyTable () {
                                 </div>
 
                                 <div className="
-                                w-full md:w-10/12 lg:w-9/12
-                                flex flex-col md:flex-row justify-center items-center md:items-start gap-3
+                                w-full 
+                                flex justify-center items-start gap-3
                                 ">
-                                    <div className="
-                                    w-full md:w-2/6
-                                    flex md:justify-center 
-                                    ">
-                                        <SlideInLeft>
-                                        <p className="
-                                        flex md:justify-center 
-                                        ">
-                                            事業内容
-                                        </p>
-                                        </SlideInLeft>
-                                    </div>
+                                    {/* 空ボックス */}
+                                    <div className="hidden md:block w-1/12"></div>
                                     
                                     <div className="
-                                    w-full md:w-4/6 
-                                    flex justify-center items-center
+                                    w-3/12 md:w-3/12
+                                    flex justify-center 
+                                    ">
+                                        <FadeInBack>
+                                        <p className="
+                                        flex justify-start
+                                        ">
+                                           事業内容
+                                        </p>
+                                        </FadeInBack>
+                                    </div>
+
+                                    <div className="
+                                    w-9/12 md:w-8/12
+                                    flex justify-start items-center
                                     ">
                                         <SlideInRight>
                                         <p className="
-                                        flex justify-center items-center
+                                        flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             段ボール製品の製造・加工及び販売、紙加工製品の設計及びコンサルティング業務、梱包・物流業務の代行
