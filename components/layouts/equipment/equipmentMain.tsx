@@ -16,7 +16,7 @@ export default function EquipmentMain () {
                 <div 
                 className="
                 w-11/12 lg:max-w-7xl
-                py-10 md:py-16 lg:py-20
+                pb-10 lg:pb-14
                 flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-10 lg:gap-20
                 ">
                     <div className=" w-full lg:w-4/12 h-[16rem] md:h-[20rem] lg:h-auto">
