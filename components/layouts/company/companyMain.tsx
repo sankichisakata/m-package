@@ -1,10 +1,7 @@
-
-
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
 import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
 
-
-export default function EquipmentMain () {
+export default function CompanyMain () {
     return(
         <>
             <div className="
@@ -40,7 +37,7 @@ export default function EquipmentMain () {
                     ">
                         <FadeInBack>
                         <p className="
-                        text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
+                        text-[1.3rem] md:text-[1.8rem] lg:text-[2rem]
                         font-bold
                         ">
                             多種多様なご要望にお応えするべく、日々新しい機械の導入をしております。

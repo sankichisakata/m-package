@@ -38,7 +38,7 @@ export default function ServiceMain () {
                 ">
                     <FadeInBack>
                     <p className="
-                    text-[1.3rem] md:text-[1.8rem] lg:text-[2rem]
+                    text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
                     font-bold
                     ">
                         「まごころを込めて、守ります。」

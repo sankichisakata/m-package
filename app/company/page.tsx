@@ -1,11 +1,14 @@
+import BorderPrimaryFull from "@/components/elements/border/borderPrimaryFull";
+import CompanyMain from "@/components/layouts/company/companyMain";
+import CompanyTable from "@/components/layouts/company/companyTable";
+
 
 export default function Company () {
     return(
         <>
-            <div className="bg-yellow-300 h-screen w-fill flex justify-center items-center">
-            <h2 className="text-2xl">会社概要</h2>
-            </div>
-            
+            <CompanyMain/>
+            <BorderPrimaryFull/>
+            <CompanyTable/>
         </>
     )
 }

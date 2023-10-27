@@ -72,7 +72,7 @@ export default function FooterMain () {
                             <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
                                     <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                                    <p className='text-slate-600 font-semibold'>会社概要</p>
+                                    <p className='text-slate-600 font-semibold'>会社情報</p>
                                 </div>
                             </SlideInLeft>
                         </Link>

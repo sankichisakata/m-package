@@ -43,7 +43,7 @@ export default function HomeService () {
                     className="
                     w-full lg:w-10/12 mx-auto pl-2 md:pl-4
                     font-semibold
-                    border-l-[0.2rem] border-slate-600
+                    border-l-[0.2rem] border-primary-color
                     flex flex-col gap-3
                     text-xs md:text-sm lg:text-base
                     ">
@@ -57,6 +57,7 @@ export default function HomeService () {
                 
                     
                     <div className="w-full h-full flex flex-col items-center">
+                        {/* 背景 */}
                         <div className="
                         w-full lg:w-10/12 h-full flex flex-col md:flex-row justify-center items-center gap-5 lg:gap-14 text-md
 
@@ -64,7 +65,7 @@ export default function HomeService () {
                         before:bottom-0 before:right-0
                         before:w-10/12 before:md:w-9/12
                         before:h-[40rem] before:md:h-[30rem]  before:lg:h-[40rem] 
-                        before:bg-slate-400/20 before:z-[-10] before:rounded-bl-lg before:md:rounded-l-lg 
+                        before:bg-slate-400/20 before:z-[-10] before:rounded-l-lg
                         ">
                             
                             {/* 事業内容 */}
@@ -74,12 +75,13 @@ export default function HomeService () {
                             group
                             w-full h-[15rem] lg:h-[20rem]
                             flex flex-col justify-around items-center gap-5 
-                            bg-cardboard02 bg-center bg-cover rounded-md
+                            bg-cardboard02 bg-center bg-cover rounded-md shadow-lg
                             ">
                                 <Link className="w-full h-full" href="/service">
                                 <div className="
                                 w-full h-full p-5
                                 flex flex-col justify-center items-center gap-5 
+                                rounded-md
                                 bg-slate-600/20
                                 ">
                                     <div className="w-full h-full text-sm md:text-base text-white">
@@ -114,12 +116,13 @@ export default function HomeService () {
                             group
                             w-full h-[15rem] lg:h-[20rem]
                             flex flex-col justify-around items-center gap-5 
-                            bg-equipment02 bg-center bg-cover rounded-md
+                            bg-equipment02 bg-center bg-cover rounded-md shadow-lg
                             ">
                                 <Link className="w-full h-full" href="/equipment">
                                 <div className="
                                 w-full h-full p-5
                                 flex flex-col justify-center items-center gap-5 
+                                rounded-md
                                 bg-slate-600/10
                                 ">
                                     <div className="w-full h-full text-sm md:text-base text-white">
