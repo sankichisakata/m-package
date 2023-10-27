@@ -59,7 +59,7 @@ export default function FooterContact () {
                     
 
                     
-                    <div className="text-vivid-color text-xl lg:text-xxl text-center font-semibold">
+                    <div className="text-xl lg:text-xxl text-center font-bold">
                         <p>お気軽にご相談ください</p>
                     </div>
                    

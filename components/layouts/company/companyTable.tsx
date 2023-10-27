@@ -7,7 +7,7 @@ export default function CompanyTable () {
         <>
             <div className="
             w-full h-full
-            py-14 md:py-20
+            pt-14 md:pt-20
             flex flex-col justify-center items-center
             ">
                 <div className="w-11/12 mx-auto">
@@ -23,9 +23,9 @@ export default function CompanyTable () {
                     </FadeInBack>
                 </div>
 
-                    {/* テーブルコンテナ */}
+                {/* テーブルコンテナ */}
                 <div className="
-                    w-11/12 lg:w-10/12 max-w-5xl h-auto p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
+                    w-11/12 lg:w-10/12 max-w-5xl h-auto p-8 md:p-10 my-5 md:my-10 lg:my-16 mx-auto
                     flex flex-col justify-center items-center
                     text-xs md:text-sm lg:text-base font-semibold
                     ">
