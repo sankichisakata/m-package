@@ -11,10 +11,11 @@ export default function ServiceMain () {
         flex flex-col justify-center items-center
         ">
 
+
             <div 
             className="
             w-11/12 lg:max-w-7xl
-            pt-5 md:pt-10 lg:pt-16 pb-14 md:pb-20 lg:pb-24
+            pb-10 lg:pb-14
             flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-10 lg:gap-20
             ">
                 <div className=" w-full lg:w-4/12 h-[16rem] md:h-[20rem] lg:h-auto">
