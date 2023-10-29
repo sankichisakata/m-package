@@ -3,11 +3,10 @@ import { FadeInBack } from "@/components/elements/observer/fadeInBack";
 import { SlideInRight } from "@/components/elements/observer/slideInRight";
 
 
-export default function CompanyMap () {
+export default function CompanyAccess () {
     return(
         <>
             <div className="
-            bg-gray-100
             w-full h-full
             py-14 md:py-20
             flex flex-col justify-center items-center
@@ -15,12 +14,25 @@ export default function CompanyMap () {
                 <div className="w-11/12 mx-auto">
                     <FadeInBack>
                     <div className="
+                    bg-white
                     w-full lg:w-11/12 h-auto p-2 md:p-4 mx-auto
                     flex flex-col justify-center items-center
                     border-[0.2rem] border-primary-color
                     text-primary-color [font-size:_clamp(1.2rem,3vw,2.5rem)] font-bold
                     ">
                         <p>アクセス</p>
+                    </div>
+                    <div className="
+                        w-full lg:w-11/12 mx-auto relative
+
+                        before:absolute 
+                        before:bg-primary-color
+                        before:top-[-2rem] before:md:top-[-3rem] 
+                        before:left-3 before:md:left-5 
+                        before:w-full
+                        before:h-[3rem] before:md:h-[5rem]
+                        before:z-[-10]
+                        ">
                     </div>
                     </FadeInBack>
                 </div>

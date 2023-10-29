@@ -19,7 +19,7 @@ export default function HomeCompany () {
             before:bg-slate-400/20 before:z-[-10] before:rounded-r-lg 
             '
             >
-                <p className="absolute z-[-5] md:mt-[-3rem] md:[writing-mode:vertical-lr] text-slate-400/20 top-0 right-0 text-[4rem] md:text-[8rem] lg:text-[10rem]">Overview</p>
+                <p className="absolute z-[-5] md:mt-[-3rem] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 right-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]">Company</p>
 
                 <div className="w-11/12 h-auto overflow-hidden">
                 <SlideInRight>
