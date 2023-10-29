@@ -9,7 +9,11 @@ export default function HomeNews () {
         flex justify-center items-center
         "
         >
-            <p className="absolute text-slate-400/10 top-0 text-[4rem] md:text-[9rem] lg:text-[10rem]">News</p>
+            <p className="
+            absolute text-slate-400/10 top-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]
+            ">
+                News
+            </p>
             <div className="
             before:absolute 
             before:top-0 before:right-0

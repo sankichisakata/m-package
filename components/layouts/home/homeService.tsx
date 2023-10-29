@@ -14,7 +14,7 @@ export default function HomeService () {
             flex flex-col justify-center items-center gap-5 md:gap-8
             '
             >
-                <p className="absolute z-[-1] md:[writing-mode:vertical-lr] text-slate-400/20 top-0 left-0 text-[4rem] md:text-[8rem] lg:text-[10rem]">We work it</p>
+                <p className="absolute z-[-1] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 left-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]">We work it</p>
 
                 <div className="w-11/12 h-auto">
                     <SlideInLeft> 

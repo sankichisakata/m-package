@@ -20,6 +20,19 @@ export default function CompanyTable () {
                     ">
                         <p>会社概要</p>
                     </div>
+                        <div className="
+                            w-full lg:w-11/12 mx-auto relative
+
+                            before:absolute 
+                            before:bg-white
+                            before:border-[0.2rem] before:border-primary-color
+                            before:top-[-2rem] before:md:top-[-3rem] 
+                            before:left-3 before:md:left-5 
+                            before:w-full
+                            before:h-[3rem] before:md:h-[5rem]
+                            before:z-[-10]
+                            ">
+                        </div>
                     </FadeInBack>
                 </div>
 
