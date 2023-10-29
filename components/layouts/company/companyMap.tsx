@@ -1,4 +1,6 @@
+import GoogleMap from "@/components/elements/googleMap/googleMap";
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
+import { SlideInRight } from "@/components/elements/observer/slideInRight";
 
 
 export default function CompanyMap () {
@@ -25,43 +27,139 @@ export default function CompanyMap () {
 
                 
                 <div className="
-                    bg-red-100
                     w-11/12 lg:w-10/12 max-w-5xl 
-                    p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
+                    pl-2 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
+                    flex flex-col justify-center items-center gap-10 md:gap-16 lg:gap-20
                     text-xs md:text-sm lg:text-base font-semibold
                     ">
-                        <FadeInBack>
                         <div className="
-                        w-11/12 h-auto mx-auto
-                        flex flex-col justify-center items-center gap-5
+                        w-full 
+                        flex justify-center items-start gap-3
                         ">
-                            <div className="w-full flex flex-col justify-center items-start">
-                                <p>株式会社エムパッケージ</p>
-                                <p>〒332-0006&emsp;埼玉県川口市末広2-7-15</p>
+                            {/* 空ボックス */}
+                            <div className="hidden md:block w-1/12"></div>
+                            
+                            <div className="
+                            w-3/12 md:w-3/12
+                            flex justify-center 
+                            ">
+                                <FadeInBack>
+                                <p className="
+                                flex justify-start
+                                ">
+                                    所在地
+                                </p>
+                                </FadeInBack>
                             </div>
 
-                            <div className="flex flex-col justify-center items-start">
-                                <p>・電車で来られる方</p>
-                                <p>加賀ICより車で10分</p>
-                            </div>
-                            
-                            <div className="flex flex-col justify-center items-start">
-                                <p>・バスで来られる方</p>
-                                <p>JR京浜東北線&nbsp;川口駅&emsp;峯八幡宮行より10分</p>
-                                <p>「十二月田中学校」下車徒歩2分</p>
+                            <div className="
+                            w-9/12 md:w-8/12
+                            flex justify-start items-center
+                            ">
+                                <SlideInRight>
+                                <div className="
+                                flex justify-start items-start
+                                text-xl md:text-xxl lg:text-xxxl font-bold
+                                ">
+                                    <p>〒332-0006
+                                        <span className="md:hidden"><br/></span>
+                                        <span className="hidden md:inline-block">&emsp;</span>埼玉県川口市末広2-7-15
+                                    </p>
+                                </div>
+                                
+                                </SlideInRight>
                             </div>
                         </div>
-                        </FadeInBack>
 
-                        <div 
-                        className="
-                        bg-gray-300
-                        w-full h-[20rem] mt-10
+                        <div className="
+                        w-full 
+                        flex justify-center items-start gap-3
                         ">
-                            Google Map
+                            {/* 空ボックス */}
+                            <div className="hidden md:block w-1/12"></div>
+                            
+                            <div className="
+                            w-3/12 md:w-3/12
+                            flex justify-center 
+                            ">
+                                <FadeInBack>
+                                <p className="
+                                flex justify-start
+                                ">
+                                    電車
+                                </p>
+                                </FadeInBack>
+                            </div>
+
+                            <div className="
+                            w-9/12 md:w-8/12
+                            flex justify-start items-center
+                            ">
+                                <SlideInRight>
+                                <div className="
+                                flex flex-col justify-start items-start
+                                text-xl md:text-xxl lg:text-xxxl font-bold
+                                ">
+                                    <p>加賀ICより車で10分</p>
+                                </div>
+                                
+                                </SlideInRight>
+                            </div>
+                        </div>
+
+                        <div className="
+                        w-full 
+                        flex justify-center items-start gap-3
+                        ">
+                            {/* 空ボックス */}
+                            <div className="hidden md:block w-1/12"></div>
+                            
+                            <div className="
+                            w-3/12 md:w-3/12
+                            flex justify-center 
+                            ">
+                                <FadeInBack>
+                                <p className="
+                                flex justify-start
+                                ">
+                                    バス
+                                </p>
+                                </FadeInBack>
+                            </div>
+
+                            <div className="
+                            w-9/12 md:w-8/12
+                            flex justify-start items-center
+                            ">
+                                <SlideInRight>
+                                <div className="
+                                flex flex-col justify-start items-start
+                                text-xl md:text-xxl lg:text-xxxl font-bold
+                                ">
+                                    <p>JR京浜東北線&nbsp;川口駅
+                                        <span className="md:hidden"><br/></span>
+                                        <span className="hidden md:inline-block">&emsp;</span>
+                                        峯八幡宮行きバス
+                                    </p>
+                                    <p>「十二月田中学校」バス停
+                                        <span className="md:hidden"><br/></span>
+                                        <span className="hidden md:inline-block">&emsp;</span>
+                                        下車すぐ
+                                    </p>
+                                </div>
+                                
+                                </SlideInRight>
+                            </div>
                         </div>
                 </div>
-                
+
+                <div 
+                    className="
+                    w-full md:w-11/12 max-w-5xl h-[20rem] md:h-[30rem] lg:h-[40rem]
+                    ">
+                    <GoogleMap/>
+                </div>
+            
 
             </div>
         </>

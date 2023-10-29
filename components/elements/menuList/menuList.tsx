@@ -1,8 +1,7 @@
 import { Button } from '@chakra-ui/react';
 import Link from 'next/link';
 
-
-const MenuList = () => {
+export default function MenuList () {
     return(
         <div className='py-10'>
             <nav className='flex flex-col justify-center items-center'>
@@ -49,5 +48,3 @@ const MenuList = () => {
         </div>
     )
 }
-
-export default MenuList;
