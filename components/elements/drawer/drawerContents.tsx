@@ -135,29 +135,6 @@ export default function DrawerContents (props) {
                       '
                       >
 
-                            {/* <div className='w-full md:w-5/6 flex justify-center items-center gap-2 md:gap-6'>
-                              <Link href="/contact" onClick={onClose} className="border border-slate-500/20 rounded-full">
-                                <div className="flex justify-center items-center">
-                                    <p className="px-3 py-2 text-slate-800 text-xs">お問い合わせ</p>
-                                    <EmailIcon
-                                      className="border-slate-800 rounded-full p-1 m-1 bg-slate-800 text-white"
-                                      w={26} h={26}
-                                      />
-                                </div>
-                              </Link>
-
-                                <Link href="/contact" onClick={onClose} className="border border-slate-500/20 rounded-full">
-                                    <div className="flex justify-center items-center">
-                                      <p className="px-3 py-2 text-slate-800 text-xs">電話で相談する</p>
-                                      <PhoneIcon 
-                                      className="border-slate-800 rounded-full p-1 m-1 bg-slate-800 text-white" 
-                                     
-                                      w={26} h={26}
-                                      />
-                                    </div>
-                                </Link>
-                            </div> */}
-
                           <ul className="
                           w-full md:w-8/12 pt-6
                           text-xs md:text-sm
@@ -243,8 +220,8 @@ export default function DrawerContents (props) {
                             pt-6 mb-2
                             flex flex-col justify-center items-center gap-2
                             '>
-                                <Link href="#" onClick={onClose}>
-                                            <p className='text-xxs text-slate-600'>プライバシーポリシー</p>
+                                <Link href="/privacy" onClick={onClose}>
+                                  <p className='text-xxs text-slate-600'>プライバシーポリシー</p>
                                 </Link>
                                 <small className='text-xxs text-slate-400'><span className="text-slate-400">©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
                             </div>
