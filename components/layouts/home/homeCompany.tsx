@@ -26,17 +26,17 @@ export default function HomeCompany () {
                 <div className="w-full">
                     <SlideInLeft>
                     <div className="
-                    w-11/12 mx-auto relative
+                    w-11/12 lg:w-10/12 mx-auto relative
 
                     before:absolute
                     before:bg-sub-color
                     before:bottom-[-1rem] before:md:bottom-[-1.5rem] 
                     before:left-[0.5rem] before:md:left-[1rem]
-                    before:w-full before:lg:w-10/12
+                    before:w-full 
                     before:h-[3rem] before:md:h-[5rem]
                     before:z-[-10]
                     ">
-                            <div className="mx-auto w-full lg:w-10/12 bg-white">
+                            <div className="mx-auto w-full bg-white">
                                 <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">株式会社エムパッケージについて</p>
                                 </div>
