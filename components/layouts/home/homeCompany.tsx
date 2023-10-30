@@ -36,13 +36,11 @@ export default function HomeCompany () {
                     before:h-[3rem] before:md:h-[5rem]
                     before:z-[-10]
                     ">
-                        <SlideInLeft>
                             <div className="mx-auto w-full lg:w-10/12 bg-white">
                                 <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">株式会社エムパッケージについて</p>
                                 </div>
                             </div>
-                        </SlideInLeft>
                     </div>
                     </SlideInLeft>
                 </div>

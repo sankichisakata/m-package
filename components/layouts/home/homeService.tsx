@@ -30,13 +30,11 @@ export default function HomeService () {
                     before:border-[0.2rem] before:border-sub-color
                     before:z-[-10]
                     ">
-                        <SlideInLeft>
                             <div className="mx-auto w-full lg:w-10/12 bg-sub-color">
                                 <div className="p-2 md:p-4">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">エムパッケージの仕事</p>
                                 </div>
                             </div>
-                        </SlideInLeft>
                     </div>
                     </SlideInLeft>
                 </div>

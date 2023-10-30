@@ -16,7 +16,7 @@ export default function ServiceTimeline () {
                     <div className="
                     w-full lg:w-11/12 h-auto p-2 md:p-4 mx-auto
                     flex flex-col justify-center items-center
-                    border-x-[0.2rem] border-t-[0.2rem] border-sub-color
+                    border-[0.2rem] border-sub-color
                     text-sub-color [font-size:_clamp(1.2rem,3vw,2.5rem)] font-bold
                     ">
                         <p>お届けまでの流れ</p>
@@ -28,7 +28,7 @@ export default function ServiceTimeline () {
                     bg-sub-color
                     w-full lg:w-11/12 h-auto p-2 md:p-4 mx-auto
                     flex flex-col justify-center items-center
-                    border-x-[0.2rem] border-y-[0.2rem] border-sub-color
+                    border-[0.2rem] border-sub-color
                     text-white text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
                     ">
                         <p>

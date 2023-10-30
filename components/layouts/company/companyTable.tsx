@@ -6,7 +6,8 @@ export default function CompanyTable () {
     return(
         <>
             <div className="
-            w-full h-full
+            overflow-hidden
+            w-full h-full 
             pt-14 md:pt-20
             flex flex-col justify-center items-center
             ">
