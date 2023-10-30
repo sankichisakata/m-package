@@ -31,7 +31,7 @@ export default function CompanyTable () {
                             before:left-[0.5rem] before:md:left-[1rem]
                             before:w-full
                             before:h-[3rem] before:md:h-[5rem]
-                            before:z-[-10]
+                            before:z-[-1]
                             ">
                         </div>
                     </FadeInBack>

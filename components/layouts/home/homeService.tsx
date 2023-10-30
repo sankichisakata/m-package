@@ -9,7 +9,7 @@ export default function HomeService () {
         <>
             <div 
             className='
-            relative
+            relative overflow-hidden
             w-full h-full mx-auto py-16 lg:py-24
             flex flex-col justify-center items-center gap-5 md:gap-8
             '
@@ -19,7 +19,7 @@ export default function HomeService () {
                 <div className="w-full">
                     <SlideInLeft>
                     <div className="
-                    w-11/12 lg:w-10/12 mx-auto relative
+                    w-11/12 w-10/12 mx-auto relative
 
                     before:absolute
                     before:bg-white

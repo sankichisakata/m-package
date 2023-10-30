@@ -9,7 +9,7 @@ export default function HomeCompany () {
         <>
             <div 
             className='
-            relative
+            relative overflow-hidden
             w-full h-full mx-auto py-16 lg:py-24
             flex flex-col justify-center items-center gap-5 md:gap-8
             
@@ -34,7 +34,7 @@ export default function HomeCompany () {
                     before:left-[0.5rem] before:md:left-[1rem]
                     before:w-full 
                     before:h-[3rem] before:md:h-[5rem]
-                    before:z-[-10]
+                    before:z-[-1]
                     ">
                             <div className="mx-auto w-full bg-white">
                                 <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
