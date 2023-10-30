@@ -20,37 +20,37 @@ export default function HomeCompany () {
             before:bg-slate-400/20 before:z-[-10] before:rounded-r-lg 
             '
             >
-                <p className="absolute z-[-5] md:mt-[-3rem] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 right-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]">Company</p>
+                <p className="
+                absolute z-[-5] md:mt-[-3rem] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 right-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]
+                ">Company</p>
 
                 
                 <div className="w-full">
-                    <SlideInLeft>
                     <div className="
-                    w-11/12 lg:w-10/12 mx-auto relative
-
-                    before:absolute
-                    before:bg-sub-color
-                    before:bottom-[-1rem] before:md:bottom-[-1.5rem] 
-                    before:left-[0.5rem] before:md:left-[1rem]
-                    before:w-full 
-                    before:h-[3rem] before:md:h-[5rem]
-                    before:z-[-1]
+                    w-11/12 lg:w-10/12 mx-auto
                     ">
+                            <SlideInLeft>
                             <div className="mx-auto w-full bg-white">
                                 <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">株式会社エムパッケージについて</p>
                                 </div>
                             </div>
+                            </SlideInLeft>
+
+                            <SlideInLeft>
+                            <div className="
+                            bg-sub-color
+                            w-full h-auto p-2 md:p-4 mx-auto
+                            flex flex-col justify-center items-center
+                            border-[0.2rem] border-sub-color
+                            text-white text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
+                            ">
+                                <p>
+                                「いつも、身近に、皆様と共に。」
+                                </p>
+                        </div>
+                        </SlideInLeft>
                     </div>
-                    </SlideInLeft>
-                </div>
-                
-                <div className="w-11/12 h-auto">
-                <FadeInBack>
-                    <div className="mx-auto w-full lg:w-10/12">
-                        <p className="text-base md:text-lg lg:text-xxl font-bold p-2 md:p-4">「いつも、身近に、皆様と共に。」</p>
-                    </div>
-                </FadeInBack>
                 </div>
 
                 <div
