@@ -12,22 +12,22 @@ export default function CompanyTable () {
             ">
                 <div className="w-11/12 mx-auto">
                     <FadeInBack>
-                    <div className="
-                    bg-primary-color
-                    w-full lg:w-11/12 h-auto p-2 md:p-4 mx-auto
-                    flex flex-col justify-center items-center
-                    text-white [font-size:_clamp(1.2rem,3vw,2.5rem)] font-bold
-                    ">
-                        <p>会社概要</p>
-                    </div>
+                        <div className="
+                        bg-primary-color
+                        w-full lg:w-11/12 h-auto p-2 md:p-4 mx-auto
+                        flex flex-col justify-center items-center
+                        text-white [font-size:_clamp(1.2rem,3vw,2.5rem)] font-bold
+                        ">
+                            <p>会社概要</p>
+                        </div>
                         <div className="
                             w-full lg:w-11/12 mx-auto relative
-
+                            
                             before:absolute 
                             before:bg-white
                             before:border-[0.2rem] before:border-primary-color
                             before:top-[-2rem] before:md:top-[-3rem] 
-                            before:left-3 before:md:left-5 
+                            before:left-[0.5rem] before:md:left-[1rem]
                             before:w-full
                             before:h-[3rem] before:md:h-[5rem]
                             before:z-[-10]

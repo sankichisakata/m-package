@@ -16,20 +16,37 @@ export default function HomeService () {
             >
                 <p className="absolute z-[-1] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 left-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]">We work it</p>
 
-                <div className="w-11/12 h-auto">
-                    <SlideInLeft> 
-                        <div className="mx-auto w-full lg:w-10/12">
-                            <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
-                                <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">エムパッケージの仕事</p>
-                            </div>
-                        </div>
-                    </SlideInLeft>
+                <div className="w-full">
+                    <SlideInLeft>
+                    <div className="
+                    w-11/12 mx-auto relative
 
-                    <FadeInBack>
-                        <div className="mx-auto w-full lg:w-10/12">
-                            <p className="text-base md:text-lg lg:text-xxl font-bold p-2 md:p-4">「まごころを込めて、守ります。」</p>
-                        </div>
-                    </FadeInBack>
+                    before:absolute
+                    before:bg-white
+                    before:bottom-[-1rem] before:md:bottom-[-1.5rem] 
+                    before:left-[0.5rem] before:md:left-[1rem]
+                    before:w-full before:lg:w-10/12
+                    before:h-[3rem] before:md:h-[5rem]
+                    before:border-[0.2rem] before:border-sub-color
+                    before:z-[-10]
+                    ">
+                        <SlideInLeft>
+                            <div className="mx-auto w-full lg:w-10/12 bg-sub-color">
+                                <div className="p-2 md:p-4">
+                                    <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">エムパッケージの仕事</p>
+                                </div>
+                            </div>
+                        </SlideInLeft>
+                    </div>
+                    </SlideInLeft>
+                </div>
+                
+                <div className="w-11/12 h-auto">
+                <FadeInBack>
+                    <div className="mx-auto w-full lg:w-10/12">
+                        <p className="text-base md:text-lg lg:text-xxl font-bold p-2 md:p-4">「まごころを込めて、守ります。」</p>
+                    </div>
+                </FadeInBack>
                 </div>
 
                 <div

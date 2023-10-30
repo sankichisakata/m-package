@@ -1,4 +1,5 @@
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
+import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
 import { SlideInRight } from "@/components/elements/observer/slideInRight";
 import Link from "next/link";
 import { HiChevronDoubleRight } from "react-icons/hi";
@@ -21,20 +22,37 @@ export default function HomeCompany () {
             >
                 <p className="absolute z-[-5] md:mt-[-3rem] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 right-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]">Company</p>
 
-                <div className="w-11/12 h-auto overflow-hidden">
-                <SlideInRight>
-                        <div className="mx-auto w-full lg:w-10/12">
-                            <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
-                                <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">株式会社エムパッケージについて</p>
-                            </div>
-                        </div>
-                    </SlideInRight>
+                
+                <div className="w-full">
+                    <SlideInLeft>
+                    <div className="
+                    w-11/12 mx-auto relative
 
-                    <FadeInBack>
-                        <div className="mx-auto w-full lg:w-10/12">
-                            <p className="text-base md:text-lg lg:text-xxl font-bold p-2 md:p-4">「いつも、身近に、皆様と共に。」</p>
-                        </div>
-                    </FadeInBack>
+                    before:absolute
+                    before:bg-sub-color
+                    before:bottom-[-1rem] before:md:bottom-[-1.5rem] 
+                    before:left-[0.5rem] before:md:left-[1rem]
+                    before:w-full before:lg:w-10/12
+                    before:h-[3rem] before:md:h-[5rem]
+                    before:z-[-10]
+                    ">
+                        <SlideInLeft>
+                            <div className="mx-auto w-full lg:w-10/12 bg-white">
+                                <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
+                                    <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">株式会社エムパッケージについて</p>
+                                </div>
+                            </div>
+                        </SlideInLeft>
+                    </div>
+                    </SlideInLeft>
+                </div>
+                
+                <div className="w-11/12 h-auto">
+                <FadeInBack>
+                    <div className="mx-auto w-full lg:w-10/12">
+                        <p className="text-base md:text-lg lg:text-xxl font-bold p-2 md:p-4">「いつも、身近に、皆様と共に。」</p>
+                    </div>
+                </FadeInBack>
                 </div>
 
                 <div
