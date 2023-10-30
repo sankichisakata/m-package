@@ -19,18 +19,18 @@ export default function HomeService () {
                 <div className="w-full">
                     <SlideInLeft>
                     <div className="
-                    w-11/12 mx-auto relative
+                    w-11/12 lg:w-10/12 mx-auto relative
 
                     before:absolute
                     before:bg-white
                     before:bottom-[-1rem] before:md:bottom-[-1.5rem] 
                     before:left-[0.5rem] before:md:left-[1rem]
-                    before:w-full before:lg:w-10/12
+                    before:w-full 
                     before:h-[3rem] before:md:h-[5rem]
                     before:border-[0.2rem] before:border-sub-color
-                    before:z-[-10]
+                    before:z-[-5]
                     ">
-                            <div className="mx-auto w-full lg:w-10/12 bg-sub-color">
+                            <div className="mx-auto w-full bg-sub-color">
                                 <div className="p-2 md:p-4">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">エムパッケージの仕事</p>
                                 </div>
