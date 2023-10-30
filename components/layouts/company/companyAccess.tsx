@@ -28,7 +28,7 @@ export default function CompanyAccess () {
                         before:absolute 
                         before:bg-primary-color
                         before:top-[-2rem] before:md:top-[-3rem] 
-                        before:left-3 before:md:left-5 
+                        before:left-[0.5rem] before:md:left-[1rem]
                         before:w-full
                         before:h-[3rem] before:md:h-[5rem]
                         before:z-[-10]
