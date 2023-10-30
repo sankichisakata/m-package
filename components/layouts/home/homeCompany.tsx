@@ -48,8 +48,8 @@ export default function HomeCompany () {
                                 <p>
                                 「いつも、身近に、皆様と共に。」
                                 </p>
-                        </div>
-                        </SlideInLeft>
+                            </div>
+                            </SlideInLeft>
                     </div>
                 </div>
 
@@ -99,7 +99,7 @@ export default function HomeCompany () {
                             bg-slate-600/20 rounded-md
                             ">
                                 <div className="w-full h-full text-sm md:text-base">
-                                    <p className="font-semibold">会社概要</p>
+                                    <p className="font-semibold">会社情報</p>
                                     <p className="text-xxs md:text-xs">Company</p>
                                 </div>
                                 <div 

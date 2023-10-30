@@ -121,7 +121,7 @@ export default function FooterMain () {
                     pt-6 mb-2
                     flex flex-col justify-center items-center gap-2
                     '>
-                        <Link href="#">
+                        <Link href="/privacy">
                             <p className='text-xxs lg:text-xs text-slate-600'>プライバシーポリシー</p>
                         </Link>
                         <small className='text-xxs lg:text-xs text-slate-400'><span className="text-slate-400">©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
