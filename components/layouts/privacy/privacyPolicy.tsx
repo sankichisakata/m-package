@@ -7,19 +7,19 @@ export default function PrivacyPolicy () {
     return(
         <>
             <div className="
-            overflow-hidden
             w-full h-full
             flex flex-col justify-center items-center
             ">
+                <FadeInBack>
                 <div className="w-11/12 mx-auto">
-                    <FadeInBack>
+                    
                             <div className="w-full mx-auto bg-primary-color">
                                 <div className="p-2 md:p-4">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">個人情報の取り扱いについて</p>
                                 </div>
                             </div>
-                        </FadeInBack> 
                 </div>
+                </FadeInBack> 
 
                 {/* テーブルコンテナ */}
                 <div className="
@@ -48,7 +48,7 @@ export default function PrivacyPolicy () {
 
                                 <div className="
                                 w-full 
-                                flex justify-center items-start gap-3
+                                flex justify-center items-start
                                 ">
                                     <div className="
                                     w-full

@@ -238,41 +238,6 @@ export default function CompanyTable () {
                                         <p className="
                                         flex justify-start
                                         ">
-                                           従業員数
-                                        </p>
-                                        </FadeInBack>
-                                    </div>
-
-                                    <div className="
-                                    w-9/12 md:w-8/12
-                                    flex justify-start items-center
-                                    ">
-                                        <SlideInRight>
-                                        <p className="
-                                        flex justify-start items-center
-                                        text-xl md:text-xxl lg:text-xxxl font-bold
-                                        ">
-                                            4名
-                                        </p>
-                                        </SlideInRight>
-                                    </div>
-                                </div>
-
-                                <div className="
-                                w-full 
-                                flex justify-center items-start gap-3
-                                ">
-                                    {/* 空ボックス */}
-                                    <div className="hidden md:block w-1/12"></div>
-                                    
-                                    <div className="
-                                    w-3/12 md:w-3/12
-                                    flex justify-center 
-                                    ">
-                                        <FadeInBack>
-                                        <p className="
-                                        flex justify-start
-                                        ">
                                            事業内容
                                         </p>
                                         </FadeInBack>
