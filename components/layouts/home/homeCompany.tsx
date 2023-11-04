@@ -21,7 +21,7 @@ export default function HomeCompany () {
             '
             >
                 <p className="
-                absolute z-[-5] md:mt-[-3rem] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 right-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]
+                absolute z-[-5] md:mt-[-0.1rem] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 right-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]
                 ">Company</p>
 
                 
