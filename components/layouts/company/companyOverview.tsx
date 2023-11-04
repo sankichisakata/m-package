@@ -2,7 +2,7 @@ import { FadeInBack } from "@/components/elements/observer/fadeInBack";
 import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
 import { SlideInRight } from "@/components/elements/observer/slideInRight";
 
-export default function CompanyTable () {
+export default function CompanyOverview () {
     return(
         <>
             <div className="

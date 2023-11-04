@@ -1,7 +1,10 @@
 import BorderPrimaryFull from "@/components/elements/border/borderPrimaryFull";
+import UseMap from "@/components/elements/useMap/useMap";
+
 import CompanyAccess from "@/components/layouts/company/companyAccess";
 import CompanyMain from "@/components/layouts/company/companyMain";
-import CompanyTable from "@/components/layouts/company/companyTable";
+import CompanyMap from "@/components/layouts/company/companyMap";
+import CompanyOverview from "@/components/layouts/company/companyOverview";
 
 
 export default function Company () {
@@ -9,8 +12,10 @@ export default function Company () {
         <>
             <CompanyMain/>
             <BorderPrimaryFull/>
-            <CompanyTable/>
+            <CompanyOverview/>
             <CompanyAccess/>
+            <CompanyMap/>
+            <UseMap/>
         </>
     )
 }
