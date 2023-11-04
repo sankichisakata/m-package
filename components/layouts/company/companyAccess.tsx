@@ -162,15 +162,6 @@ export default function CompanyAccess () {
                             </div>
                         </div>
                 </div>
-
-                <div 
-                    className="
-                    w-full md:w-11/12 max-w-5xl h-[20rem] md:h-[30rem] lg:h-[40rem]
-                    ">
-                    <GoogleMap/>
-                </div>
-            
-
             </div>
         </>
     )
