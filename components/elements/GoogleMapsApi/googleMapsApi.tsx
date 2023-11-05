@@ -23,9 +23,7 @@ function GoogleMapsApi() {
   const { isLoaded , loadError } = useJsApiLoader({
     id: 'google-map-script',
     language: 'ja',
-    // googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY!,
-    // 下は個人のapiキー　アカウント作成後、削除する！
-    googleMapsApiKey: "AIzaSyCPoYagwNQICZG20fNEPsst6TK2Evtnjvc",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY!,
   })
 
   const [map, setMap] = React.useState(null)
@@ -62,11 +60,6 @@ function GoogleMapsApi() {
               >
                 ダンボールのエムパッケージ
               </Text>
-              <img
-                width="150px"
-                src="https://miraito-+inc.co.jp/images/fix_logomark_A_flat%20.png"
-                alt=""
-              />
             </>
           </InfoWindowF>
         { /* Child components, such as markers, info windows, etc. */ }
