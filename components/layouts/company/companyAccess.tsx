@@ -8,7 +8,7 @@ export default function CompanyAccess () {
         <>
             <div className="
             w-full h-full overflow-hidden
-            py-14 md:py-20
+            py-4 md:py-10 lg:py-20
             flex flex-col justify-center items-center
             ">
                 <div className="w-11/12 mx-auto">
