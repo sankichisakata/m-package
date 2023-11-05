@@ -15,7 +15,7 @@ export default function CompanyMap () {
             <div 
                 className="
                 w-full md:w-11/12 lg:w-10/12
-                h-[30rem] md:h-[40rem] lg:h-[50rem]
+                h-[20rem] md:h-[40rem] lg:h-[50rem]
                 mx-auto
                 ">
                 <GoogleMapsApi/>

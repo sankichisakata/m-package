@@ -1,8 +1,9 @@
 "use client";
 
 import React from 'react'
-import { GoogleMap, MarkerF, useJsApiLoader } from '@react-google-maps/api';
+import { GoogleMap, MarkerF, useJsApiLoader, InfoWindowF } from '@react-google-maps/api';
 import { InterfaceMap } from "./googleMapStyles";
+import { Text } from '@chakra-ui/react';
  const googleMapOptions = {
   styles: InterfaceMap,
 };
@@ -24,7 +25,7 @@ function GoogleMapsApi() {
     language: 'ja',
     // googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY!,
     // 下は個人のapiキー　アカウント作成後、削除する！
-    googleMapsApiKey: "AIzaSyATucYkuY37O3MEJlYiOvBfKlCgKxXWKsg",
+    googleMapsApiKey: "AIzaSyCPoYagwNQICZG20fNEPsst6TK2Evtnjvc",
   })
 
   const [map, setMap] = React.useState(null)
@@ -50,6 +51,24 @@ function GoogleMapsApi() {
         center={center}
         zoom={10}
       >
+        <InfoWindowF position={center}>
+            <>
+              <Text
+                fontSize={16}
+                as={"p"}
+                align={"center"}
+                fontWeight={"bold"}
+                color={"green.400"}
+              >
+                ダンボールのエムパッケージ
+              </Text>
+              <img
+                width="150px"
+                src="https://miraito-+inc.co.jp/images/fix_logomark_A_flat%20.png"
+                alt=""
+              />
+            </>
+          </InfoWindowF>
         { /* Child components, such as markers, info windows, etc. */ }
         <MarkerF
           position={{
@@ -58,6 +77,7 @@ function GoogleMapsApi() {
           }}
           onLoad={onLoad}
         />
+
       </GoogleMap>
   ) : <></>
 }
