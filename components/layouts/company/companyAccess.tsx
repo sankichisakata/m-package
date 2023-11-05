@@ -1,4 +1,4 @@
-import GoogleMap from "@/components/elements/googleMap/googleMap";
+
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
 import { SlideInRight } from "@/components/elements/observer/slideInRight";
 

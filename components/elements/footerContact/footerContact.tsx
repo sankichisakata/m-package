@@ -38,7 +38,8 @@ export default function FooterContact () {
                     className='group-hover:scale-110 transition-all delay-100 duration-500 inline-block aspect-[4/3]'
                     src={equipment01}
                     alt="equipment" 
-                    fill
+                    fill={true}
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     placeholder='blur'
                     style={{ objectFit: "cover" }}
                     />
