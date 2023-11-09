@@ -1,11 +1,11 @@
+import SendEmail from "@/components/elements/nodeMailer/nodeMailer";
+import ContactForm from "@/components/layouts/contact/contactForm";
 
 export default function Contact () {
     return(
         <>
-        <div className="bg-blue-800 h-screen w-fill flex justify-center items-center">
-            <h2 className="text-2xl">お問い合わせ</h2>
-        </div>
-            
+            <ContactForm/>
+            {/* <SendEmail /> */}
         </>
     )
     
