@@ -21,7 +21,8 @@ const config: Config = {
     extend: {
       colors: {
         "primary-color" : "#475569",
-        "sub-color" : "#17a658",
+        "sub-color" : "#2c3e50",
+        // "sub-color" : "#17a658",
         "vivid-color" :"#0284c7"        
       },
       height: {

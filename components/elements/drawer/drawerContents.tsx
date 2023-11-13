@@ -91,7 +91,7 @@ export default function DrawerContents (props) {
 
                         {/* マスク */}
                         <div className="
-                        overflow-hidden bg-fixed bg-slate-600/40
+                        overflow-hidden bg-fixed bg-slate-600/30
                         bottom-0 left-0 right-0 top-0 h-full w-full 
                         rounded-md
                         "
@@ -115,7 +115,7 @@ export default function DrawerContents (props) {
                           </div>
 
                           <div className='w-full flex justify-center items-center py-3'>
-                            <Link href="/contact" onClick={onClose} className="bg-green-600 border border-green-600 rounded-full shadow-md">
+                            <Link href="/contact" onClick={onClose} className="bg-sub-color border border-sub-color rounded-full shadow-md">
                               <div className="flex justify-center items-center">
                                   <p className="px-6 py-2 text-white text-xs md:text-sm font-semibold">お問い合わせ</p>
                                   <HiMail className="border-white rounded-full p-1 md:p-0.5 m-1 md:m-2 bg-white text-xxxl"/>

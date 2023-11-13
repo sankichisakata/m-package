@@ -42,11 +42,11 @@ export default function EquipmentList () {
                 <div className="
                     z-10 bg-white top-0
                     w-11/12 lg:w-10/12 max-w-5xl h-[10rem] p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
-                    rounded-md shadow-lg
+                    rounded-sm
                     flex flex-col justify-center items-center gap-2
                     text-xs md:text-sm lg:text-base font-semibold
                     ">
-                        <p className="text-xxxl">設備に対する熱意か設備情報のテーブルを記載する。</p>
+                        <p className="text-xxl">設備に対する熱意か設備情報のテーブルを記載する。</p>
                     <p>弊社では1人の営業がすべての工程を管理する<span className="text-vivid-color">「ノンステップ管理」</span>をしております。</p>
                     <p>必要な情報を迅速にお伝えし、最短でお客様の問題を解決致します。</p>
                 </div>
@@ -70,7 +70,7 @@ export default function EquipmentList () {
                             <SlideInLeft>
                             <div className="
                             bg-white m-2
-                            rounded-md shadow-lg
+                            rounded-sm shadow-md
                             ">
                                 <div className="
                                 overflow-hidden
@@ -79,7 +79,7 @@ export default function EquipmentList () {
                                     className="
                                     w-full h-[16rem] md:h-[20rem] lg:h-[24rem]
                                     aspect-[4/6]
-                                    rounded-t-lg
+                                    rounded-t-sm
                                     bg-factory01 bg-center bg-cover
                                     flex justify-center items-center
                                     ">
@@ -111,7 +111,7 @@ export default function EquipmentList () {
                             <SlideInLeft>
                             <div className="
                             bg-white m-2
-                            rounded-md shadow-lg
+                            rounded-sm shadow-md
                             ">
                                 <div className="
                                 overflow-hidden
@@ -120,7 +120,7 @@ export default function EquipmentList () {
                                     className="
                                     w-full h-[16rem] md:h-[20rem] lg:h-[24rem]
                                     aspect-[4/6]
-                                    rounded-t-lg
+                                    rounded-t-sm
                                     bg-factory01 bg-center bg-cover
                                     flex justify-center items-center
                                     ">
@@ -152,7 +152,7 @@ export default function EquipmentList () {
                             <SlideInLeft>
                             <div className="
                             bg-white m-2
-                            rounded-md shadow-lg
+                            rounded-sm shadow-md
                             ">
                                 <div className="
                                 overflow-hidden
@@ -161,7 +161,7 @@ export default function EquipmentList () {
                                     className="
                                     w-full h-[16rem] md:h-[20rem] lg:h-[24rem]
                                     aspect-[4/6]
-                                    rounded-t-lg
+                                    rounded-t-sm
                                     bg-factory01 bg-center bg-cover
                                     flex justify-center items-center
                                     ">
@@ -193,7 +193,7 @@ export default function EquipmentList () {
                             <SlideInLeft>
                             <div className="
                             bg-white m-2
-                            rounded-md shadow-lg
+                            rounded-sm shadow-md
                             ">
                                 <div className="
                                 overflow-hidden
@@ -202,7 +202,49 @@ export default function EquipmentList () {
                                     className="
                                     w-full h-[16rem] md:h-[20rem] lg:h-[24rem]
                                     aspect-[4/6]
-                                    rounded-t-lg
+                                    rounded-t-sm
+                                    bg-factory01 bg-center bg-cover
+                                    flex justify-center items-center
+                                    ">
+                                    </div>
+                                </div>
+                                <div className="
+                                w-full p-5 lg:p-10
+                                flex flex-col justify-center items-start gap-1
+                                ">
+                                    <p className="
+                                    pb-5
+                                    text-vivid-color text-base md:text-lg lg:text-xl font-bold">【マシン名】</p>
+                                    <div className="pl-2 md:pl-5 border-l-2 border-primary-color">
+                                    <p>1何をする機械か？</p>
+                                    <p>2何ができる機械か？</p>
+                                    <p>マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明</p>
+                                    <p>その他備考</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </SlideInLeft>
+                        </div>
+
+
+                        {/* リスト⑤ */}
+                        <div className="
+                        rounded-md
+                        w-full md:w-1/2 
+                        ">
+                            <SlideInLeft>
+                            <div className="
+                            bg-white m-2
+                            rounded-sm shadow-md
+                            ">
+                                <div className="
+                                overflow-hidden
+                                ">
+                                    <div 
+                                    className="
+                                    w-full h-[16rem] md:h-[20rem] lg:h-[24rem]
+                                    aspect-[4/6]
+                                    rounded-t-sm
                                     bg-factory01 bg-center bg-cover
                                     flex justify-center items-center
                                     ">

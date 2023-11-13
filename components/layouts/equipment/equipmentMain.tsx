@@ -26,7 +26,6 @@ export default function EquipmentMain () {
                         w-full h-[16rem] md:h-[20rem] lg:h-auto
                         aspect-[4/6]
                         bg-factory01 bg-center bg-cover
-                        rounded-md shadow-lg
                         flex justify-center items-center
                         ">
                         </div>

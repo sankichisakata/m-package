@@ -22,7 +22,7 @@ export default function DrawerLayout () {
         <div>
             <a href="/" className='flex justify-center items-center px-2'>
                 <p className="text-xxs md:text-xs lg:text-sm p-1 font-bold border-t-2 border-l-2 border-b-2 border-primary-color">段ボールの</p>
-                <p className='text-xxs md:text-xs lg:text-sm text-sub-color p-1 font-bold border-2 border-sub-color'>エムパッケージ</p>
+                <p className='text-xxs md:text-xs lg:text-sm p-1 bg-sub-color text-white font-bold border-2 border-sub-color'>エムパッケージ</p>
             </a>
         </div>
 
