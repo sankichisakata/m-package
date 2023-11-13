@@ -29,10 +29,10 @@ export default function ServiceTimeline () {
                     w-full lg:w-11/12 h-auto p-2 md:p-4 mx-auto
                     flex flex-col justify-center items-center
                     border-[0.2rem] border-sub-color
-                    text-white text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
+                    text-gray-100/80 text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
                     ">
                         <p>
-                            <span className="text-primary-color">
+                            <span className="text-white">
                                 「ノンステップ管理」
                                 <span className="md:hidden"><br/></span>
                             </span>
@@ -46,7 +46,7 @@ export default function ServiceTimeline () {
                 <div className="
                     z-10 bg-white top-0
                     w-11/12 lg:w-10/12 max-w-5xl h-[10rem] p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
-                    rounded-md shadow-lg
+                    rounded-sm
                     flex flex-col justify-center items-center gap-2
                     text-xs md:text-sm lg:text-base font-semibold
                     ">
@@ -83,7 +83,7 @@ export default function ServiceTimeline () {
                             w-full h-[10rem] md:h-[16rem] lg:h-[20rem]
                             aspect-[4/6]
                             bg-factory01 bg-center bg-cover
-                            rounded-md shadow-lg
+                            shadow-md
                             flex justify-center items-center
                             ">
                             </div>
@@ -112,7 +112,7 @@ export default function ServiceTimeline () {
                             <SlideInRight>
                             <div className="
                             bg-slate-50
-                            rounded-lg shadow-xl">
+                            rounded-sm shadow-md">
                                 <div className="
                                 w-full p-3 md:p-5
                                 flex flex-col items-center">
@@ -142,7 +142,7 @@ export default function ServiceTimeline () {
                             w-full h-[10rem] md:h-[16rem] lg:h-[20rem]
                             aspect-[4/6]
                             bg-factory01 bg-center bg-cover
-                            rounded-md shadow-lg
+                            shadow-md
                             flex justify-center items-center
                             ">
                             </div>
@@ -172,7 +172,7 @@ export default function ServiceTimeline () {
                             <div className="
                             bg-primary-color 
                             text-white
-                            rounded-lg shadow-xl">
+                            rounded-sm shadow-md">
                                 <div className="
                                 w-full p-3 md:p-5
                                 flex flex-col items-center">
@@ -201,7 +201,7 @@ export default function ServiceTimeline () {
                             w-full h-[10rem] md:h-[16rem] lg:h-[20rem]
                             aspect-[4/6]
                             bg-factory01 bg-center bg-cover
-                            rounded-md shadow-lg
+                            shadow-md
                             flex justify-center items-center
                             ">
                             </div>
@@ -230,7 +230,7 @@ export default function ServiceTimeline () {
                             <SlideInRight>
                             <div className="
                             bg-slate-50
-                            rounded-lg shadow-xl">
+                            rounded-sm shadow-md">
                                 <div className="
                                 w-full p-3 md:p-5
                                 flex flex-col items-center">
@@ -258,7 +258,7 @@ export default function ServiceTimeline () {
                             w-full h-[10rem] md:h-[16rem] lg:h-[20rem]
                             aspect-[4/6]
                             bg-factory01 bg-center bg-cover
-                            rounded-md shadow-lg
+                            shadow-md
                             flex justify-center items-center
                             ">
                             </div>
@@ -288,7 +288,7 @@ export default function ServiceTimeline () {
                             <div className="
                             bg-primary-color 
                             text-white
-                            rounded-lg shadow-xl">
+                            rounded-sm shadow-md">
                                 <div className="
                                 w-full p-3 md:p-5
                                 flex flex-col items-center">
@@ -318,7 +318,7 @@ export default function ServiceTimeline () {
                             w-full h-[10rem] md:h-[16rem] lg:h-[20rem]
                             aspect-[4/6]
                             bg-factory01 bg-center bg-cover
-                            rounded-md shadow-lg
+                            shadow-md
                             flex justify-center items-center
                             ">
                             </div>
@@ -347,7 +347,7 @@ export default function ServiceTimeline () {
                             <SlideInRight>
                             <div className="
                             bg-slate-50
-                            rounded-lg shadow-xl">
+                            rounded-sm shadow-md">
                                 <div className="
                                 w-full p-3 md:p-5
                                 flex flex-col items-center">
@@ -376,7 +376,7 @@ export default function ServiceTimeline () {
                             w-full h-[10rem] md:h-[16rem] lg:h-[20rem]
                             aspect-[4/6]
                             bg-factory01 bg-center bg-cover
-                            rounded-md shadow-lg
+                            shadow-md
                             flex justify-center items-center
                             ">
                             </div>
@@ -406,7 +406,7 @@ export default function ServiceTimeline () {
                             <div className="
                             bg-primary-color 
                             text-white
-                            rounded-lg shadow-xl">
+                            rounded-sm shadow-md">
                                 <div className="
                                 w-full p-3 md:p-5
                                 flex flex-col items-center">
@@ -435,7 +435,7 @@ export default function ServiceTimeline () {
                             w-full h-[10rem] md:h-[16rem] lg:h-[20rem]
                             aspect-[4/6]
                             bg-factory01 bg-center bg-cover
-                            rounded-md shadow-lg
+                            shadow-md
                             flex justify-center items-center
                             ">
                             </div>
@@ -464,7 +464,7 @@ export default function ServiceTimeline () {
                             <SlideInRight>
                             <div className="
                             bg-slate-50
-                            rounded-lg shadow-xl">
+                            rounded-sm shadow-md">
                                 <div className="
                                 w-full p-3 md:p-5
                                 flex flex-col items-center">
@@ -494,7 +494,7 @@ export default function ServiceTimeline () {
                             w-full h-[10rem] md:h-[16rem] lg:h-[20rem]
                             aspect-[4/6]
                             bg-factory01 bg-center bg-cover
-                            rounded-md shadow-lg
+                            shadow-md
                             flex justify-center items-center
                             ">
                             </div>
@@ -524,7 +524,7 @@ export default function ServiceTimeline () {
                             <div className="
                             bg-primary-color 
                             text-white
-                            rounded-lg shadow-xl">
+                            rounded-sm shadow-md">
                                 <div className="
                                 w-full p-3 md:p-5
                                 flex flex-col items-center">

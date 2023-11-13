@@ -65,6 +65,7 @@ export default function PageTitle () {
                                 <span className="
                                 font-bold
                                 text-[2rem] md:text-[2.5rem] lg:text-[3rem]
+                                drop-shadow-md
                                 ">
                                     {name}
                                 </span>
