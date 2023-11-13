@@ -38,27 +38,13 @@ export default function EquipmentList () {
                     </FadeInBack>
                 </div>
 
-                <FadeInBack>
-                <div className="
-                    z-10 bg-white top-0
-                    w-11/12 lg:w-10/12 max-w-5xl h-[10rem] p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
-                    rounded-sm
-                    flex flex-col justify-center items-center gap-2
-                    text-xs md:text-sm lg:text-base font-semibold
-                    ">
-                        <p className="text-xxl">設備に対する熱意か設備情報のテーブルを記載する。</p>
-                    <p>弊社では1人の営業がすべての工程を管理する<span className="text-vivid-color">「ノンステップ管理」</span>をしております。</p>
-                    <p>必要な情報を迅速にお伝えし、最短でお客様の問題を解決致します。</p>
-                </div>
-                </FadeInBack>
-
                 <div className="
                 w-full h-auto 
                 flex justify-center items-center 
                 ">
                     {/* テーブル */}
                     <div className="
-                    w-11/12 lg:w-10/12 h-auto py-10
+                    w-11/12 lg:w-9/12 xl:w-7/12 h-auto py-10
                     flex flex-col md:flex-row flex-wrap justify-start items-center gap-2 md:gap-0
                     text-xs md:text-sm lg:text-base font-semibold
                     ">
@@ -80,23 +66,23 @@ export default function EquipmentList () {
                                     w-full h-[16rem] md:h-[20rem] lg:h-[24rem]
                                     aspect-[4/6]
                                     rounded-t-sm
-                                    bg-factory01 bg-center bg-cover
+                                    bg-PrinterSlotter bg-center bg-cover
                                     flex justify-center items-center
                                     ">
                                     </div>
                                 </div>
                                 <div className="
                                 w-full p-5 lg:p-10
-                                flex flex-col justify-center items-start gap-1
+                                flex flex-col justify-center items-start gap-3 md:gap-5
                                 ">
                                     <p className="
-                                    pb-5
-                                    text-vivid-color text-base md:text-lg lg:text-xl font-bold">【マシン名】</p>
-                                    <div className="pl-2 md:pl-5 border-l-2 border-primary-color">
-                                    <p>1何をする機械か？</p>
-                                    <p>2何ができる機械か？</p>
-                                    <p>マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明</p>
-                                    <p>その他備考</p>
+                                    flex justify-center items-center
+                                    pl-2 md:pl-3
+                                    border-l-2 border-vivid-color
+                                    text-vivid-color text-base md:text-lg lg:text-xl font-bold
+                                    ">プリンタースロッター</p>
+                                    <div className="">
+                                        <p>自由に動く刃物により希望の寸法に切り込みと罫線を入れる事ができる。一般的なA式(みかん箱タイプ)に裁断する。同時にカラー印刷(2色)ができ、商品名やロゴなど細かい印刷ができる。</p>
                                     </div>
                                 </div>
                             </div>
@@ -121,23 +107,23 @@ export default function EquipmentList () {
                                     w-full h-[16rem] md:h-[20rem] lg:h-[24rem]
                                     aspect-[4/6]
                                     rounded-t-sm
-                                    bg-factory01 bg-center bg-cover
+                                    bg-RotarySlitterBig bg-center bg-cover
                                     flex justify-center items-center
                                     ">
                                     </div>
                                 </div>
                                 <div className="
                                 w-full p-5 lg:p-10
-                                flex flex-col justify-center items-start gap-1
+                                flex flex-col justify-center items-start gap-3 md:gap-5
                                 ">
                                     <p className="
-                                    pb-5
-                                    text-vivid-color text-base md:text-lg lg:text-xl font-bold">【マシン名】</p>
-                                    <div className="pl-2 md:pl-5 border-l-2 border-primary-color">
-                                    <p>1何をする機械か？</p>
-                                    <p>2何ができる機械か？</p>
-                                    <p>マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明</p>
-                                    <p>その他備考</p>
+                                   flex justify-center items-center
+                                   pl-2 md:pl-3
+                                   border-l-2 border-vivid-color
+                                   text-vivid-color text-base md:text-lg lg:text-xl font-bold
+                                    ">ロータリースリッター</p>
+                                    <div className="">
+                                        <p>板状の段ボールシートに罫線を入れたり、パット・仕切りなど指定の寸法に断裁することができる。大小のロータリーパンチを使用して小ロットや特殊な形状の箱を作ることができる。</p>
                                     </div>
                                 </div>
                             </div>
@@ -162,23 +148,23 @@ export default function EquipmentList () {
                                     w-full h-[16rem] md:h-[20rem] lg:h-[24rem]
                                     aspect-[4/6]
                                     rounded-t-sm
-                                    bg-factory01 bg-center bg-cover
+                                    bg-Punch bg-center bg-cover
                                     flex justify-center items-center
                                     ">
                                     </div>
                                 </div>
                                 <div className="
                                 w-full p-5 lg:p-10
-                                flex flex-col justify-center items-start gap-1
+                                flex flex-col justify-center items-start gap-3 md:gap-5
                                 ">
                                     <p className="
-                                    pb-5
-                                    text-vivid-color text-base md:text-lg lg:text-xl font-bold">【マシン名】</p>
-                                    <div className="pl-2 md:pl-5 border-l-2 border-primary-color">
-                                    <p>1何をする機械か？</p>
-                                    <p>2何ができる機械か？</p>
-                                    <p>マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明</p>
-                                    <p>その他備考</p>
+                                    flex justify-center items-center
+                                    pl-2 md:pl-3
+                                    border-l-2 border-vivid-color
+                                    text-vivid-color text-base md:text-lg lg:text-xl font-bold
+                                    ">パンチ</p>
+                                    <div className="">
+                                        <p>罫線に合わせて切り込みを入れる。</p>
                                     </div>
                                 </div>
                             </div>
@@ -203,23 +189,23 @@ export default function EquipmentList () {
                                     w-full h-[16rem] md:h-[20rem] lg:h-[24rem]
                                     aspect-[4/6]
                                     rounded-t-sm
-                                    bg-factory01 bg-center bg-cover
+                                    bg-SemiAutoGluer bg-center bg-cover
                                     flex justify-center items-center
                                     ">
                                     </div>
                                 </div>
                                 <div className="
                                 w-full p-5 lg:p-10
-                                flex flex-col justify-center items-start gap-1
+                                flex flex-col justify-center items-start gap-3 md:gap-5
                                 ">
                                     <p className="
-                                    pb-5
-                                    text-vivid-color text-base md:text-lg lg:text-xl font-bold">【マシン名】</p>
-                                    <div className="pl-2 md:pl-5 border-l-2 border-primary-color">
-                                    <p>1何をする機械か？</p>
-                                    <p>2何ができる機械か？</p>
-                                    <p>マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明</p>
-                                    <p>その他備考</p>
+                                    flex justify-center items-center
+                                    pl-2 md:pl-3
+                                    border-l-2 border-vivid-color
+                                    text-vivid-color text-base md:text-lg lg:text-xl font-bold
+                                    ">セミオートグルアー</p>
+                                    <div className="">
+                                        <p>裁断、印刷した段ボールの接合部を糊付けする。</p>
                                     </div>
                                 </div>
                             </div>
@@ -230,7 +216,7 @@ export default function EquipmentList () {
                         {/* リスト⑤ */}
                         <div className="
                         rounded-md
-                        w-full md:w-1/2 
+                        w-full md:w-1/2
                         ">
                             <SlideInLeft>
                             <div className="
@@ -245,28 +231,49 @@ export default function EquipmentList () {
                                     w-full h-[16rem] md:h-[20rem] lg:h-[24rem]
                                     aspect-[4/6]
                                     rounded-t-sm
-                                    bg-factory01 bg-center bg-cover
+                                    bg-ArmStitcher bg-center bg-cover
                                     flex justify-center items-center
                                     ">
                                     </div>
                                 </div>
                                 <div className="
                                 w-full p-5 lg:p-10
-                                flex flex-col justify-center items-start gap-1
+                                flex flex-col justify-center items-start gap-3 md:gap-5
                                 ">
                                     <p className="
-                                    pb-5
-                                    text-vivid-color text-base md:text-lg lg:text-xl font-bold">【マシン名】</p>
-                                    <div className="pl-2 md:pl-5 border-l-2 border-primary-color">
-                                    <p>1何をする機械か？</p>
-                                    <p>2何ができる機械か？</p>
-                                    <p>マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明マシン説明</p>
-                                    <p>その他備考</p>
+                                    flex justify-center items-center
+                                    pl-2 md:pl-3
+                                    border-l-2 border-vivid-color
+                                    text-vivid-color text-base md:text-lg lg:text-xl font-bold                                   
+                                    ">アームステッチャー</p>
+                                    <div className="">
+                                        <p>段ボールケースの接合部をワイヤーで留める機械。</p>
                                     </div>
                                 </div>
                             </div>
                             </SlideInLeft>
                         </div>
+
+                        {/* その他設備 */}
+                        <FadeInBack>
+                        <div className="
+                            bg-white
+                            lg:w-10/12 max-w-5xl h-[10rem] mt-10 md:mt-14 lg:mt-20 mx-auto
+                            rounded-sm
+                            flex flex-col justify-center items-center gap-3
+                            text-xs md:text-sm lg:text-base font-semibold
+                            ">
+                            <p className="
+                            text-base md:text-lg lg:text-xl font-bold
+                            ">その他設備</p>
+                            <div className="
+                            flex justify-center items-center
+                            ">
+                                <p>・2tトラック1台</p>
+                                <p>・ガスボイラー</p>
+                            </div>
+                        </div>
+                        </FadeInBack>
                         
 
 
