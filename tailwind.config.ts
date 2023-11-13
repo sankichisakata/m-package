@@ -29,18 +29,26 @@ const config: Config = {
         'safari-screen' : '100dvh'
       },
       backgroundImage: {
-       'tell01' : "url('/img/tell01.jpg')" ,
-       'town01' : "url('/img/town01.jpg')" ,
-       'town02' : "url('/img/town02.jpg')" ,
-       'service01' : "url('/img/service01.jpg')" ,
-       'equipment01' : "url('/img/equipment01.jpg')",
-       'equipment02' : "url('/img/equipment02.jpg')",
-       'cardboard01' : "url('/img/cardboard01.jpg')",
-       'cardboard02' : "url('/img/cardboard02.jpg')",
-       'factory01' : "url('/img/factory01.jpg')",
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        // home
+      'tell01' : "url('/img/tell01.jpg')" ,
+      'town01' : "url('/img/town01.jpg')" ,
+      'town02' : "url('/img/town02.jpg')" ,
+      'service01' : "url('/img/service01.jpg')" ,
+      'equipment01' : "url('/img/equipment01.jpg')",
+      'equipment02' : "url('/img/equipment02.jpg')",
+      'cardboard01' : "url('/img/cardboard01.jpg')",
+      'cardboard02' : "url('/img/cardboard02.jpg')",
+      'factory01' : "url('/img/factory01.jpg')",
+      // equipment
+      'PrinterSlotter' : "url('/img/equipment/PrinterSlotter.webp')" ,
+      'RotarySlitterSmall' : "url('/img/equipment/RotarySlitterSmall.webp')" ,
+      'RotarySlitterBig' : "url('/img/equipment/RotarySlitterBig.webp')" ,
+      'Punch' : "url('/img/equipment/Punch.webp')" ,
+      'SemiAutoGluer' : "url('/img/equipment/SemiAutoGluer.webp')" ,
+      'ArmStitcher' : "url('/img/equipment/ArmStitcher.webp')" ,
+      // 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      // 'gradient-conic':
+      //   'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
