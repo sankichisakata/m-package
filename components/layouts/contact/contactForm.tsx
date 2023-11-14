@@ -41,18 +41,17 @@ export default function ContactForm () {
     ">
       <div className="
       w-11/12
-      text-xs md:text-sm lg:text-base font-semibold
+      text-sm md:text-base lg:text-lg font-semibold
       flex flex-col justify-center items-center gap-3
       ">
 
-        <p>弊社の事業にご興味をお持ちいただき、誠にありがとうございます。</p>
+        <p>弊社の商品にご興味をお持ちいただき、誠にありがとうございます。</p>
         <p>内容をご入力いただき、プライバシーポリシーに同意の上、「送信する」ボタンを押してください。</p>
-        <p className="text-xxs md:text-xs lg:text-sm font-semibold">※「送信する」ボタンを押すと内容が送信されます。ご入力内容をご確認の上、ボタンを押してください。</p>
       </div>
 
       {/* フォーム全体 */}
       <div className="
-      w-11/12 md:w-8/12 lg:w-7/12
+      w-11/12 md:w-7/12 lg:w-6/12 max-w-2xl
       py-10 md:py-16
       flex flex-col justify-center items-center
       ">
@@ -61,20 +60,25 @@ export default function ContactForm () {
         className="
         w-full
         space-y-5 md:space-y-12 
-        text-xs md:text-sm lg:text-base font-semibold
+        text-sm md:text-base lg:text-lg font-semibold
         ">
 
           {/* フォーム：お名前 */}
           <div className="
-          flex flex-col md:flex-row gap-1
+          flex flex-col md:flex-row gap-2 md:gap-0
           ">
+
             <div className="
-            w-full md:w-3/12 h-auto
+            w-full md:w-6/12 h-auto
             ">
-              <label className="flex items-center md:items-first" htmlFor="name">
+              <label 
+              htmlFor="name"
+              className="
+              flex items-center items-center
+              ">
                 <span className="
                 bg-red-400
-                p-[0.1rem] mx-1
+                py-[0.1rem] md:py-[0.2rem] px-1 md:px-2 mr-1 md:mr-3
                 text-white text-xxs md:text-xs lg:text-sm
                 rounded-sm
                 ">必須
@@ -83,8 +87,6 @@ export default function ContactForm () {
                 </label>
             </div>
 
-            <div className="hidden md:block md:w-3/12"></div>
-
             <div className="
             w-full md:w-6/12
             ">
@@ -92,9 +94,16 @@ export default function ContactForm () {
               flex flex-col justify-center items-first
               ">
                 <input
-                  className="border"
+                  className="
+                  w-44 
+                  py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
+                  border-2
+                  rounded-md
+                  focus:outline-sub-color
+                  "
                   id="name"
                   type="text"
+                  placeholder="例：山田太郎"
                   {...register('name', { 
                     // required: {
                     //   value: true,
@@ -117,7 +126,7 @@ export default function ContactForm () {
               
 
               {/* エラーメッセージ：お名前 */}
-              <div className="p-1 text-xxs md:text-xs lg:text-sm">
+              <div className="p-1 text-xs md:text-sm lg:text-base">
                 {errors.name?.message === 'required' && (
                         <div className="text-red-500">入力が必須の項目です。</div>
                       )}
@@ -133,7 +142,9 @@ export default function ContactForm () {
           <div>
             <label htmlFor="phone">電話番号</label>
             <input
-              className="border"
+              className="
+              focus:outline-sub-color
+              "
               id="phone"
               {...register('phone')}
               type="tel"
@@ -174,13 +185,31 @@ export default function ContactForm () {
             ></textarea>
           </div>
 
-          <button 
-          className="border"
-          type="submit"
-          disabled={ !isDirty }
-          >
-              Submit
-          </button>
+          <div className="
+          py-4
+          flex flex-col justify-center items-center gap-2 md:gap-3
+          text-xs md:text-sm lg:text-base font-semibold
+          ">
+            <p>「送信する」ボタンを押すと内容が送信されます。</p>
+            <p>ご入力内容をご確認の上、ボタンを押してください。</p>
+          </div>
+          
+          <div className="
+          flex justify-center items-center
+          ">
+            <button 
+            className="
+            bg-sub-color
+            py-3 px-8 mx-1
+            border rounded-full
+            text-white
+            "
+            type="submit"
+            disabled={ !isDirty }
+            >
+              送信する
+            </button>
+          </div>
 
         </form>
       </div>
