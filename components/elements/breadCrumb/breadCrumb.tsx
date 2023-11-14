@@ -10,8 +10,9 @@ const navigation = [
     { id: 3, name: "設備案内", href: "/equipment" },
     { id: 4, name: "会社情報", href: "/company" },
     { id: 5, name: "ニュース", href: "/news" },
-    { id: 6, name: "お問い合わせ画面", href: "/contact" },
-    { id: 7, name: "プライバシーポリシー", href: "/privacy" },
+    { id: 6, name: "お問い合わせ", href: "/contact" },
+    { id: 7, name: "お問い合わせ完了", href: "/bird" },
+    { id: 8, name: "プライバシーポリシー", href: "/privacy" },
   ];
 
 export default function BreadCrumb () {
