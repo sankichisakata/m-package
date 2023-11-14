@@ -3,25 +3,25 @@
 import { useState } from "react"
 import { useForm } from 'react-hook-form';
 
-type FormDate = {
-  name: string;
-  email: string;
-  message: string;
-}
+import { FormDate ,Form } from "@/components/elements/zod/zodShema";
+import { zodResolver } from '@hookform/resolvers/zod';
 
 export default function ContactForm () {
   const {
     register, 
     handleSubmit,
     formState: { isDirty, isValid, errors },
-  } = useForm<FormDate>({ criteriaMode: 'all',});
+  } = useForm<FormDate>({ 
+    criteriaMode: 'all',
+    resolver: zodResolver(Form),
+  });
 
   // const [name, setName] = useState("")
   // const [email, setEmail] = useState("")
   // const [message, setMessage] = useState("")
 
   const onSubmit = handleSubmit((date) =>  console.log(date));
-  const { name, ref, onChange, onBlur } = register('name');
+  // const { name, ref, onChange, onBlur } = register('name');
   
   
 
@@ -35,70 +35,155 @@ export default function ContactForm () {
   // }
 
   return (
-    <div>
-      <h2>お問い合わせ</h2>
+    <div className="
+    w-full h-auto
+    flex flex-col justify-center items-center
+    ">
+      <div className="
+      w-11/12
+      text-xs md:text-sm lg:text-base font-semibold
+      flex flex-col justify-center items-center gap-3
+      ">
 
-      <form onSubmit={onSubmit} className="space-y-10">
-        <div>
-          <label htmlFor="name">お名前</label>
-          <input
-            className="border"
-            id="name"
-            {...register('name', { 
-              required: {
-                value: true,
-                message: '入力が必須の項目です。',
-              },
-              minLength: {
-              value: 3,
-              message: '3文字以上入力してください。'
-              },
-            })}
-            type="text"
-            name={name}
-            onChange={onChange}
-            onBlur={onBlur}
-            ref={ref}
-            // onChange={(e) => setName(e.target.value)}
-            // onBlur={onBlur}
-            // ref={ref}
-          />
-          {errors.name?.type === 'required' && (
-            <div className="text-red-500">入力が必須の項目です。</div>
-          )}
-          {errors.name?.type === 'minLength' && (
-            <div className="text-red-500">3文字以上入力してください。</div>
-          )}
-        </div>
-        <div>
-          <label htmlFor="email">メールアドレス</label>
-          <input
-            className="border"
-            id="email"
-            {...register('email')}
-            type="email"
-            // value={email}
-            // onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="message">メッセージ</label>
-          <textarea
-            className="border"
-            id="message"
-            {...register('message')}
-            name="message"
-            // value={message}
-            // onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-        </div>
-        <button 
-        className="border"
-        type="submit"
-        disabled={!isDirty }
-        >
-            Submit</button>
-      </form>
+        <p>弊社の事業にご興味をお持ちいただき、誠にありがとうございます。</p>
+        <p>内容をご入力いただき、プライバシーポリシーに同意の上、「送信する」ボタンを押してください。</p>
+        <p className="text-xxs md:text-xs lg:text-sm font-semibold">※「送信する」ボタンを押すと内容が送信されます。ご入力内容をご確認の上、ボタンを押してください。</p>
+      </div>
+
+      {/* フォーム全体 */}
+      <div className="
+      w-11/12 md:w-8/12 lg:w-7/12
+      py-10 md:py-16
+      flex flex-col justify-center items-center
+      ">
+        <form 
+        onSubmit={onSubmit} 
+        className="
+        w-full
+        space-y-5 md:space-y-12 
+        text-xs md:text-sm lg:text-base font-semibold
+        ">
+
+          {/* フォーム：お名前 */}
+          <div className="
+          flex flex-col md:flex-row gap-1
+          ">
+            <div className="
+            w-full md:w-3/12 h-auto
+            ">
+              <label className="flex items-center md:items-first" htmlFor="name">
+                <span className="
+                bg-red-400
+                p-[0.1rem] mx-1
+                text-white text-xxs md:text-xs lg:text-sm
+                rounded-sm
+                ">必須
+                </span>
+                  お名前
+                </label>
+            </div>
+
+            <div className="hidden md:block md:w-3/12"></div>
+
+            <div className="
+            w-full md:w-6/12
+            ">
+              <div className="
+              flex flex-col justify-center items-first
+              ">
+                <input
+                  className="border"
+                  id="name"
+                  type="text"
+                  {...register('name', { 
+                    // required: {
+                    //   value: true,
+                    //   message: '入力が必須の項目です。',
+                    // },
+                    // minLength: {
+                    // value: 3,
+                    // message: '3文字以上入力してください。'
+                    // },
+                  })}
+                  // name={name}
+                  // onChange={onChange}
+                  // onBlur={onBlur}
+                  // ref={ref}
+                  // onChange={(e) => setName(e.target.value)}
+                  // onBlur={onBlur}
+                  // ref={ref}
+                />
+              </div>
+              
+
+              {/* エラーメッセージ：お名前 */}
+              <div className="p-1 text-xxs md:text-xs lg:text-sm">
+                {errors.name?.message === 'required' && (
+                        <div className="text-red-500">入力が必須の項目です。</div>
+                      )}
+                {errors.name?.message && (
+                  <div className="text-red-500">{errors.name.message}</div>
+                )}
+              </div>
+
+            </div>
+          </div>
+          
+          {/* フォーム：電話番号 */}
+          <div>
+            <label htmlFor="phone">電話番号</label>
+            <input
+              className="border"
+              id="phone"
+              {...register('phone')}
+              type="tel"
+              // value={email}
+              // onChange={(e) => setEmail(e.target.value)}
+            />
+            {/* エラーメッセージ：電話番号 */}
+            <div className="p-1 text-xxs md:text-xs lg:text-sm">
+                {errors.phone?.message && (
+                  <div className="text-red-500">{errors.phone.message}</div>
+                )}
+              </div>
+          </div>
+          
+          {/* フォーム：メールアドレス */}
+          <div>
+            <label htmlFor="email">メールアドレス</label>
+            <input
+              className="border"
+              id="email"
+              {...register('email')}
+              type="email"
+              // value={email}
+              // onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
+          {/* フォーム：メッセージ */}
+          <div>
+            <label htmlFor="message">メッセージ</label>
+            <textarea
+              className="border"
+              id="message"
+              {...register('message')}
+              name="message"
+              // value={message}
+              // onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+          </div>
+
+          <button 
+          className="border"
+          type="submit"
+          disabled={ !isDirty }
+          >
+              Submit
+          </button>
+
+        </form>
+      </div>
     </div>
   )
 }

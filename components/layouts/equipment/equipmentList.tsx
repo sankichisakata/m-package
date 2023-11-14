@@ -254,7 +254,7 @@ export default function EquipmentList () {
                             </SlideInLeft>
                         </div>
 
-                        {/* その他設備 */}
+                        {/* その他設備
                         <FadeInBack>
                         <div className="
                             bg-white
@@ -273,7 +273,7 @@ export default function EquipmentList () {
                                 <p>・ガスボイラー</p>
                             </div>
                         </div>
-                        </FadeInBack>
+                        </FadeInBack> */}
                         
 
 
