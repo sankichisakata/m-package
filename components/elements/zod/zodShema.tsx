@@ -44,13 +44,13 @@ export const Form = z.object({
       message:"メールアドレスの形式でご入力ください。"
     }),
 
-    message: z
+    contents: z
     .string()
-    .min(10, {
-      message: "10文字以上で入力してください。"
+    .min(1, {
+      message: "お問い合わせ内容を入力してください。"
     })
-    .max(50, {
-      message: "50文字以下で入力してください。"
+    .max(300, {
+      message: "300文字以下で入力してください。"
     }),
     
     submit: z.any()

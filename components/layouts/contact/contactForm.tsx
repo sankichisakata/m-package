@@ -52,7 +52,7 @@ export default function ContactForm () {
 
       {/* フォーム全体 */}
       <div className="
-      w-11/12 md:w-7/12 lg:w-6/12 max-w-2xl
+      w-11/12 md:w-9/12 lg:w-8/12
       py-10 md:py-16
       flex flex-col justify-center items-center
       ">
@@ -221,6 +221,12 @@ export default function ContactForm () {
                   {...register('phone', { 
                   })}
                 />
+                <p className="
+                py-[0.2rem] md:py-[0.3rem] px-1 md:px-2
+                text-gray-500 text-xxs md:text-xs lg:text-sm whitespace-nowrap
+                ">
+                  ※日中ご連絡の取れる連絡先をお願い致します。
+                </p>
               </div>
               
 
@@ -291,21 +297,70 @@ export default function ContactForm () {
 
             </div>
           </div>
-          
 
-          {/* フォーム：メッセージ */}
-          <div>
-            <label htmlFor="message">メッセージ</label>
-            <textarea
-              className="border"
-              id="message"
-              {...register('message')}
-              name="message"
-              // value={message}
-              // onChange={(e) => setMessage(e.target.value)}
-            ></textarea>
+          {/* フォーム：お問い合わせ内容 */}
+          <div className="
+          flex flex-col md:flex-row gap-2 md:gap-0
+          ">
+
+            <div className="
+            w-full md:w-6/12 h-auto
+            ">
+              <label 
+              htmlFor="contents"
+              className="
+              flex items-center items-center
+              ">
+                <span className="
+                bg-red-400
+                py-[0.1rem] md:py-[0.2rem] px-1 md:px-2 mr-1 md:mr-3
+                text-white text-xxs md:text-xs lg:text-sm
+                rounded-sm
+                ">必須
+                </span>
+                  お問い合わせ内容
+                </label>
+            </div>
+
+            <div className="
+            w-full md:w-6/12
+            ">
+              <div className="
+              flex flex-col justify-center items-first
+              ">
+                <textarea
+                  className="
+                  w-full md:w-72 lg:w-80
+                  h-40 md:h-52 lg:h-56
+                  py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
+                  border-2
+                  rounded-md
+                  focus:outline-sub-color
+                  "
+                  id="contents"
+                  placeholder="例：ooo@m-package.com"
+                  {...register('contents', { 
+                  })}
+                />
+                <p className="
+                py-[0.2rem] md:py-[0.3rem] px-1 md:px-2
+                text-gray-500 text-xxs md:text-xs lg:text-sm whitespace-nowrap
+                ">
+                  ※全角300字以内でご入力ください。。
+                </p>
+              </div>
+              
+
+              {/* エラーメッセージ：お問い合わせ内容 */}
+              <div className="p-1 text-xs md:text-sm lg:text-base">
+                {errors.contents?.message && (
+                  <div className="text-red-500">{errors.contents.message}</div>
+                )}
+              </div>
+
+            </div>
           </div>
-
+          
           <div className="
           py-4
           flex flex-col justify-center items-center gap-2 md:gap-3
@@ -315,6 +370,7 @@ export default function ContactForm () {
             <p>ご入力内容をご確認の上、ボタンを押してください。</p>
           </div>
           
+          {/* フォーム：送信ボタン */}
           <div className="
           flex justify-center items-center
           ">
