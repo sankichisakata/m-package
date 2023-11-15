@@ -13,6 +13,7 @@ export default function ContactForm () {
     formState: { isDirty, isValid, errors },
   } = useForm<FormDate>({ 
     criteriaMode: 'all',
+    mode: "onBlur",
     resolver: zodResolver(Form),
   });
 
@@ -63,6 +64,62 @@ export default function ContactForm () {
         text-sm md:text-base lg:text-lg font-semibold
         ">
 
+          {/* フォーム：会社名 */}
+          <div className="
+          flex flex-col md:flex-row gap-2 md:gap-0
+          ">
+
+            <div className="
+            w-full md:w-6/12 h-auto
+            ">
+              <label 
+              htmlFor="company"
+              className="
+              flex items-center items-center
+              ">
+                <span className="
+                bg-gray-500
+                py-[0.1rem] md:py-[0.2rem] px-1 md:px-2 mr-1 md:mr-3
+                text-white text-xxs md:text-xs lg:text-sm
+                rounded-sm
+                ">任意
+                </span>
+                  会社名
+                </label>
+            </div>
+
+            <div className="
+            w-full md:w-6/12
+            ">
+              <div className="
+              flex flex-col justify-center items-first
+              ">
+                <input
+                  className="
+                  w-60 md:w-72 lg:w-80
+                  py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
+                  border-2
+                  rounded-md
+                  focus:outline-sub-color
+                  "
+                  id="company"
+                  type="text"
+                  placeholder="例：株式会社エムパッケージ"
+                  {...register('company', { 
+                  })}
+                />
+              </div>
+
+              {/* エラーメッセージ：会社名 */}
+              <div className="p-1 text-xs md:text-sm lg:text-base">
+                {errors.company?.message && (
+                  <div className="text-red-500">{errors.company.message}</div>
+                )}
+              </div>
+
+            </div>
+          </div>
+
           {/* フォーム：お名前 */}
           <div className="
           flex flex-col md:flex-row gap-2 md:gap-0
@@ -95,7 +152,7 @@ export default function ContactForm () {
               ">
                 <input
                   className="
-                  w-44 
+                  w-44 md:w-52 lg:w-60
                   py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
                   border-2
                   rounded-md
@@ -103,33 +160,15 @@ export default function ContactForm () {
                   "
                   id="name"
                   type="text"
-                  placeholder="例：山田太郎"
+                  placeholder="例：山田&emsp;太郎"
                   {...register('name', { 
-                    // required: {
-                    //   value: true,
-                    //   message: '入力が必須の項目です。',
-                    // },
-                    // minLength: {
-                    // value: 3,
-                    // message: '3文字以上入力してください。'
-                    // },
                   })}
-                  // name={name}
-                  // onChange={onChange}
-                  // onBlur={onBlur}
-                  // ref={ref}
-                  // onChange={(e) => setName(e.target.value)}
-                  // onBlur={onBlur}
-                  // ref={ref}
                 />
               </div>
               
 
               {/* エラーメッセージ：お名前 */}
               <div className="p-1 text-xs md:text-sm lg:text-base">
-                {errors.name?.message === 'required' && (
-                        <div className="text-red-500">入力が必須の項目です。</div>
-                      )}
                 {errors.name?.message && (
                   <div className="text-red-500">{errors.name.message}</div>
                 )}
@@ -137,40 +176,122 @@ export default function ContactForm () {
 
             </div>
           </div>
-          
+
           {/* フォーム：電話番号 */}
-          <div>
-            <label htmlFor="phone">電話番号</label>
-            <input
+          <div className="
+          flex flex-col md:flex-row gap-2 md:gap-0
+          ">
+
+            <div className="
+            w-full md:w-6/12 h-auto
+            ">
+              <label 
+              htmlFor="phone"
               className="
-              focus:outline-sub-color
-              "
-              id="phone"
-              {...register('phone')}
-              type="tel"
-              // value={email}
-              // onChange={(e) => setEmail(e.target.value)}
-            />
-            {/* エラーメッセージ：電話番号 */}
-            <div className="p-1 text-xxs md:text-xs lg:text-sm">
+              flex items-center items-center
+              ">
+                <span className="
+                bg-red-400
+                py-[0.1rem] md:py-[0.2rem] px-1 md:px-2 mr-1 md:mr-3
+                text-white text-xxs md:text-xs lg:text-sm
+                rounded-sm
+                ">必須
+                </span>
+                  電話番号
+                </label>
+            </div>
+
+            <div className="
+            w-full md:w-6/12
+            ">
+              <div className="
+              flex flex-col justify-center items-first
+              ">
+                <input
+                  className="
+                  w-40 md:w-56
+                  py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
+                  border-2
+                  rounded-md
+                  focus:outline-sub-color
+                  "
+                  id="phone"
+                  type="tel"
+                  placeholder="例：09011112222"
+                  {...register('phone', { 
+                  })}
+                />
+              </div>
+              
+
+              {/* エラーメッセージ：電話番号 */}
+              <div className="p-1 text-xs md:text-sm lg:text-base">
                 {errors.phone?.message && (
                   <div className="text-red-500">{errors.phone.message}</div>
                 )}
               </div>
+
+            </div>
+          </div>
+
+
+          {/* フォーム：メールアドレス */}
+          <div className="
+          flex flex-col md:flex-row gap-2 md:gap-0
+          ">
+
+            <div className="
+            w-full md:w-6/12 h-auto
+            ">
+              <label 
+              htmlFor="email"
+              className="
+              flex items-center items-center
+              ">
+                <span className="
+                bg-red-400
+                py-[0.1rem] md:py-[0.2rem] px-1 md:px-2 mr-1 md:mr-3
+                text-white text-xxs md:text-xs lg:text-sm
+                rounded-sm
+                ">必須
+                </span>
+                  メールアドレス
+                </label>
+            </div>
+
+            <div className="
+            w-full md:w-6/12
+            ">
+              <div className="
+              flex flex-col justify-center items-first
+              ">
+                <input
+                  className="
+                  w-64 md:w-72 lg:w-80
+                  py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
+                  border-2
+                  rounded-md
+                  focus:outline-sub-color
+                  "
+                  id="email"
+                  type="email"
+                  placeholder="例：ooo@m-package.com"
+                  {...register('email', { 
+                  })}
+                />
+              </div>
+              
+
+              {/* エラーメッセージ：メールアドレス */}
+              <div className="p-1 text-xs md:text-sm lg:text-base">
+                {errors.email?.message && (
+                  <div className="text-red-500">{errors.email.message}</div>
+                )}
+              </div>
+
+            </div>
           </div>
           
-          {/* フォーム：メールアドレス */}
-          <div>
-            <label htmlFor="email">メールアドレス</label>
-            <input
-              className="border"
-              id="email"
-              {...register('email')}
-              type="email"
-              // value={email}
-              // onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
 
           {/* フォーム：メッセージ */}
           <div>
