@@ -2,14 +2,16 @@
 
 import Link from "next/link";
 import { useState } from "react"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useForm } from 'react-hook-form';
 
 import { FormDate ,Form } from "@/components/elements/zod/zodShema";
 import { zodResolver } from '@hookform/resolvers/zod';
 
-
-
 export default function ContactForm () {
+  const url = '/m-package/components/elements/api/sendEmail'
+
   const {
     register, 
     handleSubmit,
@@ -19,13 +21,13 @@ export default function ContactForm () {
     criteriaMode: 'all',
     mode: "onBlur",
     defaultValues: {
-    company: "",
-    name: "",
-    phonetic: "",
-    phone: "",
-    email: "",
-    contents: "",
-    // privacy: true,
+      company: "",
+      name: "",
+      phonetic: "",
+      phone: "",
+      email: "",
+      contents: "",
+      // privacy: true,
     },//formの初期値
     resolver: zodResolver(Form),
     shouldFocusError: true,//エラー位置にフォーカスするか
@@ -35,11 +37,28 @@ export default function ContactForm () {
   });
 
 
-
-  const onSubmit = handleSubmit((data) => {
-    console.log(data)
-    reset()
-  })
+  const onSubmit = (data) => {
+    fetch(url, {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => {
+        // console.log("Response received", res);
+        if (res.status === 200) {
+          // console.log("Response succeeded!");
+          toast("送信に成功しました。");
+        } else {
+          // console.log("Email/Password is invalid.");
+          toast("送信に失敗しました。");
+        }
+      })
+      .catch((e) => console.log(e));
+      reset()
+  }
 
   return (
     <div className="
@@ -55,6 +74,7 @@ export default function ContactForm () {
         <p>弊社にご興味をお持ちいただき、誠にありがとうございます。</p>
         <p>段ボールにまつわること何でもご相談ください。</p>
         <p>後日、担当者よりご連絡させていただきます。</p>
+        <p>{process.env.NEXT_PUBLIC_GMAIL_PASS}</p>
       </div>
 
       {/* フォーム全体 */}
@@ -64,7 +84,7 @@ export default function ContactForm () {
       flex flex-col justify-center items-center
       ">
         <form 
-        onSubmit={onSubmit} 
+        onSubmit={handleSubmit(onSubmit)}
         className="
         w-full
         space-y-5 md:space-y-12 
@@ -173,8 +193,7 @@ export default function ContactForm () {
                   {...register('name', { 
                   })}
                 />
-              </div>
-              
+              </div>             
 
               {/* エラーメッセージ：お名前 */}
               <div className="p-1 text-xs md:text-sm lg:text-base">
@@ -182,7 +201,6 @@ export default function ContactForm () {
                   <div className="text-red-500">{errors.name.message}</div>
                 )}
               </div>
-
             </div>
           </div>
 
@@ -504,6 +522,7 @@ export default function ContactForm () {
             text-white
             "
             type="submit"
+            value="SUBMIT"
             disabled={ !isDirty }
             >
               送信する
@@ -512,6 +531,7 @@ export default function ContactForm () {
 
         </form>
       </div>
+      <ToastContainer />
     </div>
   )
 }

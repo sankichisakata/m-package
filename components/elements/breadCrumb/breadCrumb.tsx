@@ -25,7 +25,7 @@ export default function BreadCrumb () {
         <SlideInLeft>
         <nav className="
         w-11/12
-        mx-auto mt-24 md:mt-28 lg:mt-36
+        mx-auto mt-28 md:mt-36 lg:mt-40
         ">
             <ul className="
             flex 
