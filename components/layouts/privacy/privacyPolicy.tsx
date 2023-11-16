@@ -13,7 +13,7 @@ export default function PrivacyPolicy () {
                 <FadeInBack>
                 <div className="w-11/12 mx-auto">
                     
-                            <div className="w-full mx-auto bg-primary-color">
+                            <div className="w-full mx-auto bg-sub-color">
                                 <div className="p-2 md:p-4">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">個人情報の取り扱いについて</p>
                                 </div>

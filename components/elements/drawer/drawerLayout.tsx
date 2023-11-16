@@ -20,9 +20,25 @@ export default function DrawerLayout () {
     return(
         <>  
         <div>
-            <a href="/" className='flex justify-center items-center px-2'>
-                <p className="text-xxs md:text-xs lg:text-sm p-1 font-bold border-t-2 border-l-2 border-b-2 border-primary-color">段ボールの</p>
-                <p className='text-xxs md:text-xs lg:text-sm p-1 bg-sub-color text-white font-bold border-2 border-sub-color'>エムパッケージ</p>
+            <a href="/" className='flex flex-col mx-2'>
+                <p className="
+                block
+                bg-white
+                w-15
+                p-[0.1rem]
+                text-center text-xxs md:text-xs lg:text-sm font-bold
+                border-sub-color border-t-2 border-l-2 border-r-2
+                ">
+                {/* border-sub-color border-t-2 border-l-2 border-b-2  */}
+                    ダンボールの
+                </p>
+                <p className="
+                bg-sub-color
+                text-white font-bold text-xxs md:text-xs lg:text-sm p-1 
+                border-2 border-sub-color
+                ">
+                    エムパッケージ
+                </p>
             </a>
         </div>
 

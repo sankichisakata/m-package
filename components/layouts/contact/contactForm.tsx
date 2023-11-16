@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 
 import { FormDate ,Form } from "@/components/elements/zod/zodShema";
 import { zodResolver } from '@hookform/resolvers/zod';
+import Link from "next/link";
 
 export default function ContactForm () {
   const {
@@ -46,8 +47,9 @@ export default function ContactForm () {
       flex flex-col justify-center items-center gap-3
       ">
 
-        <p>弊社の商品にご興味をお持ちいただき、誠にありがとうございます。</p>
-        <p>内容をご入力いただき、プライバシーポリシーに同意の上、「送信する」ボタンを押してください。</p>
+        <p>弊社にご興味をお持ちいただき、誠にありがとうございます。</p>
+        <p>段ボールにまつわること何でもご相談ください。</p>
+        <p>後日、担当者よりご連絡させていただきます。</p>
       </div>
 
       {/* フォーム全体 */}
@@ -96,15 +98,16 @@ export default function ContactForm () {
               ">
                 <input
                   className="
+                  bg-gray-100
                   w-60 md:w-72 lg:w-80
-                  py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
-                  border-2
+                  py-2 md:py-3 px-3 md:px-4
                   rounded-md
+                  focus:bg-white
                   focus:outline-sub-color
                   "
                   id="company"
                   type="text"
-                  placeholder="例：株式会社エムパッケージ"
+                  placeholder="例&emsp;株式会社エムパッケージ"
                   {...register('company', { 
                   })}
                 />
@@ -152,15 +155,16 @@ export default function ContactForm () {
               ">
                 <input
                   className="
+                  bg-gray-100
                   w-44 md:w-52 lg:w-60
-                  py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
-                  border-2
+                  py-2 md:py-3 px-3 md:px-4
                   rounded-md
+                  focus:bg-white
                   focus:outline-sub-color
                   "
                   id="name"
                   type="text"
-                  placeholder="例：山田&emsp;太郎"
+                  placeholder="例&emsp;山田&nbsp;太郎"
                   {...register('name', { 
                   })}
                 />
@@ -171,6 +175,64 @@ export default function ContactForm () {
               <div className="p-1 text-xs md:text-sm lg:text-base">
                 {errors.name?.message && (
                   <div className="text-red-500">{errors.name.message}</div>
+                )}
+              </div>
+
+            </div>
+          </div>
+
+          {/* フォーム：フリガナ */}
+          <div className="
+          flex flex-col md:flex-row gap-2 md:gap-0
+          ">
+
+            <div className="
+            w-full md:w-6/12 h-auto
+            ">
+              <label 
+              htmlFor="phonetic"
+              className="
+              flex items-center items-center
+              ">
+                <span className="
+                bg-red-400
+                py-[0.1rem] md:py-[0.2rem] px-1 md:px-2 mr-1 md:mr-3
+                text-white text-xxs md:text-xs lg:text-sm
+                rounded-sm
+                ">必須
+                </span>
+                  お名前（フリガナ）
+                </label>
+            </div>
+
+            <div className="
+            w-full md:w-6/12
+            ">
+              <div className="
+              flex flex-col justify-center items-first
+              ">
+                <input
+                  className="
+                  bg-gray-100
+                  w-44 md:w-52 lg:w-60
+                  py-2 md:py-3 px-3 md:px-4
+                  rounded-md
+                  focus:bg-white
+                  focus:outline-sub-color
+                  "
+                  id="phonetic"
+                  type="text"
+                  placeholder="例&emsp;ヤマダ&nbsp;タロウ"
+                  {...register('phonetic', { 
+                  })}
+                />
+              </div>
+              
+
+              {/* エラーメッセージ：フリガナ */}
+              <div className="p-1 text-xs md:text-sm lg:text-base">
+                {errors.phonetic?.message && (
+                  <div className="text-red-500">{errors.phonetic.message}</div>
                 )}
               </div>
 
@@ -209,24 +271,27 @@ export default function ContactForm () {
               ">
                 <input
                   className="
-                  w-40 md:w-56
-                  py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
-                  border-2
+                  bg-gray-100
+                  w-40 md:w-56 lg:w-60
+                  py-2 md:py-3 px-3 md:px-4
                   rounded-md
+                  focus:bg-white
                   focus:outline-sub-color
                   "
                   id="phone"
                   type="tel"
-                  placeholder="例：09011112222"
+                  placeholder="例&emsp;09011112222"
                   {...register('phone', { 
                   })}
                 />
-                <p className="
+                <div className="
+                flex flex-col justify-center items-first md:gap-1
                 py-[0.2rem] md:py-[0.3rem] px-1 md:px-2
                 text-gray-500 text-xxs md:text-xs lg:text-sm whitespace-nowrap
                 ">
-                  ※日中ご連絡の取れる連絡先をお願い致します。
-                </p>
+                  <p>※日中ご連絡の取れる連絡先をお願い致します。</p>
+                  <p>※ハイフン（-）はご不要です。</p>
+                </div>
               </div>
               
 
@@ -273,15 +338,16 @@ export default function ContactForm () {
               ">
                 <input
                   className="
+                  bg-gray-100
                   w-64 md:w-72 lg:w-80
-                  py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
-                  border-2
+                  py-2 md:py-3 px-3 md:px-4
                   rounded-md
+                  focus:bg-white
                   focus:outline-sub-color
                   "
                   id="email"
                   type="email"
-                  placeholder="例：ooo@m-package.com"
+                  placeholder="ooo@m-package.com"
                   {...register('email', { 
                   })}
                 />
@@ -330,15 +396,15 @@ export default function ContactForm () {
               ">
                 <textarea
                   className="
+                  bg-gray-100
                   w-full md:w-72 lg:w-80
                   h-40 md:h-52 lg:h-56
-                  py-[0.3rem] md:py-[0.4rem] px-2 md:px-3
-                  border-2
+                  py-2 md:py-3 px-3 md:px-4
                   rounded-md
+                  focus:bg-white
                   focus:outline-sub-color
                   "
                   id="contents"
-                  placeholder="例：ooo@m-package.com"
                   {...register('contents', { 
                   })}
                 />
@@ -346,7 +412,7 @@ export default function ContactForm () {
                 py-[0.2rem] md:py-[0.3rem] px-1 md:px-2
                 text-gray-500 text-xxs md:text-xs lg:text-sm whitespace-nowrap
                 ">
-                  ※全角300字以内でご入力ください。。
+                  ※全角300字以内でご入力ください。
                 </p>
               </div>
               
@@ -360,7 +426,58 @@ export default function ContactForm () {
 
             </div>
           </div>
+
+          {/* フォーム：プライバシーポリシー */}
+          <div className="
           
+          ">
+            <div className="
+            w-full
+            flex justify-center items-center
+            ">
+              <input
+                className="
+                accent-white
+                box-border
+                w-10 md:w-12 h-10 md:h-12 
+                m-2 md:m-4
+                rounded-md
+                focus:bg-white
+                focus:outline-sub-color
+                "
+                id="privacy"
+                type="checkbox"
+                {...register('privacy', { 
+                })}
+              >
+              </input>
+              
+              <label htmlFor="privacy">
+                <div className="
+                flex justify-center items-center
+                ">  
+                    <div className="
+                    flex flex-col
+                    text-xxs md:text-xs lg:text-sm
+                    ">
+                      <p>ご入力いただいた内容は、お問い合わせへのご回答に利用させていただきます。</p>
+                      <p>プライバシーポリシーについては、<Link href="/privacy"><span className="underline underline-offset-2">こちら</span></Link>をご確認ください。</p>
+                    </div>
+                </div>
+              </label>
+            </div>
+            {/* エラーメッセージ：プライバシーポリシー */}
+            <div className="
+            flex justify-center items-center
+            text-xs md:text-sm lg:text-base
+            ">
+              {errors.privacy?.message && (
+                <div className="text-red-500">{errors.privacy.message}</div>
+              )}
+            </div>
+          </div>
+          
+          {/* 注意書き */}
           <div className="
           py-4
           flex flex-col justify-center items-center gap-2 md:gap-3
@@ -376,9 +493,11 @@ export default function ContactForm () {
           ">
             <button 
             className="
-            bg-sub-color
+            bg-sub-color active:bg-sub-color/80 hover:bg-sub-color/80
             py-3 px-8 mx-1
             border rounded-full
+            shadow-lg active:shadow-none hover:shadow-none
+            
             text-white
             "
             type="submit"

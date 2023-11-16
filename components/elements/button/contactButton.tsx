@@ -7,9 +7,17 @@ const ContactButton = () => {
     return(
         <div className='
         flex justify-center items-center
+        mx-2
         '
         >
-            <Link href="/contact" className="bg-sub-color border border-sub-color rounded-full">
+            <Link 
+            href="/contact" 
+            className="
+            bg-sub-color active:bg-sub-color/80 hover:bg-sub-color/80
+            border border-sub-color 
+            rounded-full 
+            shadow-lg active:shadow-none hover:shadow-none
+            ">
               
                 <div className="flex justify-center items-center">
                   <p className="px-3 md:px-4 lg:px-6 py-1 text-white text-xs md:text-sm lg:text-base font-semibold">お問い合わせ</p>
