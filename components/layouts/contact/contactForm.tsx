@@ -1,40 +1,45 @@
 "use client"
 
+import Link from "next/link";
 import { useState } from "react"
 import { useForm } from 'react-hook-form';
 
 import { FormDate ,Form } from "@/components/elements/zod/zodShema";
 import { zodResolver } from '@hookform/resolvers/zod';
-import Link from "next/link";
+
+
 
 export default function ContactForm () {
   const {
     register, 
     handleSubmit,
+    reset,
     formState: { isDirty, isValid, errors },
   } = useForm<FormDate>({ 
     criteriaMode: 'all',
     mode: "onBlur",
+    defaultValues: {
+    company: "",
+    name: "",
+    phonetic: "",
+    phone: "",
+    email: "",
+    contents: "",
+    // privacy: true,
+    },//formの初期値
     resolver: zodResolver(Form),
+    shouldFocusError: true,//エラー位置にフォーカスするか
+    shouldUseNativeValidation: false,//ブラウザの元々のバリデーションを有効にするか
+    delayError: undefined,//エラーを遅らせる
+
   });
 
-  // const [name, setName] = useState("")
-  // const [email, setEmail] = useState("")
-  // const [message, setMessage] = useState("")
 
-  const onSubmit = handleSubmit((date) =>  console.log(date));
-  // const { name, ref, onChange, onBlur } = register('name');
-  
-  
 
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault()
-
-  //   await fetch("/api/email", {
-  //     method: "POST",
-  //     body: JSON.stringify({ email, message }),
-  //   })
-  // }
+  const onSubmit = handleSubmit((data) => {
+    console.log(data)
+    reset()
+  })
 
   return (
     <div className="
@@ -437,13 +442,11 @@ export default function ContactForm () {
             ">
               <input
                 className="
-                accent-white
+                accent-sub-color
                 box-border
-                w-10 md:w-12 h-10 md:h-12 
+                w-6 md:w-12 h-6 md:h-12 
                 m-2 md:m-4
                 rounded-md
-                focus:bg-white
-                focus:outline-sub-color
                 "
                 id="privacy"
                 type="checkbox"

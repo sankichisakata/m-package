@@ -34,7 +34,9 @@ export default function DrawerLayout () {
                 </p>
                 <p className="
                 bg-sub-color
-                text-white font-bold text-xxs md:text-xs lg:text-sm p-1 
+                p-[0.1rem]
+                text-center text-white font-bold 
+                text-xxs md:text-xs lg:text-sm
                 border-2 border-sub-color
                 ">
                     エムパッケージ
