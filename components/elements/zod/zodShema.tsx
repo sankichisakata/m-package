@@ -12,15 +12,24 @@ const emailRegex = new RegExp(
 export const Form = z.object({
     company: z
     .string()
-    .min(1, {
-      message: "会社名をご入力ください。"
-    })
     .optional(),
 
     name: z
     .string()
     .min(1, {
         message: "お名前をご入力ください。"
+    })
+    .max(20, {
+      message: "20文字以下でご入力ください。"
+    }),
+
+    phonetic: z
+    .string()
+    .min(1, {
+        message: "フリガナをご入力ください。"
+    })
+    .max(20, {
+      message: "20文字以下でご入力ください。"
     }),
 
     phone: z
@@ -29,7 +38,7 @@ export const Form = z.object({
         message: "電話番号をご入力ください。"
     })
     .max(12, {
-        message: "12文字以下で入力してください。"
+        message: "12文字以下でご入力ください。"
     })
     .regex(phoneRegex, { 
         message:"電話番号の形式でご入力ください。"
@@ -38,7 +47,7 @@ export const Form = z.object({
     email: z
     .string()
     .min(1 ,{
-      message: "メールアドレスを入力してください。"
+      message: "メールアドレスをご入力ください。"
     })
     .regex(emailRegex, { 
       message:"メールアドレスの形式でご入力ください。"
@@ -47,11 +56,17 @@ export const Form = z.object({
     contents: z
     .string()
     .min(1, {
-      message: "お問い合わせ内容を入力してください。"
+      message: "お問い合わせ内容をご入力ください。"
     })
     .max(300, {
-      message: "300文字以下で入力してください。"
+      message: "300文字以下でご入力ください。"
     }),
+
+    privacy: z
+    .literal(true, {
+      errorMap: () => ({message: "プライバシーポリシーへ同意ください。"})
+    }),
+
     
     submit: z.any()
   });

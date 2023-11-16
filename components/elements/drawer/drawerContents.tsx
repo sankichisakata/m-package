@@ -37,14 +37,16 @@ export default function DrawerContents (props) {
       <>
         
         <Button className="
-        block w-12
-        py-3
-        " ref={btnRef} onClick={onToggle} onChange={props.isOpenChange(isOpen)}>
+        block
+        w-11
+        py-2
+        " 
+        ref={btnRef} onClick={onToggle} onChange={props.isOpenChange(isOpen)}>
 
           { isOpen ? 
-            <HiOutlineX className="mx-auto text-black text-xxxl"/>
+            <HiOutlineX className="mx-auto text-sub-color text-xxxl"/>
           :
-            <HiOutlineMenu className="mx-auto text-black text-xxxl"/>
+            <HiOutlineMenu className="mx-auto text-sub-color text-xxxl"/>
           }
 
         </Button>
@@ -58,7 +60,7 @@ export default function DrawerContents (props) {
           
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
           <HeaderFadeInBack>
-              <div className="block w-11/12 lg:w-4/6 mx-auto mt-20 md:mt-24 text-left">
+              <div className="block w-11/12 lg:w-4/6 mx-auto mt-20 md:mt-28 text-left">
                   <p className='text-xxs md:txet-xxs text-white font-semibold '>(株)エムパッケージは、お客様第一営業を掲げております。</p>
               </div>
             </HeaderFadeInBack>
@@ -71,7 +73,7 @@ export default function DrawerContents (props) {
   
                 <DrawerBody className="
                 bg-white
-                mt-24 md:mt-28 mb-5
+                mt-24 md:mt-32 mb-5
                 w-11/12 mx-auto 
                 shadow-2xl rounded-md
                 "

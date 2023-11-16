@@ -88,7 +88,7 @@ export default function HomeCompany () {
                         <div 
                         className="
                         group
-                        w-full h-[15rem] lg:h-[20rem]
+                        w-full h-[15rem] lg:h-[24rem]
                         flex flex-col justify-around items-center gap-5 
                         bg-service01 bg-center bg-cover rounded-md shadow-lg
                         ">
@@ -104,10 +104,10 @@ export default function HomeCompany () {
                                 </div>
                                 <div 
                                 className="
-                                bg-white lg:group-hover:bg-green-600 transition duration-500
+                                bg-white lg:group-hover:bg-sub-color transition duration-500
                                 w-full md:w-3/6 h-[4rem] 
                                 lg:group-hover:text-white
-                                border lg:group-hover:border-green-600 rounded-full
+                                border lg:group-hover:border-sub-color rounded-full
                                 flex justify-center items-center gap-5
                                 font-semibold
                                 ">
