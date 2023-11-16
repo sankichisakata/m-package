@@ -27,7 +27,7 @@ export default function PageTitle () {
         ">
             <FadeInBack>
             <div className="
-            w-full h-[8rem] md:h-[10rem] lg:h-[12rem]
+            w-full h-[8rem] md:h-[10rem] lg:h-[16rem]
             flex justify-center items-center
             ">
                 <ul className="
@@ -65,7 +65,7 @@ export default function PageTitle () {
                             }>
                                 <span className="
                                 font-bold
-                                text-[2rem] md:text-[2.5rem] lg:text-[3rem]
+                                text-sub-color text-[2rem] md:text-[2.5rem] lg:text-[3rem]
                                 drop-shadow-md
                                 ">
                                     {name}
@@ -74,7 +74,7 @@ export default function PageTitle () {
                     </li>
                     ))}
                     <div className="w-11/12 lg:w-10/12 pt-3 flex items-center mx-auto">
-                        <div className="flex-1 border-b-[0.2rem] border-slate-500"></div>  
+                        <div className="flex-1 border-b-[0.2rem] border-sub-color"></div>  
                     </div>
                 </ul>  
             </div>

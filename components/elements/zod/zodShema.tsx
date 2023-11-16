@@ -64,10 +64,11 @@ export const Form = z.object({
 
     privacy: z
     .literal(true, {
-      errorMap: () => ({message: "プライバシーポリシーへ同意ください。"})
+      errorMap: () => ({
+        message: "プライバシーポリシーへ同意ください。"
+      })
     }),
 
-    
     submit: z.any()
   });
   
