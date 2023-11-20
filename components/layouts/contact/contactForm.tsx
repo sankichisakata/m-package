@@ -1,25 +1,16 @@
 "use client"
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useForm } from 'react-hook-form';
-import { FormDate ,Form } from "@/components/elements/zod/zodShema";
+import { FormDate, Form } from "@/components/elements/zod/zodShema";
 import { zodResolver } from '@hookform/resolvers/zod';
-import Mail from "nodemailer/lib/mailer";
-import { Console } from "console";
-
-// export type FormDate = {
-//   company: string,
-//   name: string,
-//   phonetic: string,
-//   phone: number,
-//   email: string,
-//   contents: string,
-//   privacy: boolean,
-// };
+import { useState } from "react";
 
 export default function ContactForm () {
+  const router = useRouter(); 
   const {
     register, 
     handleSubmit,
@@ -43,11 +34,18 @@ export default function ContactForm () {
     delayError: undefined,//エラーを遅らせる
   });
 
+  // let time = new Date();
+
+  // const newTime = () => {
+  //   let now = new Date();
+  //   time = now.toLocaleString();
+  // }
+
   //メール送信関数
   function onSubmit(data: FormDate) {
     const apiEndPoint = '/api/email'
     console.log(data);
-    
+
     fetch( apiEndPoint, {
       method: 'POST',
       headers: {
@@ -56,27 +54,18 @@ export default function ContactForm () {
       },
       body: JSON.stringify(data),
     })
-      .then((res) => {
-        // console.log("Response received", res);
-        if (res.status === 200) {
-          // console.log("Response succeeded!");
-          toast("送信に成功しました。");
+      .then((response) => {
+        if (response.status === 200) {
+          router.push('/bird')
         } else {
-          // console.log("Email/Password is invalid.");
           toast("送信に失敗しました。");
+
         }
       })
-      .catch((e) => console.log(e));
+      .catch((err) => {
+        alert(err);
+      });
       reset()
-      // .then((res) => res.json())
-      // .then((response) => {
-      //   toast("送信に成功しました。");
-      //   alert(response.message);
-      // })
-      // .catch((err) => {
-      //   toast("送信に失敗しました。");
-      // });
-      // reset()
   }
 
   return (
@@ -93,7 +82,6 @@ export default function ContactForm () {
         <p>弊社にご興味をお持ちいただき、誠にありがとうございます。</p>
         <p>段ボールにまつわること何でもご相談ください。</p>
         <p>後日、担当者よりご連絡させていただきます。</p>
-        <p>{process.env.NEXT_PUBLIC_GMAIL_PASS}</p>
       </div>
 
       {/* フォーム全体 */}
@@ -109,6 +97,13 @@ export default function ContactForm () {
         space-y-5 md:space-y-12 
         text-sm md:text-base lg:text-lg font-semibold
         ">
+
+          {/* 現在時刻の取得 -start */}
+          <input 
+            className="hidden" 
+            name="time" 
+            value='time'
+          />
 
           {/* フォーム：会社名 */}
           <div className="
@@ -550,7 +545,18 @@ export default function ContactForm () {
 
         </form>
       </div>
-      <ToastContainer />
+      <ToastContainer 
+      position="bottom-center"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="dark"
+      />
     </div>
   )
 }

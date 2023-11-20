@@ -10,9 +10,13 @@ const emailRegex = new RegExp(
 
 
 export const Form = z.object({
+  
+    time: z
+    .coerce
+    .date(),
+
     company: z
-    .string()
-    .optional(),
+    .string(),
 
     name: z
     .string()
