@@ -1,17 +1,25 @@
 "use client"
 
 import Link from "next/link";
-import { useState } from "react"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useForm } from 'react-hook-form';
-
 import { FormDate ,Form } from "@/components/elements/zod/zodShema";
 import { zodResolver } from '@hookform/resolvers/zod';
+import Mail from "nodemailer/lib/mailer";
+import { Console } from "console";
+
+// export type FormDate = {
+//   company: string,
+//   name: string,
+//   phonetic: string,
+//   phone: number,
+//   email: string,
+//   contents: string,
+//   privacy: boolean,
+// };
 
 export default function ContactForm () {
-  const url = '/m-package/components/elements/api/sendEmail'
-
   const {
     register, 
     handleSubmit,
@@ -20,29 +28,31 @@ export default function ContactForm () {
   } = useForm<FormDate>({ 
     criteriaMode: 'all',
     mode: "onBlur",
-    defaultValues: {
-      company: "",
-      name: "",
-      phonetic: "",
-      phone: "",
-      email: "",
-      contents: "",
-      // privacy: true,
-    },//formの初期値
+    // defaultValues: {
+    //   company: "",
+    //   name: "",
+    //   phonetic: "",
+    //   phone: "",
+    //   email: "",
+    //   contents: "",
+    //   privacy: false,
+    // },//formの初期値
     resolver: zodResolver(Form),
     shouldFocusError: true,//エラー位置にフォーカスするか
     shouldUseNativeValidation: false,//ブラウザの元々のバリデーションを有効にするか
     delayError: undefined,//エラーを遅らせる
-
   });
 
-
-  const onSubmit = (data) => {
-    fetch(url, {
-      method: "POST",
+  //メール送信関数
+  function onSubmit(data: FormDate) {
+    const apiEndPoint = '/api/email'
+    console.log(data);
+    
+    fetch( apiEndPoint, {
+      method: 'POST',
       headers: {
         Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
+                "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     })
@@ -58,6 +68,15 @@ export default function ContactForm () {
       })
       .catch((e) => console.log(e));
       reset()
+      // .then((res) => res.json())
+      // .then((response) => {
+      //   toast("送信に成功しました。");
+      //   alert(response.message);
+      // })
+      // .catch((err) => {
+      //   toast("送信に失敗しました。");
+      // });
+      // reset()
   }
 
   return (

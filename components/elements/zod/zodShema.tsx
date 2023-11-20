@@ -69,6 +69,19 @@ export const Form = z.object({
       })
     }),
 
+    // .boolean({
+    //   errorMap: () => 
+    //   ({
+    //     message: "プライバシーポリシーへ同意ください。"
+    //   }),
+      // required_error: "プライバシーポリシーにご同意ください。",
+      // invalid_type_error: "プライバシーポリシーにご同意ください。",
+    // })
+
+    // .preprocess((input) => JSON.parse(`${input}`), z.boolean())
+
+    
+    
     submit: z.any()
   });
   

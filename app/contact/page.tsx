@@ -4,7 +4,6 @@ export default function Contact () {
     return(
         <>
             <ContactForm/>
-            {/* <SendEmail /> */}
         </>
     )
     
