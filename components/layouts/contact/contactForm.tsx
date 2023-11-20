@@ -5,9 +5,8 @@ import { useRouter } from "next/navigation";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useForm } from 'react-hook-form';
-import { FormDate, Form } from "@/components/elements/zod/zodShema";
+import { FormDate ,Form } from "@/components/elements/zod/zodShema";
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useState } from "react";
 
 export default function ContactForm () {
   const router = useRouter(); 
@@ -33,13 +32,6 @@ export default function ContactForm () {
     shouldUseNativeValidation: false,//ブラウザの元々のバリデーションを有効にするか
     delayError: undefined,//エラーを遅らせる
   });
-
-  // let time = new Date();
-
-  // const newTime = () => {
-  //   let now = new Date();
-  //   time = now.toLocaleString();
-  // }
 
   //メール送信関数
   function onSubmit(data: FormDate) {
@@ -98,12 +90,16 @@ export default function ContactForm () {
         text-sm md:text-base lg:text-lg font-semibold
         ">
 
-          {/* 現在時刻の取得 -start */}
-          <input 
-            className="hidden" 
-            name="time" 
-            value='time'
-          />
+          {/* フォーム：現在時刻 */}
+          {/* <input
+            className="
+            hidden
+            "
+            id="time"
+            type="date"
+            {...register('time', { 
+            })}
+          /> */}
 
           {/* フォーム：会社名 */}
           <div className="
