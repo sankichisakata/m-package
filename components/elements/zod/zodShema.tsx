@@ -11,9 +11,8 @@ const emailRegex = new RegExp(
 
 export const Form = z.object({
   
-    time: z
-    .coerce
-    .date(),
+    // time: z
+    // .date(),
 
     company: z
     .string(),

@@ -17,20 +17,7 @@ export async function POST(request: NextRequest) {
           user: process.env.NEXT_PUBLIC_MAIL_ADDRESS ,
           pass: process.env.NEXT_PUBLIC_MAIL_PASS , 
       }, 
-  });
-
-  const sendMailPromise = () =>
-  new Promise<string>((resolve, reject) => {
-    transporter.sendMail(mailOptions, function (err) {
-      if (!err) {
-        resolve('メールが送信されました。');
-      } else {
-        reject(err.message);
-      }
-    });
-  });
-
-  
+  });  
 
   //送信メール内容
   const mailOptions: Mail.Options = {
@@ -639,6 +626,18 @@ export async function POST(request: NextRequest) {
     // `,
   };
 
+
+  const sendMailPromise = () =>
+  new Promise<string>((resolve, reject) => {
+    transporter.sendMail(mailOptions, function (err) {
+      if (!err) {
+        resolve('メールが送信されました。');
+      } else {
+        reject(err.message);
+      }
+    });
+  });
+  
   try {
     await sendMailPromise();
     return NextResponse.json({ message: 'メールが送信されました。' }, { status: 200 });
