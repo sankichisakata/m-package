@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react'
-import { GoogleMap, MarkerF, useJsApiLoader, InfoWindowF } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, MarkerF, useJsApiLoader, InfoWindowF } from '@react-google-maps/api';
 import { InterfaceMap } from "./googleMapStyles";
 import { Text } from '@chakra-ui/react';
  const googleMapOptions = {
