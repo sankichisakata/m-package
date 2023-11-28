@@ -96,7 +96,7 @@ export default function CompanyAccess () {
                                 <p className="
                                 flex justify-start
                                 ">
-                                    電車
+                                    車
                                 </p>
                                 </FadeInBack>
                             </div>
@@ -104,13 +104,13 @@ export default function CompanyAccess () {
                             <div className="
                             w-9/12 md:w-8/12
                             flex justify-start items-center
-                            ">
+                            ">                              
                                 <SlideInRight>
                                 <div className="
                                 flex flex-col justify-start items-start
                                 text-xl md:text-xxl lg:text-xxxl font-bold
                                 ">
-                                    <p>加賀ICより車で10分</p>
+                                    <p>鹿浜橋出口より車で10分</p>
                                 </div>
                                 
                                 </SlideInRight>

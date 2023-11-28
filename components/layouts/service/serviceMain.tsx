@@ -41,7 +41,7 @@ export default function ServiceMain () {
                     text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
                     font-bold
                     ">
-                        「まごころを込めて、守ります。」
+                        「まごころを込めて、作ります。」
                     </p>
                     </FadeInBack>
 
@@ -50,22 +50,26 @@ export default function ServiceMain () {
                     flex flex-col justify-center gap-2
                     ">
                         <SlideInLeft>
-                        <p>ダンボールに対して、真摯に取り組みます。</p>
-                        </SlideInLeft>
-
-                        <SlideInLeft>
                         <p>
                             株式会社エムパッケージでは、ダンボールの設計・企画から製造、納品までを一貫して行なっております。
                         </p>
                         </SlideInLeft>
 
                         <SlideInLeft>
-                        <p>先代から引き継いだ技術で質の高い段ボールとサービスを提供することをお約束します。</p>
+                        <p>
+                            企画品（A式、C式、ヤッコ型等）はもちろんのこと、規格外のオーダーメイドの段ボールも承ります。
+                        </p>
                         </SlideInLeft>
-                            
+
                         <SlideInLeft>
                         <p>
-                            オリジナルアイテムや梱包品に合わせたサイズの作成など、応えられないご要望はございません。
+                            手作業でのこだわりもあり、機械では製造できない規格外の製品（極端に大きい・小さい）にも対応しております。
+                        </p>
+                        </SlideInLeft>
+
+                        <SlideInLeft>
+                        <p>
+                            小ロット～多ロット（大口）まで多種多様な段ボールの生産が可能です。※ロットは最小1c/sから可能。
                         </p>
                         </SlideInLeft>
                     </div>

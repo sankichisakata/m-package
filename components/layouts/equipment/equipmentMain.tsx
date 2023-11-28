@@ -42,7 +42,7 @@ export default function EquipmentMain () {
                         text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
                         font-bold
                         ">
-                            多種多様なご要望にお応えするべく、日々新しい機械の導入をしております。
+                            多種多様なご要望にお応え致します。
                         </p>
                         </FadeInBack>
 
@@ -51,11 +51,21 @@ export default function EquipmentMain () {
                         flex flex-col justify-center gap-2
                         ">
                             <SlideInLeft>
-                            <p>一般的な段ボール（※名前）をはじめ、弊社は梱包にまつわることは何でも行います。</p>
+                                <p>
+                                弊社は、梱包にまつわることは何でもお手伝い可能でございます。
+                                </p>
                             </SlideInLeft>
 
                             <SlideInLeft>
-                            <p>食品から衣類、医療品や精密機械など、様々な商品に適した段ボールを製造することが可能でございます。</p>
+                                <p>
+                                    食品から衣類、医療品や精密機械など、様々な商品に適した段ボールを製造してきました。
+                                </p>
+                            </SlideInLeft>
+
+                            <SlideInLeft>
+                                <p>
+                                一般的な段ボール（A式、C式、ヤッコ型等）や規格外のオーダーメイドの段ボールも製造可能な設備が整っております。
+                                </p>
                             </SlideInLeft>
                         </div>
                     </div>
