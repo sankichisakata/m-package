@@ -34,7 +34,6 @@ export default function HomeSwiper () {
                         overflow-hidden bg-fixed bg-slate-600/30
                         w-full h-full 
                         bottom-0 left-0 right-0 top-0
-                        rounded-md
                         "
                         >
                           <div className="
