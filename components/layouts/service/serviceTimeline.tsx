@@ -45,7 +45,7 @@ export default function ServiceTimeline () {
                 <FadeInBack>
                 <div className="
                     z-10 bg-white top-0
-                    w-11/12 lg:w-10/12 max-w-5xl h-[10rem] md:h-[14rem] p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
+                    w-11/12 lg:w-10/12 max-w-5xl h-[16rem] md:h-[20rem] p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
                     rounded-sm
                     flex flex-col justify-center items-center gap-2
                     text-xs md:text-sm lg:text-base font-semibold
@@ -127,7 +127,9 @@ export default function ServiceTimeline () {
                                     </div>
                                     <div className="text-center">
                                         <p>長年段ボールに携わった経験と知識で最適なご提案を致します。</p>
-                                        <p>※商品を保護する緩衝材、仕切、パット（当板）等の設計も行っております。</p>
+                                        <p className="
+                                        text-xxs md:text-xs lg:text-sm
+                                        ">※商品を保護する緩衝材、仕切、パット（当板）等の設計も行っております。</p>
                                     </div>       
                                 </div>
                             </div>
