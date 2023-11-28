@@ -133,6 +133,47 @@ export default function CompanyOverview () {
                                         <p className="
                                         flex justify-start
                                         ">
+                                           電話番号
+                                        </p>
+                                        </FadeInBack>
+                                    </div>
+
+                                    <div className="
+                                    w-9/12 md:w-8/12
+                                    flex justify-start items-center
+                                    ">
+                                        <SlideInRight>
+                                        <p className="
+                                        flex justify-start items-center
+                                        text-xl md:text-xxl lg:text-xxxl font-bold
+                                        ">
+                                            （代表）048-287-8055
+                                        </p>
+                                        <p className="
+                                        flex justify-start items-center
+                                        text-xl md:text-xxl lg:text-xxxl font-bold
+                                        ">
+                                            &emsp;FAX&emsp;048-287-8056
+                                        </p>
+                                        </SlideInRight>
+                                    </div>
+                                </div>
+
+                                <div className="
+                                w-full 
+                                flex justify-center items-start gap-3
+                                ">
+                                    {/* 空ボックス */}
+                                    <div className="hidden md:block w-1/12"></div>
+                                    
+                                    <div className="
+                                    w-3/12 md:w-3/12
+                                    flex justify-center 
+                                    ">
+                                        <FadeInBack>
+                                        <p className="
+                                        flex justify-start
+                                        ">
                                            設立
                                         </p>
                                         </FadeInBack>
@@ -147,7 +188,7 @@ export default function CompanyOverview () {
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
-                                            2022年4月
+                                            2022年1月
                                         </p>
                                         </SlideInRight>
                                     </div>
@@ -217,7 +258,7 @@ export default function CompanyOverview () {
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
-                                            100万円
+                                            200万円
                                         </p>
                                         </SlideInRight>
                                     </div>
@@ -252,7 +293,7 @@ export default function CompanyOverview () {
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
-                                            段ボール製品の製造・加工及び販売、紙加工製品の設計及びコンサルティング業務、梱包・物流業務の代行
+                                            段ボール製品の製造・加工及び販売、紙加工製品の設計及びコンサルティング業務、梱包・物流業務
                                         </p>
                                         </SlideInRight>
                                     </div>

@@ -37,7 +37,7 @@ export default function HomeService () {
                             text-sub-color text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
                             ">
                                 <p>
-                                「まごころを込めて、守ります。」
+                                「まごころを込めて、作ります。」
                                 </p>
                         </div>
                         </SlideInLeft>
@@ -100,8 +100,6 @@ export default function HomeService () {
                                     <div className="w-full h-full text-sm md:text-base text-white">
                                         <p className="font-semibold">事業内容</p>
                                         <p className="text-xxs md:text-xs">Our Service</p>
-                                        {/* <p>梱包材コンサル企業です。</p>
-                                        <p>企画・製造・配送・販売をワンストップで行います。</p> */}
                                     </div>
                                     <div 
                                     className="
