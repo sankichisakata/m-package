@@ -110,7 +110,8 @@ export default function CompanyAccess () {
                                 flex flex-col justify-start items-start
                                 text-xl md:text-xxl lg:text-xxxl font-bold
                                 ">
-                                    <p>鹿浜橋出口より車で10分</p>
+                                    <p>加賀ICより車で10分</p>
+                                    <p>鹿浜橋ICより車で12分</p>
                                 </div>
                                 
                                 </SlideInRight>
