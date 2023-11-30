@@ -19,7 +19,7 @@ export default function HomeService () {
                 <div className="w-full">
                     
                     <div className="
-                    w-11/12 lg:w-10/12 mx-auto
+                    w-11/12 mx-auto
                     ">
                         <SlideInLeft>
                             <div className="w-full mx-auto bg-sub-color">
@@ -27,13 +27,12 @@ export default function HomeService () {
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">エムパッケージの仕事</p>
                                 </div>
                             </div>
-                        </SlideInLeft>
-                        <SlideInLeft>
+                        
                             <div className="
                             bg-white
                             w-full h-auto p-2 md:p-4 mx-auto
                             flex flex-col justify-center items-center
-                            border-[0.2rem] border-sub-color
+                            border-x-[0.2rem] border-b-[0.2rem] border-sub-color
                             text-sub-color text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
                             ">
                                 <p>
@@ -47,18 +46,18 @@ export default function HomeService () {
                 
                 <div
                 className="
-                w-11/12 md:w-10/12 h-auto
+                w-11/12 xl:w-10/12  h-auto
+                md:mt-10 lg:mt-20
                 flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-20
                 "
                 >
                     <FadeInBack>
                     <div 
                     className="
-                    w-full lg:w-10/12 mx-auto pl-2 md:pl-4
-                    font-semibold
-                    border-l-[0.2rem] border-primary-color
+                    w-full mx-auto pl-2 md:pl-4
+                    border-l-[0.2rem] border-sub-color
                     flex flex-col gap-3
-                    text-xs md:text-sm lg:text-base
+                    text-sub-color text-xs md:text-base lg:text-xl font-bold
                     ">
                         <p>株式会社エムパッケージでは、<span className="text-vivid-color">ダンボールの設計・企画から製造、納品までを一貫して</span>行なっております。</p>
                         <p>先代から引き継いだ技術で<span className="text-vivid-color">質の高い段ボールとサービス</span>を提供することをお約束します。</p>

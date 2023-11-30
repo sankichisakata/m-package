@@ -7,9 +7,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useForm } from 'react-hook-form';
 import { FormDate ,Form } from "@/components/elements/zod/zodShema";
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Button } from "@chakra-ui/react";
+import { useState } from "react";
 
 export default function ContactForm () {
   const router = useRouter(); 
+  const [loading, setLoading] = useState(false);
+
   const {
     register, 
     handleSubmit,
@@ -18,26 +22,22 @@ export default function ContactForm () {
   } = useForm<FormDate>({ 
     criteriaMode: 'all',
     mode: "onBlur",
-    // defaultValues: {
-    //   company: "",
-    //   name: "",
-    //   phonetic: "",
-    //   phone: "",
-    //   email: "",
-    //   contents: "",
-    //   privacy: false,
-    // },//formの初期値
     resolver: zodResolver(Form),
     shouldFocusError: true,//エラー位置にフォーカスするか
     shouldUseNativeValidation: false,//ブラウザの元々のバリデーションを有効にするか
     delayError: undefined,//エラーを遅らせる
   });
+  
+  // 現在時刻の取得
+  let now =new Date();
+  let time = now.toLocaleString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'short',hour: 'numeric',minute: 'numeric', second: 'numeric', })
 
   //メール送信関数
   function onSubmit(data: FormDate) {
-    const apiEndPoint = '/api/email'
     console.log(data);
+    setLoading(true);
 
+    const apiEndPoint = '/api/email'
     fetch( apiEndPoint, {
       method: 'POST',
       headers: {
@@ -48,10 +48,10 @@ export default function ContactForm () {
     })
       .then((response) => {
         if (response.status === 200) {
-          router.push('/bird')
+          router.push('/contact/bird')
         } else {
+          router.push('/contact/failed')
           toast("送信に失敗しました。");
-
         }
       })
       .catch((err) => {
@@ -61,6 +61,7 @@ export default function ContactForm () {
   }
 
   return (
+    <>
     <div className="
     w-full h-auto
     flex flex-col justify-center items-center
@@ -72,7 +73,6 @@ export default function ContactForm () {
       ">
 
         <p>弊社にご興味をお持ちいただき、誠にありがとうございます。</p>
-        <p>段ボールにまつわること何でもご相談ください。</p>
         <p>後日、担当者よりご連絡させていただきます。</p>
       </div>
 
@@ -87,19 +87,20 @@ export default function ContactForm () {
         className="
         w-full
         space-y-5 md:space-y-12 
-        text-sm md:text-base lg:text-lg font-semibold
+        text-sm md:text-base lg:text-xl font-bold
         ">
 
           {/* フォーム：現在時刻 */}
-          {/* <input
+          <input
             className="
             hidden
             "
             id="time"
-            type="date"
+            type="string"
+            value={time}
             {...register('time', { 
             })}
-          /> */}
+          />
 
           {/* フォーム：会社名 */}
           <div className="
@@ -489,7 +490,7 @@ export default function ContactForm () {
                 ">  
                     <div className="
                     flex flex-col
-                    text-xxs md:text-xs lg:text-sm
+                    text-xxs md:text-xs lg:text-sm font-bold
                     ">
                       <p>ご入力いただいた内容は、お問い合わせへのご回答に利用させていただきます。</p>
                       <p>プライバシーポリシーについては、<Link href="/privacy"><span className="underline underline-offset-2">こちら</span></Link>をご確認ください。</p>
@@ -512,7 +513,7 @@ export default function ContactForm () {
           <div className="
           py-4
           flex flex-col justify-center items-center gap-2 md:gap-3
-          text-xs md:text-sm lg:text-base font-semibold
+          text-xs md:text-sm lg:text-base font-bold
           ">
             <p>「送信する」ボタンを押すと内容が送信されます。</p>
             <p>ご入力内容をご確認の上、ボタンを押してください。</p>
@@ -522,21 +523,22 @@ export default function ContactForm () {
           <div className="
           flex justify-center items-center
           ">
-            <button 
-            className="
-            bg-sub-color active:bg-sub-color/80 hover:bg-sub-color/80
-            py-3 px-8 mx-1
-            border rounded-full
-            shadow-lg active:shadow-none hover:shadow-none
-            
-            text-white
-            "
-            type="submit"
-            value="SUBMIT"
-            disabled={ !isDirty }
+            <Button
+              className="
+              bg-sub-color active:bg-sub-color/80 hover:bg-sub-color/80
+              py-6 md:py-7 lg:py-10 px-8 md:px-12 lg:px-18 mx-1
+              text-white text-sm md:text-base lg:text-xl
+              border rounded-full
+              shadow-lg active:shadow-none hover:shadow-none
+              "
+              loadingText='送信中'
+              spinnerPlacement='start'
+              isLoading={loading}
+              type="submit"
+              value="SUBMIT"
             >
               送信する
-            </button>
+            </Button>
           </div>
 
         </form>
@@ -554,5 +556,7 @@ export default function ContactForm () {
       theme="dark"
       />
     </div>
+
+    </>
   )
 }

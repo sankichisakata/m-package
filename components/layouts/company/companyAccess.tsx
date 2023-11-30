@@ -15,17 +15,15 @@ export default function CompanyAccess () {
 
                     <FadeInBack>
                     <div className="mx-auto w-full bg-white">
-                        <div className="p-2 md:p-4 border-[0.2rem] border-primary-color">
-                            <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-primary-color">アクセス</p>
+                        <div className="p-2 md:p-4 border-x-[0.2rem] border-t-[0.2rem] border-sub-color">
+                            <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">アクセス</p>
                         </div>
                     </div>
-                    </FadeInBack>
-                    <FadeInBack>
                     <div className="
-                    bg-primary-color
+                    bg-sub-color
                     w-full h-auto p-2 md:p-4 mx-auto
                     flex flex-col justify-center items-center
-                    border-[0.2rem] border-primary-color
+                    border-[0.2rem] border-sub-color
                     text-white text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
                     ">
                         <p>
@@ -40,7 +38,7 @@ export default function CompanyAccess () {
                     w-11/12 lg:w-10/12 max-w-5xl 
                     pl-2 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
                     flex flex-col justify-center items-center gap-10 md:gap-16 lg:gap-20
-                    text-xs md:text-sm lg:text-base font-semibold
+                    text-xs md:text-base lg:text-xl font-bold
                     ">
                         <div className="
                         w-full 

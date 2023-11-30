@@ -4,11 +4,12 @@ import Header from '@/components/layouts/header/header';
 import Footer from '@/components/layouts/footer/footer';
 import { Providers } from './providers';
 
-import React from "react";
+import React, { Suspense } from "react";
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import BreadCrumb from '@/components/elements/breadCrumb/breadCrumb';
 import PageTitle from '@/components/elements/pageTitle/pageTitle';
+import Loading from './loading';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,12 +28,14 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <Header/>
-        <BreadCrumb/>
-        <PageTitle/>
         <main>
-          <Providers>
-          {children}
-          </Providers>
+        <Suspense fallback={<Loading />}>
+          <BreadCrumb/>
+          <PageTitle/>
+            <Providers>
+            {children}
+            </Providers>
+        </Suspense>
         </main>
         <Footer/>
         </body>

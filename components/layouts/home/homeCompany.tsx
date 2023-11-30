@@ -27,22 +27,26 @@ export default function HomeCompany () {
                 
                 <div className="w-full">
                     <div className="
-                    w-11/12 lg:w-10/12 mx-auto
+                    w-11/12 mx-auto
                     ">
                             <SlideInLeft>
                             <div className="mx-auto w-full bg-white">
-                                <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
-                                    <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">株式会社エムパッケージについて</p>
+                                <div className="
+                                p-2 md:p-4 
+                                border-x-[0.2rem] border-t-[0.2rem] border-sub-color
+                                ">
+                                    <p className="
+                                    [font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color
+                                    ">
+                                        株式会社エムパッケージについて
+                                    </p>
                                 </div>
                             </div>
-                            </SlideInLeft>
-
-                            <SlideInLeft>
                             <div className="
                             bg-sub-color
                             w-full h-auto p-2 md:p-4 mx-auto
-                            flex flex-col justify-center items-center
                             border-[0.2rem] border-sub-color
+                            flex flex-col justify-center items-center
                             text-white text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
                             ">
                                 <p>
@@ -55,20 +59,20 @@ export default function HomeCompany () {
 
                 <div
                 className="
-                w-11/12 md:w-10/12 h-auto
+                w-full h-auto
+                md:mt-10 lg:mt-20
                 flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-20
                 "
                 >
-                    <div className="w-full lg:w-10/12 flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-14">
+                    <div className="w-11/12 xl:w-10/12 flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-14">
 
                     
                     
                     <div 
                     className="
                     w-full h-auto mx-auto pl-2 md:pl-4 md:pr-6
-                    font-semibold
-                    border-l-[0.2rem] border-primary-color
-                    text-xs md:text-sm lg:text-base
+                    border-l-[0.2rem] border-sub-color
+                    text-sub-color text-xs md:text-base lg:text-xl font-bold
                     ">
                         <FadeInBack>
                         <div className="flex flex-col justify-center gap-3">
@@ -88,7 +92,7 @@ export default function HomeCompany () {
                         <div 
                         className="
                         group
-                        w-full h-[15rem] lg:h-[24rem]
+                        w-full h-[15rem] lg:h-[24rem] xl:h-[30rem]
                         flex flex-col justify-around items-center gap-5 
                         bg-service01 bg-center bg-cover rounded-md shadow-lg
                         ">

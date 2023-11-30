@@ -22,9 +22,8 @@ export async function POST(request: NextRequest) {
   //送信メール内容
   const mailOptions: Mail.Options = {
     from: `${data.email}`,
-    to: `keitaku2momo@gmail.com` ,
+    to: 'keitaku2momo@yahoo.co.jp' ,
     subject: `【${data.name}様よりお問い合わせ】`,
-    // html: `${<ContactHtml />}`
     html: `
     <head>
         <meta charset="utf-8"> <!-- utf-8 works for most cases -->
@@ -361,7 +360,7 @@ export async function POST(request: NextRequest) {
                           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="95%">
                             <tr>
                               <td style="text-align: center; font-family: sans-serif; font-size: 12px; color: #555555;">
-                                <p class="" style="margin: 0;">問合せ日時：${ data.nowTime }</p>
+                                <p class="" style="margin: 0;">問合せ日時：${ data.time }</p>
                               </td>
                             </tr>
                           </table>
@@ -378,7 +377,7 @@ export async function POST(request: NextRequest) {
                             <tr>
                               <td style="text-align: left; font-family: sans-serif; font-size: 12px; color: #555555;">
                                 <p style="margin: 0;">${ data.company }</p>
-                                <p style="margin: 0;">${ data.name }&nbsp;${ data.phonetic }&nbsp;様より</p>
+                                <p style="margin: 0;">${ data.name }様より</p>
                                 <p style="margin: 0;">以下の内容にてお問い合わせを受け付けました。</p>
                               </td>
                             </tr>
@@ -502,7 +501,7 @@ export async function POST(request: NextRequest) {
               <!-- 上に50px余白あり -->
               <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style=" margin: auto;">
                 <tr>
-                  <td style="padding: 50px 0 0 0; background-color: #ffffff; margin: auto;">
+                  <td style="padding: 10px 0 0 0; background-color: #ffffff; margin: auto;">
                     <table cellspacing="0" cellpadding="0" border="0" width="95%"  style="margin: auto;">
                 
                       <tr>
@@ -553,9 +552,8 @@ export async function POST(request: NextRequest) {
                             <table align="left" border="0" width="50%">
                               <tr>
                                 <td style=" font-size: 10px; color: #7c7c7c; padding: 0 20px; text-align: left;" class="unstyle-auto-detected-links">
-                                  <span style="margin: 0;">〒150-0031 東京都渋谷区桜丘町13-10</span>
-                                  <br><span style="margin: 0;">桜ヶ丘ハイホーム401</span>
-                                  <br><span style="margin: 0;">00-0000-0000</span>
+                                  <span style="margin: 0;">〒332-0006 埼玉県川口市末広2-7-15</span>
+                                  <br><span style="margin: 0;">048-287-8055</span>
                                 </td>
                               </tr>
                             </table>
@@ -564,9 +562,8 @@ export async function POST(request: NextRequest) {
                             <table align="left" border="0" width="50%">
                               <tr>
                                 <td style=" font-size: 10px; color: #7c7c7c; padding: 0 20px; text-align: left;" class="unstyle-auto-detected-links">
-                                  <span style="margin: 0;">Sakuragaoka High Home #401</span>
-                                  <br><span style="margin: 0;">13-10, Sakuragaoka, Shibuya-ku, Tokyo, 150-0031</span>
-                                  <br><span style="margin: 0;">(+81) 3-0000-7890</span>
+                                  <br><span style="margin: 0;">2-7-15, Suehiro, Kawaguchi-si, Saitama, 332-0006</span>
+                                  <br><span style="margin: 0;">(+81) 48-287-8055</span>
                                 </td>
                               </tr>
                             </table>
@@ -608,22 +605,7 @@ export async function POST(request: NextRequest) {
     
     
     </body>
-    `,
-    // html: `
-    // <div><strong>会社名 :</strong> ${data.company}</div>
-    // <br/>
-    // <div><strong>お名前 :</strong> ${data.name}</div>
-    // <br/>
-    // <div><strong>お名前（フリガナ）:</strong> ${data.phonetic}</div>
-    // <br/>
-    // <div><strong>電話番号:</strong> ${data.phone}</div>
-    // <br/>
-    // <div><strong>メールアドレス:</strong> ${data.email}</div>
-    // <br/>
-    // <div><strong>お問い合わせ内容:</strong> ${data.contents}</div>
-    // <br/>
-    // <p>Sent from:${data.email}</p>
-    // `,
+    `
   };
 
 

@@ -1,7 +1,6 @@
 
 import GoogleMapsApi from "@/components/elements/GoogleMapsApi/googleMapsApi";
-import { FadeInBack } from "@/components/elements/observer/fadeInBack";
-import { SlideInRight } from "@/components/elements/observer/slideInRight";
+import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
 
 
 export default function CompanyMap () {
@@ -11,7 +10,7 @@ export default function CompanyMap () {
         flex justify-center items-center
         mb-14 md:mb-20 lg:mb-24
         ">
-            <FadeInBack>
+            <SlideInLeft>
             <div 
                 className="
                 w-full md:w-11/12 lg:w-10/12
@@ -20,7 +19,7 @@ export default function CompanyMap () {
                 ">
                 <GoogleMapsApi/>
             </div>
-            </FadeInBack>
+            </SlideInLeft>
         </div>
         </>
     )

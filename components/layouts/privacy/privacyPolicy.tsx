@@ -2,6 +2,7 @@
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
 import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
 import { SlideInRight } from "@/components/elements/observer/slideInRight";
+import Link from "next/link";
 
 export default function PrivacyPolicy () {
     return(
@@ -25,7 +26,7 @@ export default function PrivacyPolicy () {
                 <div className="
                     w-11/12 lg:w-10/12 max-w-5xl h-auto pl-2 py-10 md:p-10 md:my-10 lg:my-16 mx-auto
                     flex flex-col justify-center items-center
-                    text-xs md:text-sm lg:text-base font-semibold
+                    text-xs md:text-base lg:text-xl font-bold
                     ">
                         {/* テーブル */}
                         <div className="
@@ -250,7 +251,9 @@ export default function PrivacyPolicy () {
                                         <p className="
                                         flex justify-start items-center
                                         ">
-                                            当社の個人情報の取り扱いに関するお問い合わせはこちらまでご連絡ください。
+                                            当社の個人情報の取り扱いに関するお問い合わせは
+                                            <Link href={'/contact'}>こちら</Link>
+                                            までご連絡ください。
                                         </p>
                                         </SlideInLeft>
                                     </div>

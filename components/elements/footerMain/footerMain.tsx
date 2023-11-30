@@ -17,8 +17,8 @@ export default function FooterMain () {
                 >
 
                     <ul className="
-                    w-11/12 md:w-8/12 lg:max-w-xxl pt-6
-                    text-xs md:text-sm lg:text-base
+                    w-11/12 md:w-10/12 lg:w-9/12 pt-6
+                    text-sub-color font-bold text-xs md:text-base lg:text-xl
                     flex flex-col lg:flex-row justify-center items-center
                     "
                     >
@@ -31,8 +31,8 @@ export default function FooterMain () {
                         ">
                             <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
-                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                                    <p className='text-slate-600 font-semibold'>事業内容</p>
+                                    <HiChevronRight className="text-sub-color text-xl md:text-xxl lg:text-xxxl" />
+                                    <p>事業内容</p>
                                 </div>
                             </SlideInLeft>
                         </Link>
@@ -51,8 +51,8 @@ export default function FooterMain () {
                             <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
                                 
-                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                                    <p className='text-slate-600 font-semibold'>設備案内</p>
+                                    <HiChevronRight className="text-sub-color text-xl md:text-xxl lg:text-xxxl" />
+                                    <p>設備案内</p>
                                 
                                 </div>
                                 </SlideInLeft>
@@ -71,8 +71,8 @@ export default function FooterMain () {
                         ">
                             <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
-                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                                    <p className='text-slate-600 font-semibold'>会社情報</p>
+                                    <HiChevronRight className="text-sub-color text-xl md:text-xxl lg:text-xxxl" />
+                                    <p>会社情報</p>
                                 </div>
                             </SlideInLeft>
                         </Link>
@@ -90,8 +90,8 @@ export default function FooterMain () {
                         ">
                             <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
-                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                                    <p className='text-slate-600 font-semibold'>ニュース</p>
+                                    <HiChevronRight className="text-sub-color text-xl md:text-xxl lg:text-xxxl" />
+                                    <p>ニュース</p>
                                 </div>
                             </SlideInLeft>
                         </Link>
@@ -109,8 +109,8 @@ export default function FooterMain () {
                         ">
                             <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
-                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl lg:text-xxxl" />
-                                    <p className='text-slate-600 font-semibold'>お問い合わせ</p>
+                                    <HiChevronRight className="text-sub-color text-xl md:text-xxl lg:text-xxxl" />
+                                    <p>お問い合わせ</p>
                                 </div>
                             </SlideInLeft>
                         </Link>
@@ -119,12 +119,12 @@ export default function FooterMain () {
 
                     <div className='
                     pt-6 mb-2
-                    flex flex-col justify-center items-center gap-2
+                    flex flex-col justify-center items-center gap-2 md:gap-5
                     '>
                         <Link href="/privacy">
-                            <p className='text-xxs lg:text-xs text-slate-600'>プライバシーポリシー</p>
+                            <p className='text-xxs md:text-xs lg:text-sm text-sub-color'>プライバシーポリシー</p>
                         </Link>
-                        <small className='text-xxs lg:text-xs text-slate-400'><span className="text-slate-400">©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
+                        <small className='text-xxxs md:text-xxs lg:text-xs text-primary-color'>©&nbsp;2023&nbsp;株式会社エムパッケージ</small>
                     </div>
 
                 </nav>
