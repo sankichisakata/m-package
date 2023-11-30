@@ -25,8 +25,8 @@ export default function DrawerLayout () {
                 block
                 bg-white
                 w-15
-                p-[0.1rem]
-                text-center text-xxs md:text-xs lg:text-sm font-bold
+                p-[0.1rem] md:p-[0.2rem]
+                text-center text-xxs md:text-xs lg:text-base font-bold
                 border-sub-color border-t-2 border-l-2 border-r-2
                 ">
                 {/* border-sub-color border-t-2 border-l-2 border-b-2  */}
@@ -34,9 +34,9 @@ export default function DrawerLayout () {
                 </p>
                 <p className="
                 bg-sub-color
-                p-[0.1rem]
+                p-[0.1rem] md:p-[0.2rem]
                 text-center text-white font-bold 
-                text-xxs md:text-xs lg:text-sm
+                text-xxs md:text-xs lg:text-base
                 border-2 border-sub-color
                 ">
                     エムパッケージ
@@ -51,7 +51,7 @@ export default function DrawerLayout () {
         >
         <ul className="
         hidden lg:flex justify-center items-center
-        text-slate-600 text-xxs md:text-sm lg:text-base font-semibold
+        text-sub-color lg:text-xl font-bold
         ">
             <li>
             <Link href="/service">

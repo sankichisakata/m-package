@@ -19,7 +19,7 @@ export default function ServiceMain () {
             flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-10 lg:gap-20
             ">
                 <div className=" w-full lg:w-4/12 h-[16rem] md:h-[20rem] lg:h-auto">
-                    <FadeInBack>
+                    <SlideInLeft>
                     <div 
                     className="
                     w-full h-[16rem] md:h-[20rem] lg:h-auto
@@ -28,7 +28,7 @@ export default function ServiceMain () {
                     flex justify-center items-center
                     ">
                     </div>
-                    </FadeInBack>
+                    </SlideInLeft>
                 </div>
 
                 <div
@@ -38,7 +38,7 @@ export default function ServiceMain () {
                 ">
                     <FadeInBack>
                     <p className="
-                    text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
+                    text-sub-color text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
                     font-bold
                     ">
                         「まごころを込めて、作ります。」
@@ -46,24 +46,24 @@ export default function ServiceMain () {
                     </FadeInBack>
 
                     <div className="
-                    text-xs md:text-sm lg:text-base font-semibold
-                    flex flex-col justify-center gap-2
+                    text-sub-color text-xs md:text-base lg:text-xl font-bold
+                    flex flex-col justify-center gap-2 md:gap-5
                     ">
                         <SlideInLeft>
                         <p>
-                            株式会社エムパッケージでは、ダンボールの設計・企画から製造、納品までを一貫して行なっております。
+                            弊社では、ダンボールの設計・企画から製造、納品までを一貫して行なっております。
                         </p>
                         </SlideInLeft>
 
                         <SlideInLeft>
                         <p>
-                            企画品（A式、C式、ヤッコ型等）はもちろんのこと、規格外のオーダーメイドの段ボールも承ります。
+                            多種多様な企画品（A式、C式、ヤッコ型等）に対応していることはもちろんのこと、
                         </p>
                         </SlideInLeft>
 
                         <SlideInLeft>
                         <p>
-                            手作業でのこだわりもあり、機械では製造できない規格外の製品（極端に大きい・小さい）にも対応しております。
+                            手作業でのこだわりもあり、機械では製造できない規格外の製品（極端に大きい・小さい）にも多数対応しております。
                         </p>
                         </SlideInLeft>
 

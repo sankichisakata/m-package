@@ -14,22 +14,19 @@ export default function ServiceTimeline () {
                 <div className="w-11/12 mx-auto">
                     <FadeInBack>
                     <div className="
-                    w-full lg:w-11/12 h-auto p-2 md:p-4 mx-auto
+                    w-full h-auto p-2 md:p-4 mx-auto
                     flex flex-col justify-center items-center
-                    border-[0.2rem] border-sub-color
+                    border-x-[0.2rem] border-t-[0.2rem] border-sub-color
                     text-sub-color [font-size:_clamp(1.2rem,3vw,2.5rem)] font-bold
                     ">
                         <p>お届けまでの流れ</p>
                     </div>
-                    </FadeInBack>
-
-                    <FadeInBack>
                     <div className="
                     bg-sub-color
-                    w-full lg:w-11/12 h-auto p-2 md:p-4 mx-auto
+                    w-full h-auto p-2 md:p-4 mx-auto
                     flex flex-col justify-center items-center
                     border-[0.2rem] border-sub-color
-                    text-gray-100/80 text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
+                    text-gray-100/80 [font-size:_clamp(1.2rem,3vw,2.5rem)] font-bold
                     ">
                         <p>
                             <span className="text-white">
@@ -45,10 +42,10 @@ export default function ServiceTimeline () {
                 <FadeInBack>
                 <div className="
                     z-10 bg-white top-0
-                    w-11/12 lg:w-10/12 max-w-5xl h-[16rem] md:h-[20rem] p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
+                    w-11/12 lg:w-10/12 max-w-5xl h-auto p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
                     rounded-sm
-                    flex flex-col justify-center items-center gap-2
-                    text-xs md:text-sm lg:text-base font-semibold
+                    flex flex-col justify-center items-center gap-2 md:gap-5
+                    text-xs md:text-base lg:text-xl font-bold
                     ">
                     <p>弊社では1人の営業がすべての工程を管理する<span className="text-vivid-color">「ノンステップ管理」</span>をしております。</p>
                     <p>必要な情報を迅速にお伝えし、最短でお客様の問題を解決致します。</p>
@@ -125,7 +122,7 @@ export default function ServiceTimeline () {
                                         text-base md:text-lg lg:text-xl font-bold">ご相談</h3>
                                         <div className="w-full border-2-black"></div>  
                                     </div>
-                                    <div className="text-center">
+                                    <div className="text-center flex flex-col gap-1 md:gap-3">
                                         <p>長年段ボールに携わった経験と知識で最適なご提案を致します。</p>
                                         <p className="
                                         text-xxs md:text-xs lg:text-sm

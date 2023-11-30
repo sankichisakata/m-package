@@ -39,22 +39,23 @@ export default function CompanyMain () {
                         text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
                         font-bold
                         ">
-                          お客様を第一に 「親切・迅速・丁寧」を常に心掛けております。
+                          「いつも、身近に、皆様と共に。」
                         </p>
                         </FadeInBack>
 
                         <div className="
-                        text-xs md:text-sm lg:text-base font-semibold
-                        flex flex-col justify-center gap-2
+                        text-xs md:text-base lg:text-xl font-bold
+                        flex flex-col justify-center gap-2 md:gap-5
                         ">
                             <SlideInLeft>
                             <p>
-                                埼玉で40年、お客様と共に段ボール業をさせていただいております。
+                                埼玉で50年、お客様と共に段ボール業をさせていただいております。
                             </p>
                             </SlideInLeft>
+
                             <SlideInLeft>
                             <p>
-                                先代から引き継いだ技術と熱意で、これからも皆様の隣でお手伝いさせていただけることに感謝いたします。
+                                先代から引き継いだ技術と信頼で、これからも皆様の隣でお手伝いさせていただけることに感謝し、より一層精進して参ります。
                             </p>
                             </SlideInLeft>
                         </div>

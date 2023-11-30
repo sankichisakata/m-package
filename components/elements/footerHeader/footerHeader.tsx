@@ -7,32 +7,28 @@ export default function FooterHeader () {
         <div
         className='bg-white w-full h-full'
         >
-            <div className="mx-auto w-11/12 md:w-8/12 lg:w-9/12">
+            <div className="
+            w-11/12 md:w-10/12 lg:w-9/12
+            mx-auto
+            ">
                 <div className='
                 w-full
                 pt-5
                 flex flex-col justify-start
-                text-slate-600
+                text-sub-color
                 '
                 >
                     <FadeInBack>
-                        <Link href="/" className="w-56">
-                            <p className="text-xxs md:text-xs">ダンボールのエムパッケージ</p>
-                            <p className='text-base md:text-lg font-bold'>株式会社エムパッケージ</p>
+                        <Link href="/" className="block w-72 p-1 md:p-2">
+                            <div className="block flex flex-col gap-2">
+                                <p className="text-xxs md:text-xs font-semibold">ダンボールのエムパッケージ</p>
+                                <p className='text-base md:text-xxl font-bold'>株式会社エムパッケージ</p>
+                            </div>
                         </Link>
                     </FadeInBack>
-                    
-                    {/* <div className='text-xs'>
-                        <p>〒332-0006&nbsp;埼玉県川口市末広2-7-15</p>
-                        <p>TEL:048-287-8055</p>
-                    </div>
-                    <div className='text-xs'>
-                        <p >加賀ICより車で10分</p>
-                        <p >川口元郷駅2番出口より徒歩13分</p>
-                    </div> */}
                 </div>
                 <div className="w-full pt-3 flex items-center mx-auto">
-                    <div className="flex-1 border-b-2 border-slate-500"></div>  
+                    <div className="flex-1 border-b-2 border-sub-color"></div>  
                 </div>
                 </div>
         </div>

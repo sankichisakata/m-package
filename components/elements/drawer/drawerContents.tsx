@@ -61,7 +61,7 @@ export default function DrawerContents (props) {
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
           <HeaderFadeInBack>
               <div className="block w-11/12 lg:w-4/6 mx-auto mt-20 md:mt-28 text-left">
-                  <p className='text-xxs md:txet-xxs text-white font-semibold '>(株)エムパッケージは、お客様第一営業を掲げております。</p>
+                  <p className='text-xxs md:txet-xs text-white font-bold '>(株)エムパッケージは、お客様第一営業を掲げております。</p>
               </div>
             </HeaderFadeInBack>
            
@@ -139,8 +139,8 @@ export default function DrawerContents (props) {
 
                           <ul className="
                           w-full md:w-8/12 pt-6
-                          text-xs md:text-sm
-                          flex flex-col justify-center items-center
+                          text-primary-color text-xs md:text-base font-bold
+                          flex flex-col justify-center items-center md:gap-2
                           "
                           >
                               <li className="w-full h-10">
@@ -150,8 +150,8 @@ export default function DrawerContents (props) {
                               flex items-center lg:justify-center
                               ">
                                 <div className="w-full flex justify-start items-center gap-5">
-                                    <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
-                                    <p className='text-slate-600 font-semibold'>事業内容</p>
+                                    <HiChevronRight className="text-primary-color text-xl md:text-xxl" />
+                                    <p>事業内容</p>
                                 </div>
                               </Link>
                               </li>
@@ -166,7 +166,7 @@ export default function DrawerContents (props) {
                               ">
                                   <div className="w-full flex justify-start items-center gap-5">
                                   <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
-                                      <p className='text-slate-600 font-semibold'>設備案内</p>
+                                      <p>設備案内</p>
                                   </div>
                               </Link>
                               </li>
@@ -181,7 +181,7 @@ export default function DrawerContents (props) {
                               ">
                                   <div className="w-full flex justify-start items-center gap-5">
                                   <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
-                                      <p className='text-slate-600 font-semibold'>会社情報</p>
+                                      <p>会社情報</p>
                                   </div>
                               </Link>
                               </li>
@@ -196,7 +196,7 @@ export default function DrawerContents (props) {
                               ">
                                   <div className="w-full flex justify-start items-center gap-5">
                                   <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
-                                      <p className='text-slate-600 font-semibold'>ニュース</p>
+                                      <p>ニュース</p>
                                   </div>
                               </Link>
                               </li>
@@ -211,7 +211,7 @@ export default function DrawerContents (props) {
                               ">
                                   <div className="w-full flex justify-start items-center gap-5">
                                   <HiChevronRight className="text-slate-600 text-xl md:text-xxl" />
-                                      <p className='text-slate-600 font-semibold'>お問い合わせ</p>
+                                      <p>お問い合わせ</p>
                                   </div>
                               </Link>
                               </li>
@@ -223,9 +223,9 @@ export default function DrawerContents (props) {
                             flex flex-col justify-center items-center gap-2
                             '>
                                 <Link href="/privacy" onClick={onClose}>
-                                  <p className='text-xxs text-slate-600'>プライバシーポリシー</p>
+                                  <p className='text-xs text-sub-color'>プライバシーポリシー</p>
                                 </Link>
-                                <small className='text-xxs text-slate-400'><span className="text-slate-400">©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
+                                <small className='text-xxs text-primary-color'><span>©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
                             </div>
                           
 

@@ -20,7 +20,7 @@ export default function EquipmentMain () {
                 flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-10 lg:gap-20
                 ">
                     <div className=" w-full lg:w-4/12 h-[16rem] md:h-[20rem] lg:h-auto">
-                        <FadeInBack>
+                        <SlideInLeft>
                         <div 
                         className="
                         w-full h-[16rem] md:h-[20rem] lg:h-auto
@@ -29,7 +29,7 @@ export default function EquipmentMain () {
                         flex justify-center items-center
                         ">
                         </div>
-                        </FadeInBack>
+                        </SlideInLeft>
                     </div>
 
                     <div
@@ -39,16 +39,16 @@ export default function EquipmentMain () {
                     ">
                         <FadeInBack>
                         <p className="
-                        text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
+                        text-sub-color text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
                         font-bold
                         ">
-                            多種多様なご要望にお応え致します。
+                            「多種多様なご要望にお応え致します。」
                         </p>
                         </FadeInBack>
 
                         <div className="
-                        text-xs md:text-sm lg:text-base font-semibold
-                        flex flex-col justify-center gap-2
+                        text-sub-color text-xs md:text-base lg:text-xl font-bold
+                        flex flex-col justify-center gap-2 md:gap-5
                         ">
                             <SlideInLeft>
                                 <p>

@@ -15,7 +15,7 @@ const Header = () => {
         bg-white
         shadow-md 
         rounded-md
-        w-11/12 h-16 md:h-20  py-1 px-1 md:py-2 md:px-4
+        w-11/12 h-16 md:h-20 lg:h-24 py-1 px-1 md:py-2 md:px-4
         flex justify-center items-center
         '>
             <DrawerLayout/>

@@ -13,22 +13,20 @@ export default function CompanyOverview () {
             ">
                 <div className="w-11/12 mx-auto">
                     <FadeInBack>
-                            <div className="w-full mx-auto bg-primary-color">
-                                <div className="p-2 md:p-4">
+                            <div className="w-full mx-auto bg-sub-color">
+                                <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">会社概要</p>
                                 </div>
                             </div>
-                        </FadeInBack>
-                        <FadeInBack>
                             <div className="
                             bg-white
                             w-full h-auto p-2 md:p-4 mx-auto
                             flex flex-col justify-center items-center
-                            border-[0.2rem] border-primary-color
-                            text-primary-color text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
+                            border-x-[0.2rem] border-b-[0.2rem] border-sub-color
+                            text-sub-color [font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold
                             ">
                                 <p>
-                                Overview
+                                    Overview
                                 </p>
                         </div>
                         </FadeInBack>   
@@ -38,7 +36,7 @@ export default function CompanyOverview () {
                 <div className="
                     w-11/12 lg:w-10/12 max-w-5xl h-auto pl-2 py-10 md:p-10 md:my-10 lg:my-16 mx-auto
                     flex flex-col justify-center items-center
-                    text-xs md:text-sm lg:text-base font-semibold
+                    text-xs md:text-base lg:text-xl font-bold
                     ">
                         {/* テーブル */}
                         <div className="

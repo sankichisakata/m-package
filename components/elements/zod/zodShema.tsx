@@ -14,6 +14,9 @@ export const Form = z.object({
     // time: z
     // .date(),
 
+    time: z
+    .string(),
+
     company: z
     .string(),
 
