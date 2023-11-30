@@ -39,7 +39,7 @@ export default function CompanyMain () {
                         text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
                         font-bold
                         ">
-                            多種多様なご要望にお応えするべく、日々新しい機械の導入をしております。
+                          お客様を第一に 「親切・迅速・丁寧」を常に心掛けております。
                         </p>
                         </FadeInBack>
 
@@ -48,11 +48,14 @@ export default function CompanyMain () {
                         flex flex-col justify-center gap-2
                         ">
                             <SlideInLeft>
-                            <p>一般的な段ボール（※名前）をはじめ、弊社は梱包にまつわることは何でも行います。</p>
+                            <p>
+                                埼玉で40年、お客様と共に段ボール業をさせていただいております。
+                            </p>
                             </SlideInLeft>
-
                             <SlideInLeft>
-                            <p>食品から衣類、医療品や精密機械など、様々な商品に適した段ボールを製造することが可能でございます。</p>
+                            <p>
+                                先代から引き継いだ技術と熱意で、これからも皆様の隣でお手伝いさせていただけることに感謝いたします。
+                            </p>
                             </SlideInLeft>
                         </div>
                     </div>
