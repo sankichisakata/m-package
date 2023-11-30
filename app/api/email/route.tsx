@@ -342,7 +342,7 @@ export async function POST(request: NextRequest) {
                           <table ellspacing="0" cellpadding="0" border="0" width="90%" style="background-color: #ffffff; margin: auto;">
     
                             <tr>
-                              <td style="border:1px solid #555555; padding: 15px; font-family: sans-serif; font-size: 10px; color: #555555;">
+                              <td style="border:1px solid #555555; padding: 15px; font-family: sans-serif; font-size: 10px; font-weight: bold; color: #555555;">
                                 <span style="margin: 0;">※本メールはシステムにより自動送信しております。</span>
                               </td>
                             </tr>
@@ -359,8 +359,8 @@ export async function POST(request: NextRequest) {
                         <td style=" background-color: #ffffff; padding: 10px 0;">
                           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="95%">
                             <tr>
-                              <td style="text-align: center; font-family: sans-serif; font-size: 12px; color: #555555;">
-                                <p class="" style="margin: 0;">問合せ日時：${ data.time }</p>
+                              <td style="text-align: center; font-family: sans-serif; font-size: 12px; font-weight: bold; color: #555555;">
+                                <p class="" style="margin: 0;">【&nbsp;問合せ日時：${ data.time }&nbsp;】</p>
                               </td>
                             </tr>
                           </table>
@@ -372,10 +372,10 @@ export async function POST(request: NextRequest) {
                       <!-- 問い合わせ受付通知 -start -->
                       <tr>
                         <td style="background-color: #ffffff; padding: 30px 0 30px 0;">
-                          <table ellspacing="0" cellpadding="0" border="0" width="95%" style=" margin: auto;">
+                          <table ellspacing="0" cellpadding="0" border="0" width="90%" style=" margin: auto;">
     
                             <tr>
-                              <td style="text-align: left; font-family: sans-serif; font-size: 12px; color: #555555;">
+                              <td style="text-align: left; font-family: sans-serif; font-size: 12px; font-weight: bold; color: #555555;">
                                 <p style="margin: 0;">${ data.company }</p>
                                 <p style="margin: 0;">${ data.name }様より</p>
                                 <p style="margin: 0;">以下の内容にてお問い合わせを受け付けました。</p>
@@ -391,7 +391,7 @@ export async function POST(request: NextRequest) {
     
                       <!-- フォーム内容 -start -->
                       <tr>
-                        <td style="background-color: #ffffff; padding: 0 0 40px 0;">
+                        <td style="background-color: #ffffff; padding: 0 0 0 0;">
                           <table align="center" width="100%" ellspacing="0" cellpadding="0" border="0" style=" margin: auto;">
                            
                             <tr>
@@ -402,11 +402,11 @@ export async function POST(request: NextRequest) {
     
                                   <!-- お問い合わせの種類 -start -->
                                   <tr>
-                                    <td style=" background-color: #ffffff; padding: 50px 20px 20px 20px;">
+                                    <td style=" background-color: #ffffff; padding: 35px 20px 20px 20px;">
                                       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="95%">
                                         <tr>
-                                          <td style="text-align: center; font-family: sans-serif; font-size: 12px; color: #555555;">
-                                            <p class="" style="margin: 0;">【&nbsp;お問い合わせ&nbsp;】</p>
+                                          <td style="text-align: center; font-family: sans-serif; font-size: 12px; font-weight: bold; color: #555555;">
+                                            <p class="" style="margin: 0;">お問い合わせ</p>
                                           </td>
                                         </tr>
                                       </table>
@@ -416,10 +416,10 @@ export async function POST(request: NextRequest) {
     
                                     <tr>
                                       <td style="border-radius: 10px; padding: 10px 20px; font-family: sans-serif; font-size: 12px; color: #555555;">
-                                          <p style="margin: 0; padding-bottom: 5px;">会社名</p>
+                                          <p style="margin: 0; padding-bottom: 5px; font-weight: bold; color: #7c7c7c;">会社名</p>
                                           <p style="margin: 0;">
                                             &emsp;
-                                            <span style="border-bottom: 0.5px solid #989898; padding-bottom: 2px;">&nbsp;${ data.company }&nbsp;
+                                            <span style="border-bottom: 0.5px solid #989898; font-weight: bold; padding-bottom: 2px;">&nbsp;${ data.company }&nbsp;
                                             </span>
                                           </p>
                                       </td>
@@ -427,50 +427,54 @@ export async function POST(request: NextRequest) {
     
                                     <tr>
                                       <td style=" border-radius: 10px; padding: 20px 20px 20px 20px; font-family: sans-serif; font-size: 12px; color: #555555;">
-                                          <p style="margin: 0; padding-bottom: 5px;">お名前</p>
-    
-                                          <p style="margin: 0; padding-bottom: 5px;">
-                                            &emsp;
-                                            <span style="border-bottom: 0.5px solid #989898; padding-bottom: 2px;">&nbsp;${ data.name }&nbsp;
-                                            </span>
-                                          </p>
-    
+                                          <p style="margin: 0; padding-bottom: 5px; font-weight: bold; color: #7c7c7c;">お名前</p>
                                           <p style="margin: 0;">
                                             &emsp;
-                                            <span style="border-bottom: 0.5px solid #989898; padding-bottom: 2px;">&nbsp;${ data.phonetic }&nbsp;
+                                            <span style="border-bottom: 0.5px solid #989898; font-weight: bold; padding-bottom: 2px;">&nbsp;${ data.name }&nbsp;
+                                            </span>
+                                          </p>
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td style=" border-radius: 10px; padding: 20px 20px 20px 20px; font-family: sans-serif; font-size: 12px; color: #555555;">
+                                          <p style="margin: 0; padding-bottom: 5px; font-weight: bold; color: #7c7c7c;">お名前（フリガナ）</p>
+                                          <p style="margin: 0;">
+                                            &emsp;
+                                            <span style="border-bottom: 0.5px solid #989898; font-weight: bold; padding-bottom: 2px;">&nbsp;${ data.phonetic }&nbsp;
                                             </span>
                                           </p>
                                       </td>
                                     </tr>
     
                                     <tr>
-                                      <td style="border-radius: 10px; padding: 10px 20px; font-family: sans-serif; font-size: 12px; color: #555555;">
-                                          <p style="margin: 0; padding-bottom: 5px;">電話番号</p>
+                                      <td style="border-radius: 10px; padding: 20px 20px 20px 20px; font-family: sans-serif; font-size: 12px; color: #555555;">
+                                          <p style="margin: 0; padding-bottom: 5px; font-weight: bold; color: #7c7c7c;">電話番号</p>
                                           <p style="margin: 0;">
                                             &emsp;
-                                              <span style="border-bottom: 0.5px solid #989898; padding-bottom: 2px;">&nbsp;${ data.phone }&nbsp;
+                                              <span style="border-bottom: 0.5px solid #989898; font-weight: bold; padding-bottom: 2px;">&nbsp;${ data.phone }&nbsp;
                                               </span>
                                             </p>
                                       </td>
                                     </tr>
     
                                     <tr>
-                                      <td style="border-radius: 10px; padding: 10px 20px; font-family: sans-serif; font-size: 12px; color: #555555;">
-                                          <p style="margin: 0; padding-bottom: 5px;">メールアドレス</p>
+                                      <td style="border-radius: 10px; padding: 20px 20px 20px 20px; font-family: sans-serif; font-size: 12px; color: #555555;">
+                                          <p style="margin: 0; padding-bottom: 5px; font-weight: bold; color: #7c7c7c;">メールアドレス</p>
                                           <p style="margin: 0;">
                                           &emsp;
-                                            <span style="border-bottom: 0.5px solid #989898; padding-bottom: 2px;">&nbsp;${ data.email }&nbsp;
+                                            <span style="border-bottom: 0.5px solid #989898; font-weight: bold; padding-bottom: 2px;">&nbsp;${ data.email }&nbsp;
                                             </span>
                                           </p>
                                       </td>
                                     </tr>
     
                                     <tr>
-                                      <td style="border-radius: 10px; padding: 10px 20px 50px 20px; font-family: sans-serif; font-size: 12px; color: #555555;">
-                                          <p style="margin: 0; padding-bottom: 5px;">お問い合わせ内容</p>
+                                      <td style="border-radius: 10px; padding: 20px 20px 35px 20px; font-family: sans-serif; font-size: 12px; color: #555555;">
+                                          <p style="margin: 0; padding-bottom: 5px; font-weight: bold; color: #7c7c7c;">お問い合わせ内容</p>
                                           <p style="margin: 0;">
                                             &emsp;
-                                            <span style="border-bottom: 0.5px solid #989898; padding-bottom: 2px;">&nbsp;${ data.contents }&nbsp;
+                                            <span style="border-bottom: 0.5px solid #989898; font-weight: bold; padding-bottom: 2px; line-height: 2;">&nbsp;${ data.contents }&nbsp;
                                             </span>
                                           </p>
                                       </td>
@@ -498,10 +502,10 @@ export async function POST(request: NextRequest) {
     
     
               <!-- オートボーダー -start -->
-              <!-- 上に50px余白あり -->
+              <!-- 上に余白20px -start -->
               <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style=" margin: auto;">
                 <tr>
-                  <td style="padding: 10px 0 0 0; background-color: #ffffff; margin: auto;">
+                  <td style="padding: 20px 0 0 0; background-color: #ffffff; margin: auto;">
                     <table cellspacing="0" cellpadding="0" border="0" width="95%"  style="margin: auto;">
                 
                       <tr>
@@ -527,7 +531,7 @@ export async function POST(request: NextRequest) {
                           <tr>
                               <td class="button-td button-td-logo" style=" border-radius: 4px;">
                                   <a class="button-a button-a-logo" href="https://m-package.vercel.app/" 
-                                  style=" padding: 20px 20px; font-family: sans-serif; line-height: 0; font-size: 14px;  text-decoration: none; color: #7c7c7c; display: block; border-radius: 4px;">
+                                  style=" padding: 20px 20px; font-family: sans-serif; line-height: 0; font-size: 14px; font-weight: bold; text-decoration: none; color: #7c7c7c; display: block; border-radius: 4px;">
                                   株式会社エムパッケージ
                                   </a>
                               </td>
@@ -551,7 +555,7 @@ export async function POST(request: NextRequest) {
     
                             <table align="left" border="0" width="50%">
                               <tr>
-                                <td style=" font-size: 10px; color: #7c7c7c; padding: 0 20px; text-align: left;" class="unstyle-auto-detected-links">
+                                <td style=" font-size: 10px; font-weight: bold; color: #7c7c7c; padding: 0 20px; text-align: left;" class="unstyle-auto-detected-links">
                                   <span style="margin: 0;">〒332-0006 埼玉県川口市末広2-7-15</span>
                                   <br><span style="margin: 0;">048-287-8055</span>
                                 </td>
@@ -561,8 +565,8 @@ export async function POST(request: NextRequest) {
     
                             <table align="left" border="0" width="50%">
                               <tr>
-                                <td style=" font-size: 10px; color: #7c7c7c; padding: 0 20px; text-align: left;" class="unstyle-auto-detected-links">
-                                  <br><span style="margin: 0;">2-7-15, Suehiro, Kawaguchi-si, Saitama, 332-0006</span>
+                                <td style=" font-size: 10px; font-weight: bold; color: #7c7c7c; padding: 0 20px; text-align: left;" class="unstyle-auto-detected-links">
+                                  <span style="margin: 0;">2-7-15, Suehiro, Kawaguchi-si, Saitama, 332-0006</span>
                                   <br><span style="margin: 0;">(+81) 48-287-8055</span>
                                 </td>
                               </tr>
