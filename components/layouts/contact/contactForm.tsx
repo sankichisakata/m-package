@@ -431,8 +431,8 @@ export default function ContactForm () {
                 <textarea
                   className="
                   bg-gray-100
-                  w-full md:w-72 lg:w-80
-                  h-40 md:h-52 lg:h-56
+                  w-full md:w-80 lg:w-[28rem] xl:w-[34rem]
+                  h-40 md:h-52 lg:h-56 xl:h-64
                   py-2 md:py-3 px-3 md:px-4
                   rounded-md
                   focus:bg-white
@@ -534,6 +534,8 @@ export default function ContactForm () {
               loadingText='送信中'
               spinnerPlacement='start'
               isLoading={loading}
+              colorScheme='gray'
+              variant='solid'
               type="submit"
               value="SUBMIT"
             >
