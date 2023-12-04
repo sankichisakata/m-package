@@ -383,7 +383,7 @@ export async function POST(request: NextRequest) {
                                   <p style="margin: 0;">${ data.company }</p>
                                   <p style="margin: 0;">${ data.name }&nbsp様</p>
                                   <br>
-                                  <p style="margin: 0;">この度は、お問い合わせいただきまして誠にありがとうございます。</p>
+                                  <p style="margin: 0;">この度は、お問い合わせいただき、誠にありがとうございます。</p>
                                   <p style="margin: 0;">お問い合わせ内容を確認次第、ご連絡致します。</p>
                                   <p style="margin: 0;">今しばらくお待ち下さいませ。</p>
                               </td>
