@@ -69,7 +69,7 @@ export default function HomeSwiper () {
                                     <p className='[font-size:_clamp(1.5rem,3vw,3rem)]'>いつも、身近に、皆様と共に。</p>
                                     <p className='[font-size:_clamp(0.8rem,2vw,2rem)]'>段ボールの製造・企画・加工・納品までを
                                         <span className='md:hidden'><br/></span>
-                                        ワンストップで行います。
+                                        ノンストップで行います。
                                     </p>
                             </div>
 
