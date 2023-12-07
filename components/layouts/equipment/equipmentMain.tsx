@@ -16,22 +16,9 @@ export default function EquipmentMain () {
                 <div 
                 className="
                 w-11/12 lg:max-w-7xl
-                pb-10 lg:pb-14
+                md:pt-14 lg:pt pb-10 md:pb-24 lg:pb-32
                 flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-10 lg:gap-20
                 ">
-                    <div className=" w-full lg:w-4/12 h-[16rem] md:h-[20rem] lg:h-auto">
-                        <SlideInLeft>
-                        <div 
-                        className="
-                        w-full h-[16rem] md:h-[20rem] lg:h-auto
-                        aspect-[4/6]
-                        bg-factory01 bg-center bg-cover
-                        flex justify-center items-center
-                        ">
-                        </div>
-                        </SlideInLeft>
-                    </div>
-
                     <div
                     className="
                     w-full lg:w-8/12 h-auto

@@ -30,7 +30,7 @@ export default function ServiceTimeline () {
                     ">
                         <p>
                             <span className="text-white">
-                                「ノンステップ管理」
+                                「ノンストップ管理」
                                 <span className="md:hidden"><br/></span>
                             </span>
                             で迅速かつ正確な情報伝達を。
@@ -47,7 +47,7 @@ export default function ServiceTimeline () {
                     flex flex-col justify-center items-center gap-2 md:gap-5
                     text-xs md:text-base lg:text-xl font-bold
                     ">
-                    <p>弊社では1人の営業がすべての工程を管理する<span className="text-vivid-color">「ノンステップ管理」</span>をしております。</p>
+                    <p>弊社では1人の営業がすべての工程を管理する<span className="text-vivid-color">「ノンストップ管理」</span>をしております。</p>
                     <p>必要な情報を迅速にお伝えし、最短でお客様の問題を解決致します。</p>
                     <p>また、自社配送だからこそのお急ぎ対応も可能です。</p>
                     <p>まずはお気軽にご相談ください。</p>
@@ -300,7 +300,7 @@ export default function ServiceTimeline () {
                                     <div className="w-full flex flex-col items-center">
                                         <h3 className="
                                         mb-3 
-                                        text-base md:text-lg lg:text-xl font-bold">企画提案</h3>
+                                        text-base md:text-lg lg:text-xl font-bold">御発注</h3>
                                         <div className="flex-1 border-b-2 border-slate-500"></div>  
                                     </div>
                                     <p>最終調整を行い、生産へ参ります。</p>

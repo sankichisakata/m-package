@@ -1,12 +1,41 @@
+// import Link from "next/link";
+// import { client } from "@/components/elements/libs/microcms";
 
-export default function News () {
-    return(
-        <>
-        <div className="bg-gray-800 h-screen w-fill flex flex-col justify-center items-center">
-            <h2 className="text-2xl">ニュース</h2>
-            <p className="text-lg">記事一覧</p>
-        </div>
-            
-        </>
-    )
-}
+export default async function News() {
+//  const { contents } = await getList();
+
+//  // ページの生成された時間を取得
+//  const time = new Date().toLocaleString();
+
+//  if (!contents || contents.length === 0) {
+//   return <h1>No contents</h1>;
+//  }
+
+//  return (
+//   <div>
+//    <h1>{time}</h1>
+//    <ul>
+//     {contents.map((post) => {
+//      return (
+//       <li key={post.id}>
+//        <Link href={`/news/${post.id}`}>{post.title}</Link>
+//       </li>
+//      );
+//     })}
+//    </ul>
+//   </div>
+//  );
+// }
+
+// export default async function News() {
+//     const data = await  client.get({
+//       endpoint: 'news',
+//     })
+  
+//     return (
+//       <main className="text-2xl">
+//         <div className="text-center">{data.text}</div>
+//       </main>
+//     )
+  }
+  
