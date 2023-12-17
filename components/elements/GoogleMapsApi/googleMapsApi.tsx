@@ -21,10 +21,11 @@ const center = {
 };
 
 function GoogleMapsApi() {
+  const mapsKey:string = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ?? "";
   const { isLoaded , loadError } = useJsApiLoader({
     id: 'google-map-script',
     language: 'ja',
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY,
+    googleMapsApiKey: mapsKey,
   })
 
   const [map, setMap] = React.useState(null)
