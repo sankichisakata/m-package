@@ -6,7 +6,7 @@ import { InterfaceMap } from "./googleMapStyles";
  const googleMapOptions = {
   styles: InterfaceMap,
   mapTypeControl: false,
-
+  streetViewControl: false,
 };
 
 const containerStyle = {
