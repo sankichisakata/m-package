@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { HiMail } from "react-icons/hi";
 import equipment01 from '@/public/img/equipment01.jpg'
 import { SlideInLeft } from '../observer/slideInLeft';
+import FooterMap from '../footerMap/footerMap';
 
 export default function FooterContact () {
     return (
@@ -14,19 +15,17 @@ export default function FooterContact () {
         '
         >
             <SlideInLeft>
-            <Link 
-            href="/contact" 
+            <div
             className="
-            w-11/12 lg:w-9/12 mx-auto md:p-5
+            w-11/12 lg:w-10/12 mx-auto
             flex justify-center-items-center
             border-2 border-primary-color
             shadow-lg rounded-md
-            group transition-all duration-500
-            bg-white hover:bg-slate-300
+            bg-white
             "
             >
                 
-                <div 
+                {/* <div 
                 className='
                 overflow-hidden
                 hidden md:block shadow-inner
@@ -43,13 +42,25 @@ export default function FooterContact () {
                     placeholder='blur'
                     style={{ objectFit: "cover" }}
                     />
+                </div> */}
+                <div className="
+                overflow-hidden
+                hidden md:block
+                rounded-l-md shadow-inner
+                h-auto md:w-1/2
+                flex justify-center items-center
+                ">
+                    <FooterMap/>
                 </div>
 
-                <div className="
+                <Link 
+                href="/contact"
+                className="
                 w-full md:w-1/2 px-5 py-6 lg:py-10 
-                text-slate-600
-                rounded-md
                 flex flex-col justify-center gap-5 lg:gap-8
+                hover:bg-sub-color/10 text-slate-600
+                rounded-r-md
+                transition-all duration-500
                 "
                 >
                     
@@ -87,9 +98,9 @@ export default function FooterContact () {
 
 
 
-                </div>
-               
                 </Link>
+               
+                </div>
             {/* <div className="w-full md:w-7/12 lg:w-9/12 flex items-center mx-auto pt-5">
                  <div className="flex-1 border-b-2 border-slate-500"></div>  
             </div> */}

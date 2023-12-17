@@ -3,9 +3,10 @@
 import React from 'react'
 import { GoogleMap, LoadScript, MarkerF, useJsApiLoader, InfoWindowF } from '@react-google-maps/api';
 import { InterfaceMap } from "./googleMapStyles";
-import { Text } from '@chakra-ui/react';
  const googleMapOptions = {
   styles: InterfaceMap,
+  mapTypeControl: false,
+
 };
 
 const containerStyle = {
@@ -15,15 +16,16 @@ const containerStyle = {
 
 // 初期表示する座標
 const center = {
-  lat: 43,
-  lng: 141,
+  lat: 35.80462646484375,
+  lng: 139.73667907714844,
 };
 
 function GoogleMapsApi() {
+  const mapsKey:string = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ?? "";
   const { isLoaded , loadError } = useJsApiLoader({
     id: 'google-map-script',
     language: 'ja',
-    googleMapsApiKey: process.env.GOOGLE_MAPS_KEY!,
+    googleMapsApiKey: mapsKey,
   })
 
   const [map, setMap] = React.useState(null)
@@ -47,26 +49,38 @@ function GoogleMapsApi() {
         id='map'
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={10}
+        zoom={15}
       >
         <InfoWindowF position={center}>
             <>
-              <Text
-                fontSize={16}
-                as={"p"}
-                align={"center"}
-                fontWeight={"bold"}
-                color={"green.400"}
-              >
-                ダンボールのエムパッケージ
-              </Text>
+            <div className='p-1'>
+              <p className="
+              block
+              bg-white
+              w-15
+              p-[0.1rem] md:p-[0.2rem]
+              text-center text-xxs md:text-xs lg:text-base font-bold
+              border-sub-color border-t-2 border-l-2 border-r-2
+              ">
+                  ダンボールの
+              </p>
+              <p className="
+              bg-sub-color
+              p-[0.1rem] md:p-[0.2rem]
+              text-center text-white font-bold 
+              text-xxs md:text-xs lg:text-base
+              border-2 border-sub-color
+              ">
+                  エムパッケージ
+              </p>
+            </div>
             </>
           </InfoWindowF>
         { /* Child components, such as markers, info windows, etc. */ }
         <MarkerF
           position={{
-            lat: 43,
-            lng: 141,
+            lat: 35.80462646484375,
+            lng: 139.73667907714844,
           }}
           onLoad={onLoad}
         />
