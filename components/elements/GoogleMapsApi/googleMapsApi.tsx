@@ -53,14 +53,14 @@ function GoogleMapsApi() {
       >
         <InfoWindowF position={center}>
             <>
-            <div className='p-1'>
+            <div className='flex p-1'>
               <p className="
               block
               bg-white
               w-15
               p-[0.1rem] md:p-[0.2rem]
               text-center text-xxs md:text-xs lg:text-base font-bold
-              border-sub-color border-t-2 border-l-2 border-r-2
+              border-sub-color border-t-2 border-l-2 border-b-2
               ">
                   ダンボールの
               </p>
