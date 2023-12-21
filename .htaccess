@@ -1,5 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{HTTP_HOST} ^www\.sample\.com
-
-RewriteRule ^(.*) http://m-package.com/$1 [R=301,L]
