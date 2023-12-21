@@ -79,7 +79,8 @@ export default function EquipmentList () {
                                     text-sub-color text-base md:text-lg lg:text-xl font-bold
                                     ">プリンタースロッター</p>
                                     <div className="">
-                                        <p>自由に動く刃物により希望の寸法に切り込みと罫線を入れる事ができる。一般的なA式(みかん箱タイプ)に裁断する。同時にカラー印刷(2色)ができ、商品名やロゴなど細かい印刷ができる。</p>
+                                        <p>自由に動く刃物により希望の寸法に切り込みと罫線を入れる事ができます。</p>
+                                        <p>一般的なA式(みかん箱タイプ)に裁断を行ったり、同時にカラー印刷(2色)ができ、商品名やロゴなど細かい印刷が可能です。</p>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +121,9 @@ export default function EquipmentList () {
                                     text-sub-color text-base md:text-lg lg:text-xl font-bold
                                     ">ロータリースリッター</p>
                                     <div className="">
-                                        <p>板状の段ボールシートに罫線を入れたり、パット・仕切りなど指定の寸法に断裁することができる。大小のロータリーパンチを使用して小ロットや特殊な形状の箱を作ることができる。</p>
+                                        <p>板状の段ボールシートに罫線を入れたり、パット・仕切りなど指定の寸法に断裁することができます。</p>
+                                        <p>また、大小のロータリーパンチを使用して小ロットや特殊な形状の箱を作ることもできます。</p>
+                                            
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +164,7 @@ export default function EquipmentList () {
                                     text-sub-color text-base md:text-lg lg:text-xl font-bold
                                     ">パンチ</p>
                                     <div className="">
-                                        <p>罫線に合わせて切り込みを入れる。</p>
+                                        <p>罫線に合わせて切り込みを入れることができます。</p>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +205,7 @@ export default function EquipmentList () {
                                     text-sub-color text-base md:text-lg lg:text-xl font-bold
                                     ">セミオートグルアー</p>
                                     <div className="">
-                                        <p>裁断、印刷した段ボールの接合部を糊付けする。</p>
+                                        <p>裁断、印刷した段ボールの接合部を糊付けします。</p>
                                     </div>
                                 </div>
                             </div>
@@ -244,7 +247,7 @@ export default function EquipmentList () {
                                     text-sub-color text-base md:text-lg lg:text-xl font-bold                                   
                                     ">アームステッチャー</p>
                                     <div className="">
-                                        <p>段ボールケースの接合部をワイヤーで留める機械。</p>
+                                        <p>段ボールケースの接合部をワイヤーで留める機械です。</p>
                                     </div>
                                 </div>
                             </div>
