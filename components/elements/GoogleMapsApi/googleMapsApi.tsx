@@ -11,7 +11,7 @@ import { InterfaceMap } from "./googleMapStyles";
 
 const containerStyle = {
   width: '100%',
-  height: '100%'
+  height: '100%',
 };
 
 // 初期表示する座標
@@ -49,7 +49,7 @@ function GoogleMapsApi() {
         id='map'
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={15}
+        zoom={14}
       >
         <InfoWindowF position={center}>
             <>
