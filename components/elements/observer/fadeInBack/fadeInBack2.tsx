@@ -2,7 +2,7 @@
 
 import { useInView } from 'react-intersection-observer';
 
-const FadeInBack2 = ({ children }) => {
+export const FadeInBack2 = ({ children }) => {
     const { ref, inView } = useInView({
         // オプション
         rootMargin: '-100px', // ref要素が現れてから⚪︎⚪︎px過ぎたら
@@ -18,5 +18,3 @@ const FadeInBack2 = ({ children }) => {
         </div>
     )
 }
-
-export default FadeInBack2;

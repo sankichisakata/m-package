@@ -2,7 +2,7 @@
 
 import { useInView } from 'react-intersection-observer';
 
-const SlideInRight = ({ children }) => {
+export const SlideInRight = ({ children }) => {
     const { ref, inView } = useInView({
         // オプション
         rootMargin: '-100px', // ref要素が現れてから50px過ぎたら
@@ -18,5 +18,3 @@ const SlideInRight = ({ children }) => {
         </div>
     )
 }
-
-export default SlideInRight;
