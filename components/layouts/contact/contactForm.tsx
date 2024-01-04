@@ -9,6 +9,14 @@ import { FormDate ,Form } from "@/components/elements/zod/zodShema";
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from "@chakra-ui/react";
 import { useState } from "react";
+import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
+// import { FadeInBack } from "@/components/elements/observer/fadeInBack/fadeInBack";
+import { FadeInBack } from "@/components/elements/observer/fadeInBack";
+import { FadeInBack2 } from "@/components/elements/observer/fadeInBack/fadeInBack2";
+import { FadeInBack3 } from "@/components/elements/observer/fadeInBack/fadeInBack3";
+import { FadeInBack4 } from "@/components/elements/observer/fadeInBack/fadeInBack4";
+import { FadeInBack5 } from "@/components/elements/observer/fadeInBack/fadeInBack5";
+import { FadeInBack6 } from "@/components/elements/observer/fadeInBack/fadeInBack6";
 
 export default function ContactForm () {
   const router = useRouter(); 
@@ -106,7 +114,7 @@ export default function ContactForm () {
           <div className="
           flex flex-col md:flex-row gap-2 md:gap-0
           ">
-
+            <SlideInLeft>
             <div className="
             w-full md:w-6/12 h-auto
             ">
@@ -125,7 +133,9 @@ export default function ContactForm () {
                   会社名
                 </label>
             </div>
+            </SlideInLeft>
 
+            <FadeInBack>
             <div className="
             w-full md:w-6/12
             ">
@@ -157,6 +167,7 @@ export default function ContactForm () {
               </div>
 
             </div>
+            </FadeInBack>
           </div>
 
           {/* フォーム：お名前 */}
@@ -164,6 +175,7 @@ export default function ContactForm () {
           flex flex-col md:flex-row gap-2 md:gap-0
           ">
 
+            <SlideInLeft>
             <div className="
             w-full md:w-6/12 h-auto
             ">
@@ -182,7 +194,9 @@ export default function ContactForm () {
                   お名前
                 </label>
             </div>
+            </SlideInLeft>
 
+            <FadeInBack2>
             <div className="
             w-full md:w-6/12
             ">
@@ -213,13 +227,14 @@ export default function ContactForm () {
                 )}
               </div>
             </div>
+            </FadeInBack2>
           </div>
 
           {/* フォーム：フリガナ */}
           <div className="
           flex flex-col md:flex-row gap-2 md:gap-0
           ">
-
+            <SlideInLeft>
             <div className="
             w-full md:w-6/12 h-auto
             ">
@@ -238,7 +253,9 @@ export default function ContactForm () {
                   お名前（フリガナ）
                 </label>
             </div>
+            </SlideInLeft>
 
+            <FadeInBack3>
             <div className="
             w-full md:w-6/12
             ">
@@ -271,13 +288,14 @@ export default function ContactForm () {
               </div>
 
             </div>
+            </FadeInBack3>
           </div>
 
           {/* フォーム：電話番号 */}
           <div className="
           flex flex-col md:flex-row gap-2 md:gap-0
           ">
-
+            <SlideInLeft>
             <div className="
             w-full md:w-6/12 h-auto
             ">
@@ -296,7 +314,9 @@ export default function ContactForm () {
                   電話番号
                 </label>
             </div>
+            </SlideInLeft>
 
+            <FadeInBack4>
             <div className="
             w-full md:w-6/12
             ">
@@ -337,6 +357,7 @@ export default function ContactForm () {
               </div>
 
             </div>
+            </FadeInBack4>
           </div>
 
 
@@ -344,7 +365,7 @@ export default function ContactForm () {
           <div className="
           flex flex-col md:flex-row gap-2 md:gap-0
           ">
-
+            <SlideInLeft>
             <div className="
             w-full md:w-6/12 h-auto
             ">
@@ -363,7 +384,9 @@ export default function ContactForm () {
                   メールアドレス
                 </label>
             </div>
-
+            </SlideInLeft>
+                
+            <FadeInBack5>
             <div className="
             w-full md:w-6/12
             ">
@@ -396,13 +419,14 @@ export default function ContactForm () {
               </div>
 
             </div>
+            </FadeInBack5>
           </div>
 
           {/* フォーム：お問い合わせ内容 */}
           <div className="
           flex flex-col md:flex-row gap-2 md:gap-0
           ">
-
+            <SlideInLeft>
             <div className="
             w-full md:w-6/12 h-auto
             ">
@@ -421,7 +445,9 @@ export default function ContactForm () {
                   お問い合わせ内容
                 </label>
             </div>
+            </SlideInLeft>
 
+            <FadeInBack6>
             <div className="
             w-full md:w-6/12
             ">
@@ -459,12 +485,13 @@ export default function ContactForm () {
               </div>
 
             </div>
+            </FadeInBack6>
           </div>
 
           {/* フォーム：プライバシーポリシー */}
           <div className="
-          
           ">
+            <FadeInBack>
             <div className="
             w-full
             flex justify-center items-center
@@ -498,6 +525,7 @@ export default function ContactForm () {
                 </div>
               </label>
             </div>
+
             {/* エラーメッセージ：プライバシーポリシー */}
             <div className="
             flex justify-center items-center
@@ -507,9 +535,11 @@ export default function ContactForm () {
                 <div className="text-red-500">{errors.privacy.message}</div>
               )}
             </div>
+            </FadeInBack>
           </div>
           
           {/* 注意書き */}
+          <FadeInBack>
           <div className="
           py-4
           flex flex-col justify-center items-center gap-2 md:gap-3
@@ -518,8 +548,10 @@ export default function ContactForm () {
             <p>「送信する」ボタンを押すと内容が送信されます。</p>
             <p>ご入力内容をご確認の上、ボタンを押してください。</p>
           </div>
+          </FadeInBack>
           
           {/* フォーム：送信ボタン */}
+          <FadeInBack>
           <div className="
           flex justify-center items-center
           ">
@@ -542,6 +574,7 @@ export default function ContactForm () {
               送信する
             </Button>
           </div>
+          </FadeInBack>
 
         </form>
       </div>
