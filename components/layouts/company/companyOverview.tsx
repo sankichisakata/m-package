@@ -57,27 +57,27 @@ export default function CompanyOverview () {
                                     w-3/12 md:w-3/12
                                     flex justify-center 
                                     ">
-                                        <FadeInBack>
+                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start
                                         ">
                                            社名
                                         </p>
-                                        </FadeInBack>
+                                        </SlideInLeft>
                                     </div>
 
                                     <div className="
                                     w-9/12 md:w-8/12
                                     flex justify-start items-center
                                     ">
-                                        <SlideInRight>
+                                        <FadeInBack>
                                         <p className="
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             株式会社エムパッケージ
                                         </p>
-                                        </SlideInRight>
+                                        </FadeInBack>
                                     </div>
                                 </div>
 
@@ -92,27 +92,27 @@ export default function CompanyOverview () {
                                     w-3/12 md:w-3/12
                                     flex justify-center 
                                     ">
-                                        <FadeInBack>
+                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start
                                         ">
                                            所在地
                                         </p>
-                                        </FadeInBack>
+                                        </SlideInLeft>
                                     </div>
 
                                     <div className="
                                     w-9/12 md:w-8/12
                                     flex justify-start items-center
                                     ">
-                                        <SlideInRight>
+                                        <FadeInBack>
                                         <p className="
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             埼玉県川口市末広2-7-15
                                         </p>
-                                        </SlideInRight>
+                                        </FadeInBack>
                                     </div>
                                 </div>
 
@@ -127,20 +127,20 @@ export default function CompanyOverview () {
                                     w-3/12 md:w-3/12
                                     flex justify-center 
                                     ">
-                                        <FadeInBack>
+                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start
                                         ">
                                            電話番号
                                         </p>
-                                        </FadeInBack>
+                                        </SlideInLeft>
                                     </div>
 
                                     <div className="
                                     w-9/12 md:w-8/12
                                     flex justify-start items-center
                                     ">
-                                        <SlideInRight>
+                                        <FadeInBack>
                                         <p className="
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
@@ -153,7 +153,7 @@ export default function CompanyOverview () {
                                         ">
                                             &emsp;FAX&emsp;048-287-8056
                                         </p>
-                                        </SlideInRight>
+                                        </FadeInBack>
                                     </div>
                                 </div>
 
@@ -168,27 +168,27 @@ export default function CompanyOverview () {
                                     w-3/12 md:w-3/12
                                     flex justify-center 
                                     ">
-                                        <FadeInBack>
+                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start
                                         ">
                                            設立
                                         </p>
-                                        </FadeInBack>
+                                        </SlideInLeft>
                                     </div>
 
                                     <div className="
                                     w-9/12 md:w-8/12
                                     flex justify-start items-center
                                     ">
-                                        <SlideInRight>
+                                        <FadeInBack>
                                         <p className="
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             2022年1月
                                         </p>
-                                        </SlideInRight>
+                                        </FadeInBack>
                                     </div>
                                 </div>
 
@@ -203,27 +203,27 @@ export default function CompanyOverview () {
                                     w-3/12 md:w-3/12
                                     flex justify-center 
                                     ">
-                                        <FadeInBack>
+                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start
                                         ">
                                            代表取締役
                                         </p>
-                                        </FadeInBack>
+                                        </SlideInLeft>
                                     </div>
 
                                     <div className="
                                     w-9/12 md:w-8/12
                                     flex justify-start items-center
                                     ">
-                                        <SlideInRight>
+                                        <FadeInBack>
                                         <p className="
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             渡辺&emsp;久人
                                         </p>
-                                        </SlideInRight>
+                                        </FadeInBack>
                                     </div>
                                 </div>
 
@@ -238,27 +238,27 @@ export default function CompanyOverview () {
                                     w-3/12 md:w-3/12
                                     flex justify-center 
                                     ">
-                                        <FadeInBack>
+                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start
                                         ">
                                            資本金
                                         </p>
-                                        </FadeInBack>
+                                        </SlideInLeft>
                                     </div>
 
                                     <div className="
                                     w-9/12 md:w-8/12
                                     flex justify-start items-center
                                     ">
-                                        <SlideInRight>
+                                        <FadeInBack>
                                         <p className="
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             200万円
                                         </p>
-                                        </SlideInRight>
+                                        </FadeInBack>
                                     </div>
                                 </div>
 
@@ -273,27 +273,27 @@ export default function CompanyOverview () {
                                     w-3/12 md:w-3/12
                                     flex justify-center 
                                     ">
-                                        <FadeInBack>
+                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start
                                         ">
                                            事業内容
                                         </p>
-                                        </FadeInBack>
+                                        </SlideInLeft>
                                     </div>
 
                                     <div className="
                                     w-9/12 md:w-8/12
                                     flex justify-start items-center
                                     ">
-                                        <SlideInRight>
+                                        <FadeInBack>
                                         <p className="
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
                                             段ボール製品の製造・加工及び販売、紙加工製品の設計及びコンサルティング業務、梱包・物流業務
                                         </p>
-                                        </SlideInRight>
+                                        </FadeInBack>
                                     </div>
                                 </div>
                             </div>

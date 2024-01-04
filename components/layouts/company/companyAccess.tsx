@@ -1,6 +1,6 @@
 
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
-import { SlideInRight } from "@/components/elements/observer/slideInRight";
+import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
 
 
 export default function CompanyAccess () {
@@ -51,20 +51,20 @@ export default function CompanyAccess () {
                             w-3/12 md:w-3/12
                             flex justify-center 
                             ">
-                                <FadeInBack>
+                                <SlideInLeft>
                                 <p className="
                                 flex justify-start
                                 ">
                                     所在地
                                 </p>
-                                </FadeInBack>
+                                </SlideInLeft>
                             </div>
 
                             <div className="
                             w-9/12 md:w-8/12
                             flex justify-start items-center
                             ">
-                                <SlideInRight>
+                                <FadeInBack>
                                 <div className="
                                 flex justify-start items-start
                                 text-xl md:text-xxl lg:text-xxxl font-bold
@@ -75,7 +75,7 @@ export default function CompanyAccess () {
                                     </p>
                                 </div>
                                 
-                                </SlideInRight>
+                                </FadeInBack>
                             </div>
                         </div>
 
@@ -90,20 +90,20 @@ export default function CompanyAccess () {
                             w-3/12 md:w-3/12
                             flex justify-center 
                             ">
-                                <FadeInBack>
+                                <SlideInLeft>
                                 <p className="
                                 flex justify-start
                                 ">
                                     車
                                 </p>
-                                </FadeInBack>
+                                </SlideInLeft>
                             </div>
 
                             <div className="
                             w-9/12 md:w-8/12
                             flex justify-start items-center
                             ">                              
-                                <SlideInRight>
+                                <FadeInBack>
                                 <div className="
                                 flex flex-col justify-start items-start
                                 text-xl md:text-xxl lg:text-xxxl font-bold
@@ -112,7 +112,7 @@ export default function CompanyAccess () {
                                     <p>鹿浜橋ICより車で12分</p>
                                 </div>
                                 
-                                </SlideInRight>
+                                </FadeInBack>
                             </div>
                         </div>
 
@@ -127,20 +127,20 @@ export default function CompanyAccess () {
                             w-3/12 md:w-3/12
                             flex justify-center 
                             ">
-                                <FadeInBack>
+                                <SlideInLeft>
                                 <p className="
                                 flex justify-start
                                 ">
                                     バス
                                 </p>
-                                </FadeInBack>
+                                </SlideInLeft>
                             </div>
 
                             <div className="
                             w-9/12 md:w-8/12
                             flex justify-start items-center
                             ">
-                                <SlideInRight>
+                                <FadeInBack>
                                 <div className="
                                 flex flex-col justify-start items-start
                                 text-xl md:text-xxl lg:text-xxxl font-bold
@@ -157,7 +157,7 @@ export default function CompanyAccess () {
                                     </p>
                                 </div>
                                 
-                                </SlideInRight>
+                                </FadeInBack>
                             </div>
                         </div>
                 </div>
