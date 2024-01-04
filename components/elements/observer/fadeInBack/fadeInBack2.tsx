@@ -12,7 +12,7 @@ export const FadeInBack2 = ({ children }) => {
     return (
         <div
             ref={ref}
-            className={`${inView ? "opacity-100" : "opacity-0 translate-y-[-10%]"} duration-[1300ms] w-full`}
+            className={`${inView ? "opacity-100" : "opacity-0 translate-y-[-10%]"} duration-[1500ms] w-full`}
         >
             {children}
         </div>
