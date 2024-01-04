@@ -20,9 +20,9 @@ export default function FooterHeader () {
                 >
                     <FadeInBack>
                         <Link href="/" className="block w-72 p-1 md:p-2">
-                            <div className="block flex flex-col gap-2">
-                                <p className="text-xxs md:text-xs font-semibold">ダンボールのエムパッケージ</p>
-                                <p className='text-base md:text-xxl font-bold'>株式会社エムパッケージ</p>
+                            <div className="block flex flex-col gap-1 md:gap-2">
+                                <p className="text-xs md:text-sm font-semibold">ダンボールのエムパッケージ</p>
+                                <p className='text-xl md:text-xxxl font-bold'>株式会社エムパッケージ</p>
                             </div>
                         </Link>
                     </FadeInBack>

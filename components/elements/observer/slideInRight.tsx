@@ -12,7 +12,7 @@ export const SlideInRight = ({ children }) => {
     return (
         <div
             ref={ref}
-            className={`${inView ? "opacity-100" : "opacity-0 translate-x-[10%]"} duration-[1s] w-full`}
+            className={`${inView ? "opacity-100" : "opacity-0 translate-x-[10%]"} duration-[.8s] w-full`}
         >
             {children}
         </div>
