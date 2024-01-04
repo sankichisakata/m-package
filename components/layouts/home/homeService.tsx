@@ -1,5 +1,4 @@
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
-import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
 import Link from "next/link";
 import { HiChevronDoubleRight, HiChevronRight, HiLogout } from "react-icons/hi";
 
@@ -21,7 +20,7 @@ export default function HomeService () {
                     <div className="
                     w-11/12 mx-auto
                     ">
-                        <SlideInLeft>
+                        <FadeInBack>
                             <div className="w-full mx-auto bg-sub-color">
                                 <div className="p-2 md:p-4">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">エムパッケージの仕事</p>
@@ -39,7 +38,7 @@ export default function HomeService () {
                                 「まごころを込めて、作ります。」
                                 </p>
                         </div>
-                        </SlideInLeft>
+                        </FadeInBack>
                     </div>
                     
                 </div>
