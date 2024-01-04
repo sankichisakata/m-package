@@ -1,6 +1,4 @@
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
-import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
-import { SlideInRight } from "@/components/elements/observer/slideInRight";
 import Link from "next/link";
 import { HiChevronDoubleRight } from "react-icons/hi";
 
@@ -29,7 +27,7 @@ export default function HomeCompany () {
                     <div className="
                     w-11/12 mx-auto
                     ">
-                            <SlideInLeft>
+                            <FadeInBack>
                             <div className="mx-auto w-full bg-white">
                                 <div className="
                                 p-2 md:p-4 
@@ -53,7 +51,7 @@ export default function HomeCompany () {
                                 「いつも、身近に、皆様と共に。」
                                 </p>
                             </div>
-                            </SlideInLeft>
+                            </FadeInBack>
                     </div>
                 </div>
 
