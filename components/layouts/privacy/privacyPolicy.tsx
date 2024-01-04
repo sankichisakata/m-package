@@ -1,7 +1,6 @@
 
 import { FadeInBack } from "@/components/elements/observer/fadeInBack";
 import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
-import { SlideInRight } from "@/components/elements/observer/slideInRight";
 import Link from "next/link";
 
 export default function PrivacyPolicy () {
@@ -248,12 +247,8 @@ export default function PrivacyPolicy () {
                                     flex justify-start items-center
                                     ">
                                         <SlideInLeft>
-                                        <p className="
-                                        flex justify-start items-center
-                                        ">
-                                            当社の個人情報の取り扱いに関するお問い合わせは
-                                            <Link href={'/contact'}>こちら</Link>
-                                            までご連絡ください。
+                                        <p>
+                                            当社の個人情報の取り扱いに関するお問い合わせは<Link href={'/contact'}>こちら</Link>までご連絡ください。
                                         </p>
                                         </SlideInLeft>
                                     </div>
