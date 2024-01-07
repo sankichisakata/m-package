@@ -22,20 +22,21 @@ export default function HomeNews () {
             {/* hero画面とコンテンツ境の白ボーダー */}
             <div className="
             before:absolute 
-            before:top-0 before:right-0
+            before:top-0 
+            before:right-0
             before:w-full 
-            before:h-[0.2rem] 
+            before:h-2
             before:bg-white ">
             </div>
             
             <div 
             className="
-            w-11/12 h-auto
+            w-11/12 h-auto 
             flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-28
             ">
                 <FadeInBack>
                         <div className="mx-auto w-full">
-                            <div className="p-2 md:p-4 border-[0.2rem] border-white">
+                            <div className="p-2 md:p-4 border-2 border-white">
                                 <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">ニュース</p>
                             </div>
                         </div>

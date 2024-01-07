@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { HiChevronRight } from "react-icons/hi";
 import { SlideInLeft } from '../observer/slideInLeft';
+import { FadeInBack } from '../observer/fadeInBack';
 
 export default function FooterMain () {
     return(
@@ -115,9 +116,12 @@ export default function FooterMain () {
                         </Link>
                         </li>
                     </ul>
+
+                </nav>
                     
+                <FadeInBack>
                     <div className='
-                    pt-6 mb-2
+                    pt-10 mb-2
                     flex flex-col justify-center items-center gap-2 md:gap-5
                     '>
                         <Link href="/privacy">
@@ -125,13 +129,14 @@ export default function FooterMain () {
                         </Link>
                         
                     </div>
+                </FadeInBack>
 
-                    <div>
-                        <small className='text-xxxs md:text-xxs lg:text-xs text-primary-color'>©&nbsp;2023&nbsp;株式会社エムパッケージ</small>
-                    </div>
-
-                </nav>
-            
+                <div className='
+                mb-2
+                flex flex-col justify-center items-center
+                '>
+                    <small className='text-xxxs md:text-xxs lg:text-xs text-sub-color'>©&nbsp;2023&nbsp;株式会社エムパッケージ</small>
+                </div>
         </div>
         
     )

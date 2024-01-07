@@ -31,7 +31,7 @@ export default function HomeCompany () {
                             <div className="mx-auto w-full bg-white">
                                 <div className="
                                 p-2 md:p-4 
-                                border-x-[0.2rem] border-t-[0.2rem] border-sub-color
+                                border-x-2 border-t-2 border-sub-color
                                 ">
                                     <p className="
                                     [font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color
@@ -43,7 +43,7 @@ export default function HomeCompany () {
                             <div className="
                             bg-sub-color
                             w-full h-auto p-2 md:p-4 mx-auto
-                            border-[0.2rem] border-sub-color
+                            border-2 border-sub-color
                             flex flex-col justify-center items-center
                             text-white text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
                             ">
@@ -69,7 +69,7 @@ export default function HomeCompany () {
                     <div 
                     className="
                     w-full h-auto mx-auto pl-2 md:pl-4 md:pr-6
-                    border-l-[0.2rem] border-sub-color
+                    border-l-2 border-sub-color
                     text-sub-color text-xs md:text-base lg:text-xl font-bold
                     ">
                         <FadeInBack>
@@ -107,7 +107,7 @@ export default function HomeCompany () {
                                 <div 
                                 className="
                                 bg-white lg:group-hover:bg-sub-color transition duration-500
-                                w-full md:w-4/6 max-w-[24rem] h-[4rem] md:h-5rem mx-auto
+                                w-full md:w-4/6 max-w-[24rem] h-[3.5rem] md:h-[4rem] mx-auto
                                 lg:group-hover:text-white
                                 border lg:group-hover:border-sub-color rounded-full
                                 text-sub-color text-xs md:text-base lg:text-lg font-bold
