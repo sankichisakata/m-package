@@ -23,7 +23,7 @@ const ContactButton = () => {
                   <p className="px-3 md:px-4 lg:px-6 py-2 md:py-3 lg:py-4 text-white text-xs md:text-base lg:text-xl font-semibold">
                     お問い合わせ
                 </p>
-                  <HiMail className="border-white rounded-full p-1 m-1 md:m-2 bg-white text-xxl lg:text-[2rem]"/>
+                  <HiMail className="border-white rounded-full p-1 m-1 md:m-2 bg-white text-sub-color text-xxl lg:text-[2rem]"/>
                   </div>
               
             </Link>

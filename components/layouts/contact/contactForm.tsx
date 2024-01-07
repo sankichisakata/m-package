@@ -572,8 +572,8 @@ export default function ContactForm () {
             <Button
               className="
               bg-sub-color active:bg-sub-color/80 hover:bg-sub-color/80
-              py-6 md:py-7 lg:py-10 px-8 md:px-12 lg:px-18 mx-1
-              text-white text-sm md:text-base lg:text-xl
+              w-full md:w-3/6 max-w-[24rem] h-[3.5rem] md:h-[5rem]
+              text-white text-xs md:text-base lg:text-xl font-bold
               border rounded-full
               shadow-lg active:shadow-none hover:shadow-none
               "
