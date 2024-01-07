@@ -91,9 +91,8 @@ export default function HomeService () {
                                 <Link className="w-full h-full" href="/service">
                                 <div className="
                                 w-full h-full p-5
-                                flex flex-col justify-center items-center gap-5 
-                                rounded-md
-                                bg-slate-600/20
+                                flex flex-col items-center gap-5 
+                                bg-slate-600/20 rounded-md
                                 ">
                                     <div className="w-full h-full text-sm md:text-base text-white">
                                         <p className="font-semibold">事業内容</p>
@@ -102,14 +101,19 @@ export default function HomeService () {
                                     <div 
                                     className="
                                     bg-white lg:group-hover:bg-sub-color transition duration-500
-                                    w-full md:w-3/6 h-[4rem]  
+                                    w-full md:w-4/6 max-w-[24rem] h-[5rem] mx-auto
                                     lg:group-hover:text-white
                                     border lg:group-hover:border-sub-color rounded-full
-                                    flex justify-center items-center gap-5
-                                    font-semibold
+                                    text-sub-color text-xs md:text-base lg:text-lg font-bold
+                                    flex justify-center items-center
                                     ">
-                                        <p className="text-sm">詳しく見る</p>
-                                        <HiChevronDoubleRight/>
+                                        <div className="
+                                        w-full h-full
+                                        flex justify-center items-center gap-5
+                                        ">
+                                            <p>詳しく見る</p>
+                                            <HiChevronDoubleRight/>
+                                        </div>
                                     </div>
                                 </div>
                                 </Link>
@@ -130,9 +134,8 @@ export default function HomeService () {
                                 <Link className="w-full h-full" href="/equipment">
                                 <div className="
                                 w-full h-full p-5
-                                flex flex-col justify-center items-center gap-5 
-                                rounded-md
-                                bg-slate-600/10
+                                flex flex-col items-center gap-5 
+                                bg-slate-600/20 rounded-md
                                 ">
                                     <div className="w-full h-full text-sm md:text-base text-white">
                                         <p className="font-semibold">設備一覧</p>
@@ -141,14 +144,19 @@ export default function HomeService () {
                                     <div 
                                     className="
                                     bg-white lg:group-hover:bg-sub-color transition duration-500
-                                    w-full md:w-3/6 h-[4rem] 
+                                    w-full md:w-4/6 max-w-[24rem] h-[5rem] mx-auto
                                     lg:group-hover:text-white
                                     border lg:group-hover:border-sub-color rounded-full
-                                    flex justify-center items-center gap-5
-                                    font-semibold
+                                    text-sub-color text-xs md:text-base lg:text-lg font-bold
+                                    flex justify-center items-center
                                     ">
-                                        <p className="text-sm">詳しく見る</p>
-                                        <HiChevronDoubleRight/>
+                                        <div className="
+                                        w-full h-full
+                                        flex justify-center items-center gap-5
+                                        ">
+                                            <p>詳しく見る</p>
+                                            <HiChevronDoubleRight/>
+                                        </div>
                                     </div>
                                 </div>
                                 </Link>

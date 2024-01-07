@@ -107,17 +107,21 @@ export default function HomeCompany () {
                                 <div 
                                 className="
                                 bg-white lg:group-hover:bg-sub-color transition duration-500
-                                w-full md:w-3/6 h-[4rem] 
+                                w-full md:w-4/6 max-w-[24rem] h-[5rem] mx-auto
                                 lg:group-hover:text-white
                                 border lg:group-hover:border-sub-color rounded-full
-                                flex justify-center items-center gap-5
-                                font-semibold
+                                text-sub-color text-xs md:text-base lg:text-lg font-bold
+                                flex justify-center items-center
                                 ">
-                                    <div className=" flex justify-center items-center gap-5">
-                                        <p className="text-sm">詳しく見る</p>
+                                    <div className="
+                                    w-full h-full
+                                    flex justify-center items-center gap-5
+                                    ">
+                                        <p>詳しく見る</p>
                                         <HiChevronDoubleRight/>
                                     </div>
                                 </div>
+
                             </div>
                             </Link>
                         </div>

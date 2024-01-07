@@ -7,6 +7,7 @@ export default function CompanyMap () {
     return(
         <>
         <div className="
+        md:hidden
         flex justify-center items-center
         mb-14 md:mb-20 lg:mb-24
         ">
