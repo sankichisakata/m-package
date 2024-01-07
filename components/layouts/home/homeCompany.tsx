@@ -107,7 +107,7 @@ export default function HomeCompany () {
                                 <div 
                                 className="
                                 bg-white lg:group-hover:bg-sub-color transition duration-500
-                                w-full md:w-4/6 max-w-[24rem] h-[5rem] mx-auto
+                                w-full md:w-4/6 max-w-[24rem] h-[4rem] md:h-5rem mx-auto
                                 lg:group-hover:text-white
                                 border lg:group-hover:border-sub-color rounded-full
                                 text-sub-color text-xs md:text-base lg:text-lg font-bold

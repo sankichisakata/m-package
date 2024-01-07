@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import { HiChevronRight } from "react-icons/hi";
 import { SlideInLeft } from '../observer/slideInLeft';
-import FooterMaps from '../footerMap/footerMap';
 
 export default function FooterMain () {
     return(
@@ -116,7 +115,7 @@ export default function FooterMain () {
                         </Link>
                         </li>
                     </ul>
-
+                    
                     <div className='
                     pt-6 mb-2
                     flex flex-col justify-center items-center gap-2 md:gap-5
@@ -124,6 +123,10 @@ export default function FooterMain () {
                         <Link href="/privacy">
                             <p className='text-xxs md:text-xs lg:text-sm text-sub-color'>プライバシーポリシー</p>
                         </Link>
+                        
+                    </div>
+
+                    <div>
                         <small className='text-xxxs md:text-xxs lg:text-xs text-primary-color'>©&nbsp;2023&nbsp;株式会社エムパッケージ</small>
                     </div>
 
