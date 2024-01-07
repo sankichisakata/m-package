@@ -39,7 +39,9 @@ export default async function NewsList() {
                               <Date dateString={post.date} />
                           </div>
 
-                          <Link href={`/news/${post.id}`}>
+                          <Link 
+                          scroll={true}
+                          href={`/news/${post.id}`}>
                             <div className="
                             py-2
                             flex justify-between items-center
