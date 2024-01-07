@@ -1,9 +1,6 @@
 
-import Image from 'next/image'
 import Link from 'next/link'
-import { HiMail } from "react-icons/hi";
-import equipment01 from '@/public/img/equipment01.jpg'
-import { SlideInLeft } from '../observer/slideInLeft';
+import { HiArrowRight, HiMail } from "react-icons/hi";
 import FooterMap from '../footerMap/footerMap';
 import { FadeInBack } from '../observer/fadeInBack';
 
@@ -36,7 +33,7 @@ export default function FooterContact () {
                 <Link 
                 href="/contact"
                 className="
-                w-full md:w-1/2 px-5 py-6 md:py-10 lg:py-24
+                w-full md:w-1/2 px-5 py-10 md:py-14 lg:py-24
                 flex flex-col justify-center gap-5 lg:gap-8
                 hover:bg-sub-color/10 text-slate-600
                 rounded-r-md
@@ -71,22 +68,21 @@ export default function FooterContact () {
                     text-white text-sm md:text-base lg:text-xl font-bold
                     ">
                         <div className="
-                        flex justify-between items-center bg-white 
-                        border border-sub-color rounded-full
+                        flex justify-between items-center 
+                        px-3 md:px-5
+                        bg-white 
+                        border border-sub-color rounded-full shadow-lg
                         text-sub-color
                         ">
-                            <p></p>
+                            <HiMail className="rounded-full p-1 bg-sub-color border-2 border-sub-color text-white text-xxxl lg:text-[2rem]"/>
                             <p className="py-4 lg:py-6 font-bold">お問い合わせ</p>
-                            <HiMail className="rounded-full p-1 mr-3 lg:mr-4 bg-sub-color border-2 border-sub-color text-white text-xxxl lg:text-[2.5rem]"/>
+                            <HiArrowRight className="text-sub-color text-xl lg:text-xxxl" />
                         </div>
                     </div>
 
                 </Link>
                
                 </div>
-            {/* <div className="w-full md:w-7/12 lg:w-9/12 flex items-center mx-auto pt-5">
-                 <div className="flex-1 border-b-2 border-slate-500"></div>  
-            </div> */}
             </FadeInBack>
         </div>
     )

@@ -80,32 +80,33 @@ return (
                     </FadeInBack>
                     
                 </div>
+
                 <div className="
                 w-full h-full
-                pt-10 md:pt-18 lg:pt-24
-                pb-16 md:pb-20 lg:pb-32
+                pt-14 md:pt-18 lg:pt-24
+                pb-16 md:pb-24 lg:pb-28
                 ">
                     <FadeInBack>
                         <div
                         className="
-                        w-full md:w-3/6 max-w-[24rem] h-[3.5rem] md:h-[5rem] mx-auto
-                        border-sub-color border-2 rounded-full
+                        w-48 md:w-60 lg:w-72 h-[3.5rem] md:h-[5rem] mx-auto
+                        border-sub-color border-2 rounded-full shadow-md
                         flex justify-center items-center
                         text-sub-color text-xs md:text-base lg:text-xl font-bold
                         ">
-                            <Link 
-                            href="/news"
-                            className="w-full h-full"
-                            >
-                                <div className="
+                            <div className="
+                            w-full h-full
+                            ">
+                                <Link 
+                                href="/news"
+                                className="
                                 w-full h-full
-                                flex justify-center items-center gap-5
-                                ">
-                                    <p>お知らせ一覧</p>
+                                flex justify-center items-center gap-5"
+                                >
+                                    <p>ニュース一覧</p>
                                     <HiChevronDoubleRight/>
-                                </div>
-                            </Link>
-                            
+                                </Link>
+                            </div> 
                         </div>
                     </FadeInBack>
                 </div>

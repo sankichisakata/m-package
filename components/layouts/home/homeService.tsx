@@ -101,7 +101,7 @@ export default function HomeService () {
                                     <div 
                                     className="
                                     bg-white lg:group-hover:bg-sub-color transition duration-500
-                                    w-full md:w-4/6 max-w-[24rem] h-[3.5rem] md:h-[4rem] mx-auto
+                                    w-48 md:w-60 lg:w-72 h-[3.5rem] md:h-[5rem] mx-auto
                                     lg:group-hover:text-white
                                     border lg:group-hover:border-sub-color rounded-full
                                     text-sub-color text-xs md:text-base lg:text-lg font-bold
@@ -144,7 +144,7 @@ export default function HomeService () {
                                     <div 
                                     className="
                                     bg-white lg:group-hover:bg-sub-color transition duration-500
-                                    w-full md:w-4/6 max-w-[24rem] h-[3.5rem] md:h-[4rem] mx-auto
+                                    w-48 md:w-60 lg:w-72 h-[3.5rem] md:h-[5rem] mx-auto
                                     lg:group-hover:text-white
                                     border lg:group-hover:border-sub-color rounded-full
                                     text-sub-color text-xs md:text-base lg:text-lg font-bold
