@@ -30,7 +30,7 @@ export default async function HomeNewsList() {
               className="
               w-full max-w-[40rem] h-auto py-3 md:py-6 mx-auto
               flex flex-col
-              text-white text-xxs md:text-sm lg:text-lg font-bold
+              text-white text-xs md:text-base lg:text-xl font-bold
               ">
                 <div className="
                 flex flex-col justify-center gap-1">

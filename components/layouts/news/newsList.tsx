@@ -24,7 +24,7 @@ export default async function NewsList() {
                 className="
                 w-11/12 max-w-[40rem] h-auto py-3 md:py-6 mx-auto
                 flex flex-col
-                text-sub-color text-xxs md:text-sm lg:text-lg font-bold
+                text-sub-color text-xs md:text-base lg:text-xl font-bold
                 ">
                     <div className="
                       flex flex-col justify-center gap-1">
