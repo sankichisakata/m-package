@@ -1,7 +1,7 @@
 export default function Spinner({ color = "border-sub-color" }: { color?: string }) {
     return (
       <div className="
-      fixed z-30 top-0 left-0 
+      fixed z-50 top-0 left-0 
       w-full h-full bg-white
       flex justify-center items-center
       ">
