@@ -31,7 +31,7 @@ export default function HomeService () {
                             bg-white
                             w-full h-auto p-2 md:p-4 mx-auto
                             flex flex-col justify-center items-center
-                            border-x-[0.2rem] border-b-[0.2rem] border-sub-color
+                            border-x-2 border-b-2 border-sub-color
                             text-sub-color text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold
                             ">
                                 <p>
@@ -54,7 +54,7 @@ export default function HomeService () {
                     <div 
                     className="
                     w-full mx-auto pl-2 md:pl-4
-                    border-l-[0.2rem] border-sub-color
+                    border-l-2 border-sub-color
                     flex flex-col gap-3
                     text-sub-color text-xs md:text-base lg:text-xl font-bold
                     ">
@@ -101,7 +101,7 @@ export default function HomeService () {
                                     <div 
                                     className="
                                     bg-white lg:group-hover:bg-sub-color transition duration-500
-                                    w-full md:w-4/6 max-w-[24rem] h-[4rem] md:h-5rem mx-auto
+                                    w-full md:w-4/6 max-w-[24rem] h-[3.5rem] md:h-[4rem] mx-auto
                                     lg:group-hover:text-white
                                     border lg:group-hover:border-sub-color rounded-full
                                     text-sub-color text-xs md:text-base lg:text-lg font-bold
@@ -144,7 +144,7 @@ export default function HomeService () {
                                     <div 
                                     className="
                                     bg-white lg:group-hover:bg-sub-color transition duration-500
-                                    w-full md:w-4/6 max-w-[24rem] h-[4rem] md:h-5rem mx-auto
+                                    w-full md:w-4/6 max-w-[24rem] h-[3.5rem] md:h-[4rem] mx-auto
                                     lg:group-hover:text-white
                                     border lg:group-hover:border-sub-color rounded-full
                                     text-sub-color text-xs md:text-base lg:text-lg font-bold

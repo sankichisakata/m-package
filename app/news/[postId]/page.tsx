@@ -40,21 +40,20 @@ return (
             className="
             w-11/12 md:w-10/12 max-w-[75rem] h-auto mx-auto
             flex flex-col
-            text-sub-color text-xxs md:text-sm lg:text-lg font-bold
             ">
                 <div 
                 className="
-                px-5 md:px-10 lg:px-16 py-10 md:py-16 lg:py-24
+                px-5 md:px-10 lg:px-16 
                 flex flex-col justify-center gap-10 md:gap-16 lg:gap-20
                 rounded-xl">
                     <FadeInBack>
                     <div className="
                     flex justify-between items-center
+                    text-xs md:text-base lg:text-xl font-bold
                     ">
                         <p className="
-                        bg-sub-color py-1 px-2 md:px-3
+                        bg-sub-color py-1 px-3
                         text-white
-                        rounded-full
                         ">{post.category}</p>
                         <Date dateString={post.date} />
                     </div>
@@ -65,23 +64,21 @@ return (
                     flex flex-col justify-center items-first 
                     pl-2 md:pl-4 md:pr-6
                     [font-size:_clamp(1rem,3vw,2.5rem)] font-bold text-sub-color
-                    border-l-[0.1rem] md:border-l-[0.2rem] border-sub-color
+                    border-l-2 border-sub-color
                     ">
                         <h1>{post.title}</h1>
                     </div>
                     </FadeInBack>
                     
                     <FadeInBack>
-                    <div>
-                        <div>{parse(post.contents)}</div>
-                    </div>
+                        <div className="text-xs md:text-base lg:text-xl font-bold">{parse(post.contents)}</div>
                     </FadeInBack>
                     
                 </div>
                 <div className="
                 w-full h-full
-                pt-10 md:pt-14 lg:pt-20
-                pb-12 md:pb-16 lg:pb-28
+                pt-10 md:pt-18 lg:pt-24
+                pb-16 md:pb-20 lg:pb-32
                 ">
                     <FadeInBack>
                         <div

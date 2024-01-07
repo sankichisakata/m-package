@@ -39,9 +39,9 @@ export default async function HomeNewsList() {
                     flex justify-between items-center
                     ">
                         <p className="
-                        bg-white py-[0.1rem] px-3
-                        text-sub-color
-                        rounded-full
+                        bg-sub-color py-[0.1rem] px-3
+                        text-white
+                        border-[0.1rem] border-white
                         ">{post.category}</p>
                         <Date dateString={post.date} />
                     </div>

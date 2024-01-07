@@ -1,5 +1,5 @@
 import { client, getList } from '@/components/elements/libs/microcms'
-import { HiChevronDoubleRight } from 'react-icons/hi'
+import { HiChevronDoubleRight, HiChevronLeft, HiChevronRight } from 'react-icons/hi'
 import Date from '@/components/elements/date-fns/date';
 import { FadeInBack } from '@/components/elements/observer/fadeInBack';
 import Link from 'next/link';
@@ -35,7 +35,6 @@ export default async function NewsList() {
                               <p className="
                               bg-sub-color py-[0.1rem] px-3
                               text-white
-                              rounded-full
                               ">{post.category}</p>
                               <Date dateString={post.date} />
                           </div>
@@ -56,15 +55,6 @@ export default async function NewsList() {
             )
             })}  
         </ul>
-
-        {/* ページネーション */}
-        <div className="
-        flex justify-center items-center
-        pt-10 md:pt-14 lg:pt-20
-        pb-12 md:pb-16 lg:pb-28
-        ">
-            <p>ページネーション</p>
-        </div>
     </div>
   )
 }

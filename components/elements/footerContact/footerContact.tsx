@@ -45,14 +45,15 @@ export default function FooterContact () {
                 >
                     
                     <div className='flex flex-col justify-center items-center text-white'>
-                        <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold">お問い合わせ</p>
-                        <p className="text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold">CONTACT</p>
+                        <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold">お気軽にご相談ください</p>
+                        {/* <p className="text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold">CONTACT</p> */}
                     </div>
                     
 
                     
                     <div className="text-center text-white text-xs md:text-base lg:text-xl font-bold">
-                        <p>お気軽にご相談ください</p>
+                        <p>梱包から配送まで</p>
+                        <p>エムパッケージにお任せください。</p>
                     </div>
                    
 
