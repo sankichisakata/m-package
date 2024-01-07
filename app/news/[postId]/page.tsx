@@ -71,7 +71,12 @@ return (
                     </FadeInBack>
                     
                     <FadeInBack>
-                        <div className="text-xs md:text-base lg:text-xl font-bold">{parse(post.contents)}</div>
+                        <div 
+                        className="
+                        text-sub-color text-xs md:text-base lg:text-xl font-bold
+                        ">
+                            {parse(post.contents)}
+                        </div>
                     </FadeInBack>
                     
                 </div>
@@ -111,59 +116,3 @@ return (
 
     
 )};
-
-
-
-//     //コンテンツがない場合の表示
-//     if (!contents || contents.length === 0) {
-//       return <h3>新着情報はありません。</h3>;
-//     }
-  
-
-//   return (
-//     <div className="
-//     w-full h-full flex flex-col items-center
-//     flex justify-center items-center">
-//         <ul className="
-//             w-full
-//             flex flex-col justify-center
-//             ">
-//               {contents.map((post) => {
-//                 return(
-                  
-//                   <li key={post.id}>
-//                     <FadeInBack>
-//                     <div 
-//                     className="
-//                     w-full max-w-[40rem] h-auto py-3 md:py-6 mx-auto
-//                     flex flex-col
-//                     text-white text-xxs md:text-sm lg:text-lg font-bold
-//                     ">
-//                       <div className="
-//                       flex flex-col justify-center gap-3">
-//                           <div className="
-//                           flex justify-between items-center
-//                           ">
-//                               <p className="
-//                               bg-white
-//                               text-sub-color
-//                               border-2 border-white px-1
-//                               ">{post.category}</p>
-//                               <Date dateString={post.date} />
-//                               {/* <p>{post.date}</p> */}
-//                           </div>
-//                           <div className="
-//                           flex justify-between items-center
-//                           ">
-//                               <p>{post.title}</p>
-//                               <HiChevronDoubleRight/>
-//                           </div>
-//                       </div>
-//                     </div>
-//                     </FadeInBack>
-//                   </li>
-//                 )
-//               })}  
-//             </ul>
-//     </div>
-//   )
