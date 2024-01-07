@@ -9,7 +9,7 @@ const navigation = [
     { id: 3, name: "設備案内", subName: 'Equipment', href: "/equipment" },
     { id: 4, name: "会社情報", subName: 'Company', href: "/company" },
     { id: 5, name: "ニュース", subName: 'News',  href: "/news" },
-    { id: 6, name: "ニュース詳細", subName: 'News Details',  href: "/news/[...slug].tsx" },
+    // { id: 6, name: "ニュース詳細", subName: 'News Details',  href: "/news/[...slug].tsx" },
     { id: 7, name: "お問い合わせ", subName: 'Contact Form',  href: "/contact" },
     { id: 8, name: "お問い合わせ完了",subName: 'Complete', href: "/contact/bird" },
     { id: 9, name: "お問い合わせ失敗",subName: 'Failed', href: "/contact/failed" },
