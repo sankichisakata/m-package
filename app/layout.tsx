@@ -14,8 +14,18 @@ import Loading from './loading';
 // const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'M-Package',
-  description: '埼玉県川口市の梱包材企業です | 段ボールの企画・製造・配送・販売、お気軽にご相談ください。',
+
+  title: {
+    default: 'M-Package',
+    template: '%s | M-Package',
+  },
+  description: '埼玉県川口市の梱包材企業：段ボールの企画・製造・配送・販売、お気軽にご相談ください。',
+  // openGraph: {
+  //   title: 'サイトのタイトル',
+  //   description: 'サイトの説明',
+  //   images: ['/path-to-your-image.jpg'],
+  // },
+  // icons: [{ rel: 'icon', url: Favicon.src }],
 }
 
 export default function RootLayout({
@@ -41,3 +51,9 @@ export default function RootLayout({
     </html>
   )
 }
+
+// export async function generateMetadata({ params }) {
+//   return {
+//     title: '...',
+//   }
+// }
