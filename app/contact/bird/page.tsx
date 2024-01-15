@@ -1,5 +1,6 @@
 import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
 
+
 export default function Bird () {
     return(
         <>
