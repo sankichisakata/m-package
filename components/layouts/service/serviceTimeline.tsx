@@ -12,7 +12,6 @@ export default function ServiceTimeline () {
             flex flex-col justify-center items-center
             ">
                 <div className="w-11/12 mx-auto">
-                    <FadeInBack>
                     <div className="
                     w-full h-auto p-2 md:p-4 mx-auto
                     flex flex-col justify-center items-center
@@ -36,7 +35,6 @@ export default function ServiceTimeline () {
                             で迅速かつ正確な情報伝達を。
                         </p>
                     </div>
-                    </FadeInBack>
                 </div>
 
                 <FadeInBack>

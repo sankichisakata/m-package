@@ -29,12 +29,10 @@ export default function FooterMain () {
                         w-full h-full inline-block 
                         flex items-center lg:justify-center
                         ">
-                            <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
                                     <HiChevronRight className="text-sub-color text-xl md:text-xxl lg:text-xxxl" />
                                     <p>事業内容</p>
                                 </div>
-                            </SlideInLeft>
                         </Link>
                         </li>
                         
@@ -48,14 +46,12 @@ export default function FooterMain () {
                         w-full h-full inline-block
                         flex items-center lg:justify-center
                         ">
-                            <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
                                 
                                     <HiChevronRight className="text-sub-color text-xl md:text-xxl lg:text-xxxl" />
                                     <p>設備案内</p>
                                 
                                 </div>
-                                </SlideInLeft>
                         </Link>
                         </li>
 
@@ -69,12 +65,10 @@ export default function FooterMain () {
                         w-full h-full inline-block
                         flex items-center lg:justify-center
                         ">
-                            <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
                                     <HiChevronRight className="text-sub-color text-xl md:text-xxl lg:text-xxxl" />
                                     <p>会社情報</p>
                                 </div>
-                            </SlideInLeft>
                         </Link>
                         </li>
 
@@ -88,12 +82,10 @@ export default function FooterMain () {
                         w-full h-full inline-block
                         flex items-center lg:justify-center
                         ">
-                            <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
                                     <HiChevronRight className="text-sub-color text-xl md:text-xxl lg:text-xxxl" />
                                     <p>ニュース</p>
                                 </div>
-                            </SlideInLeft>
                         </Link>
                         </li>
 
@@ -107,19 +99,16 @@ export default function FooterMain () {
                         w-full h-full inline-block
                         flex items-center lg:justify-center
                         ">
-                            <SlideInLeft>
                                 <div className="w-full flex justify-start lg:justify-center items-center gap-5 lg:gap-2">
                                     <HiChevronRight className="text-sub-color text-xl md:text-xxl lg:text-xxxl" />
                                     <p>お問い合わせ</p>
                                 </div>
-                            </SlideInLeft>
                         </Link>
                         </li>
                     </ul>
 
                 </nav>
                     
-                <FadeInBack>
                     <div className='
                     pt-10 mb-2
                     flex flex-col justify-center items-center gap-2 md:gap-5
@@ -129,7 +118,6 @@ export default function FooterMain () {
                         </Link>
                         
                     </div>
-                </FadeInBack>
 
                 <div className='
                 mb-2

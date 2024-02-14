@@ -25,7 +25,6 @@ export default async function HomeNewsList() {
           return(
             
             <li key={post.id}>
-              <FadeInBack>
               <div 
               className="
               w-full max-w-[40rem] h-auto py-3 md:py-6 mx-auto
@@ -57,7 +56,6 @@ export default async function HomeNewsList() {
                     </Link>
                 </div>
               </div>
-              </FadeInBack>
             </li>
           )
         })}  

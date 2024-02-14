@@ -61,7 +61,7 @@ export default function DrawerContents (props) {
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
           <HeaderFadeInBack>
               <div className="block w-11/12 lg:w-4/6 mx-auto mt-20 md:mt-28 text-left">
-                  <p className='text-xxs md:txet-xs text-white font-bold '>(株)エムパッケージは、お客様第一営業を掲げております。</p>
+                  <p className='text-xxs md:txet-xs text-white font-bold '>(株)エムパッケージは、お客様第一を掲げております。</p>
               </div>
             </HeaderFadeInBack>
            
@@ -70,7 +70,6 @@ export default function DrawerContents (props) {
             w-full h-full h-safari-screen mx-auto
             flex flex-col gap-5
             ">
-  
                 <DrawerBody className="
                 bg-white
                 mt-24 md:mt-32 mb-5
@@ -84,7 +83,6 @@ export default function DrawerContents (props) {
                   rounded-md
                   '
                   >
-                    <HeaderFadeInBack>
                       <div className="
                       bg-tell01 bg-cover bg-top
                       w-10/12 md:w-8/12 h-auto mx-auto 
@@ -129,8 +127,7 @@ export default function DrawerContents (props) {
                         
                         
                       </div>
-                    </HeaderFadeInBack>
-                    <HeaderFadeInBack>
+
                       <nav className='
                       w-full
                       flex flex-col justify-center items-center
@@ -230,7 +227,6 @@ export default function DrawerContents (props) {
                           
 
                       </nav>
-                      </HeaderFadeInBack>
                   </div>
                 </DrawerBody>
                 

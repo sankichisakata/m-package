@@ -36,42 +36,29 @@ export default function ServiceMain () {
                 w-full lg:w-8/12 h-auto
                 flex flex-col justify-center gap-6 lg:gap-10
                 ">
-                    <FadeInBack>
                     <p className="
                     text-sub-color text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
                     font-bold
                     ">
                         「まごころを込めて、作ります。」
                     </p>
-                    </FadeInBack>
 
                     <div className="
                     text-sub-color text-xs md:text-base lg:text-xl font-bold
                     flex flex-col justify-center gap-2 md:gap-5
                     ">
-                        <SlideInLeft>
                         <p>
                             弊社では、ダンボールの設計・企画から製造、納品までを一貫して行なっております。
                         </p>
-                        </SlideInLeft>
-
-                        <SlideInLeft>
                         <p>
                             多種多様な企画品（A式、C式、ヤッコ型等）に対応していることはもちろんのこと、
                         </p>
-                        </SlideInLeft>
-
-                        <SlideInLeft>
                         <p>
                             手作業でのこだわりもあり、機械では製造できない規格外の製品（極端に大きい・小さい）にも多数対応しております。
                         </p>
-                        </SlideInLeft>
-
-                        <SlideInLeft>
                         <p>
                             小ロット～多ロット（大口）まで多種多様な段ボールの生産が可能です。※ロットは最小1c/sから可能。
                         </p>
-                        </SlideInLeft>
                     </div>
                 </div>
             </div>

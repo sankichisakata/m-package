@@ -27,7 +27,6 @@ export default function HomeCompany () {
                     <div className="
                     w-11/12 mx-auto
                     ">
-                            <FadeInBack>
                             <div className="mx-auto w-full bg-white">
                                 <div className="
                                 p-2 md:p-4 
@@ -51,7 +50,6 @@ export default function HomeCompany () {
                                 「いつも、身近に、皆様と共に。」
                                 </p>
                             </div>
-                            </FadeInBack>
                     </div>
                 </div>
 
@@ -72,13 +70,11 @@ export default function HomeCompany () {
                     border-l-2 border-sub-color
                     text-sub-color text-xs md:text-base lg:text-xl font-bold
                     ">
-                        <FadeInBack>
                         <div className="flex flex-col justify-center gap-3">
                             <p>先代から引き継いだ技術と経験で段ボール業界に革命を起こします。</p>
                             <p>食品・精密機械や紙など守る者として日々奮闘して参りました。</p>
                             <p>これからも皆様の大事なものを守る者として、段ボールへ<span className="text-vivid-color">真摯に向き合って参ります。</span></p>
                         </div>
-                        </FadeInBack>
                     </div>
                         
                 

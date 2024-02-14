@@ -12,7 +12,6 @@ export default function CompanyOverview () {
             flex flex-col justify-center items-center
             ">
                 <div className="w-11/12 mx-auto">
-                    <FadeInBack>
                             <div className="w-full mx-auto bg-sub-color">
                                 <div className="p-2 md:p-4 border-[0.2rem] border-sub-color">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">会社概要</p>
@@ -29,7 +28,6 @@ export default function CompanyOverview () {
                                     Overview
                                 </p>
                         </div>
-                        </FadeInBack>   
                 </div>
 
                 {/* テーブルコンテナ */}

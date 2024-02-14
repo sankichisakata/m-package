@@ -12,8 +12,6 @@ export default function CompanyAccess () {
             flex flex-col justify-center items-center
             ">
                 <div className="w-11/12 mx-auto">
-
-                    <FadeInBack>
                     <div className="mx-auto w-full bg-white">
                         <div className="p-2 md:p-4 border-x-[0.2rem] border-t-[0.2rem] border-sub-color">
                             <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-sub-color">アクセス</p>
@@ -30,7 +28,6 @@ export default function CompanyAccess () {
                             Access
                         </p>
                     </div>
-                    </FadeInBack>
                 </div>
 
                 
