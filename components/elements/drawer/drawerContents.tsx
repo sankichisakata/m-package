@@ -2,7 +2,7 @@
 
 import React from "react"
 import Link from "next/link"
-import { HiChevronRight, HiMail, HiOutlineMenu, HiOutlineX} from "react-icons/hi";
+import { HiArrowRight, HiChevronRight, HiMail, HiOutlineMenu, HiOutlineX} from "react-icons/hi";
 import {
     Drawer,
     DrawerBody,
@@ -39,8 +39,9 @@ export default function DrawerContents (props) {
         
         <Button className="
         block
-        w-11
-        py-2
+        w-14 md:w-16
+        py-5
+        px-3
         " 
         ref={btnRef} onClick={onToggle} onChange={props.isOpenChange(isOpen)}>
 
@@ -63,17 +64,27 @@ export default function DrawerContents (props) {
            
             <DrawerContent 
             className="
-            w-full h-full h-safari-screen mx-auto
-            flex flex-col gap-5
+            w-full h-full h-safari-screen mx-auto pb-2 md:pb-4
+            flex flex-col
             ">
-              <FadeInBack>
-                <DrawerBody className="
+              <div
+              className=""
+              >
+                  <p className='
+                  break-words mt-20 md:mt-28 pb-2 md:pb-4 pl-5 md:pl-10
+                  text-left text-xxs md:txet-xs text-white font-bold
+                  '>
+                      (株)エムパッケージは、お客様第一を掲げております。
+                  </p>
+              </div>
+                <DrawerBody 
+                overflow='scroll'
+                className="
                 bg-white
-                mt-24 md:mt-32 mb-5
                 w-11/12 mx-auto 
                 shadow-2xl rounded-md
+                overflow-auto
                 "
-                overflow='scroll'
                 >
                   <div className='
                   bg-white mx-auto px-5 py-5
@@ -88,42 +99,60 @@ export default function DrawerContents (props) {
 
                         {/* マスク */}
                         <div className="
-                        overflow-hidden bg-fixed bg-slate-600/30
+                        overflow-hidden bg-fixed bg-slate-600/60
                         bottom-0 left-0 right-0 top-0 h-full w-full 
                         rounded-md
                         "
                         >
-                          
-                          <div className="
-                            w-full pt-5
-                            flex flex-col justify-center gap-2
-                            "
-                            >
-                              <div className="text-xs md:text-sm text-white font-semibold text-center">
-                                  <p>お気軽にご相談ください。</p>
+                          <Link 
+                          href="/contact"
+                          className="
+                          w-full py-6 md:py-8
+                          flex flex-col justify-center gap-3 md:gap-5
+                          hover:bg-sub-color/10 text-slate-600
+                          transition-all duration-500
+                          "
+                          >
+                              
+                              <div className='flex flex-col justify-center items-center text-white'>
+                                  <p className="text-base md:text-lg text-center font-bold">お気軽にご相談ください</p>
+                                  {/* <p className="text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem] font-bold">CONTACT</p> */}
                               </div>
+                              
 
+                              
+                              <div className="text-center text-white text-xs md:text-base font-bold">
+                                  <p>梱包から配送まで</p>
+                                  <p>エムパッケージにお任せください。</p>
+                              </div>
+                            
+
+                              
                               {/* 電話お問い合わせ */}
-                              <div className="text-center text-white">
-                                  <p className="text-xxs md:text-xs">お急ぎの方は、電話でお問い合わせ</p>
-                                  <p className="text-sm md:text-base font-semibold">048-287-8055</p>
-                                  <p className="text-xxs md:text-xs">平日 9:00 ~ 17:30</p>
+                              <div className="text-center text-white text-xxs md:text-sm lg:text-lg">
+                                  <p>お急ぎの方は、電話でお問い合わせ</p>
+                                  <p className="text-base lg:text-lg font-semibold">048-287-8055</p>
+                                  <p>平日 9:00 ~ 17:30</p>
                               </div>
-                          </div>
 
-                          <div className='w-full flex justify-center items-center py-3'>
-                            <Link href="/contact" onClick={onClose} className="bg-sub-color border border-sub-color rounded-full shadow-md">
-                              <div className="flex justify-center items-center">
+                              {/* 問い合わせボタン */}
+                              <div className="
+                              flex justify-center items-center mx-auto h-[2.5rem] md:h-[3rem]
+                              text-white text-sm md:text-base lg:text-xl font-bold
+                              bg-sub-color border border-sub-color rounded-full shadow-md
+                              ">
+                                <div className="flex justify-center items-center">
+                                  <HiMail className="bg-white border-white rounded-full text-sub-color p-1 md:p-0.5 m-1 md:m-2 text-xxxl"/>
                                   <p className="px-6 py-2 text-white text-xs md:text-sm font-semibold">お問い合わせ</p>
-                                  <HiMail className="border-white rounded-full p-1 md:p-0.5 m-1 md:m-2 bg-white text-xxxl"/>
+                                  <HiArrowRight className="text-white text-lg md:text-xxl pr-1" />
+                                </div>
+                                  
                               </div>
-                            </Link>
-                          </div>
 
-                        </div>
-                        
-                        
+                          </Link>                          
+                        </div>                        
                       </div>
+
 
                       <nav className='
                       w-full
@@ -226,7 +255,7 @@ export default function DrawerContents (props) {
                       </nav>
                   </div>
                 </DrawerBody>
-                </FadeInBack>
+
             </DrawerContent>
           </DrawerOverlay>
         </Drawer>
