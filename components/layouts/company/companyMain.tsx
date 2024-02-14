@@ -34,30 +34,23 @@ export default function CompanyMain () {
                     w-full lg:w-8/12 h-auto
                     flex flex-col justify-center gap-6 lg:gap-10
                     ">
-                        <FadeInBack>
                         <p className="
                         text-[1.1rem] md:text-[1.5rem] lg:text-[1.8rem]
                         font-bold
                         ">
                           「いつも、身近に、皆様と共に。」
                         </p>
-                        </FadeInBack>
 
                         <div className="
                         text-xs md:text-base lg:text-xl font-bold
                         flex flex-col justify-center gap-2 md:gap-5
                         ">
-                            <SlideInLeft>
                             <p>
                                 埼玉で50年、お客様と共に段ボール業をさせていただいております。
                             </p>
-                            </SlideInLeft>
-
-                            <SlideInLeft>
                             <p>
                                 先代から引き継いだ技術と信頼で、これからも皆様の隣でお手伝いさせていただけることに感謝し、より一層精進して参ります。
                             </p>
-                            </SlideInLeft>
                         </div>
                     </div>
                 </div>

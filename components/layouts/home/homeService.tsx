@@ -20,7 +20,6 @@ export default function HomeService () {
                     <div className="
                     w-11/12 mx-auto
                     ">
-                        <FadeInBack>
                             <div className="w-full mx-auto bg-sub-color">
                                 <div className="p-2 md:p-4">
                                     <p className="[font-size:_clamp(1.2rem,3vw,2.5rem)] text-center font-bold text-white">エムパッケージの仕事</p>
@@ -38,7 +37,6 @@ export default function HomeService () {
                                 「まごころを込めて、作ります。」
                                 </p>
                         </div>
-                        </FadeInBack>
                     </div>
                     
                 </div>
@@ -50,7 +48,6 @@ export default function HomeService () {
                 flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-20
                 "
                 >
-                    <FadeInBack>
                     <div 
                     className="
                     w-full mx-auto pl-2 md:pl-4
@@ -63,7 +60,6 @@ export default function HomeService () {
                         <p>オリジナルアイテムや梱包品に合わせたサイズの作成など、<span className="text-vivid-color">応えられないご要望はございません。</span></p>
                         <p>まずはお気軽にお問い合わせください。</p>
                     </div>
-                    </FadeInBack>
                         
                 
                     

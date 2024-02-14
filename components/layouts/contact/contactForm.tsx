@@ -74,7 +74,6 @@ export default function ContactForm () {
     w-full h-auto
     flex flex-col justify-center items-center
     ">
-      <FadeInBack>
       <div className="
       w-11/12 mx-auto
       text-sm md:text-base lg:text-lg font-semibold
@@ -85,7 +84,6 @@ export default function ContactForm () {
         <p>後日、担当者よりご連絡させていただきます。</p>
         
       </div>
-      </FadeInBack>
       
 
       {/* フォーム全体 */}
@@ -122,7 +120,6 @@ export default function ContactForm () {
             <div className="
             w-full md:w-6/12 h-auto
             ">
-              <SlideInLeft>
               <label 
               htmlFor="company"
               className="
@@ -137,7 +134,6 @@ export default function ContactForm () {
                 </span>
                   会社名
                 </label>
-                </SlideInLeft>
             </div>
             
 
@@ -145,7 +141,6 @@ export default function ContactForm () {
             <div className="
             w-full md:w-6/12
             ">
-              <FadeInBack>
               <div className="
               flex flex-col justify-center items-first
               ">
@@ -172,7 +167,6 @@ export default function ContactForm () {
                   <div className="text-red-500">{errors.company.message}</div>
                 )}
               </div>
-              </FadeInBack>
             </div>
             
           </div>
@@ -186,7 +180,6 @@ export default function ContactForm () {
             <div className="
             w-full md:w-6/12 h-auto
             ">
-              <SlideInLeft>
               <label 
               htmlFor="name"
               className="
@@ -201,14 +194,12 @@ export default function ContactForm () {
                 </span>
                   お名前
                 </label>
-                </SlideInLeft>
             </div>
 
             
             <div className="
             w-full md:w-6/12
             ">
-              <FadeInBack2>
               <div className="
               flex flex-col justify-center items-first
               ">
@@ -235,7 +226,6 @@ export default function ContactForm () {
                   <div className="text-red-500">{errors.name.message}</div>
                 )}
               </div>
-              </FadeInBack2>
             </div>
           </div>
 
@@ -247,7 +237,6 @@ export default function ContactForm () {
             <div className="
             w-full md:w-6/12 h-auto
             ">
-              <SlideInLeft>
               <label 
               htmlFor="phonetic"
               className="
@@ -262,7 +251,6 @@ export default function ContactForm () {
                 </span>
                   お名前（フリガナ）
                 </label>
-                </SlideInLeft>
             </div>
             
 
@@ -270,7 +258,6 @@ export default function ContactForm () {
             <div className="
             w-full md:w-6/12
             ">
-              <FadeInBack3>
               <div className="
               flex flex-col justify-center items-first
               ">
@@ -298,7 +285,6 @@ export default function ContactForm () {
                   <div className="text-red-500">{errors.phonetic.message}</div>
                 )}
               </div>
-              </FadeInBack3>
             </div>
             
           </div>
@@ -311,7 +297,6 @@ export default function ContactForm () {
             <div className="
             w-full md:w-6/12 h-auto
             ">
-              <SlideInLeft>
               <label 
               htmlFor="phone"
               className="
@@ -326,14 +311,12 @@ export default function ContactForm () {
                 </span>
                   電話番号
                 </label>
-              </SlideInLeft>
             </div>
 
             
             <div className="
             w-full md:w-6/12
             ">
-              <FadeInBack4>
               <div className="
               flex flex-col justify-center items-first
               ">
@@ -369,7 +352,6 @@ export default function ContactForm () {
                   <div className="text-red-500">{errors.phone.message}</div>
                 )}
               </div>
-              </FadeInBack4>
             </div>
           </div>
 
@@ -382,7 +364,6 @@ export default function ContactForm () {
             <div className="
             w-full md:w-6/12 h-auto
             ">
-              <SlideInLeft>
               <label 
               htmlFor="email"
               className="
@@ -397,13 +378,11 @@ export default function ContactForm () {
                 </span>
                   メールアドレス
                 </label>
-                </SlideInLeft>
             </div>
 
             <div className="
             w-full md:w-6/12
             ">
-              <FadeInBack5>
               <div className="
               flex flex-col justify-center items-first
               ">
@@ -431,7 +410,6 @@ export default function ContactForm () {
                   <div className="text-red-500">{errors.email.message}</div>
                 )}
               </div>
-              </FadeInBack5>
             </div>
           </div>
 
@@ -443,7 +421,6 @@ export default function ContactForm () {
             <div className="
             w-full md:w-6/12 h-auto
             ">
-              <SlideInLeft>
               <label 
               htmlFor="contents"
               className="
@@ -458,14 +435,12 @@ export default function ContactForm () {
                 </span>
                   お問い合わせ内容
                 </label>
-                </SlideInLeft>
             </div>
            
             
             <div className="
             w-full md:w-6/12
             ">
-              <FadeInBack6>
               <div className="
               flex flex-col justify-center items-first
               ">
@@ -498,14 +473,12 @@ export default function ContactForm () {
                   <div className="text-red-500">{errors.contents.message}</div>
                 )}
               </div>
-              </FadeInBack6>
             </div>
           </div>
 
           {/* フォーム：プライバシーポリシー */}
           <div className="
           ">
-            <FadeInBack>
             <div className="
             w-full
             flex justify-center items-center
@@ -549,11 +522,9 @@ export default function ContactForm () {
                 <div className="text-red-500">{errors.privacy.message}</div>
               )}
             </div>
-            </FadeInBack>
           </div>
           
           {/* 注意書き */}
-          <FadeInBack>
           <div className="
           py-4
           flex flex-col justify-center items-center gap-2 md:gap-3
@@ -562,10 +533,8 @@ export default function ContactForm () {
             <p>「送信する」ボタンを押すと内容が送信されます。</p>
             <p>ご入力内容をご確認の上、ボタンを押してください。</p>
           </div>
-          </FadeInBack>
           
           {/* フォーム：送信ボタン */}
-          <FadeInBack>
           <div className="
           flex justify-center items-center
           ">
@@ -588,7 +557,6 @@ export default function ContactForm () {
               送信する
             </Button>
           </div>
-          </FadeInBack>
 
         </form>
       </div>

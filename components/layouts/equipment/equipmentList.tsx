@@ -12,7 +12,6 @@ export default function EquipmentList () {
             flex flex-col justify-center items-center
             ">
                 <div className="w-11/12 mx-auto">
-                    <FadeInBack>
                     <div className="
                     w-full h-auto p-2 md:p-4 mx-auto
                     flex flex-col justify-center items-center
@@ -32,7 +31,6 @@ export default function EquipmentList () {
                             お客様の製品を技術で丁寧に。
                         </p>
                     </div>
-                    </FadeInBack>
                 </div>
 
                 <div className="
