@@ -19,15 +19,24 @@ export default async function NewsList() {
             return(
                 
                 <li key={post.id}>
-                <div 
-                className="
-                w-11/12 max-w-[40rem] h-auto py-3 md:py-6 mx-auto
-                flex flex-col
-                text-sub-color text-xs md:text-base lg:text-xl font-bold
-                ">
-                    <div className="
-                      flex flex-col justify-center gap-1">
+                  <Link 
+                  scroll={true}
+                  href={`/news/${post.id}`}>
 
+                  <div 
+                  className="
+                  w-11/12 max-w-[60rem] h-auto py-3 md:py-6 mx-auto
+                  flex flex-col 
+                  rounded-xl
+                  border-2 border-sub-color
+                  px-3 md:px-6 lg:px-8
+                  py-3 md:py-6 lg:py-8
+                  my-3
+                  
+                  text-sub-color text-xs md:text-base lg:text-xl font-bold
+                  ">
+                    <div className="
+                      flex flex-col justify-center gap-3 md:gap-5">
                           <div className="
                           flex justify-between items-center
                           ">
@@ -38,19 +47,16 @@ export default async function NewsList() {
                               <Date dateString={post.date} />
                           </div>
 
-                          <Link 
-                          scroll={true}
-                          href={`/news/${post.id}`}>
-                            <div className="
-                            py-2
-                            flex justify-between items-center
-                            ">
-                                <p>{post.title}</p>
-                                <HiChevronDoubleRight/>
-                            </div>
-                          </Link>
+                          
+                          <div className="
+                          flex justify-between items-center
+                          ">
+                              <p>{post.title}</p>
+                              <HiChevronDoubleRight/>
+                          </div>
                       </div>
-                </div>
+                  </div>
+                </Link>
                 </li>
             )
             })}  

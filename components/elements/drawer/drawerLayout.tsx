@@ -19,8 +19,8 @@ export default function DrawerLayout () {
 
     return(
         <>  
-        <div className="whitespace-nowrap px-2 md:px-3">
-            <a href="/" className=' lex flex-col mx-2'>
+        <div className="whitespace-nowrap px-3 md:px-5">
+            <a href="/" className='flex flex-col'>
                 <p className="
                 block
                 bg-white
@@ -42,18 +42,6 @@ export default function DrawerLayout () {
                     エムパッケージ
                 </p>
             </a>
-        </div>
-
-        <div
-        style={{ display: !isOpen ? "none" : "block" }} 
-        className="
-        mx-auto"
-        >
-            <p className='break-words text-left text-xxs md:txet-xs text-primary-color font-bold'>
-                (株)エムパッケージは、
-                <span className="md:hidden"><br/></span>
-                お客様第一を掲げております。
-            </p>
         </div>
 
         <div className='

@@ -70,7 +70,9 @@ return (
             ">
                 <div 
                 className="
-                px-5 md:px-10 lg:px-16 
+                border-2 border-sub-color
+                px-5 md:px-10 lg:px-16
+                py-8 md:py-14 lg:py-20
                 flex flex-col justify-center gap-10 md:gap-16 lg:gap-20
                 rounded-xl">
                     <div className="

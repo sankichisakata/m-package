@@ -10,7 +10,6 @@ export default function PrivacyPolicy () {
             w-full h-full
             flex flex-col justify-center items-center
             ">
-                <FadeInBack>
                 <div className="w-11/12 mx-auto">
                     
                             <div className="w-full mx-auto bg-sub-color">
@@ -19,7 +18,6 @@ export default function PrivacyPolicy () {
                                 </div>
                             </div>
                 </div>
-                </FadeInBack> 
 
                 {/* テーブルコンテナ */}
                 <div className="
@@ -37,14 +35,12 @@ export default function PrivacyPolicy () {
                             ">
 
                                 {/* サブタイトル */}
-                                <FadeInBack>
                                 <div className="
                                 w-full h-auto
                                 flex justify-center items-center
                                 ">
                                     <p className="text-xl md:text-xxl lg:text-xxxl font-bold">個人情報保護方針</p>
                                 </div>
-                                </FadeInBack>
 
                                 <div className="
                                 w-full 
@@ -54,7 +50,6 @@ export default function PrivacyPolicy () {
                                     w-full
                                     flex justify-start items-center
                                     ">
-                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start items-center
                                         ">
@@ -62,19 +57,16 @@ export default function PrivacyPolicy () {
                                             <br/>
                                             お客様が当社ウェブサイトを安心してご利用いただくため、以下の基本方針に基づき、当社ウェブサイトでご提供いただいたお客様の個人情報の取り扱いに万全を期して参ります。
                                         </p>
-                                        </SlideInLeft>
                                     </div>
                                 </div>
 
                                 {/* サブタイトル */}
-                                <FadeInBack>
                                 <div className="
                                 w-full h-auto
                                 flex justify-center items-center
                                 ">
                                     <p className="text-xl md:text-xxl lg:text-xxxl font-bold">個人情報の利用目的</p>
                                 </div>
-                                </FadeInBack>
 
                                 <div className="
                                 w-full 
@@ -84,25 +76,21 @@ export default function PrivacyPolicy () {
                                     w-full
                                     flex justify-start items-center
                                     ">
-                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start items-center
                                         ">
                                             お客様からお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用致します。
                                         </p>
-                                        </SlideInLeft>
                                     </div>
                                 </div>
 
                                 {/* サブタイトル */}
-                                <FadeInBack>
                                 <div className="
                                 w-full h-auto
                                 flex justify-center items-center
                                 ">
                                     <p className="text-xl md:text-xxl lg:text-xxxl font-bold">個人情報の第三者への開示・提供の禁止</p>
                                 </div>
-                                </FadeInBack>
 
                                 <div className="
                                 w-full 
@@ -112,13 +100,11 @@ export default function PrivacyPolicy () {
                                     w-full
                                     flex justify-start items-center
                                     ">
-                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start items-center
                                         ">
                                             当社は、お客様からお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示致しません。
                                         </p>
-                                        </SlideInLeft>
                                     </div>
                                 </div>
 
@@ -130,7 +116,6 @@ export default function PrivacyPolicy () {
                                     w-full
                                     flex justify-start items-center
                                     ">
-                                        <SlideInLeft>
                                         <div className="
                                         flex justify-start items-center
                                         ">
@@ -140,19 +125,16 @@ export default function PrivacyPolicy () {
                                                 <li>・法令に基づき開示することが必要である場合</li>
                                             </ul>
                                         </div>
-                                        </SlideInLeft>
                                     </div>
                                 </div>
 
                                 {/* サブタイトル */}
-                                <FadeInBack>
                                 <div className="
                                 w-full h-auto
                                 flex justify-center items-center
                                 ">
                                     <p className="text-xl md:text-xxl lg:text-xxxl font-bold">個人情報の安全対策</p>
                                 </div>
-                                </FadeInBack>
 
                                 <div className="
                                 w-full 
@@ -162,25 +144,21 @@ export default function PrivacyPolicy () {
                                     w-full
                                     flex justify-start items-center
                                     ">
-                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start items-center
                                         ">
                                             当社は、個人情報の正確及び安全確保のために、セキュリティに万全の対策を講じています。
                                         </p>
-                                        </SlideInLeft>
                                     </div>
                                 </div>
 
                                 {/* サブタイトル */}
-                                <FadeInBack>
                                 <div className="
                                 w-full h-auto
                                 flex justify-center items-center
                                 ">
                                     <p className="text-xl md:text-xxl lg:text-xxxl font-bold">ご本人の照会</p>
                                 </div>
-                                </FadeInBack>
 
                                 <div className="
                                 w-full 
@@ -190,25 +168,21 @@ export default function PrivacyPolicy () {
                                     w-full
                                     flex justify-start items-center
                                     ">
-                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start items-center
                                         ">
                                             お客様がご本人の個人情報の照会・修正・削除などを希望される場合には、ご本人であることを確認の上、対応させていただきます。
                                         </p>
-                                        </SlideInLeft>
                                     </div>
                                 </div>
 
                                 {/* サブタイトル */}
-                                <FadeInBack>
                                 <div className="
                                 w-full h-auto
                                 flex justify-center items-center
                                 ">
                                     <p className="text-xl md:text-xxl lg:text-xxxl font-bold">法令、規範の遵守と見直し</p>
                                 </div>
-                                </FadeInBack>
 
                                 <div className="
                                 w-full 
@@ -218,25 +192,21 @@ export default function PrivacyPolicy () {
                                     w-full
                                     flex justify-start items-center
                                     ">
-                                        <SlideInLeft>
                                         <p className="
                                         flex justify-start items-center
                                         ">
                                             当社は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。
                                         </p>
-                                        </SlideInLeft>
                                     </div>
                                 </div>
 
                                 {/* サブタイトル */}
-                                <FadeInBack>
                                 <div className="
                                 w-full h-auto
                                 flex justify-center items-center
                                 ">
                                     <p className="text-xl md:text-xxl lg:text-xxxl font-bold">個人情報の取り扱いに関するお問い合わせ先</p>
                                 </div>
-                                </FadeInBack>
 
                                 <div className="
                                 w-full 
@@ -246,11 +216,9 @@ export default function PrivacyPolicy () {
                                     w-full
                                     flex justify-start items-center
                                     ">
-                                        <SlideInLeft>
                                         <p>
                                             当社の個人情報の取り扱いに関するお問い合わせは<Link href={'/contact'}>こちら</Link>までご連絡ください。
                                         </p>
-                                        </SlideInLeft>
                                     </div>
                                 </div>
                             </div>
