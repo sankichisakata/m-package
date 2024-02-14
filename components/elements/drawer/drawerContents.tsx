@@ -22,6 +22,7 @@ import {
   } from '@chakra-ui/react'
 import { HeaderFadeInBack } from "../observer/headerFadeInBack";
 import BorderWhiteFull from "../border/borderWhiteFull";
+import { FadeInBack } from "../observer/fadeInBack";
 
 export default function DrawerContents (props) {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
@@ -59,17 +60,13 @@ export default function DrawerContents (props) {
         >
           
           <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
-          <HeaderFadeInBack>
-              <div className="block w-11/12 lg:w-4/6 mx-auto mt-20 md:mt-28 text-left">
-                  <p className='text-xxs md:txet-xs text-white font-bold '>(株)エムパッケージは、お客様第一を掲げております。</p>
-              </div>
-            </HeaderFadeInBack>
            
             <DrawerContent 
             className="
             w-full h-full h-safari-screen mx-auto
             flex flex-col gap-5
             ">
+              <FadeInBack>
                 <DrawerBody className="
                 bg-white
                 mt-24 md:mt-32 mb-5
@@ -229,7 +226,7 @@ export default function DrawerContents (props) {
                       </nav>
                   </div>
                 </DrawerBody>
-                
+                </FadeInBack>
             </DrawerContent>
           </DrawerOverlay>
         </Drawer>

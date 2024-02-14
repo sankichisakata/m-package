@@ -44,6 +44,14 @@ export default function DrawerLayout () {
             </a>
         </div>
 
+        <div
+        style={{ display: !isOpen ? "none" : "block" }} 
+        className="
+        mx-auto"
+        >
+            <p className='break-words text-left text-xxs md:txet-xs text-primary-color font-bold'>(株)エムパッケージは、お客様第一を掲げております。</p>
+        </div>
+
         <div className='
         mr-0 ml-auto pr-3
         flex justify-center items-center gap-10
