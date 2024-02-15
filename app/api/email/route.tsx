@@ -10,13 +10,13 @@ export async function POST(request: NextRequest) {
 
   //SMTP情報
   const transporter = nodemailer.createTransport({
-    service: "lolipop",
+    service: "Lolipop",
     host: "smtp.lolipop.jp",
     port: 465,
-    secure: true,
+    // secure: true,
       auth: {
-          user: process.env.NEXT_PUBLIC_MAIL_ADDRESS ,
-          pass: process.env.NEXT_PUBLIC_MAIL_PASS , 
+          user: process.env.NEXT_PUBLIC_MAIL_ADDRESS,
+          pass: process.env.NEXT_PUBLIC_MAIL_PASS, 
       }, 
   });  
 
@@ -381,7 +381,7 @@ export async function POST(request: NextRequest) {
                             <tr>
                               <td style="text-align: left; font-family: sans-serif; font-size: 12px; font-weight: bold; color: #555555;">
                                   <p style="margin: 0;">${ data.company }</p>
-                                  <p style="margin: 0;">${ data.name }&nbsp様</p>
+                                  <p style="margin: 0;">${ data.name }&nbsp;様</p>
                                   <br>
                                   <p style="margin: 0;">この度は、お問い合わせいただき、誠にありがとうございます。</p>
                                   <p style="margin: 0;">お問い合わせ内容を確認次第、ご連絡致します。</p>
@@ -659,7 +659,7 @@ export async function POST(request: NextRequest) {
   // start-------------------------------------------管理者向けメール内容
   const mailOptionsAdmin: Mail.Options = {
     from: `${data.email}`,
-    to: 'keitaku2momo@gmail.com',
+    to: process.env.NEXT_PUBLIC_MAIL_ADDRESS,
     subject: `【${data.name}様よりお問い合わせ】`,
     html: `
     <head>
