@@ -10,10 +10,10 @@ export async function POST(request: NextRequest) {
 
   //SMTP情報
   const transporter = nodemailer.createTransport({
-    service: "Gmail",
-    host: "smtp.gmail.com",
+    service: "lolipop",
+    host: "smtp.lolipop.jp",
     port: 465,
-    // secure: true,
+    secure: true,
       auth: {
           user: process.env.NEXT_PUBLIC_MAIL_ADDRESS ,
           pass: process.env.NEXT_PUBLIC_MAIL_PASS , 

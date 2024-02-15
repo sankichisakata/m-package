@@ -10,7 +10,7 @@ const navigation = [
     { id: 3, name: "設備案内", href: "/equipment" },
     { id: 4, name: "会社情報", href: "/company" },
     { id: 5, name: "ニュース", href: "/news" },
-    // { id: 6, name: "ニュース詳細", href: "/news/..." },
+    { id: 6, name: "ニュース詳細", href: "/news/`*`" },
     { id: 7, name: "お問い合わせ", href: "/contact" },
     { id: 8, name: "お問い合わせ完了", href: "/contact/bird" },
     { id: 9, name: "お問い合わせ失敗", href: "/contact/failed" },
@@ -20,8 +20,10 @@ const navigation = [
 export default function BreadCrumb () {
     const pathname = usePathname();
     const homePage = pathname === '/'
+    const notFound = pathname === '/404'
 
     if(homePage)return null
+    if(notFound)return null
 
     return(
         <nav className="

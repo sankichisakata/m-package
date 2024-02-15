@@ -93,7 +93,7 @@ export default function DrawerContents (props) {
                   >
                       <div className="
                       bg-tell01 bg-cover bg-top
-                      w-10/12 md:w-8/12 h-auto mx-auto 
+                      w-full md:w-8/12 h-auto mx-auto 
                       rounded-md
                       ">
 
