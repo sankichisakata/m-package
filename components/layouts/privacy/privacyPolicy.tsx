@@ -217,7 +217,7 @@ export default function PrivacyPolicy () {
                                     flex justify-start items-center
                                     ">
                                         <p>
-                                            当社の個人情報の取り扱いに関するお問い合わせは<Link href={'/contact'}>こちら</Link>までご連絡ください。
+                                            当社の個人情報の取り扱いに関するお問い合わせは<Link href={'/contact/'}>こちら</Link>までご連絡ください。
                                         </p>
                                     </div>
                                 </div>

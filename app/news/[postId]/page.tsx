@@ -74,7 +74,8 @@ return (
                 px-5 md:px-10 lg:px-16
                 py-8 md:py-14 lg:py-20
                 flex flex-col justify-center gap-10 md:gap-16 lg:gap-20
-                rounded-xl">
+                rounded-xl
+                ">
                     <div className="
                     flex justify-between items-center
                     text-xs md:text-base lg:text-xl font-bold
@@ -109,29 +110,27 @@ return (
                 pt-14 md:pt-18 lg:pt-24
                 pb-16 md:pb-24 lg:pb-28
                 ">
-                    <FadeInBack>
-                        <div
-                        className="
-                        w-48 md:w-60 lg:w-72 h-[3.5rem] md:h-[5rem] mx-auto
-                        border-sub-color border-2 rounded-full shadow-md
-                        flex justify-center items-center
-                        text-sub-color text-xs md:text-base lg:text-xl font-bold
+                    <div
+                    className="
+                    w-48 md:w-60 lg:w-72 h-[3.5rem] md:h-[5rem] mx-auto
+                    border-sub-color border-2 rounded-full shadow-md
+                    flex justify-center items-center
+                    text-sub-color text-xs md:text-base lg:text-xl font-bold
+                    ">
+                        <div className="
+                        w-full h-full
                         ">
-                            <div className="
+                            <Link 
+                            href="/news/"
+                            className="
                             w-full h-full
-                            ">
-                                <Link 
-                                href="/news"
-                                className="
-                                w-full h-full
-                                flex justify-center items-center gap-5"
-                                >
-                                    <p>ニュース一覧</p>
-                                    <HiChevronDoubleRight/>
-                                </Link>
-                            </div> 
-                        </div>
-                    </FadeInBack>
+                            flex justify-center items-center gap-5"
+                            >
+                                <p>ニュース一覧</p>
+                                <HiChevronDoubleRight/>
+                            </Link>
+                        </div> 
+                    </div>
                 </div>
             </div>
     </li>

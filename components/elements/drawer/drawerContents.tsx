@@ -105,7 +105,7 @@ export default function DrawerContents (props) {
                         "
                         >
                           <Link 
-                          href="/contact"
+                          href="/contact/"
                           className="
                           w-full py-6 md:py-8
                           flex flex-col justify-center gap-3 md:gap-5
@@ -167,7 +167,7 @@ export default function DrawerContents (props) {
                           "
                           >
                               <li className="w-full h-10">
-                              <Link href="/service" onClick={onClose}
+                              <Link href="/service/" onClick={onClose}
                               className="
                               w-full h-full inline-block 
                               flex items-center lg:justify-center
@@ -182,7 +182,7 @@ export default function DrawerContents (props) {
                               <BorderWhiteFull/>
 
                               <li className="w-full h-10">
-                              <Link href="/equipment" onClick={onClose}
+                              <Link href="/equipment/" onClick={onClose}
                               className="
                               w-full h-full inline-block
                               flex items-center lg:justify-center
@@ -197,7 +197,7 @@ export default function DrawerContents (props) {
                               <BorderWhiteFull/>
 
                               <li className="w-full h-10">
-                              <Link href="/company" onClick={onClose}
+                              <Link href="/company/" onClick={onClose}
                               className="
                               w-full h-full inline-block
                               flex items-center lg:justify-center
@@ -212,7 +212,7 @@ export default function DrawerContents (props) {
                               <BorderWhiteFull/>
 
                               <li className="w-full h-10">
-                              <Link href="/news" onClick={onClose}
+                              <Link href="/news/" onClick={onClose}
                               className="
                               w-full h-full inline-block
                               flex items-center lg:justify-center
@@ -227,7 +227,7 @@ export default function DrawerContents (props) {
                               <BorderWhiteFull/>
 
                               <li className="w-full h-10">
-                              <Link href="/contact" onClick={onClose}
+                              <Link href="/contact/" onClick={onClose}
                               className="
                               w-full h-full inline-block
                               flex items-center lg:justify-center
@@ -245,7 +245,7 @@ export default function DrawerContents (props) {
                             pt-6 mb-2
                             flex flex-col justify-center items-center gap-2
                             '>
-                                <Link href="/privacy" onClick={onClose}>
+                                <Link href="/privacy/" onClick={onClose}>
                                   <p className='text-xs text-sub-color'>プライバシーポリシー</p>
                                 </Link>
                                 <small className='text-xxs text-primary-color'><span>©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>

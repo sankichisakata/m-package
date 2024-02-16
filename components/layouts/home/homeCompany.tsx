@@ -90,7 +90,10 @@ export default function HomeCompany () {
                         flex flex-col justify-around items-center gap-5 
                         bg-service01 bg-center bg-cover rounded-md shadow-lg
                         ">
-                            <Link className="w-full h-full" href="/company">
+                            <Link 
+                            className="w-full h-full" 
+                            href="/company/"
+                            >
                             <div className="
                             w-full h-full p-5
                             flex flex-col items-center gap-5 

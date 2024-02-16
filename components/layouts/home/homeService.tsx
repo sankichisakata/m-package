@@ -84,7 +84,10 @@ export default function HomeService () {
                             flex flex-col justify-around items-center gap-5 
                             bg-cardboard02 bg-center bg-cover rounded-md shadow-lg
                             ">
-                                <Link className="w-full h-full" href="/service">
+                                <Link 
+                                className="w-full h-full" 
+                                href="/service/"
+                                >
                                 <div className="
                                 w-full h-full p-5
                                 flex flex-col items-center gap-5 
@@ -127,7 +130,10 @@ export default function HomeService () {
                             flex flex-col justify-around items-center gap-5 
                             bg-equipment02 bg-center bg-cover rounded-md shadow-lg
                             ">
-                                <Link className="w-full h-full" href="/equipment">
+                                <Link 
+                                className="w-full h-full" 
+                                href="/equipment/"
+                                >
                                 <div className="
                                 w-full h-full p-5
                                 flex flex-col items-center gap-5 

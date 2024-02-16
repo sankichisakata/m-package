@@ -55,7 +55,6 @@ export default function HomeNews () {
                         </div>
 
                         <div className="w-full h-full">
-                        <FadeInBack>
                             <div
                             className="
                             w-48 md:w-60 lg:w-72 h-[3.5rem] md:h-[5rem] mx-auto
@@ -67,7 +66,7 @@ export default function HomeNews () {
                                 w-full h-full
                                 ">
                                     <Link 
-                                    href="/news"
+                                    href="/news/"
                                     className="
                                     w-full h-full
                                     flex justify-center items-center gap-5"
@@ -77,7 +76,6 @@ export default function HomeNews () {
                                     </Link>
                                 </div> 
                             </div>
-                        </FadeInBack>
                         </div>
 
                     </div>

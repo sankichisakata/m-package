@@ -11,7 +11,7 @@ const ContactButton = () => {
         '
         >
             <Link 
-            href="/contact" 
+            href="/contact/" 
             className="
             bg-sub-color active:bg-sub-color/80 hover:bg-sub-color/80
             border border-sub-color 
