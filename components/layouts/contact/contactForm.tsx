@@ -9,14 +9,6 @@ import { FormDate ,Form } from "@/components/elements/zod/zodShema";
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from "@chakra-ui/react";
 import { useState } from "react";
-import { SlideInLeft } from "@/components/elements/observer/slideInLeft";
-// import { FadeInBack } from "@/components/elements/observer/fadeInBack/fadeInBack";
-import { FadeInBack } from "@/components/elements/observer/fadeInBack";
-import { FadeInBack2 } from "@/components/elements/observer/fadeInBack/fadeInBack2";
-import { FadeInBack3 } from "@/components/elements/observer/fadeInBack/fadeInBack3";
-import { FadeInBack4 } from "@/components/elements/observer/fadeInBack/fadeInBack4";
-import { FadeInBack5 } from "@/components/elements/observer/fadeInBack/fadeInBack5";
-import { FadeInBack6 } from "@/components/elements/observer/fadeInBack/fadeInBack6";
 
 export default function ContactForm () {
   const router = useRouter(); 
@@ -542,7 +534,7 @@ export default function ContactForm () {
               className="
               bg-sub-color active:bg-sub-color/80 hover:bg-sub-color/80
               w-full md:w-3/6 max-w-[24rem] h-[3.5rem] md:h-[5rem]
-              text-white text-xs md:text-base lg:text-xl font-bold
+              text-white text-base md:text-xl font-bold
               border rounded-full
               shadow-lg active:shadow-none hover:shadow-none
               "

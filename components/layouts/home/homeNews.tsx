@@ -44,7 +44,7 @@ export default function HomeNews () {
             <div
                 className="
                 w-full h-auto
-                md:mt-10
+                mt-6 md:mt-10
                 flex flex-col justify-center items-center gap-8 md:gap-10 lg:gap-20
                 "
                 >
@@ -54,7 +54,10 @@ export default function HomeNews () {
                             <HomeNewsList/>
                         </div>
 
-                        <div className="w-full h-full">
+                        <div className="
+                        w-full h-full
+                        pt-10
+                        ">
                             <div
                             className="
                             w-48 md:w-60 lg:w-72 h-[3.5rem] md:h-[5rem] mx-auto

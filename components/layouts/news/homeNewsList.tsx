@@ -29,25 +29,25 @@ export default async function HomeNewsList() {
                   href={`/news/${post.id}/`}>
                   <div 
                   className="
-                  w-11/12 max-w-[60rem] h-auto py-3 md:py-6 mx-auto
+                  w-full max-w-[60rem] h-auto py-3 md:py-6 mx-auto
                   flex flex-col 
                   rounded-xl
                   border-2 border-white
-                  px-3 md:px-6 lg:px-8
-                  py-3 md:py-6 lg:py-8
-                  my-3
+                  px-3 md:px-6 
+                  py-3 md:py-6 
+                  my-2 md:my-3
                   
-                  text-sub-color text-xs md:text-base lg:text-xl font-bold
+                  text-sub-color text-xs md:text-base lg:text-lg font-bold
                   ">
                     <div className="
-                      flex flex-col justify-center gap-3 md:gap-5">
+                      flex flex-col justify-center gap-3 md:gap-4">
                           <div className="
                           flex justify-between items-center
                           text-white
                           ">
                               <p className="
-                              bg-white py-[0.1rem] px-3
-                              text-sub-color 
+                              border-2 border-white py-[0.1rem] px-3
+                              text-white 
                               ">{post.category}</p>
                               <Date dateString={post.date} />
                           </div>
