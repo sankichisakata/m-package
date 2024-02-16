@@ -24,7 +24,7 @@ export default function FooterMain () {
                     >
                         
                         <li className="w-full h-10">
-                        <Link href="/service"
+                        <Link href="/service/"
                         className="
                         w-full h-full inline-block 
                         flex items-center lg:justify-center
@@ -41,7 +41,7 @@ export default function FooterMain () {
                         </div>
 
                         <li className="w-full h-10">
-                        <Link href="/equipment"
+                        <Link href="/equipment/"
                         className="
                         w-full h-full inline-block
                         flex items-center lg:justify-center
@@ -60,7 +60,7 @@ export default function FooterMain () {
                         </div>
 
                         <li className="w-full h-10">
-                        <Link href="/company"
+                        <Link href="/company/"
                         className="
                         w-full h-full inline-block
                         flex items-center lg:justify-center
@@ -77,7 +77,7 @@ export default function FooterMain () {
                         </div>
 
                         <li className="w-full h-10">
-                        <Link href="/news"
+                        <Link href="/news/"
                         className="
                         w-full h-full inline-block
                         flex items-center lg:justify-center
@@ -94,7 +94,7 @@ export default function FooterMain () {
                         </div>
 
                         <li className="w-full h-10">
-                        <Link href="/contact"
+                        <Link href="/contact/"
                         className="
                         w-full h-full inline-block
                         flex items-center lg:justify-center
@@ -113,7 +113,7 @@ export default function FooterMain () {
                     pt-10 mb-2
                     flex flex-col justify-center items-center gap-2 md:gap-5
                     '>
-                        <Link href="/privacy">
+                        <Link href="/privacy/">
                             <p className='text-xxs md:text-xs lg:text-sm text-sub-color'>プライバシーポリシー</p>
                         </Link>
                         

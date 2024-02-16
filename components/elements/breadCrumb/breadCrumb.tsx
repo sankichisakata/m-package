@@ -6,21 +6,21 @@ import { SlideInLeft } from "../observer/slideInLeft";
 
 const navigation = [
     { id: 1, name: "ホーム", href: "/" },
-    { id: 2, name: "事業内容", href: "/service" },
-    { id: 3, name: "設備案内", href: "/equipment" },
-    { id: 4, name: "会社情報", href: "/company" },
-    { id: 5, name: "ニュース", href: "/news" },
+    { id: 2, name: "事業内容", href: "/service/" },
+    { id: 3, name: "設備案内", href: "/equipment/" },
+    { id: 4, name: "会社情報", href: "/company/" },
+    { id: 5, name: "ニュース", href: "/news/" },
     // { id: 6, name: "ニュース詳細", href: "/news/`*`" },
-    { id: 7, name: "お問い合わせ", href: "/contact" },
-    { id: 8, name: "お問い合わせ完了", href: "/contact/bird" },
-    { id: 9, name: "お問い合わせ失敗", href: "/contact/failed" },
-    { id: 10, name: "プライバシーポリシー", href: "/privacy" },
+    { id: 7, name: "お問い合わせ", href: "/contact/" },
+    { id: 8, name: "お問い合わせ完了", href: "/contact/bird/" },
+    { id: 9, name: "お問い合わせ失敗", href: "/contact/failed/" },
+    { id: 10, name: "プライバシーポリシー", href: "/privacy/" },
   ];
 
 export default function BreadCrumb () {
     const pathname = usePathname();
     const homePage = pathname === '/'
-    const notFound = pathname === '/404'
+    const notFound = pathname === '/404.html/'
 
     if(homePage)return null
     if(notFound)return null

@@ -21,7 +21,7 @@ export default async function NewsList() {
                 <li key={post.id}>
                   <Link 
                   scroll={true}
-                  href={`/news/${post.id}`}>
+                  href={`/news/${post.id}/`}>
 
                   <div 
                   className="

@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export default function NotFound() {
@@ -19,6 +20,9 @@ export default function NotFound() {
                 <p>「トップに戻る」ボタンを押してください。</p> 
             </div>
 
+            <Link
+            href="/" 
+            className='flex flex-col rounded-full'>
             <div 
             className="
             flex justify-center items-center
@@ -26,10 +30,9 @@ export default function NotFound() {
             border-2 border-sub-color
             rounded-full
             ">
-                <a href="/" className='flex flex-col'>
                     <p className="text-center text-sub-color text-sm md:text-base lg:text-lg font-bold">トップに戻る</p>
-                </a>
             </div>
+            </Link>
         </div>
     )
 }

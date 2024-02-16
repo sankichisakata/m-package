@@ -31,7 +31,7 @@ export default function FooterContact () {
                 </div>
 
                 <Link 
-                href="/contact"
+                href="/contact/"
                 className="
                 w-full md:w-1/2 px-5 py-10 md:py-14 lg:py-24
                 flex flex-col justify-center gap-5 lg:gap-8

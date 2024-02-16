@@ -54,25 +54,25 @@ export default function DrawerLayout () {
         text-sub-color lg:text-xl font-bold
         ">
             <li>
-            <Link href="/service">
+            <Link href="/service/">
             <p className='p-4'>事業内容</p>
             </Link>
             </li>
 
             <li>
-            <Link href="/equipment">
+            <Link href="/equipment/">
             <p className='p-4'>設備案内</p>
             </Link>
             </li>
 
             <li>
-            <Link href="/company">
+            <Link href="/company/">
             <p className='p-4'>会社情報</p>
             </Link>
             </li>
 
             <li>
-            <Link href="/news">
+            <Link href="/news/">
             <p className='p-4'>ニュース</p>
             </Link>
             </li>

@@ -25,37 +25,44 @@ export default async function HomeNewsList() {
           return(
             
             <li key={post.id}>
-              <div 
-              className="
-              w-full max-w-[40rem] h-auto py-3 md:py-6 mx-auto
-              flex flex-col
-              text-white text-xs md:text-base lg:text-xl font-bold
-              ">
-                <div className="
-                flex flex-col justify-center gap-1">
-
+                <Link 
+                  href={`/news/${post.id}/`}>
+                  <div 
+                  className="
+                  w-11/12 max-w-[60rem] h-auto py-3 md:py-6 mx-auto
+                  flex flex-col 
+                  rounded-xl
+                  border-2 border-white
+                  px-3 md:px-6 lg:px-8
+                  py-3 md:py-6 lg:py-8
+                  my-3
+                  
+                  text-sub-color text-xs md:text-base lg:text-xl font-bold
+                  ">
                     <div className="
-                    flex justify-between items-center
-                    ">
-                        <p className="
-                        bg-sub-color py-[0.1rem] px-3
-                        text-white
-                        border-[0.1rem] border-white
-                        ">{post.category}</p>
-                        <Date dateString={post.date} />
-                    </div>
+                      flex flex-col justify-center gap-3 md:gap-5">
+                          <div className="
+                          flex justify-between items-center
+                          text-white
+                          ">
+                              <p className="
+                              bg-white py-[0.1rem] px-3
+                              text-sub-color 
+                              ">{post.category}</p>
+                              <Date dateString={post.date} />
+                          </div>
 
-                    <Link href={`/news/${post.id}`}>
-                      <div className="
-                      py-2
-                      flex justify-between items-center
-                      ">
-                          <p>{post.title}</p>
-                          <HiChevronDoubleRight/>
+                          
+                          <div className="
+                          flex justify-between items-center
+                          text-white
+                          ">
+                              <p>{post.title}</p>
+                              <HiChevronDoubleRight/>
+                          </div>
                       </div>
-                    </Link>
-                </div>
-              </div>
+                  </div>
+                </Link>
             </li>
           )
         })}  
