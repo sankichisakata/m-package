@@ -35,6 +35,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body>
       <Header/>
       <Suspense fallback={<Loading />}>

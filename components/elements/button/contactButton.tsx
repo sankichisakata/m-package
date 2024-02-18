@@ -7,23 +7,34 @@ const ContactButton = () => {
     return(
         <div className='
         flex justify-center items-center
-        mx-2
+        lg:mx-2
         '
         >
             <Link 
             href="/contact/" 
             className="
-            bg-sub-color active:bg-sub-color/80 hover:bg-sub-color/80
-            border border-sub-color 
+            flex flex-col justify-center items-center
+            w-16 md:w-auto h-16 md:h-auto
             rounded-full 
             ">
               
-                <div className="flex justify-center items-center">
-                  <p className="px-3 md:px-4 lg:px-6 py-2 md:py-3 lg:py-4 text-white text-xs md:text-base lg:text-xl font-semibold">
+                <div 
+                className="
+                flex justify-center items-center
+                bg-sub-color active:bg-sub-color/80 hover:bg-sub-color/80
+                rounded-full 
+                ">
+                    <p className="
+                    hidden md:inline-block px-3 lg:px-5 py-2 lg:py-3 
+                    text-white text-xs md:text-sm lg:text-base font-semibold"
+                    >
+                        お問い合わせ
+                    </p>
+                    <HiMail className="border border-sub-color rounded-full p-1 md:m-2 bg-white text-sub-color text-xxl lg:text-[2rem]"/>
+                </div>
+                <p className="pt-1 md:hidden text-sub-color text-xxxs font-semibold">
                     お問い合わせ
                 </p>
-                  <HiMail className="border-white rounded-full p-1 m-1 md:m-2 bg-white text-sub-color text-xxl lg:text-[2rem]"/>
-                  </div>
               
             </Link>
       
