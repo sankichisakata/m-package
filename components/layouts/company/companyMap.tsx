@@ -7,15 +7,16 @@ export default function CompanyMap () {
     return(
         <>
         <div className="
+        bg-gray-100
+        py-14 md:py-20
         md:hidden
         flex justify-center items-center
-        mb-14 md:mb-20 lg:mb-24
         ">
             <SlideInLeft>
             <div 
                 className="
                 w-full md:w-11/12 lg:w-10/12
-                h-[20rem] md:h-[40rem] lg:h-[50rem]
+                h-[24rem] md:h-[40rem] lg:h-[50rem]
                 mx-auto
                 ">
                 <GoogleMapsApi/>

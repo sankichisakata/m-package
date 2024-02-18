@@ -16,8 +16,8 @@ import Loading from './loading';
 export const metadata: Metadata = {
 
   title: {
-    default: 'M-Package',
-    template: '%s | M-Package',
+    default: 'ダンボールのエムパッケージ',
+    template: '%s | ダンボールのエムパッケージ',
   },
   description: '埼玉県川口市の梱包材企業：段ボールの企画・製造・配送・販売、お気軽にご相談ください。',
   // openGraph: {
@@ -35,10 +35,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body>
       <Header/>
       <Suspense fallback={<Loading />}>
-          <main>
+          <main className='bg-white'>
             <BreadCrumb/>
             <PageTitle/>
               <Providers>

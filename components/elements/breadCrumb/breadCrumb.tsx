@@ -28,7 +28,7 @@ export default function BreadCrumb () {
     return(
         <nav className="
         w-11/12 lg:w-10/12
-        mx-auto mt-28 md:mt-36 lg:mt-40
+        mx-auto pt-28 md:pt-36 lg:pt-40
         ">
             <ul className="
             flex 

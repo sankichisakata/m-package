@@ -11,11 +11,11 @@ const Header = () => {
       "
       >
         <div className='
-        z-40
         bg-white
         shadow-md 
         rounded-md
         w-11/12 h-16 md:h-20 lg:h-24
+        px-2 md:px-5 lg:px-8 xl:px-10
         flex justify-center items-center
         '>
             <DrawerLayout/>

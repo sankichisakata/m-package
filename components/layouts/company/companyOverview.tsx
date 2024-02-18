@@ -6,6 +6,7 @@ export default function CompanyOverview () {
     return(
         <>
             <div className="
+            bg-gray-100
             overflow-hidden
             w-full h-full 
             pt-14 md:pt-20

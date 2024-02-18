@@ -7,7 +7,7 @@ export default function HomeHero () {
         flex justify-center items-center
         ">
             <div className="
-            w-full z-[-5]
+            w-full z-[1]
             ">
                 <HomeSwiper/>
             </div>

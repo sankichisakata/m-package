@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FadeInBack } from "../observer/fadeInBack";
+import { Logo } from "../icon";
 
 
 export default function FooterHeader () {
@@ -18,7 +19,10 @@ export default function FooterHeader () {
                 text-sub-color
                 '
                 >
-                        <Link href="/" className="block w-72 p-1 md:p-2">
+                        <Link href="/" className="flex justify-left items-center">
+                            <div className="pr-2">
+                                <Logo className="md:w-[100px] md:h-[100px]" />
+                            </div>
                             <div className="block flex flex-col gap-1 md:gap-2">
                                 <p className="text-xs md:text-sm font-semibold">ダンボールのエムパッケージ</p>
                                 <p className='text-xl md:text-xxxl font-bold'>株式会社エムパッケージ</p>

@@ -9,7 +9,7 @@ export default function FooterContact () {
         
         <div 
         className='
-        w-full mx-auto py-5
+        w-full mx-auto pb-5
         '
         >
             <FadeInBack>

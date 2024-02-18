@@ -60,10 +60,11 @@ export default function DrawerContents (props) {
           finalFocusRef={btnRef}
         >
           
-          <DrawerOverlay onClick={onClose} className="bg-slate-600/50">
+          <DrawerOverlay onClick={onClose} className="z-30 bg-slate-600/50">
            
             <DrawerContent 
             className="
+            z-30
             w-full h-full h-safari-screen mx-auto pb-2 md:pb-4
             flex flex-col
             ">
@@ -248,7 +249,7 @@ export default function DrawerContents (props) {
                                 <Link href="/privacy/" onClick={onClose}>
                                   <p className='text-xs text-sub-color'>プライバシーポリシー</p>
                                 </Link>
-                                <small className='text-xxs text-primary-color'><span>©</span>&nbsp;2023&nbsp;株式会社エムパッケージ</small>
+                                <small className='text-xxs text-primary-color'><span>©</span>&nbsp;株式会社エムパッケージ</small>
                             </div>
                           
 

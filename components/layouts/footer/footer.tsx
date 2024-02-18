@@ -9,7 +9,7 @@ import FooterHeader from '@/components/elements/footerHeader/footerHeader';
 const Footer = () => {
     //URLが'/contact'時はfooterContactコンポーネントを表示しない。
     const searchPathName = usePathname();
-    const isContact = searchPathName === ('/contact')
+    const isContact = searchPathName === ('/contact/')
     return (
         <footer className="bg-white w-full h-full">
             {!isContact && <FooterContact/>}

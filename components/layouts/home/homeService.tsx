@@ -8,14 +8,15 @@ export default function HomeService () {
         <>
             <div 
             className='
+            bg-white
             relative overflow-hidden
             w-full h-full mx-auto py-16 lg:py-24
             flex flex-col justify-center items-center gap-5 md:gap-8
             '
             >
-                <p className="absolute z-[-1] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 left-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]">We work it</p>
+                <p className="absolute z-[1] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 left-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]">We work it</p>
 
-                <div className="w-full">
+                <div className="z-[2] w-full">
                     
                     <div className="
                     w-11/12 mx-auto
@@ -66,6 +67,7 @@ export default function HomeService () {
                     <div className="w-full h-full flex flex-col items-center">
                         {/* 背景 */}
                         <div className="
+                        z-[1]
                         w-full lg:w-10/12 h-full flex flex-col md:flex-row justify-center items-center gap-5 lg:gap-14 text-md
 
                         before:absolute 
