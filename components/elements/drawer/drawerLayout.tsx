@@ -27,16 +27,16 @@ export default function DrawerLayout () {
 
                     <Logo 
                     className="
-                    w-[40px] md:w-[60px] lg:w-[70px] h-[40px] md:h-[60px] lg:h-[70px]
+                    w-[45px] md:w-[60px] lg:w-[70px] h-[45px] md:h-[60px] lg:h-[70px]
                     mr-2 md:mr-3
                     "/>
                     <div className="block flex flex-col justify-center items-left gap-[0.15rem] md:gap-[0.2rem] lg:gap-[0.3rem]">
                         <p className="
-                        text-[0.4rem] md:text-xxs lg:text-xxs xl:text-xs font-semibold">
+                        text-[0.5rem] md:text-xxs lg:text-xxs xl:text-xs font-semibold">
                             ダンボールのエムパッケージ
                         </p>
                         <p className="
-                        text-xxs md:text-base lg:text-lg xl:text-xl font-bold
+                        text-xs md:text-base lg:text-lg xl:text-xl font-bold
                         ">
                             株式会社エムパッケージ
                         </p>
