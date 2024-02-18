@@ -42,7 +42,7 @@ export default function ServiceTimeline () {
                     z-10 bg-white top-0
                     w-11/12 lg:w-10/12 max-w-5xl h-auto p-8 md:p-10 my-10 md:my-14 lg:my-20 mx-auto
                     rounded-sm
-                    flex flex-col justify-center items-center gap-2 md:gap-5
+                    flex flex-col justify-center items-left gap-2 md:gap-5
                     text-xs md:text-base lg:text-xl font-bold
                     ">
                     <p>弊社では1人の営業がすべての工程を管理する<span className="text-vivid-color">「ノンストップ管理」</span>をしております。</p>

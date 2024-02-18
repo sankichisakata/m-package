@@ -123,7 +123,7 @@ export default function FooterMain () {
                 mb-2
                 flex flex-col justify-center items-center
                 '>
-                    <small className='text-xxxs md:text-xxs lg:text-xs text-sub-color'>©&nbsp;2023&nbsp;株式会社エムパッケージ</small>
+                    <small className='text-xxxs md:text-xxs lg:text-xs text-sub-color'>©&nbsp;株式会社エムパッケージ</small>
                 </div>
         </div>
         

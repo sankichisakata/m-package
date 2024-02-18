@@ -7,6 +7,7 @@ export default function HomeCompany () {
         <>
             <div 
             className='
+            bg-white z-[1]
             relative overflow-hidden
             w-full h-full mx-auto py-16 lg:py-24
             flex flex-col justify-center items-center gap-5 md:gap-8
@@ -19,11 +20,11 @@ export default function HomeCompany () {
             '
             >
                 <p className="
-                absolute z-[-5] md:mt-[-0.1rem] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 right-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]
+                absolute z-[1] md:mt-[-0.1rem] md:[writing-mode:vertical-lr] text-slate-400/10 top-0 right-0 font-semibold text-[4rem] md:text-[6rem] lg:text-[9rem]
                 ">Company</p>
 
                 
-                <div className="w-full">
+                <div className="z-[2] w-full">
                     <div className="
                     w-11/12 mx-auto
                     ">

@@ -11,7 +11,6 @@ const Header = () => {
       "
       >
         <div className='
-        z-40
         bg-white
         shadow-md 
         rounded-md
