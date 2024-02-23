@@ -22,7 +22,7 @@ export default function DrawerLayout () {
         <>  
         {/* ロゴボタン */}
         <div className="whitespace-nowrap">
-            <a href="/" className='flex'>
+            <a href="/" className='flex h-16 md:h-auto'>
                 <div className="flex justify-center items-center">
 
                     <Logo 

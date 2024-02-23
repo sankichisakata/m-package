@@ -46,7 +46,7 @@ export default function CompanyMain () {
                         flex flex-col justify-center gap-2 md:gap-5
                         ">
                             <p>
-                                埼玉で50年、お客様と共に段ボール業をさせていただいております。
+                                お客様と共に段ボール業をさせていただいております。
                             </p>
                             <p>
                                 先代から引き継いだ技術と信頼で、これからも皆様の隣でお手伝いさせていただけることに感謝し、より一層精進して参ります。

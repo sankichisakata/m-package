@@ -290,7 +290,7 @@ export default function CompanyOverview () {
                                         flex justify-start items-center
                                         text-xl md:text-xxl lg:text-xxxl font-bold
                                         ">
-                                            段ボール製品の製造・加工及び販売、紙加工製品の設計及びコンサルティング業務、梱包・物流業務
+                                            段ボール製品の製造・加工及び印刷、紙加工製品の設計及びコンサルティング業務、梱包・物流業務
                                         </p>
                                         </FadeInBack>
                                     </div>
