@@ -3,6 +3,7 @@
 import React from 'react'
 import { GoogleMap, LoadScript, MarkerF, useJsApiLoader, InfoWindowF } from '@react-google-maps/api';
 import { InterfaceMap } from "./googleMapStyles";
+import { Logo } from '../icon';
  const googleMapOptions = {
   styles: InterfaceMap,
   mapTypeControl: false,
@@ -53,26 +54,14 @@ function GoogleMapsApi() {
       >
         <InfoWindowF position={center}>
             <>
-            <div className='flex p-1'>
-              <p className="
-              block
-              bg-white
-              w-15
-              p-[0.1rem] md:p-[0.2rem]
-              text-center text-xxs md:text-xs lg:text-base font-bold
-              border-sub-color border-t-2 border-l-2 border-b-2
-              ">
-                  ダンボールの
-              </p>
-              <p className="
-              bg-sub-color
-              p-[0.1rem] md:p-[0.2rem]
-              text-center text-white font-bold 
-              text-xxs md:text-xs lg:text-base
-              border-2 border-sub-color
-              ">
-                  エムパッケージ
-              </p>
+            <div className='flex justify-center items-center gap-1'>
+              <div className="">
+                  <Logo className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[60px] lg:h-[60px]" />
+              </div>
+              <div className="block flex flex-col md:gap-1">
+                  <p className="text-[0.4rem] lg:text-[0.55rem] font-semibold">ダンボールのエムパッケージ</p>
+                  <p className="text-[0.6rem] lg:text-[0.8rem] font-bold">株式会社エムパッケージ</p>
+              </div>
             </div>
             </>
           </InfoWindowF>
