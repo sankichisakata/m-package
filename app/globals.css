@@ -20,6 +20,10 @@
   }
 }
 
+html {
+  overscroll-behavior: none;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -29,5 +33,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
-
