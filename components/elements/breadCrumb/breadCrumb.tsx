@@ -1,63 +1,60 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { SlideInLeft } from "../observer/slideInLeft";
+import { usePathname } from "next/navigation";
 
 const navigation = [
-    { id: 1, name: "ホーム", href: "/" },
-    { id: 2, name: "事業内容", href: "/service/" },
-    { id: 3, name: "設備案内", href: "/equipment/" },
-    { id: 4, name: "会社情報", href: "/company/" },
-    { id: 5, name: "ニュース", href: "/news/" },
-    // { id: 6, name: "ニュース詳細", href: "/news/`*`" },
-    { id: 7, name: "お問い合わせ", href: "/contact/" },
-    { id: 8, name: "お問い合わせ完了", href: "/contact/bird/" },
-    { id: 9, name: "お問い合わせ失敗", href: "/contact/failed/" },
-    { id: 10, name: "プライバシーポリシー", href: "/privacy/" },
-  ];
+  { id: 1, name: "ホーム", href: "/" },
+  { id: 2, name: "事業内容", href: "/service/" },
+  { id: 3, name: "設備案内", href: "/equipment/" },
+  { id: 4, name: "会社情報", href: "/company/" },
+  { id: 5, name: "ニュース", href: "/news/" },
+  // { id: 6, name: "ニュース詳細", href: "/news/`*`" },
+  { id: 7, name: "お問い合わせ", href: "/contact/" },
+  { id: 8, name: "お問い合わせ完了", href: "/contact/bird/" },
+  { id: 9, name: "お問い合わせ失敗", href: "/contact/failed/" },
+  { id: 10, name: "プライバシーポリシー", href: "/privacy/" },
+];
 
-export default function BreadCrumb () {
-    const pathname = usePathname();
-    const homePage = pathname === '/'
-    const notFound = pathname === '/404.html/'
+export default function BreadCrumb() {
+  const pathname = usePathname();
+  const homePage = pathname === "/";
+  const notFound = pathname === "/404.html/";
 
-    if(homePage)return null
-    if(notFound)return null
+  if (homePage) return null;
+  if (notFound) return null;
 
-    return(
-        <nav className="
+  return (
+    <nav
+      className="
         w-11/12 lg:w-10/12
         mx-auto pt-28 md:pt-36 lg:pt-40
-        ">
-            <ul className="
+        "
+    >
+      <ul
+        className="
             flex 
             text-xxs md:text-xs lg:text-sm font-semibold
-            ">
-                <li className="
+            "
+      >
+        <li
+          className="
                 flex justify-center items-center
-                ">
-                    <Link href="/">
-                    TOP
-                    </Link>
-                </li>
-                <span className="mx-2 md:mx-3 lg:mx-4">|</span>
-                {navigation.map(({ href, name, id }) => (
-                <li key={id}>
-                    <span
-                    className={
-                        pathname === href
-                        ? "visible"
-                        : "hidden"
-                    }
-                    >
-                    {name}
-                    </span>
-                </li>
-                ))}
-            </ul>
-        </nav>
-    )
+                "
+        >
+          <Link href="/">TOP</Link>
+        </li>
+        <span className="mx-2 md:mx-3 lg:mx-4">|</span>
+        {navigation.map(({ href, name, id }) => (
+          <li key={id}>
+            <span className={pathname === href ? "visible" : "hidden"}>
+              {name}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }
 
 // "use client";
@@ -76,14 +73,13 @@ export default function BreadCrumb () {
 // export async function generateStaticParams() {
 //     const { contents } = await getList();
 
-    
 //     return contents.map((post) => ({
 //         postId: post.id,
 //     }));
 // }
-  
+
 // export default async function BreadCrumb({ params }: { params: { postId: string } }) {
-        
+
 //     const post = await getDetail(params.postId);
 //     const pathname = usePathname();
 //     const homePage = pathname === '/'
@@ -109,7 +105,7 @@ export default function BreadCrumb () {
 //         mx-auto mt-28 md:mt-36 lg:mt-40
 //         ">
 //             <ul className="
-//             flex 
+//             flex
 //             text-xxs md:text-xs lg:text-sm font-semibold
 //             ">
 //                 <li className="
